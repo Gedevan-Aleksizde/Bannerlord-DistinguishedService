@@ -20,9 +20,9 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
-//using HarmonyLib;
 using TaleWorlds.CampaignSystem.MapEvents;
 using System.Reflection;
+using TaleWorlds.Localization;
 
 namespace DistinguishedService
 {
@@ -41,16 +41,16 @@ namespace DistinguishedService
             try
             {
                 //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService110"), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml")))
+                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), "Settings.xml");
+                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml")))
                 {
-                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml");
+                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
                 }
                 this.DeserializeObject(path);
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage("Could not serialize Settings.xml: " + ex.Message.ToString() + " Using default values!", Color.FromUint(4282569842U)));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr001}(001) Could not serialize Settings.xml: {ERR} Using default values!").SetTextVariable("ERR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
                 this.CurrentSettings = new Settings();
             }
 
@@ -72,12 +72,12 @@ namespace DistinguishedService
                 {
                     try
                     {
-                        InformationManager.DisplayMessage(new InformationMessage("AI Companions have been disabled for now!", Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr002}(002) AI Companions have been disabled for now!").ToString(), Color.FromUint(4282569842U)));
                         //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
                     }
                     catch(Exception e)
                     {
-                        InformationManager.DisplayMessage(new InformationMessage("Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.", Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr003}(003) Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.").ToString(), Color.FromUint(4282569842U)));
                         CurrentSettings.ai_promotion_chance = 0;
                     }
                 }
@@ -90,11 +90,11 @@ namespace DistinguishedService
 
                 }
 
-                InformationManager.DisplayMessage(new InformationMessage("Distinguished Service loaded successfully", Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg001}Distinguished Service loaded successfully").ToString(), Colors.Blue));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage("There was a problem:\n" + ex.ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr004}(004) There was a problem:\n {ERROR}").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
             }
             gamestarted = true;
         }
@@ -107,16 +107,16 @@ namespace DistinguishedService
             try
             {
                 //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService110"), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml")))
+                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), "Settings.xml");
+                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml")))
                 {
-                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml");
+                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
                 }
                 this.DeserializeObject(path);
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage("Could not serialize Settings.xml: " + ex.Message.ToString() + " Using default values!", Color.FromUint(4282569842U)));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr001}(001) Could not serialize Settings.xml: {} Using default values!").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
                 this.CurrentSettings = new Settings();
             }
 
@@ -140,12 +140,12 @@ namespace DistinguishedService
                 {
                     try
                     {
-                        InformationManager.DisplayMessage(new InformationMessage("AI Companions have been disabled for now!", Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSErr002}(002) AI Companions have been disabled for now!", Color.FromUint(4282569842U)));
                         //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
                     }
                     catch (Exception e)
                     {
-                        InformationManager.DisplayMessage(new InformationMessage("Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.", Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr003}(003) Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.").ToString(), Color.FromUint(4282569842U)));
                         CurrentSettings.ai_promotion_chance = 0;
                     }
                 }
@@ -158,11 +158,11 @@ namespace DistinguishedService
                 }
 
                 if(!reload)
-                    InformationManager.DisplayMessage(new InformationMessage("Distinguished Service loaded successfully", Colors.Blue));
+                    InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg001}Distinguished Service loaded successfully").ToString(), Colors.Blue));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage("There was a problem:\n" + ex.ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr004}(004) There was a problem:\n {ERROR}").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
             }
             gamestarted = false;
         }

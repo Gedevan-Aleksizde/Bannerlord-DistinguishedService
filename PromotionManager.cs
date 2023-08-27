@@ -76,13 +76,13 @@ namespace DistinguishedService
         {
             //string path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
             //start with what we know will work
-            string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService110"), "Settings.xml");
+            string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), "Settings.xml");
             //check for a settings in the modules folder
             //if it exists, use it instead!
-            if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml")))
+            if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml")))
             {
-                InformationManager.DisplayMessage(new InformationMessage("Using Modules/DistinguishedService110 Settings", Color.FromUint(4282569842U)));
-                path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", "Settings.xml");
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg002}Using Modules/DistinguishedService Settings").ToString(), Color.FromUint(4282569842U)));
+                path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
             }
             Settings currentsettings;
             using (Stream stream = (Stream)new FileStream(path, FileMode.Open))
@@ -115,39 +115,47 @@ namespace DistinguishedService
             killcounts = new List<int>();
 
             this.using_extern_namelist = currentsettings.NAMES_FROM_EXTERNAL_FILE;
-            this.extern_namelist = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService110"), currentsettings.EXTERNAL_NAME_FILE); 
+            this.extern_namelist = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), currentsettings.EXTERNAL_NAME_FILE); 
             //Do the same with the namelist -- use the easier-to-access Modules folder preferentially
-            if(File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", currentsettings.EXTERNAL_NAME_FILE)))
+            if(File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", currentsettings.EXTERNAL_NAME_FILE)))
             {
-                this.extern_namelist = Path.Combine(BasePath.Name, "Modules", "DistinguishedService110", currentsettings.EXTERNAL_NAME_FILE);
+                this.extern_namelist = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", currentsettings.EXTERNAL_NAME_FILE);
             }
 
             
 
             if (this.using_extern_namelist)
             {
-                InformationManager.DisplayMessage(new InformationMessage("USING EXTERNAL NAMELIST FILE!\nThis file will be written back to/edited to knock out used names", Color.FromUint(4282569842U)));
+                InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg003}USING EXTERNAL NAMELIST FILE!\nThis file will be written back to/edited to knock out used names", Color.FromUint(4282569842U)));
             }
             //set other values from settings
             this.fill_perks = currentsettings.fill_in_perks;
 
             //Output final mod state to user, set static instance
-            InformationManager.DisplayMessage(new InformationMessage("Max nominations = " + this.max_nominations + "\nTier Thresh = " + this.tier_threshold + "\nKill Thresh:\nInf = " + this.inf_kill_threshold + " cav = " + this.cav_kill_threshold + " ran = " + this.ran_kill_threshold + "\nPerformance Thresh = " + this.outperform_percentile, Color.FromUint(4282569842U)));
+            InformationManager.DisplayMessage(new InformationMessage(
+                new TextObject("{=DistinguishedSMsg004}Max nominations = {MAX}{newline}Tier Threshold = {TTHRESH}{newline}Kill Thresh.:{newline}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{newline}Performance Thresh. = {PTHRESH}",
+                new Dictionary<string, object> {
+                    { "MAX", this.max_nominations }, { "TTHRESH", this.tier_threshold },
+                    { "KTHRESH", this.cav_kill_threshold },
+                    { "CTHRESH", this.cav_kill_threshold },
+                    { "RTHRESH", this.ran_kill_threshold },
+                    { "PTHRESH", this.outperform_percentile }
+                } ).ToString(), Color.FromUint(4282569842U)));
             PromotionManager.__instance = this;
 
             //Display warnings if chosen settings will cause non-player-controlled events
             //e.g. auto perk selection, auto-promotion, ignoring companion limit
             if (currentsettings.upgrade_to_hero)
             {
-                InformationManager.DisplayMessage(new InformationMessage("CAUTION: Troops will auto-promote to heros at tier " + this.tier_threshold + "\nChange settings if this is unintended.", Colors.Yellow));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg005}CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{newline}Change settings if this is unintended.").SetTextVariable("TTHRESH", this.tier_threshold).ToString(), Colors.Yellow));
             }
             if (this.fill_perks)
             {
-                InformationManager.DisplayMessage(new InformationMessage("CAUTION: New hero perks will be assigned automatically.\nChange settings if this is unintended.", Colors.Yellow));
+                InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg006}CAUTION 006: New hero perks will be assigned automatically.\nChange settings if this is unintended.", Colors.Yellow));
             }
             if(!this.respect_companion_limit)
             {
-                InformationManager.DisplayMessage(new InformationMessage("CAUTION: Ignoring companion limit.", Colors.Yellow));
+                InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg007}CAUTION 007: Ignoring companion limit.", Colors.Yellow));
             }
         }
 
@@ -161,7 +169,7 @@ namespace DistinguishedService
             //check if we care about the companion limit, and if there's room
             if (this.respect_companion_limit && Clan.PlayerClan.Companions.Count >= Clan.PlayerClan.CompanionLimit)
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("At maximum allowed companions. No nominations possible.").ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg008}At maximum allowed companions. No nominations possible.").ToString(), Colors.Blue));
                 return;
             }
 
@@ -205,7 +213,7 @@ namespace DistinguishedService
                     mod_nominations = this.max_nominations;
                 }
 
-                MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Distinguished Soldiers", "Several soldiers made names for themselves in this battle. You can choose up to " + mod_nominations + " (or none, by exiting) to fight at your side as a companion.", this.GenInquiryelements(coList, _stripped_kcs), true, 0, mod_nominations, "DONE", "RANDOM", new Action<List<InquiryElement>>(OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+                MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("{=DistinguishedS001}Distinguished Soldiers", new TextObject("{DistinguishedS001Desc}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion.").SetTextVariable("N", mod_nominations).ToString(), this.GenInquiryelements(coList, _stripped_kcs), true, 0, mod_nominations, "{DistinguishedSDone}DONE", "{DistinguishedSRandom}RANDOM", new Action<List<InquiryElement>>(OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
                 return;
 
             }
@@ -486,19 +494,19 @@ namespace DistinguishedService
             if (wanderer == null)
             {
                 if (!ignore_cautions)
-                    InformationManager.DisplayMessage(new InformationMessage("CAUTION: No wanderer template with culture " + co.Culture.Name + " available.\nChoosing randomly instead.", Colors.Yellow));
+                    InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg009}CAUTION 009: No wanderer template with culture {CULTURE} available.{newline} Choosing randomly instead.").SetTextVariable("CULTURE", co.Culture.Name).ToString(), Colors.Yellow));
                 wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == co.IsFemale && x.CivilianEquipments != null));
             }
             //final fallback...
             if (wanderer == null)
             {
                 if (!ignore_cautions)
-                    InformationManager.DisplayMessage(new InformationMessage("WARNING: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES\nPICKING COMPLETELY RANDOMLY", Colors.Red));
+                    InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg010}WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES\nPICKING COMPLETELY RANDOMLY", Colors.Red));
                 wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == co.IsFemale));
             }
             if (wanderer == null)
             {
-                InformationManager.DisplayMessage(new InformationMessage("WARNING: Could not find valid wanderer template. You broke something.", Colors.Red));
+                InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg011}WARNING 011: Could not find valid wanderer template. You broke something.", Colors.Red));
                 return;
             }
 
@@ -559,7 +567,7 @@ namespace DistinguishedService
             {
                 if (MyLittleWarbandLoaded)
                 {
-                    InformationManager.DisplayMessage(new InformationMessage("MLBW compatibility mode:\nUsing first equipment sets", Colors.Yellow));
+                    InformationManager.DisplayMessage(new InformationMessage("{=DistingiushedSMsg012}MLBW compatibility mode:\nUsing first equipment sets", Colors.Yellow));
                     specialHero.BattleEquipment.FillFrom(co.FirstBattleEquipment);
                     specialHero.CivilianEquipment.FillFrom(co.FirstCivilianEquipment);
                 }
@@ -574,7 +582,7 @@ namespace DistinguishedService
             {
                 if (!ignore_cautions)
                 {
-                    InformationManager.DisplayMessage(new InformationMessage("CAUTION: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly.", Colors.Yellow));
+                    InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg013}CAUTION 013: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly.", Colors.Yellow));
                     Debug.Print("Equipment format issue, providing default equipment instead! Exception details:\n" + e.Message);
                 }
                 //leave them naked, alone, and afraid
@@ -826,7 +834,7 @@ namespace DistinguishedService
                     catch (Exception e)
                     {
                         if (!ignore_cautions)
-                            InformationManager.DisplayMessage(new InformationMessage("CAUTION: Reflection call to CheckInitialLevel failed. Potential version issue.", Colors.Yellow));
+                            InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg014}CAUTION: Reflection call to CheckInitialLevel failed. Potential version issue.", Colors.Yellow));
                     }
                 }
             }),
@@ -943,7 +951,7 @@ namespace DistinguishedService
             catch (Exception e)
             {
                 if (!ignore_cautions)
-                    InformationManager.DisplayMessage(new InformationMessage("CAUTION: Reflection call to CheckInitialLevel failed. Potential version issue.", Colors.Yellow));
+                    InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedS014}CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue.", Colors.Yellow));
             }
         }
 
@@ -1018,7 +1026,7 @@ namespace DistinguishedService
                 faux_kills.Add(1337);
             }
 
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Console Command", "Pick a soldier to uplift!", PromotionManager.__instance.GenInquiryelements(cos, faux_kills), true, 0, 1, "DONE", "RANDOM", new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("{=DistinguishedS002}Console Command", "{=DistinguishedS002Desc}Pick a soldier to uplift!", PromotionManager.__instance.GenInquiryelements(cos, faux_kills), true, 0, 1, "{=DistinguishedSDone}DONE", "{=DistinguishedSRandom}RANDOM", new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
 
             return "Dialog Generated";
         }
@@ -1135,7 +1143,7 @@ namespace DistinguishedService
             {
                 if (!ignore_cautions)
                 {
-                    InformationManager.DisplayMessage(new InformationMessage("CAUTION: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly.", Colors.Yellow));
+                    InformationManager.DisplayMessage(new InformationMessage("{DistinguishedMsg015}CAUTION 015: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly.", Colors.Yellow));
                     Debug.Print("Equipment format issue, providing default equipment instead! Exception details:\n" + e.Message);
                 }
                 //leave them naked, alone, and afraid
@@ -1277,7 +1285,7 @@ namespace DistinguishedService
         }
         private static void GetGiveCompToClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to assign to " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, 0, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("{=DistinguishedS003}Transfer Heroes", new TextObject("{=DistinguishedS003Desc}You can select who to assign to {HERO}'s party").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, 0, PartyBase.MainParty.MemberRoster.Count, "{=DistinguishedSDone}DONE", "{DistinguishedSNobody}NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), (Action<List<InquiryElement>>)null, ""), true);
         }
         private static void TransferCompsToConversationParty(List<InquiryElement> ies)
         {
@@ -1314,7 +1322,7 @@ namespace DistinguishedService
         }
         private static void GetTakeCompFromClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to take from " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, 0, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("{=DistinguishedS004}Transfer Heroes", new TextObject("{=DistinguishedS004Desc}You can select who to take from {HERO}'s party").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, 0, PartyBase.MainParty.MemberRoster.Count, "{=DistinguishedSDone}DONE", "{DistinguishedSNobody}NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), (Action<List<InquiryElement>>)null, ""), true);
         }
         private static void TransferCompsFromConversationParty(List<InquiryElement> ies)
         {
@@ -1436,22 +1444,22 @@ namespace DistinguishedService
                     switch (max_one)
                     {
                         default: //somehow everything's zero, or it's fucked
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("Well, uh, I guess it beats prison..."));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS005}Well, uh, I guess it beats prison..."));
                             break;
                         case 1: //Calculating acceptance
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("If it means I don't get chained up, it sounds good to me!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS006}If it means I don't get chained up, it sounds good to me!"));
                             break;
                         case 2: //Dishonorable acceptance
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("Deal - I never liked the other guy anyway."));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS007}Deal - I never liked the other guy anyway."));
                             break;
                         case 3: //Gambler acceptance
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("Deal. Working with you seems like the safest bet."));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS008}Deal. Working with you seems like the safest bet."));
                             break;
                         case 4: //Valour acceptance
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("I like your proposition! We shall face more glorious battle together!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS009}I like your proposition! We shall face more glorious battle together!"));
                             break;
                         case 5: //Impulsive acceptance
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("Uh... Sure, why not."));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS010}Uh... Sure, why not."));
                             break;
                     }
                     Hero.OneToOneConversationHero.ChangeState(Hero.CharacterStates.Active);
@@ -1466,19 +1474,19 @@ namespace DistinguishedService
                     switch (max_one)
                     {
                         default: //somehow everything's zero, or it's fucked
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("I just can't accept!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS011}I just can't accept!"));
                             break;
                         case 1: //Calculating rejection
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("I can't just join with whoever's most convenient! The whole system would fall apart!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS012}I can't just join with whoever's most convenient! The whole system would fall apart!"));
                             break;
                         case 2: //Honorable rejection
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("I would never betray my commander like that!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS013}I would never betray my commander like that!"));
                             break;
                         case 3: //Gambler rejection
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("No - I won't throw my life away for somebody who hasn't earned it."));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS014}No - I won't throw my life away for somebody who hasn't earned it."));
                             break;
                         case 4: //Valour rejection
-                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("I just want to retire after this! No deal!"));
+                            MBTextManager.SetTextVariable("RECRUIT_RESPONSE", new TextObject("{=DistinguishedS015}I just want to retire after this! No deal!"));
                             break;
                     }
 
