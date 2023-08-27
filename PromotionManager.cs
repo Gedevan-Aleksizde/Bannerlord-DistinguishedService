@@ -205,7 +205,7 @@ namespace DistinguishedService
                     mod_nominations = this.max_nominations;
                 }
 
-                MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Distinguished Soldiers", "Several soldiers made names for themselves in this battle. You can choose up to " + mod_nominations + " (or none, by exiting) to fight at your side as a companion.", this.GenInquiryelements(coList, _stripped_kcs), true, mod_nominations, "DONE", "RANDOM", new Action<List<InquiryElement>>(OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+                MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Distinguished Soldiers", "Several soldiers made names for themselves in this battle. You can choose up to " + mod_nominations + " (or none, by exiting) to fight at your side as a companion.", this.GenInquiryelements(coList, _stripped_kcs), true, 0, mod_nominations, "DONE", "RANDOM", new Action<List<InquiryElement>>(OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
                 return;
 
             }
@@ -715,7 +715,7 @@ namespace DistinguishedService
             if (specialHero.GetSkillValue(DefaultSkills.Engineering) < 300)
                 iqes.Add(new InquiryElement("engineering_bonus", "Helped construct and take down the camp", null, true, "+" + skill_points_to_assign.ToString() + " engineering"));
 
-            MultiSelectionInquiryData msid = new MultiSelectionInquiryData("Select " + title_prefix + " Skill Focuses", specialHero.Name + " (previously a " + prev + ") has finally found glory on the battlefield. Before this, and besides training for battle they...", iqes, true, num_skills_to_select, "Accept", "Refuse", (Action<List<InquiryElement>>)((List<InquiryElement> ies) =>
+            MultiSelectionInquiryData msid = new MultiSelectionInquiryData("Select " + title_prefix + " Skill Focuses", specialHero.Name + " (previously a " + prev + ") has finally found glory on the battlefield. Before this, and besides training for battle they...", iqes, true, num_skills_to_select, num_skills_to_select, "Accept", "Refuse", (Action<List<InquiryElement>>)((List<InquiryElement> ies) =>
             {
                 int diff = 0;
                 foreach (InquiryElement ie in ies)
@@ -1018,7 +1018,7 @@ namespace DistinguishedService
                 faux_kills.Add(1337);
             }
 
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Console Command", "Pick a soldier to uplift!", PromotionManager.__instance.GenInquiryelements(cos, faux_kills), true, 1, "DONE", "RANDOM", new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Console Command", "Pick a soldier to uplift!", PromotionManager.__instance.GenInquiryelements(cos, faux_kills), true, 0, 1, "DONE", "RANDOM", new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
 
             return "Dialog Generated";
         }
@@ -1277,7 +1277,7 @@ namespace DistinguishedService
         }
         private static void GetGiveCompToClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to assign to " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to assign to " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, 0, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), (Action<List<InquiryElement>>)null, ""), true);
         }
         private static void TransferCompsToConversationParty(List<InquiryElement> ies)
         {
@@ -1314,7 +1314,7 @@ namespace DistinguishedService
         }
         private static void GetTakeCompFromClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to take from " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData("Transfer Heroes", "You can select who to take from " + Hero.OneToOneConversationHero.Name + "'s party.", PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, 0, PartyBase.MainParty.MemberRoster.Count, "DONE", "NOBODY", new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), (Action<List<InquiryElement>>)null, ""), true);
         }
         private static void TransferCompsFromConversationParty(List<InquiryElement> ies)
         {
@@ -1406,7 +1406,7 @@ namespace DistinguishedService
                 points += temp;
                 //Risk-taking AI will want to join
                 //risk-averse won't
-                temp = 0.5f * MBRandom.RandomFloatRanged(0.1f, 0.5f) * Hero.OneToOneConversationHero.GetTraitLevel(DefaultTraits.Gambler);
+                temp = 0.5f * MBRandom.RandomFloatRanged(0.1f, 0.5f) * Hero.OneToOneConversationHero.GetTraitLevel(DefaultTraits.Generosity);
                 if (temp > max_contrib)
                 {
                     max_one = 3;
