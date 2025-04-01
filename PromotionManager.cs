@@ -12,13 +12,11 @@
  * Also includes additional dialogue and supporting methods.
  */
 
+using DistinguishedService.ext;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -115,14 +113,14 @@ namespace DistinguishedService
             killcounts = new List<int>();
 
             this.using_extern_namelist = currentsettings.NAMES_FROM_EXTERNAL_FILE;
-            this.extern_namelist = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), currentsettings.EXTERNAL_NAME_FILE); 
+            this.extern_namelist = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), currentsettings.EXTERNAL_NAME_FILE);
             //Do the same with the namelist -- use the easier-to-access Modules folder preferentially
-            if(File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", currentsettings.EXTERNAL_NAME_FILE)))
+            if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", currentsettings.EXTERNAL_NAME_FILE)))
             {
                 this.extern_namelist = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", currentsettings.EXTERNAL_NAME_FILE);
             }
 
-            
+
 
             if (this.using_extern_namelist)
             {
@@ -140,7 +138,7 @@ namespace DistinguishedService
                     { "CTHRESH", this.cav_kill_threshold },
                     { "RTHRESH", this.ran_kill_threshold },
                     { "PTHRESH", this.outperform_percentile }
-                } ).ToString(), Color.FromUint(4282569842U)));
+                }).ToString(), Color.FromUint(4282569842U)));
             PromotionManager.__instance = this;
 
             //Display warnings if chosen settings will cause non-player-controlled events
@@ -153,7 +151,7 @@ namespace DistinguishedService
             {
                 InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg006}CAUTION 006: New hero perks will be assigned automatically.\nChange settings if this is unintended.", Colors.Yellow));
             }
-            if(!this.respect_companion_limit)
+            if (!this.respect_companion_limit)
             {
                 InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSMsg007}CAUTION 007: Ignoring companion limit.", Colors.Yellow));
             }
@@ -534,7 +532,7 @@ namespace DistinguishedService
             }
             specialHero.Culture = co.Culture;
 
-            
+
 
             //Default formation class seems to be read only, so I could't change it
             specialHero.CharacterObject.DefaultFormationGroup = co.DefaultFormationGroup;
@@ -560,7 +558,7 @@ namespace DistinguishedService
             GiveGoldAction.ApplyBetweenCharacters(Hero.MainHero, specialHero, (int)adjusted_cost);
 
             //Has met is now read only. So we're using setHasMet
-            specialHero.SetHasMet(); 
+            specialHero.SetHasMet();
 
             //special, equipment-formatting try-catch statement
             try
@@ -1093,7 +1091,7 @@ namespace DistinguishedService
                     }
                 }
             }
-            catch {}
+            catch { }
         }
         public void PromoteToParty(CharacterObject co, MobileParty party)
         {
@@ -1128,9 +1126,9 @@ namespace DistinguishedService
 
             AddTraitVariance(specialHero);
             GiveGoldAction.ApplyBetweenCharacters(party_leader, specialHero, this.up_front_cost, true);
-            
+
             //specialHero.HasMet = false; //Has met seems to be read only in 1.1.0. There is SetHasMet() but it does not take any parameters, sooo idk how to set it to false
-            
+
 
             //special, equipment-formatting try-catch statement
             try
