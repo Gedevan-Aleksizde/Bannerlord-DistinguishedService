@@ -14,15 +14,14 @@
 
 using System;
 using System.IO;
+using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-using TaleWorlds.MountAndBlade;
-using TaleWorlds.CampaignSystem.MapEvents;
-using System.Reflection;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace DistinguishedService
 {
@@ -50,6 +49,7 @@ namespace DistinguishedService
             }
             catch (Exception ex)
             {
+
                 InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr001}(001) Could not serialize Settings.xml: {ERR} Using default values!").SetTextVariable("ERR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
                 this.CurrentSettings = new Settings();
             }
@@ -75,7 +75,7 @@ namespace DistinguishedService
                         InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr002}(002) AI Companions have been disabled for now!").ToString(), Color.FromUint(4282569842U)));
                         //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr003}(003) Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.").ToString(), Color.FromUint(4282569842U)));
                         CurrentSettings.ai_promotion_chance = 0;
@@ -98,7 +98,7 @@ namespace DistinguishedService
             }
             gamestarted = true;
         }
-        
+
         public override void OnGameLoaded(Game game, object initializerObject)
         {
             if (!(game.GameType is Campaign))
@@ -122,7 +122,7 @@ namespace DistinguishedService
 
             try
             {
-                if(PromotionManager.__instance == null)
+                if (PromotionManager.__instance == null)
                 {
                     _pm = new PromotionManager();
                 }
@@ -131,12 +131,12 @@ namespace DistinguishedService
                     _pm = PromotionManager.__instance;
                     reload = true;
                 }
-                
-                if(!gamestarted)
+
+                if (!gamestarted)
                     ((CampaignGameStarter)initializerObject).AddBehavior((CampaignBehaviorBase)new DSBattleBehavior());
 
                 //ai gaining companions
-                if(CurrentSettings.ai_promotion_chance > 0)
+                if (CurrentSettings.ai_promotion_chance > 0)
                 {
                     try
                     {
@@ -157,7 +157,7 @@ namespace DistinguishedService
                     CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener((object)this, new Action<CharacterObject, int>(_pm.recruit_to_hero));
                 }
 
-                if(!reload)
+                if (!reload)
                     InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg001}Distinguished Service loaded successfully").ToString(), Colors.Blue));
             }
             catch (Exception ex)

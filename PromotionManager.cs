@@ -838,7 +838,6 @@ namespace DistinguishedService
             }),
             (Action<List<InquiryElement>>)null);
             MBInformationManager.ShowMultiSelectionInquiry(msid, true);
-            //InformationManager.ShowMultiSelectionInquiry(msid, true);
         }
 
         public void AssignSkillsRandomly(Hero specialHero, int skill_points_to_assign, int num_skills_to_select)
@@ -1116,7 +1115,7 @@ namespace DistinguishedService
                 return;
             }
             Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, (Settlement)null, (Clan)null, (Clan)null, rand.Next(20, 50));
-            specialHero.SetName(new TextObject(specialHero.FirstName.ToString() + GetNameSuffix(co)), specialHero.FirstName);
+            specialHero.SetName(new TextObject(specialHero.FirstName.ToString() + GetNameSuffix(co)), specialHero.FirstName); // FIXME
             specialHero.Culture = co.Culture;
 
 
@@ -1180,7 +1179,6 @@ namespace DistinguishedService
             Shuffle(shuffled_skills);
             int skp_to_assign = base_additional_skill_points + 50 * party_leader.GetSkillValue(DefaultSkills.Leadership) / leadership_points_per_50_extra_skill_points;
             int bonus = 0;
-            //specialHero.HeroDeveloper.SetInitialLevel(co.Level);
             foreach (SkillObject sk in shuffled_skills)
             {
                 if (sk == DefaultSkills.OneHanded || sk == DefaultSkills.TwoHanded || sk == DefaultSkills.Polearm || sk == DefaultSkills.Bow || sk == DefaultSkills.Crossbow || sk == DefaultSkills.Throwing)
@@ -1215,9 +1213,13 @@ namespace DistinguishedService
             {
                 //nothing, just prevent random crashes from out of nowhere
             }
-            foreach (PerkObject po in ((HeroDeveloper)specialHero.HeroDeveloper).GetOneAvailablePerkForEachPerkPair())
+            // .GetOneAvailablePerkForEachPerkPair() が使えないので代わりに書いたが何に使うのがよくわからない.
+            foreach (PerkObject po in PerkObject.All)
             {
-                specialHero.HeroDeveloper.AddPerk(po);
+                if (specialHero.GetPerkValue(po))
+                {
+                    specialHero.HeroDeveloper.AddPerk(po);
+                }
             }
 
             CharacterDevelopmentCampaignBehavior cdcb = CharacterDevelopmentCampaignBehavior.GetCampaignBehavior<CharacterDevelopmentCampaignBehavior>();
