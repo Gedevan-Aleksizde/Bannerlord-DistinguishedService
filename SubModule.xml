@@ -1,14 +1,14 @@
 ﻿<Module>
-  <Name value="Distinguished Service 1.1.0"/>
-  <Id value="DistinguishedService110"/>
-  <Version value="v6.1.0"/>
+  <Name value="Distinguished Service Updated"/>
+  <Id value="DistinguishedServiceUpdated"/>
+  <Version value="v1.0.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="DistinguishedService110"/>
+      <Name value="DistinguishedServiceUpdated"/>
       <DLLName value="DistinguishedService110.dll"/>
       <SubModuleClassType value="DistinguishedService.dsSubModule"/>
       <Tags>
@@ -18,5 +18,11 @@
     </SubModule>
   </SubModules>
   <Xmls>
+    <XmlNode>                
+      <XmlName id="GameText" path="module_strings"/>
+    </XmlNode>
+    <XmlNode>                
+      <XmlName id="GameText" path="module_strings_name_list"/>
+    </XmlNode>
   </Xmls>
 </Module>
