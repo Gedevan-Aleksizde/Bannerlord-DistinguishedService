@@ -20,7 +20,6 @@ using System.Linq;
 using System.Xml.Serialization;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
-using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.Conversation;
 using TaleWorlds.CampaignSystem.Extensions;
@@ -676,9 +675,7 @@ namespace DistinguishedService
 
             if (this.fill_perks)
             {
-                CharacterDevelopmentCampaignBehavior cdcb = CharacterDevelopmentCampaignBehavior.GetCampaignBehavior<CharacterDevelopmentCampaignBehavior>();
-                if (cdcb != null)
-                    cdcb.DevelopCharacterStats(specialHero);
+                specialHero.DevelopCharacterStats();
             }
             specialHero.HeroDeveloper.UnspentAttributePoints = 0;
 
@@ -827,7 +824,7 @@ namespace DistinguishedService
                     }
                     try
                     {
-                        specialHero.HeroDeveloper.CheckInitialLevel();
+                        specialHero.CheckInitialLevel();
                     }
                     catch (Exception e)
                     {
@@ -943,7 +940,7 @@ namespace DistinguishedService
             }
             try
             {
-                specialHero.HeroDeveloper.CheckInitialLevel();
+                specialHero.CheckInitialLevel();
             }
             catch (Exception e)
             {
@@ -1207,24 +1204,14 @@ namespace DistinguishedService
             }
             try
             {
-                specialHero.HeroDeveloper.CheckInitialLevel();
+                specialHero.CheckInitialLevel();
             }
             catch (Exception e)
             {
                 //nothing, just prevent random crashes from out of nowhere
             }
-            // .GetOneAvailablePerkForEachPerkPair() が使えないので代わりに書いたが何に使うのがよくわからない.
-            foreach (PerkObject po in PerkObject.All)
-            {
-                if (specialHero.GetPerkValue(po))
-                {
-                    specialHero.HeroDeveloper.AddPerk(po);
-                }
-            }
-
-            CharacterDevelopmentCampaignBehavior cdcb = CharacterDevelopmentCampaignBehavior.GetCampaignBehavior<CharacterDevelopmentCampaignBehavior>();
-            if (cdcb != null)
-                cdcb.DevelopCharacterStats(specialHero);
+            specialHero.GetOneAvailablePerkForEachPerkPair();
+            specialHero.DevelopCharacterStats();
 
         }
 
