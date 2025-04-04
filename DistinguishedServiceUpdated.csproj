@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<TargetFramework>net48</TargetFramework>
+		<Platforms>x64</Platforms>
+		<LangVersion>9.0</LangVersion>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+  <PropertyGroup>
+      <TargetFramework>net48</TargetFramework>
+      <LangVersion>9.0</LangVersion>
+      <ModuleId>$(MSBuildProjectName)</ModuleId>
+      <ModuleName>$(MSBuildProjectName)</ModuleName>
+      <AssemblyName>$(ModuleName)$(GameVersion)</AssemblyName>
+      <GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
+      <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
+      <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+    <PropertyGroup>
+      <GameVersionFlat>$([System.String]::Copy('$(GameVersion)').Replace('.',''))</GameVersionFlat>
+      <GameVersionConstant>v$(GameVersionFlat)</GameVersionConstant>
+      <DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
+    </PropertyGroup>
+    <!-- NuGet Packages -->
+    <ItemGroup>
+        <PackageReference Include="Bannerlord.BuildResources" Version="1.1.0.124">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Bannerlord.ButterLib" Version="2.9.18" />
+        <PackageReference Include="Bannerlord.MCM" Version="5.10.2" />
+        <PackageReference Include="Bannerlord.ModuleManager" Version="6.0.247" />
+        <PackageReference Include="Bannerlord.ReferenceAssemblies" Version="1.2.12.66233" />
+        <PackageReference Include="Bannerlord.UIExtenderEx" Version="2.12.0" />
+        <PackageReference Include="Lib.Harmony" Version="2.3.5" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="SubModule.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+      <!-- Extra Substitution Variables to Use in SubModule.xml -->
+    <ItemGroup>
+        <SubModuleOverrides Include="DisplayName">
+            <Regex>\$displayname\$</Regex>
+            <Replacement>$(DisplayName)</Replacement>
+        </SubModuleOverrides>
+        <SubModuleOverrides Include="MCMVersion">
+            <Regex>\$mcmversion\$</Regex>
+            <Replacement>$(MCMVersion)</Replacement>
+        </SubModuleOverrides>
+    </ItemGroup>
+</Project>
