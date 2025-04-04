@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="DistServ_suffix_infantly.blade" text="the Blade"/>
+    <string id="DistServ_suffix_infantly.sword" text="the Swordman"/>
+    <string id="DistServ_suffix_infantly.brave" text="the Brave"/>
+    <string id="DistServ_suffix_infantly.maruder" text="the Maruder"/>
+    <string id="DistServ_suffix_infantly.loyal" text="the Loyal"/>
+    <string id="DistServ_suffix_infantly.strong" text="the Strong"/>
+    <string id="DistServ_suffix_infantly.Red" text="the Red"/>
+    <string id="DistServ_suffix_infantly.butcher" text="the Butcher"/>
+    <string id="DistServ_suffix_infantly.knife" text="the Knife"/>
+    <string id="DistServ_suffix_infantly.shark" text="the Shark"/>
+    <string id="DistServ_suffix_infantly.scythe" text="the Scythe"/>
+    <string id="DistServ_suffix_infantly.anvil" text="the Anvil"/>
+    <string id="DistServ_suffix_infantly.scarlet" text="the scarlet"/>
+
+    <string id="DistServ_suffix_cavalry.rider" text="the Rider"/>
+    <string id="DistServ_suffix_cavalry.horseman" text="the Horseman"/>
+    <string id="DistServ_suffix_cavalry.bold" text="the Bold"/>
+    <string id="DistServ_suffix_cavalry.vanguard" text="the Vanguard"/>
+    <string id="DistServ_suffix_cavalry.centaur" text="the Centaur"/>
+    <string id="DistServ_suffix_cavalry.stallion" text="the Stallion"/>
+    <string id="DistServ_suffix_cavalry.gallant" text="the Gallant"/>
+    <string id="DistServ_suffix_cavalry.butcher" text="the Butcher"/>
+    <string id="DistServ_suffix_cavalry.hammer" text="the Hammer"/>
+    <string id="DistServ_suffix_cavalry.swift" text="the Swift"/>
+    <string id="DistServ_suffix_cavalry.pinder" text="the Pinder"/>
+
+    <string id="DistServ_suffix_archer.ranger" text="the Ranger"/>
+    <string id="DistServ_suffix_archer.bowman" text="the Bowman"/>
+    <string id="DistServ_suffix_archer.sharpshooter" text="the Sharpshooter"/>
+    <string id="DistServ_suffix_archer.sniper" text="the Sniper"/>
+    <string id="DistServ_suffix_archer.hunter" text="the Hunter"/>
+    <string id="DistServ_suffix_archer.merry" text="the Merry"/>
+    <string id="DistServ_suffix_archer.scarlet" text="the Scarlet"/>
+    <string id="DistServ_suffix_archer.miller" text="the Miller's son"/>
+    <string id="DistServ_suffix_archer.adale" text="-a-Dale"/>
+    <string id="DistServ_suffix_archer.greenleaf" text="Greenleaf"/>
+    <string id="DistServ_suffix_archer.doncaster" text="of Doncaster"/>
+
+    <string id="DistServ_suffix_regional_battanian.001"  text="an Fhàsach"/>
+    <string id="DistServ_suffix_regional_battanian.002"  text="an Làidir"/>
+    <string id="DistServ_suffix_regional_battanian.003"  text="an Gaisgeach"/>
+
+    <string id="DistServ_suffix_regional_imperial.001"  text="Vulpis"/>
+    <string id="DistServ_suffix_regional_imperial.002"  text="Fortis"/>
+    <string id="DistServ_suffix_regional_imperial.003"  text="an Callidus"/>
+
+    <string id="DistServ_suffix_regional_sturgian.001"  text="det Kråke"/>
+    <string id="DistServ_suffix_regional_sturgian.002"  text="det Rev"/>
+    <string id="DistServ_suffix_regional_sturgian.003"  text="av Nord"/>
+
+    <string id="DistServ_suffix_regional_vlandian.001"  text="the Bold"/>
+    <string id="DistServ_suffix_regional_vlandian.002"  text="the Lion"/>
+    <string id="DistServ_suffix_regional_vlandian.003"  text="the Little"/>
+
+    <string id="DistServ_suffix_regional_khuzait.001"  text="Ukhaantai"/>
+    <string id="DistServ_suffix_regional_khuzait.002"  text="Khurdan"/>
+    <string id="DistServ_suffix_regional_khuzait.003"  text="Yamaa"/>
+
+    <string id="DistServ_suffix_climinal.001"  text="the Ragged"/>
+    <string id="DistServ_suffix_climinal.002"  text="the Shiv"/>
+    <string id="DistServ_suffix_climinal.003"  text="Slicer"/>
+    <string id="DistServ_suffix_climinal.004"  text="the Plunderer"/>
+    <string id="DistServ_suffix_climinal.005"  text="the Mad"/>
+    <string id="DistServ_suffix_climinal.006"  text="Racoon"/>
+    <string id="DistServ_suffix_climinal.007"  text="the Overlord"/>
+    <string id="DistServ_suffix_climinal.008"  text="the Slayer"/>
+    <string id="DistServ_suffix_climinal.009"  text="the Boss"/>
+    <string id="DistServ_suffix_climinal.010"  text="of the Filth"/>
+    <string id="DistServ_suffix_climinal.011"  text="the Bonebreaker"/>
+    <string id="DistServ_suffix_climinal.012"  text="Skullsmasher"/>
+    <string id="DistServ_suffix_climinal.013"  text="the Enslaver"/>
+    <string id="DistServ_suffix_climinal.014"  text="the Captain"/>
+
+    <string id="DistServ_suffix_climinal2.001"  text="the Smuggler"/>
+    <string id="DistServ_suffix_climinal2.002"  text="the Thief"/>
+    <string id="DistServ_suffix_climinal2.003"  text="Conman"/>
+    <string id="DistServ_suffix_climinal2.004"  text="the Fence"/>
+    <string id="DistServ_suffix_climinal2.005"  text="Sly"/>
+    <string id="DistServ_suffix_climinal2.006"  text="the Contrabander"/>
+    <string id="DistServ_suffix_climinal2.007"  text="the Swindler"/>
+    <string id="DistServ_suffix_climinal2.008"  text="the Pilferer"/>
+
+    <string id="DistServ_suffix_climinal3.001"  text="the Mastermind"/>
+    <string id="DistServ_suffix_climinal3.002"  text="the Assassin"/>
+    <string id="DistServ_suffix_climinal3.003"  text="the Spy"/>
+    <string id="DistServ_suffix_climinal3.004"  text="the Scoutmaster"/>
+    <string id="DistServ_suffix_climinal3.005"  text="the Tracker"/>
+    <string id="DistServ_suffix_climinal3.006"  text="the Pathfinder"/>
+    <string id="DistServ_suffix_climinal3.007"  text="the Hidden"/>
+    <string id="DistServ_suffix_climinal3.008"  text="the Bounty Hunter"/>
+    <string id="DistServ_suffix_climinal3.009"  text="Fox"/>
+
+    <string id="DistServ_suffix_pirate.001"  text="the Smuggler"/>
+    <string id="DistServ_suffix_pirate.002"  text="the Sailor"/>
+    <string id="DistServ_suffix_pirate.003"  text="of the Waves"/>
+    <string id="DistServ_suffix_pirate.004"  text="the Peg Leg"/>
+    <string id="DistServ_suffix_pirate.005"  text="Ale-Drinker"/>
+    <string id="DistServ_suffix_pirate.006"  text="the Privateer"/>
+    <string id="DistServ_suffix_pirate.007"  text="the Seafarer"/>
+    <string id="DistServ_suffix_pirate.008"  text="Blackbeard"/>
+
+    <string id="DistServ_suffix_shiftingsand.001"  text="the Doc"/>
+    <string id="DistServ_suffix_shiftingsand.001"  text="Bloodscalpel"/>
+    <string id="DistServ_suffix_shiftingsand.001"  text="Sawbones"/>
+    <string id="DistServ_suffix_shiftingsand.001"  text="the Chemist"/>
+    <string id="DistServ_suffix_shiftingsand.001"  text="the Limbchopper"/>
+</strings>

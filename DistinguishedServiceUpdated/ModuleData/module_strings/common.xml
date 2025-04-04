@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="DistServ_Error.001" text="Error 001: Could not serialize Settings.xml: {ERR} Using default values!"/>
+    <string id="DistServ_Error.002" text="Error 002: AI Companions have been disabled for now!"/>
+    <string id="DistServ_Error.003" text="Error 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
+    <string id="DistServ_Error.004" text="Error 004: There was a problem:{NEWLINE}{ERROR}"/>
+    <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{newline}This file will be written back to/edited to knock out used names"/>
+    <string id="DistServ_Info.001" text="Distinguished Service loaded successfully"/>
+    <string id="DistServ_Info.002" text="Using Modules/DistServervice110 Settings"/>
+    <string id="DistServ_Info.003" text="At maximum allowed companions. No nominations possible."/>
+    <string id="DistServ_Info.threshold" text="Max nominations = {MAX}{newline}Tier Threshold = {TTHRESH}{newline}Kill Thresh.:{newline}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{newline}Performance Thresh. = {PTHRESH}"/>
+    <string id="DistServ_Info.compatible" text="MLBW compatibility mode:{newline}Using first equipment sets"/>
+    <string id="DistServ_Caution.005autopromotion" text="CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{newline}Change settings if this is unintended."/>
+    <string id="DistServ_Caution.006perks" text="CAUTION: New hero perks will be assigned automatically.{newline}Change settings if this is unintended."/>
+    <string id="DistServ_Caution.007companionlimit" text="CAUTION 007: Ignoring companion limit."/>
+    <string id="DistServ_Caution.009nowanderer" text="CAUTION 009: No wanderer template with culture {CULTURE} available.{newline} Choosing randomly instead"/>
+    <string id="DistServ_Caution.013equipment" text="CAUTION 013: Something went wrong with this unit's equipment.{newline}Aborting process, not everything might be added properly."/>
+    <string id="DistServ_Caution.014levelerro" text="CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue."/>
+    <string id="DistServ_Caution.015equipincomp" text="CAUTION 015: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly."/>
+    <string id="DistServ_Warn.010templete" text="WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{newline}PICKING COMPLETELY RANDOMLY"/>
+    <string id="DistServ_Warn.011wanderernotfound" text="WARNING 011: Could not find valid wanderer template. You broke something."/>
+    <string id="DistServ_Warn.internalerr" text="Equipment format issue, providing default equipment instead! Exception details:{newline}{TEXT}" />
+
+    <string id="DistServ_comment_accept.000" text="Well, uh, I guess it beats prison..."/>
+    <string id="DistServ_comment_accept.001" text="If it means I don't get chained up, it sounds good to me!"/>
+    <string id="DistServ_comment_accept.002" text="Deal - I never liked the other guy anyway."/>
+    <string id="DistServ_comment_accept.003" text="Deal. Working with you seems like the safest bet." />
+    <string id="DistServ_comment_accept.004" text="I like your proposition! We shall face more glorious battle together!"/>
+    <string id="DistServ_comment_accept.005" text="Uh... Sure, why not."/>
+
+    <string id="DistServ_comment_reject.000" text="I just can't accept!"/>
+    <string id="DistServ_comment_reject.001" text="I can't just join with whoever's most convenient! The whole system would fall apart!"/>
+    <string id="DistServ_comment_reject.002" text="I would never betray my commander like that!"/>
+    <string id="DistServ_comment_reject.003" text="No - I won't throw my life away for somebody who hasn't earned it."/>
+    <string id="DistServ_comment_reject.004" text="I just want to retire after this! No deal!"/>
+
+    <string id="DistServ_tip.killcount"  text= "{COUNT} kills" />
+    <string id="DistServ_tip.round"  text= "Round {COUNT}" />
+    <string id="DistServ_tip.count"  text= "{NAME} got {COUNT}" />
+
+    <sting id="DistServ_bonustitle.Scouting" text="Ranged with the Scouts"/>
+    <sting id="DistServ_bonustitle.Crafting" text="Repaired the party's weapons"/>
+    <sting id="DistServ_bonustitle.Athletics" text="Trained for combat"/>
+    <sting id="DistServ_bonustitle.Riding" text="Rode horses"/>
+    <sting id="DistServ_bonustitle.Tactics" text="Studied past battles"/>
+    <sting id="DistServ_bonustitle.Roguery" text="Sold loot in the black market"/>
+    <sting id="DistServ_bonustitle.Charm" text="Chatted everyone up"/>
+    <sting id="DistServ_bonustitle.Leadership" text="Organized duties for the party"/>
+    <sting id="DistServ_bonustitle.Trade" text="Bought and sold items from towns you visited"/>
+    <sting id="DistServ_bonustitle.Steward" text="Helped handle the party's accounts"/>
+    <sting id="DistServ_bonustitle.Medicine" text="Helped as a medic"/>
+    <sting id="DistServ_bonustitle.Engineering" text="Helped construct and take down the camp"/>
+
+    <sting id="DistServ_dialog.rename" text="I want you to be known by another name..."/>
+    <sting id="DistServ_dialog.transfer" text="Take these companions into your party..."/>
+    <sting id="DistServ_dialog.takeback" text="I wish to reassign heroes in your party..."/>
+    <sting id="DistServ_dialog.poach" text="After this defeat, are you sure you wouldn't rather work for me?"/>
+    <sting id="DistServ_dialog.answer" text="That is all"/>
+
+    <sting id="DistServ_bonushint.text" text="+ {COUNT} {SKILLNAME}"/>
+
+    <string id="DistServ_inquiry.trsfhero" text="Transfer Heroes"/>
+    <string id="DistServ_inquirytext.trsfhero" text="You can select who to assign to {HERO}'s party"/>
+    <string id="DistServ_inquiry.Random" text="RANDOM"/>
+    <string id="DistServ_inquiry.Nobody" text="NOBODY"/>
+    <string id="DistServ_inquiry.title" text="Distinguished Soldiers"/>
+    <string id="DistServ_inquiry.desc" text="Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
+    <string id="DistServ_inquiry.console" text="Console Command"/>
+    <string id="DistServ_inquiry.consoledesc" text="Pick a soldier to uplift!"/>
+    <string id="DistServ_name_format" text="{NAME} {SUFFIX}" />
+</strings>
