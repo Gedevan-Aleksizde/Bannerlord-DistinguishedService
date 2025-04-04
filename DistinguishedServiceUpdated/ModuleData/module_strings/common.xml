@@ -6,7 +6,7 @@
   <string id="DistServ_Error.004" text="{=825019cb}Error 004: There was a problem:{NEWLINE}{ERROR}"/>
   <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
   <string id="DistServ_Info.001" text="{=faAd84dA}Distinguished Service loaded successfully"/>
-  <string id="DistServ_Info.002" text="Using Modules/DistServervice110 Settings"/>
+  <string id="DistServ_Info.002" text="Using Modules/DistServerviceUpdated Settings"/>
   <string id="DistServ_Info.003" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
   <string id="DistServ_Info.threshold" text="{=D7F07C09}Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
   <string id="DistServ_Info.compatible" text="{=04d2faC3}MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
