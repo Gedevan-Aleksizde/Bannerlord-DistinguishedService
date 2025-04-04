@@ -4,22 +4,22 @@
     <string id="DistServ_Error.002" text="Error 002: AI Companions have been disabled for now!"/>
     <string id="DistServ_Error.003" text="Error 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
     <string id="DistServ_Error.004" text="Error 004: There was a problem:{NEWLINE}{ERROR}"/>
-    <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{newline}This file will be written back to/edited to knock out used names"/>
+    <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
     <string id="DistServ_Info.001" text="Distinguished Service loaded successfully"/>
     <string id="DistServ_Info.002" text="Using Modules/DistServervice110 Settings"/>
     <string id="DistServ_Info.003" text="At maximum allowed companions. No nominations possible."/>
-    <string id="DistServ_Info.threshold" text="Max nominations = {MAX}{newline}Tier Threshold = {TTHRESH}{newline}Kill Thresh.:{newline}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{newline}Performance Thresh. = {PTHRESH}"/>
-    <string id="DistServ_Info.compatible" text="MLBW compatibility mode:{newline}Using first equipment sets"/>
-    <string id="DistServ_Caution.005autopromotion" text="CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{newline}Change settings if this is unintended."/>
-    <string id="DistServ_Caution.006perks" text="CAUTION: New hero perks will be assigned automatically.{newline}Change settings if this is unintended."/>
+    <string id="DistServ_Info.threshold" text="Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
+    <string id="DistServ_Info.compatible" text="MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
+    <string id="DistServ_Caution.005autopromotion" text="CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended."/>
+    <string id="DistServ_Caution.006perks" text="CAUTION: New hero perks will be assigned automatically.{NEWLINE}Change settings if this is unintended."/>
     <string id="DistServ_Caution.007companionlimit" text="CAUTION 007: Ignoring companion limit."/>
-    <string id="DistServ_Caution.009nowanderer" text="CAUTION 009: No wanderer template with culture {CULTURE} available.{newline} Choosing randomly instead"/>
-    <string id="DistServ_Caution.013equipment" text="CAUTION 013: Something went wrong with this unit's equipment.{newline}Aborting process, not everything might be added properly."/>
+    <string id="DistServ_Caution.009nowanderer" text="CAUTION 009: No wanderer template with culture {CULTURE} available.{NEWLINE} Choosing randomly instead"/>
+    <string id="DistServ_Caution.013equipment" text="CAUTION 013: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly."/>
     <string id="DistServ_Caution.014levelerro" text="CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue."/>
     <string id="DistServ_Caution.015equipincomp" text="CAUTION 015: Something went wrong with this unit's equipment.\nAborting process, not everything might be added properly."/>
-    <string id="DistServ_Warn.010templete" text="WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{newline}PICKING COMPLETELY RANDOMLY"/>
+    <string id="DistServ_Warn.010templete" text="WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{NEWLINE}PICKING COMPLETELY RANDOMLY"/>
     <string id="DistServ_Warn.011wanderernotfound" text="WARNING 011: Could not find valid wanderer template. You broke something."/>
-    <string id="DistServ_Warn.internalerr" text="Equipment format issue, providing default equipment instead! Exception details:{newline}{TEXT}" />
+    <string id="DistServ_Warn.internalerr" text="Equipment format issue, providing default equipment instead! Exception details:{NEWLINE}{TEXT}" />
 
     <string id="DistServ_comment_accept.000" text="Well, uh, I guess it beats prison..."/>
     <string id="DistServ_comment_accept.001" text="If it means I don't get chained up, it sounds good to me!"/>
