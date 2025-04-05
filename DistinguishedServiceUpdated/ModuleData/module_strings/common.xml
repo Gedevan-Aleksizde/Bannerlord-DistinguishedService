@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <strings>
-  <string id="DistServ_Error.001" text="{=06e8ea79}Error 001: Could not serialize Settings.xml: {ERR} Using default values!"/>
+  <string id="DistServ_Error.001" text="{=06e8ea79}Error 001: Could not serialize Settings.xml: {ERROR} Using default values!"/>
   <string id="DistServ_Error.002" text="{=725b4401}Error 002: AI Companions have been disabled for now!"/>
   <string id="DistServ_Error.003" text="{=1FBdEE9F}Error 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
   <string id="DistServ_Error.004" text="{=825019cb}Error 004: There was a problem:{NEWLINE}{ERROR}"/>
   <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
   <string id="DistServ_Info.001" text="{=faAd84dA}Distinguished Service loaded successfully"/>
-  <string id="DistServ_Info.002" text="Using Modules/DistServerviceUpdated Settings"/>
+  <string id="DistServ_Info.002" text="Using Modules/DistinguishedServerviceUpdated Settings"/>
   <string id="DistServ_Info.003" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
   <string id="DistServ_Info.threshold" text="{=D7F07C09}Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
   <string id="DistServ_Info.compatible" text="{=04d2faC3}MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
@@ -60,5 +60,4 @@
   <string id="DistServ_inquiry.desc" text="{=1A63b476}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
   <string id="DistServ_inquiry.console" text="{=f8DAbCe9}Console Command"/>
   <string id="DistServ_inquiry.consoledesc" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
-  <string id="DistServ_name_format" text="{=9eE072f9}{NAME} {SUFFIX}"/>
 </strings>
