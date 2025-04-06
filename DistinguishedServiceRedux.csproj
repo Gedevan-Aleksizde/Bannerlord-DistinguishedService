@@ -22,6 +22,7 @@
       <GameVersionFlat>$([System.String]::Copy('$(GameVersion)').Replace('.',''))</GameVersionFlat>
       <GameVersionConstant>v$(GameVersionFlat)</GameVersionConstant>
       <DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
+      <BaseOutputPath>bin\</BaseOutputPath>
     </PropertyGroup>
     <!-- NuGet Packages -->
     <ItemGroup>
@@ -53,4 +54,7 @@
             <Replacement>$(MCMVersion)</Replacement>
         </SubModuleOverrides>
     </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="echo $(TargetDir)&#xD;&#xA;echo $(SolutionDir)&#xD;&#xA;echo $(ProjectDir)&#xD;&#xA;copy $(OutDir)\$(AssemblyName).dll DistinguishedServiceUpdated\bin\Win64_Shipping_Client\$(AssemblyName).dll" />
+    </Target>
 </Project>

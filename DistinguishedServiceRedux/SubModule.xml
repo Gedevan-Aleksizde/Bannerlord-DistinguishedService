@@ -1,6 +1,6 @@
 ﻿<Module>
-  <Name value="Distinguished Service Updated"/>
-  <Id value="DistinguishedServiceUpdated"/>
+  <Name value="Distinguished Service Redux"/>
+  <Id value="DistinguishedServiceRedux"/>
   <Version value="v1.0.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
@@ -11,9 +11,9 @@
   </DependedModuleMetadatas>
   <SubModules>
     <SubModule>
-      <Name value="DistinguishedServiceUpdated"/>
-      <DLLName value="DistinguishedServiceUpdated.dll"/>
-      <SubModuleClassType value="DistinguishedServiceUpdated.SubModule"/>
+      <Name value="DistinguishedServiceRedux"/>
+      <DLLName value="DistinguishedServiceRedux.dll"/>
+      <SubModuleClassType value="DistinguishedServiceRedux.SubModule"/>
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />

@@ -32,7 +32,7 @@
   <string id="DistServ_comment_reject.003" text="{=77E91d9d}No - I won't throw my life away for somebody who hasn't earned it."/>
   <string id="DistServ_comment_reject.004" text="{=72376ce2}I just want to retire after this! No deal!"/>
   <string id="DistServ_tip.killcount" text="{=136b0505}{COUNT} kills"/>
-  <string id="DistServ_tip.round" text="{=98C9ea02}Round {COUNT}"/>
+  <string id="DistServ_inquiry_text.round" text="{=98C9ea02}Round {COUNT}"/>
   <string id="DistServ_tip.count" text="{=00BaAdfA}{NAME} got {COUNT}"/>
   <string id="DistServ_bonus_title.Scouting" text="{=Ed1f04a1}Ranged with the Scouts"/>
   <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>
