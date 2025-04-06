@@ -1,16 +1,19 @@
 ﻿<Module>
-  <Name value="Distinguished Service Updated"/>
+  <Name value="Distinguished Service - Redux"/>
   <Id value="DistinguishedServiceRedux"/>
   <Version value="v1.0.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
-  <DependedModules>
+ <DependedModules>
   </DependedModules>
+  <DependedModuleMetadatas>
+    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" />
+  </DependedModuleMetadatas>
   <SubModules>
     <SubModule>
       <Name value="DistinguishedServiceRedux"/>
-      <DLLName value="DistinguishedService110.dll"/>
-      <SubModuleClassType value="DistinguishedService.dsSubModule"/>
+      <DLLName value="DistinguishedServiceRedux.dll"/>
+      <SubModuleClassType value="DistinguishedServiceRedux.SubModule"/>
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />
@@ -18,11 +21,8 @@
     </SubModule>
   </SubModules>
   <Xmls>
-    <XmlNode>                
+    <XmlNode>
       <XmlName id="GameText" path="module_strings"/>
-    </XmlNode>
-    <XmlNode>                
-      <XmlName id="GameText" path="module_strings_name_list"/>
     </XmlNode>
   </Xmls>
 </Module>

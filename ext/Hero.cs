@@ -4,7 +4,7 @@ using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.Extensions;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-namespace DistinguishedService.ext
+namespace DistinguishedServiceRedux.ext
 {
     public static class HeroExt
     {

@@ -20,15 +20,15 @@ using System.Xml.Serialization;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
-namespace DistinguishedService
+namespace DistinguishedServiceRedux
 {
-    public class dsSubModule : MBSubModuleBase
+    public class SubModule : MBSubModuleBase
     {
+        public static readonly string moduleName = "DistinguishedServiceRedux";
         private Settings CurrentSettings { get; set; }
-        public static dsSubModule instance;
+        public static SubModule instance;
         public bool gamestarted = false;
         private static PromotionManager _pm = null;
 
@@ -40,18 +40,18 @@ namespace DistinguishedService
             try
             {
                 //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml")))
+                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(moduleName), "Settings.xml");
+                if (File.Exists(Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml")))
                 {
-                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
+                    path = Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml");
                 }
-                this.DeserializeObject(path);
+                DeserializeObject(path);
             }
             catch (Exception ex)
             {
 
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr001}(001) Could not serialize Settings.xml: {ERR} Using default values!").SetTextVariable("ERR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
-                this.CurrentSettings = new Settings();
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "settings").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
+                CurrentSettings = new Settings();
             }
 
             try
@@ -65,19 +65,19 @@ namespace DistinguishedService
                     _pm = PromotionManager.__instance;
                 }
 
-                ((CampaignGameStarter)gameStarterObject).AddBehavior((CampaignBehaviorBase)new DSBattleBehavior());
+                ((CampaignGameStarter)gameStarterObject).AddBehavior(new DSBattleBehavior());
 
                 //ai gaining companions
                 if (CurrentSettings.ai_promotion_chance > 0)
                 {
                     try
                     {
-                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr002}(002) AI Companions have been disabled for now!").ToString(), Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "ai").ToString(), Color.FromUint(4282569842U)));
                         //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
                     }
                     catch (Exception e)
                     {
-                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr003}(003) Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.").ToString(), Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "serialized").ToString(), Color.FromUint(4282569842U)));
                         CurrentSettings.ai_promotion_chance = 0;
                     }
                 }
@@ -85,39 +85,39 @@ namespace DistinguishedService
                 //for alternative nomination behaviour
                 if (CurrentSettings.upgrade_to_hero)
                 {
-                    CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener((object)this, new Action<CharacterObject, CharacterObject, int>(_pm.upgrade_to_hero));
-                    CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener((object)this, new Action<CharacterObject, int>(_pm.recruit_to_hero));
+                    CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener(this, new Action<CharacterObject, CharacterObject, int>(_pm.UpgradeToHero));
+                    CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener(this, new Action<CharacterObject, int>(_pm.RecruitAsHero));
 
                 }
 
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg001}Distinguished Service loaded successfully").ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.Blue));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr004}(004) There was a problem:\n {ERROR}").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
             }
             gamestarted = true;
         }
 
         public override void OnGameLoaded(Game game, object initializerObject)
         {
-            if (!(game.GameType is Campaign))
+            if (game.GameType is not Campaign)
                 return;
             bool reload = false;
             try
             {
                 //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath("DistinguishedService"), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml")))
+                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(moduleName), "Settings.xml");
+                if (File.Exists(Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml")))
                 {
-                    path = Path.Combine(BasePath.Name, "Modules", "DistinguishedService", "Settings.xml");
+                    path = Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml");
                 }
-                this.DeserializeObject(path);
+                DeserializeObject(path);
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr001}(001) Could not serialize Settings.xml: {} Using default values!").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
-                this.CurrentSettings = new Settings();
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "settings").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
+                CurrentSettings = new Settings();
             }
 
             try
@@ -133,19 +133,19 @@ namespace DistinguishedService
                 }
 
                 if (!gamestarted)
-                    ((CampaignGameStarter)initializerObject).AddBehavior((CampaignBehaviorBase)new DSBattleBehavior());
+                    ((CampaignGameStarter)initializerObject).AddBehavior(new DSBattleBehavior());
 
                 //ai gaining companions
                 if (CurrentSettings.ai_promotion_chance > 0)
                 {
                     try
                     {
-                        InformationManager.DisplayMessage(new InformationMessage("{=DistinguishedSErr002}(002) AI Companions have been disabled for now!", Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "ai").ToString(), Color.FromUint(4282569842U)));
                         //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
                     }
                     catch (Exception e)
                     {
-                        InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr003}(003) Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0.").ToString(), Color.FromUint(4282569842U)));
+                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "serialized").ToString(), Color.FromUint(4282569842U)));
                         CurrentSettings.ai_promotion_chance = 0;
                     }
                 }
@@ -153,16 +153,16 @@ namespace DistinguishedService
                 //for alternative nomination behaviour
                 if (CurrentSettings.upgrade_to_hero)
                 {
-                    CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener((object)this, new Action<CharacterObject, CharacterObject, int>(_pm.upgrade_to_hero));
-                    CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener((object)this, new Action<CharacterObject, int>(_pm.recruit_to_hero));
+                    CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener(this, new Action<CharacterObject, CharacterObject, int>(_pm.UpgradeToHero));
+                    CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener(this, new Action<CharacterObject, int>(_pm.RecruitAsHero));
                 }
 
                 if (!reload)
-                    InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSMsg001}Distinguished Service loaded successfully").ToString(), Colors.Blue));
+                    InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.Blue));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=DistinguishedSErr004}(004) There was a problem:\n {ERROR}").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
             }
             gamestarted = false;
         }
@@ -192,9 +192,9 @@ namespace DistinguishedService
         private void DeserializeObject(string filename)
         {
             Settings settings;
-            using (Stream stream = (Stream)new FileStream(filename, FileMode.Open))
+            using (Stream stream = new FileStream(filename, FileMode.Open))
                 settings = (Settings)new XmlSerializer(typeof(Settings)).Deserialize(stream);
-            this.CurrentSettings = settings;
+            CurrentSettings = settings;
         }
 
         private void SerializeObject(string filename)
@@ -202,13 +202,13 @@ namespace DistinguishedService
             Console.WriteLine("Writing With XmlTextWriter");
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Settings));
             Settings settings = new Settings();
-            XmlWriter xmlWriter = XmlWriter.Create((Stream)new FileStream(filename, FileMode.Create), new XmlWriterSettings()
+            XmlWriter xmlWriter = XmlWriter.Create(new FileStream(filename, FileMode.Create), new XmlWriterSettings()
             {
                 Indent = true,
                 IndentChars = "\t",
                 OmitXmlDeclaration = true
             });
-            xmlSerializer.Serialize(xmlWriter, (object)settings);
+            xmlSerializer.Serialize(xmlWriter, settings);
             xmlWriter.Close();
         }
     }
