@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <strings>
-  <string id="DistServ_Error.001" text="{=06e8ea79}Error 001: Could not serialize Settings.xml: {ERROR} Using default values!"/>
-  <string id="DistServ_Error.002" text="{=725b4401}Error 002: AI Companions have been disabled for now!"/>
-  <string id="DistServ_Error.003" text="{=1FBdEE9F}Error 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
-  <string id="DistServ_Error.004" text="{=825019cb}Error 004: There was a problem:{NEWLINE}{ERROR}"/>
-  <string id="DistServ_Error.005filenotfound" text="Error 005: USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
-  <string id="DistServ_Info.001" text="{=faAd84dA}Distinguished Service loaded successfully"/>
-  <string id="DistServ_Info.002" text="Using Modules/DistinguishedServerviceUpdated Settings"/>
+  <string id="DistServ_Error.settings" text="{=06e8ea79}ERROR 001: Could not serialize Settings.xml: {ERROR} Using default values!"/>
+  <string id="DistServ_Error.ai" text="{=725b4401}ERROR 002: AI Companions have been disabled for now!"/>
+  <string id="DistServ_Error.serialized" text="{=1FBdEE9F}ERROR 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
+  <string id="DistServ_Error.problem" text="{=825019cb}ERROR 004: There was a problem:{NEWLINE}{ERROR}"/>
+  <string id="DistServ_Info.loaded" text="{=faAd84dA}Distringuished Service loaded successfully"/>
+  <string id="DistServ_Info.usesettings" text="Using Modules/DistringuishedServerviceUpdated Settings"/>
   <string id="DistServ_Info.003" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
+  <string id="DistServ_Info.usenamelist" text="USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
   <string id="DistServ_Info.threshold" text="{=D7F07C09}Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
   <string id="DistServ_Info.compatible" text="{=04d2faC3}MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
   <string id="DistServ_Caution.005autopromotion" text="{=1cD516bA}CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended."/>
@@ -34,30 +34,34 @@
   <string id="DistServ_tip.killcount" text="{=136b0505}{COUNT} kills"/>
   <string id="DistServ_tip.round" text="{=98C9ea02}Round {COUNT}"/>
   <string id="DistServ_tip.count" text="{=00BaAdfA}{NAME} got {COUNT}"/>
-  <sting id="DistServ_bonustitle.Scouting" text="Ranged with the Scouts"/>
-  <sting id="DistServ_bonustitle.Crafting" text="Repaired the party's weapons"/>
-  <sting id="DistServ_bonustitle.Athletics" text="Trained for combat"/>
-  <sting id="DistServ_bonustitle.Riding" text="Rode horses"/>
-  <sting id="DistServ_bonustitle.Tactics" text="Studied past battles"/>
-  <sting id="DistServ_bonustitle.Roguery" text="Sold loot in the black market"/>
-  <sting id="DistServ_bonustitle.Charm" text="Chatted everyone up"/>
-  <sting id="DistServ_bonustitle.Leadership" text="Organized duties for the party"/>
-  <sting id="DistServ_bonustitle.Trade" text="Bought and sold items from towns you visited"/>
-  <sting id="DistServ_bonustitle.Steward" text="Helped handle the party's accounts"/>
-  <sting id="DistServ_bonustitle.Medicine" text="Helped as a medic"/>
-  <sting id="DistServ_bonustitle.Engineering" text="Helped construct and take down the camp"/>
-  <sting id="DistServ_dialog.rename" text="I want you to be known by another name..."/>
-  <sting id="DistServ_dialog.transfer" text="Take these companions into your party..."/>
-  <sting id="DistServ_dialog.takeback" text="I wish to reassign heroes in your party..."/>
-  <sting id="DistServ_dialog.poach" text="After this defeat, are you sure you wouldn't rather work for me?"/>
-  <sting id="DistServ_dialog.answer" text="That is all"/>
-  <sting id="DistServ_bonushint.text" text="+ {COUNT} {SKILLNAME}"/>
-  <string id="DistServ_inquiry.trsfhero" text="{=1f94d05e}Transfer Heroes"/>
-  <string id="DistServ_inquirytext.trsfhero" text="{=3A704181}You can select who to assign to {HERO}'s party"/>
-  <string id="DistServ_inquiry.Random" text="{=E59af7d2}RANDOM"/>
-  <string id="DistServ_inquiry.Nobody" text="{=b486d9de}NOBODY"/>
-  <string id="DistServ_inquiry.title" text="{=a62e65a5}Distinguished Soldiers"/>
-  <string id="DistServ_inquiry.desc" text="{=1A63b476}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
-  <string id="DistServ_inquiry.console" text="{=f8DAbCe9}Console Command"/>
-  <string id="DistServ_inquiry.consoledesc" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
+  <string id="DistServ_bonus_title.Scouting" text="{=Ed1f04a1}Ranged with the Scouts"/>
+  <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>
+  <string id="DistServ_bonus_title.Athletics" text="{=0d60006a}Trained for combat"/>
+  <string id="DistServ_bonus_title.Riding" text="{=E526B809}Rode horses"/>
+  <string id="DistServ_bonus_title.Tactics" text="{=faDC615A}Studied past battles"/>
+  <string id="DistServ_bonus_title.Roguery" text="{=9573E727}Sold loot in the black market"/>
+  <string id="DistServ_bonus_title.Charm" text="{=CdC0a2c3}Chatted everyone up"/>
+  <string id="DistServ_bonus_title.Leadership" text="{=0174004f}Organized duties for the party"/>
+  <string id="DistServ_bonus_title.Trade" text="{=007A22fa}Bought and sold items from towns you visited"/>
+  <string id="DistServ_bonus_title.Steward" text="{=9b680111}Helped handle the party's accounts"/>
+  <string id="DistServ_bonus_title.Medicine" text="{=3f123ecF}Helped as a medic"/>
+  <string id="DistServ_bonus_title.Engineering" text="{=f4DAa166}Helped construct and take down the camp"/>
+  <string id="DistServ_bonus_hint.text" text="{=CfDBbE79}+ {COUNT} {SKILLNAME}"/>
+  <string id="DistServ_dialog.rename" text="{=Ad79BA89}I want you to be known by another name..."/>
+  <string id="DistServ_dialog.transfer" text="{=0c4701a0}Take these companions into your party..."/>
+  <string id="DistServ_dialog.takeback" text="{=faB64807}I wish to reassign heroes in your party..."/>
+  <string id="DistServ_dialog.poach" text="{=b8D92710}After this defeat, are you sure you wouldn't rather work for me?"/>
+  <string id="DistServ_dialog.answer" text="{=5A92Dd21}That is all"/>
+  <string id="DistServ_inquiry_title.trsfhero" text="{=1f94d05e}Transfer Heroes"/>
+  <string id="DistServ_inquiry_text.trsfhero" text="{=3A704181}You can select who to assign to {HERO}'s party"/>
+  <string id="DistServ_inquiry_title.distinguished" text="{=a62e65a5}Distringuished Soldiers"/>
+  <string id="DistServ_inquiry_text.distinguished" text="{=1A63b476}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
+  <string id="DistServ_inquiry_title.console" text="{=f8DAbCe9}Console Command"/>
+  <string id="DistServ_inquiry_text.console" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
+  <string id="DistServ_inquiry_title.select" text="{=4AC6882E}Select {FULLNAME} Skill Focuses"/>
+  <string id="DistServ_inquiry_text.select" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.."/>
+  <string id="DistServ_inquiry_choice.Random" text="{=E59af7d2}RANDOM"/>
+  <string id="DistServ_inquiry_choice.Nobody" text="{=b486d9de}NOBODY"/>
+  <string id="DistServ_inquiry_choice.Accept" text="{=72Df4348}Accept"/>
+  <string id="DistServ_inquiry_choice.Refuse" text="{=293D731e}Refuse"/>
 </strings>
