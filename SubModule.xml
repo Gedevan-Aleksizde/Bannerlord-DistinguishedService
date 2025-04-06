@@ -1,6 +1,6 @@
 ﻿<Module>
   <Name value="Distinguished Service Updated"/>
-  <Id value="DistinguishedServiceUpdated"/>
+  <Id value="DistinguishedServiceRedux"/>
   <Version value="v1.0.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
@@ -8,7 +8,7 @@
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="DistinguishedServiceUpdated"/>
+      <Name value="DistinguishedServiceRedux"/>
       <DLLName value="DistinguishedService110.dll"/>
       <SubModuleClassType value="DistinguishedService.dsSubModule"/>
       <Tags>
