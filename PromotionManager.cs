@@ -1,15 +1,7 @@
 ﻿/*
- * Author: Thor Tronrud
- * PromotionManager.cs:
- * 
- * Pretty monolothic, and by accretion, not necessity. Acts as a big
- * state object with a lot of static methods providing the utilities
- * used to promote basic troops to companions.
- * 
- * It is fed a list of nominees by the Battle Behaviour class and presents
- * them to the player.
- * 
- * Also includes additional dialogue and supporting methods.
+ * Original Author: Thor Tronrud
+ * TODO: remove many less-informative comments
+ * TODO: refactor redundant functions
  */
 
 using DistinguishedServiceRedux.ext;
@@ -55,8 +47,6 @@ namespace DistinguishedServiceRedux
             {
                 InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Info", "usenamelist").ToString(), Color.FromUint(4282569842U)));
             }
-            //set other values from settings
-            // this.fill_perks = currentsettings.fill_in_perks;
 
             //Output final mod state to user, set static instance
             InformationManager.DisplayMessage(new(
@@ -370,15 +360,15 @@ namespace DistinguishedServiceRedux
             {
                 if (nco.IsMounted)
                 {
-                    skipToAssign += Settings.Instance.skillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountCavalry);
+                    skipToAssign += Settings.Instance.SkillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountCavalry);
                 }
                 else if (nco.IsRanged)
                 {
-                    skipToAssign += Settings.Instance.skillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountRanged);
+                    skipToAssign += Settings.Instance.SkillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountRanged);
                 }
                 else
                 {
-                    skipToAssign += Settings.Instance.skillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountInfantry);
+                    skipToAssign += Settings.Instance.SkillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountInfantry);
                 }
             }
 
@@ -816,12 +806,15 @@ namespace DistinguishedServiceRedux
         }
         private static void GetNamechanceconsequence()
         {
-            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), string.Empty, true, false, GameTexts.FindText("str_done", (string)null).ToString(), (string)null, new Action<string>(PromotionManager.ChangeHeroName), (Action)null, false), false);
+            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), Hero.OneToOneConversationHero.Name.ToString(), true, true, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("str_cancel").ToString(), new Action<string>(PromotionManager.ChangeHeroName), (Action)null, false), false);
 
         }
         private static void ChangeHeroName(string s)
         {
-            Hero.OneToOneConversationHero.SetName(new TextObject(s), new TextObject(s));
+            if (s != "")
+            {
+                Hero.OneToOneConversationHero.SetName(new TextObject(s), new TextObject(s));
+            }
         }
 
         /// <summary>
