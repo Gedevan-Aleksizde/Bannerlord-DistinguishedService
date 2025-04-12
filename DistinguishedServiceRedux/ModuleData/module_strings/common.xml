@@ -34,7 +34,7 @@
   <string id="DistServ_tip.killcount" text="{=136b0505}{COUNT} kills"/>
   <string id="DistServ_tip.count" text="{=00BaAdfA}{NAME} got {COUNT}"/>
   <string id="DistServ_bonus_title.Scouting" text="{=Ed1f04a1}Ranged with the Scouts"/>
-  <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>x
+  <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>
   <string id="DistServ_bonus_title.Athletics" text="{=0d60006a}Trained for combat"/>
   <string id="DistServ_bonus_title.Riding" text="{=E526B809}Rode horses"/>
   <string id="DistServ_bonus_title.Tactics" text="{=faDC615A}Studied past battles"/>
@@ -50,7 +50,7 @@
   <string id="DistServ_dialog.transfer" text="{=0c4701a0}Take these companions into your party..."/>
   <string id="DistServ_dialog.takeback" text="{=faB64807}I wish to reassign heroes in your party..."/>
   <string id="DistServ_dialog.poach" text="{=b8D92710}After this defeat, are you sure you wouldn't rather work for me?"/>
-  <string id="DistServ_dialog.answer" text="{=5A92Dd21}That is all"/>
+  <string id="DistServ_dialog.answer" text="{=5A92Dd21}That is all."/>
   <string id="DistServ_inquiry_title.trsfhero" text="{=1f94d05e}Transfer Heroes"/>
   <string id="DistServ_inquiry_text.trsfhero" text="{=3A704181}You can select who to assign to {HERO}'s party"/>
   <string id="DistServ_inquiry_title.distinguished" text="{=a62e65a5}Distringuished Soldiers"/>

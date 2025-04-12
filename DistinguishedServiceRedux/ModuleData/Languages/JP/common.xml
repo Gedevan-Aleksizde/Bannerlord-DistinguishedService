@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<base>
+  <tags>
+    <tag language="日本語"/>
+  </tags>
+  <strings>
+    <string id="06e8ea79" text="ERROR 001: Settings.xml をシリアライズできませんでした: {ERROR} デフォルト値を使用します!"/>
+    <string id="725b4401" text="ERROR 002: AIの仲間がただちに無効になります!"/>
+    <string id="1FBdEE9F" text="ERROR 003: MapEventEndedに対するシリアライズリスナーを作成できませんでした。抜擢確率をゼロにリセットします。"/>
+    <string id="825019cb" text="ERROR 004: 問題が発生しました。詳細:{NEWLINE}{ERROR}"/>
+    <string id="faAd84dA" text="Distinguished Service が正常に読み込まれました"/>
+    <string id="87Ba3B2D" text="Modules/DistringuishedServerviceUpdatedの設定を使用する"/>
+    <string id="A7124477" text="仲間にできる人数の上限に達しています。抜擢できません。"/>
+    <string id="Cb8f5d67" text="外部の名簿ファイルを使用します!{NEWLINE}使用した名前を排除するため、このファイルはModによって自動的に変更されます。"/>
+    <string id="D7F07C09" text="最大候補者指数 {MAX}{NEWLINE}必要Tier {TTHRESH}{NEWLINE}必要キル数 {KTHRESH}{NEWLINE}歩兵 {KTHRESH}、騎兵 {CTHRESH}、投射 {RTHRESH}{NEWLINE}要求成績 {PTHRESH}"/>
+    <string id="04d2faC3" text="My Little Warband互換モード: 1番目の装備セットを使用します"/>
+    <string id="1cD516bA" text="CAUTION 005: 兵士が Tier {TTHRESH}に到達すると自動でヒーローに昇格します。{NEWLINE}不要ならば設定を変更してください。"/>
+    <string id="E395152c" text="CAUTION: 新たなヒーローのパークスキルが自動的に割り当てられます。{NEWLINE}意図した設定でないなら変更してください。"/>
+    <string id="4EE768a2" text="CAUTION 007: 仲間の上限人数を無視します。"/>
+    <string id="8bB978c1" text="CAUTION 009: {CULTURE} 文化の有効な放浪者テンプレートが存在しません。{NEWLINE}代わりにランダムに選択します"/>
+    <string id="243961af" text="CAUTION 013: この兵士の装備に何らかの問題が見つかりました。{NEWLINE}処理を中止します。装備の追加が適切に行われなかった可能性があります。"/>
+    <string id="13cc35c2" text="CAUTION 014: Reflection call to CheckInitialLevel failed. バージョンの違いが原因の可能性があります。"/>
+    <string id="cc29D94D" text="CAUTION 015: この兵士の装備に何らかの問題が見つかりました。{NEWLINE}処理を中止します。装備の追加が適切に行われなかった可能性があります。"/>
+    <string id="fa7BFEaB" text="WARNING 010: 放浪者テンプレートの何らかの問題が見つかりました。{NEWLINE}完全にランダムに選択します"/>
+    <string id="71a98d3e" text="Warning 011: 有効な放浪者テンプレートがありません。あなたの設定になんらかの問題があります。"/>
+    <string id="E773C408" text="装備フォーマットに問題があります。デフォルト装備を代わりに与えます。例外の詳細:{NEWLINE}{TEXT}"/>
+    <string id="c0A99490" text="ふむ、そうだな。虜囚の身でいるよりはよいだろう。"/>
+    <string id="FdE08029" text="それで戒めを解いてくれるというのなら、ありがたい。"/>
+    <string id="DfBbA844" text="承諾する。他の者に仕えることは考えられぬ。"/>
+    <string id="fe8aa69D" text="承諾する。あなたと共に戦うのがより安全な道らしい。"/>
+    <string id="9a73CFbd" text="あなたの考えに同意する。我々は協力して戦場で栄光を求めるべきだ!"/>
+    <string id="D1C118bd" text="むむむ…。否定できぬ。"/>
+    <string id="15373806" text="受け入れかねる!"/>
+    <string id="ba850ec7" text="易きに任せて仕える主を変えたりはしない!全ての秩序が成り立たなくなるであろう!"/>
+    <string id="7c298cC9" text="そのような理由で仕える主を裏切ったりはしない!"/>
+    <string id="77E91d9d" text="断る。己の命を投げ打つに値しない者に仕える気はない。"/>
+    <string id="72376ce2" text="辞退申し上げたい。そのようなことは承服しかねる。"/>
+    <string id="136b0505" text="{COUNT}キル"/>
+    <string id="00BaAdfA" text="{NAME}のキル数{COUNT}"/>
+    <string id="Ed1f04a1" text="斥候とともに働いた"/>
+    <string id="8d1622d4" text="部隊の武器を修理した"/>
+    <string id="0d60006a" text="戦闘訓練を取り仕切った"/>
+    <string id="E526B809" text="乗馬経験"/>
+    <string id="faDC615A" text="過去の戦いに学んだ"/>
+    <string id="9573E727" text="戦利品を闇市場で売りさばいた"/>
+    <string id="CdC0a2c3" text="部隊の全員と会話した"/>
+    <string id="0174004f" text="部隊を団結させた"/>
+    <string id="007A22fa" text="訪れた都市で物品を売買した"/>
+    <string id="9b680111" text="部隊の物資管理への貢献"/>
+    <string id="3f123ecF" text="衛生兵としての活躍"/>
+    <string id="f4DAa166" text="野営地の構築と破壊への貢献"/>
+    <string id="CfDBbE79" text="{SKILLNAME}+{COUNT}"/>
+    <string id="Ad79BA89" text="お前がこれから馳せる名前は、別のものにしたほうがよい…"/>
+    <string id="0c4701a0" text="仲間をお前の部隊に加えよう"/>
+    <string id="faB64807" text="お前の部隊のヒーローの配置を変えたい。"/>
+    <string id="b8D92710" text="この戦いで打ち負かされたら、私のもとで働く気はないか?"/>
+    <string id="5A92Dd21" text="話すことはこれだけだ。"/>
+    <string id="1f94d05e" text="ヒーローを移動"/>
+    <string id="3A704181" text="{HERO}の部隊に誰を移動させるか選べる"/>
+    <string id="a62e65a5" text="兵士の抜擢"/>
+    <string id="1A63b476" text="この戦闘で名を挙げた兵士がいる。最大で{N}人の兵士を、あなたの側で戦う仲間として抜擢できる。誰も選ばない場合はそのまま終了しよう。"/>
+    <string id="f8DAbCe9" text="コンソールコマンド"/>
+    <string id="2D5Ca02e" text="抜擢する兵士の選択"/>
+    <string id="4AC6882E" text="フォーカス対象スキルの選択 ({COUNT}/{TOTAL)"/>
+    <string id="83E15325" text="{PREV}の{NAME}は戦場で誉を得た。彼ら兵は、以前から、そしてこれからも戦いのために鍛錬を積む…"/>
+    <string id="E59af7d2" text="ランダム"/>
+    <string id="b486d9de" text="誰も選ばない"/>
+    <string id="72Df4348" text="承認"/>
+    <string id="293D731e" text="拒否"/>
+    <string id="deE3Fb1c" text="新しい名前を決めてください"/>
+  </strings>
+</base>

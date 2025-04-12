@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LanguageData id="English">
+  <LanguageFile xml_path="EN/common.xml"/>
+  <LanguageFile xml_path="EN/mcm.xml"/>
+  <LanguageFile xml_path="EN/namelist.xml"/>
+</LanguageData>
