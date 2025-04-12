@@ -13,7 +13,7 @@ namespace DistinguishedServiceRedux
     {
         private const string EXTERNAL_NAME_FILE = "external_namelist.txt";
         private static readonly string filePath = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(SubModule.moduleName), EXTERNAL_NAME_FILE);
-        public static bool CheckFileExists()
+        public static bool IsFileExists()
         {
             return File.Exists(filePath);
         }

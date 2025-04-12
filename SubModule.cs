@@ -12,12 +12,11 @@
  * the settings file, so if they're deactivated they aren't even invoked.
  */
 
+using DistinguishedServiceRedux.settings;
 using System;
-using System.IO;
 using System.Reflection;
-using System.Xml;
-using System.Xml.Serialization;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
@@ -27,7 +26,6 @@ namespace DistinguishedServiceRedux
     public class SubModule : MBSubModuleBase
     {
         public static readonly string moduleName = "DistinguishedServiceRedux";
-        private Settings CurrentSettings { get; set; }
         public static SubModule instance;
         public bool gamestarted = false;
         private static PromotionManager _pm = null;
@@ -35,24 +33,7 @@ namespace DistinguishedServiceRedux
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             if (!(Game.Current.GameType is Campaign))
-                return; //OnCampaignStart apparently doesn't always mean it's a campaign game -_-
-
-            try
-            {
-                //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(moduleName), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml")))
-                {
-                    path = Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml");
-                }
-                DeserializeObject(path);
-            }
-            catch (Exception ex)
-            {
-
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "settings").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
-                CurrentSettings = new Settings();
-            }
+                return; // OnCampaignStart doesn't always mean it's a campaign game
 
             try
             {
@@ -68,22 +49,10 @@ namespace DistinguishedServiceRedux
                 ((CampaignGameStarter)gameStarterObject).AddBehavior(new DSBattleBehavior());
 
                 //ai gaining companions
-                if (CurrentSettings.ai_promotion_chance > 0)
-                {
-                    try
-                    {
-                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "ai").ToString(), Color.FromUint(4282569842U)));
-                        //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
-                    }
-                    catch (Exception e)
-                    {
-                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "serialized").ToString(), Color.FromUint(4282569842U)));
-                        CurrentSettings.ai_promotion_chance = 0;
-                    }
-                }
+                CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
 
                 //for alternative nomination behaviour
-                if (CurrentSettings.upgrade_to_hero)
+                if (Settings.Instance.UpgradeToHero)
                 {
                     CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener(this, new Action<CharacterObject, CharacterObject, int>(_pm.UpgradeToHero));
                     CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener(this, new Action<CharacterObject, int>(_pm.RecruitAsHero));
@@ -106,22 +75,6 @@ namespace DistinguishedServiceRedux
             bool reload = false;
             try
             {
-                //Try to see if the OG modules file exists, if so preferentially use that
-                string path = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(moduleName), "Settings.xml");
-                if (File.Exists(Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml")))
-                {
-                    path = Path.Combine(BasePath.Name, "Modules", moduleName, "Settings.xml");
-                }
-                DeserializeObject(path);
-            }
-            catch (Exception ex)
-            {
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "settings").SetTextVariable("ERROR", ex.Message.ToString()).ToString(), Color.FromUint(4282569842U)));
-                CurrentSettings = new Settings();
-            }
-
-            try
-            {
                 if (PromotionManager.__instance == null)
                 {
                     _pm = new PromotionManager();
@@ -136,22 +89,9 @@ namespace DistinguishedServiceRedux
                     ((CampaignGameStarter)initializerObject).AddBehavior(new DSBattleBehavior());
 
                 //ai gaining companions
-                if (CurrentSettings.ai_promotion_chance > 0)
-                {
-                    try
-                    {
-                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "ai").ToString(), Color.FromUint(4282569842U)));
-                        //CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
-                    }
-                    catch (Exception e)
-                    {
-                        InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "serialized").ToString(), Color.FromUint(4282569842U)));
-                        CurrentSettings.ai_promotion_chance = 0;
-                    }
-                }
+                CampaignEvents.MapEventEnded.AddNonSerializedListener((object)this, new Action<MapEvent>(_pm.MapEventEnded));
 
-                //for alternative nomination behaviour
-                if (CurrentSettings.upgrade_to_hero)
+                if (Settings.Instance.UpgradeToHero)
                 {
                     CampaignEvents.PlayerUpgradedTroopsEvent.AddNonSerializedListener(this, new Action<CharacterObject, CharacterObject, int>(_pm.UpgradeToHero));
                     CampaignEvents.OnUnitRecruitedEvent.AddNonSerializedListener(this, new Action<CharacterObject, int>(_pm.RecruitAsHero));
@@ -186,30 +126,6 @@ namespace DistinguishedServiceRedux
                     return true;
             }
             return false;
-        }
-
-        //Serialization
-        private void DeserializeObject(string filename)
-        {
-            Settings settings;
-            using (Stream stream = new FileStream(filename, FileMode.Open))
-                settings = (Settings)new XmlSerializer(typeof(Settings)).Deserialize(stream);
-            CurrentSettings = settings;
-        }
-
-        private void SerializeObject(string filename)
-        {
-            Console.WriteLine("Writing With XmlTextWriter");
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Settings));
-            Settings settings = new Settings();
-            XmlWriter xmlWriter = XmlWriter.Create(new FileStream(filename, FileMode.Create), new XmlWriterSettings()
-            {
-                Indent = true,
-                IndentChars = "\t",
-                OmitXmlDeclaration = true
-            });
-            xmlSerializer.Serialize(xmlWriter, settings);
-            xmlWriter.Close();
         }
     }
 }

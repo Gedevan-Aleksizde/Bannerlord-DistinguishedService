@@ -25,7 +25,7 @@ namespace DistinguishedServiceRedux.ext
             int b = (int)Skills.All.Sum((SkillObject s) => 2f * MathF.Pow(hero.GetSkillValue(s), 2.2f)) - 2000;
             // hero.HeroDeveloper.TotalXp = MathF.Max(1, b); TODO: is really needed?
         }
-        public static void CheckLevel(this Hero hero)  // shouldNotify arg is omitted
+        public static void CheckLevel(this Hero hero)
         {
             bool flag = false;
             int totalXp = hero.HeroDeveloper.TotalXp;

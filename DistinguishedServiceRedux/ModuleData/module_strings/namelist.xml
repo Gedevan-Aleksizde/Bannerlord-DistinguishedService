@@ -44,18 +44,18 @@
   <string id="DistServ_name_format_culture_sturgia.kraken" text="{=e0B3624e}{FIRSTNAME} det Kråke"/>
   <string id="DistServ_name_format_culture_sturgia.leaf" text="{=f030A6f3}{FIRSTNAME} det Rev"/>
   <string id="DistServ_name_format_culture_sturgia.nord" text="{=3Fc0b82e}{FIRSTNAME} av Nord"/>
-  <string id="DistServ_name_format_culture_nord.nord" text="{=e0B3624e}{FIRSTNAME} av Nord"/>
-  <string id="DistServ_name_format_culture_vakken.vakken" text="{=e0B3624e}{FIRSTNAME} the vakken"/>
+  <string id="DistServ_name_format_culture_nord.nord" text="{=whcLyzQjHH}{FIRSTNAME} av Nord"/>
+  <string id="DistServ_name_format_culture_vakken.vakken" text="{=XR30w6GwFc}{FIRSTNAME} the vakken"/>
   <string id="DistServ_name_format_culture_vlandia.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
   <string id="DistServ_name_format_culture_vlandia.lion" text="{=ae5Ee53E}{FIRSTNAME} the Lion"/>
   <string id="DistServ_name_format_culture_vlandia.little" text="{=989f99c1}{FIRSTNAME} the Little"/>
   <string id="DistServ_name_format_culture_khuzait.ukhaantai" text="{=faC8efcC}{FIRSTNAME} Ukhaantai"/>
   <string id="DistServ_name_format_culture_khuzait.khurdan" text="{=566286e1}{FIRSTNAME} Khurdan"/>
   <string id="DistServ_name_format_culture_khuzait.yamaa" text="{=A518b416}{FIRSTNAME} Yamaa"/>
-  <string id="DistServ_name_format_culture_aserai.genubi" text="{FIRSTNAME} al janubi"/>
-  <string id="DistServ_name_format_culture_aserai.sayf" text="{FIRSTNAME} al sayf"/>
-  <string id="DistServ_name_format_culture_aserai.sharasa" text="{FIRSTNAME} al sharasa"/>
-  <string id="DistServ_name_format_culture_darshi.darshi" text="{FIRSTNAME} the Darshi"/>
+  <string id="DistServ_name_format_culture_aserai.genubi" text="{=IaTwqbjk8W}{FIRSTNAME} al janubi"/>
+  <string id="DistServ_name_format_culture_aserai.sayf" text="{=09DF31e8}{FIRSTNAME} al sayf"/>
+  <string id="DistServ_name_format_culture_aserai.sharasa" text="{=c66255e7}{FIRSTNAME} al sharasa"/>
+  <string id="DistServ_name_format_culture_darshi.darshi" text="{=aE42183}{FIRSTNAME} the Darshi"/>
   <string id="DistServ_name_format_climinals.001" text="{=585607e1}{FIRSTNAME} the Ragged"/>
   <string id="DistServ_name_format_climinals.002" text="{=2f0fa040}{FIRSTNAME} the Shiv"/>
   <string id="DistServ_name_format_climinals.003" text="{=671a2a18}{FIRSTNAME} Slicer"/>
@@ -100,5 +100,5 @@
   <string id="DistServ_name_format_shift_sand.001" text="{=4b31369f}{FIRSTNAME} Sawbones"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=6837C94A}{FIRSTNAME} the Chemist"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
-  <string id="DistServ_name_format_default.fallback" text="{FIRSTNAME}"/>
+  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/>
 </strings>

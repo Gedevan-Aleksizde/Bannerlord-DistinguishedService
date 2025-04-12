@@ -2,6 +2,7 @@
  * Author: Thor Tronrud
  */
 
+using DistinguishedServiceRedux.settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,9 +61,10 @@ namespace DistinguishedServiceRedux
                 return elements[index];
         }
         /// <summary>
-        /// override showbattleresults because it fires before any loading screen has had the chance to pop up
-        /// </summary>
+        /// Overrides showbattleresults because it fires before any loading screen has had the chance to pop up
         /// That has previously caused a horrible bug where options would appear *behind* the loading screen, causing infinite hang
+        /// </summary>
+        ///
         public override void ShowBattleResults()
         {
             if (PromotionManager.__instance == null)
@@ -75,7 +77,7 @@ namespace DistinguishedServiceRedux
                 return;
             if (SumKillCountByNonHero() <= 0)
                 return;
-            float qKills = (float)GetPercentile(GetKillCounts(), PromotionManager.__instance.outperform_percentile);
+            float qKills = (float)GetPercentile(GetKillCounts(), Settings.Instance.EligiblePercentile);
             foreach (Agent ag in Mission.Current.PlayerTeam.ActiveAgents)
             {
                 if (ag.IsHero || ag.Origin == null || (PartyBase)ag.Origin.BattleCombatant == null || ((PartyBase)ag.Origin.BattleCombatant).MobileParty == null || !((PartyBase)ag.Origin.BattleCombatant).MobileParty.IsMainParty)
@@ -87,17 +89,17 @@ namespace DistinguishedServiceRedux
                 int cutoffKills;
                 if (co.IsRanged)
                 {
-                    cutoffKills = PromotionManager.__instance.ran_kill_threshold;
+                    cutoffKills = Settings.Instance.EligibleKillCountRanged;
                 }
                 else if (co.IsMounted)
                 {
-                    cutoffKills = PromotionManager.__instance.cav_kill_threshold;
+                    cutoffKills = Settings.Instance.EligibleKillCountCavalry;
                 }
                 else
                 {
-                    cutoffKills = PromotionManager.__instance.inf_kill_threshold;
+                    cutoffKills = Settings.Instance.EligibleKillCountInfantry;
                 }
-                bool qualified = (PromotionManager.__instance.outperform_percentile <= 0 || ag.KillCount > MathF.Ceiling(qKills));
+                bool qualified = (Settings.Instance.EligiblePercentile <= 0 || ag.KillCount > MathF.Ceiling(qKills));
                 if (qualified && ag.KillCount >= cutoffKills)
                 {
                     if (PromotionManager.IsSoldierQualified(co))

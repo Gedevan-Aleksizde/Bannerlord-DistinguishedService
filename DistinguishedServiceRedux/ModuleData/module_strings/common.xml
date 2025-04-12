@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <strings>
-  <string id="DistServ_Error.settings" text="{=06e8ea79}ERROR 001: Could not serialize Settings.xml: {ERROR} Using default values!"/>
-  <string id="DistServ_Error.ai" text="{=725b4401}ERROR 002: AI Companions have been disabled for now!"/>
-  <string id="DistServ_Error.serialized" text="{=1FBdEE9F}ERROR 003: Serialized Listener for MapEventEnded could not be created. AI Promotion chance reset to 0."/>
+  <string id="DistServ_Error.settings" text="{=06e8ea79}ERROR 001: Could not serialize Settings.xml: {ERROR} Using default values!"/> <!-- not used? -->
+  <string id="DistServ_Error.ai" text="{=725b4401}ERROR 002: NPC Party's companions have been disabled for now!"/>
+  <string id="DistServ_Error.serialized" text="{=1FBdEE9F}ERROR 003: Serialized Listener for MapEventEnded could not be created. NPC Party's Promotion chance reset to 0."/>
   <string id="DistServ_Error.problem" text="{=825019cb}ERROR 004: There was a problem:{NEWLINE}{ERROR}"/>
   <string id="DistServ_Info.loaded" text="{=faAd84dA}Distringuished Service loaded successfully"/>
-  <string id="DistServ_Info.usesettings" text="Using Modules/DistringuishedServerviceUpdated Settings"/>
-  <string id="DistServ_Info.003" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
-  <string id="DistServ_Info.usenamelist" text="USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names"/>
+  <string id="DistServ_Info.usesettings" text="{=87Ba3B2D}Using Modules/DistringuishedServerviceUpdated Settings"/>
+  <string id="DistServ_Info.003companionlimit" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
+  <string id="DistServ_Info.usenamelist" text="{=Cb8f5d67}USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names."/>
   <string id="DistServ_Info.threshold" text="{=D7F07C09}Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
   <string id="DistServ_Info.compatible" text="{=04d2faC3}MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
   <string id="DistServ_Caution.005autopromotion" text="{=1cD516bA}CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended."/>
@@ -32,10 +32,9 @@
   <string id="DistServ_comment_reject.003" text="{=77E91d9d}No - I won't throw my life away for somebody who hasn't earned it."/>
   <string id="DistServ_comment_reject.004" text="{=72376ce2}I just want to retire after this! No deal!"/>
   <string id="DistServ_tip.killcount" text="{=136b0505}{COUNT} kills"/>
-  <string id="DistServ_inquiry_text.round" text="{=98C9ea02}Round {COUNT}"/>
   <string id="DistServ_tip.count" text="{=00BaAdfA}{NAME} got {COUNT}"/>
   <string id="DistServ_bonus_title.Scouting" text="{=Ed1f04a1}Ranged with the Scouts"/>
-  <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>
+  <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>x
   <string id="DistServ_bonus_title.Athletics" text="{=0d60006a}Trained for combat"/>
   <string id="DistServ_bonus_title.Riding" text="{=E526B809}Rode horses"/>
   <string id="DistServ_bonus_title.Tactics" text="{=faDC615A}Studied past battles"/>
@@ -58,10 +57,11 @@
   <string id="DistServ_inquiry_text.distinguished" text="{=1A63b476}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
   <string id="DistServ_inquiry_title.console" text="{=f8DAbCe9}Console Command"/>
   <string id="DistServ_inquiry_text.console" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
-  <string id="DistServ_inquiry_title.select" text="{=4AC6882E}Select {FULLNAME} Skill Focuses"/>
+  <string id="DistServ_inquiry_title.select" text="{=4AC6882E}Select Skill Focuses ({COUNT}/{TOTAL})"/>
   <string id="DistServ_inquiry_text.select" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.."/>
   <string id="DistServ_inquiry_choice.Random" text="{=E59af7d2}RANDOM"/>
   <string id="DistServ_inquiry_choice.Nobody" text="{=b486d9de}NOBODY"/>
   <string id="DistServ_inquiry_choice.Accept" text="{=72Df4348}Accept"/>
   <string id="DistServ_inquiry_choice.Refuse" text="{=293D731e}Refuse"/>
+  <string id="DistServ_inquiry_title.newname" text="{=deE3Fb1c}Create a new name: "/>
 </strings>
