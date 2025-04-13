@@ -806,7 +806,7 @@ namespace DistinguishedServiceRedux
         }
         private static void GetNamechanceconsequence()
         {
-            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), Hero.OneToOneConversationHero.Name.ToString(), true, true, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("str_cancel").ToString(), new Action<string>(PromotionManager.ChangeHeroName), (Action)null, false), false);
+            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), string.Empty, true, true, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("str_cancel").ToString(), new Action<string>(PromotionManager.ChangeHeroName), (Action)null, false), false);
 
         }
         private static void ChangeHeroName(string s)
