@@ -626,7 +626,7 @@ namespace DistinguishedServiceRedux
                 //only care about decisive field battles
                 if (!(mapEvent.HasWinner))
                     return;
-                Random r = new();  // TODO: ここは MBRandom ではないのか
+                Random r = new();  // TODO: why not MBRandom?
                 //look at winning side
                 foreach (MapEventParty p in mapEvent.PartiesOnSide(mapEvent.WinningSide))
                 {
