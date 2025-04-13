@@ -48,7 +48,7 @@
         <string id="SzH0vFGPO" text="ヒーローへの昇格"/>
         <string id="ZKYkuUYKTQ" text="有効にした場合、抜擢要件を満たすTierまで兵士をアップグレードすると自動的にヒーローになります。併用する場合は、Tier要件を高くし、死亡率も高く設定することをおすすめします。デフォルトは「無効」です。"/>
         <string id="WX2tO2HaJ" text="仲間スロットボーナスの基礎値"/>
-        <string id="rR0oSObARw" text="追加する仲間の数の上限の基礎値です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。デフォルトは「3」です。"/>
+        <string id="rR0oSObARw" text="追加する仲間の数の上限の基礎値です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。デフォルトは「2」です。"/>
         <string id="nbSP8HlmqO" text="クランTierごとの仲間スロットボーナス"/>
         <string id="ng2TLg4pui" text="クランTierごとに追加される仲間の数の上限です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. デフォルトは「2」です。"/>
         <string id="YR3zyglTxz" text="追加死亡率"/>

@@ -49,9 +49,9 @@
     <string id="xMswq98TK" text="Remove The Companion On Defeat" />
     <string id="Fsn9jOohUy" text="If enabled the NPC partiy's companion is eliminated after their party is defeated/disbanded. This should be enabled, if you are generating NPC party's companions, as the NPC lords will not gather them back up." />
     <string id="WX2tO2HaJ" text="Companion Slots Bonus Base" />
-    <string id="rR0oSObARw" text="The base value of the number of extra companion slots to add, if Ignore Companion Limit is disables, Set to 0 for native. Default is 3." />
+    <string id="rR0oSObARw" text="The base value of the number of extra companion slots to add, if Ignore Companion Limit is disables, Set to 0 for native. Default is 2." />
     <string id="nbSP8HlmqO" text="Companion Slots Bonus Per Clan Tier" /> 
-    <string id="ng2TLg4pui" text="The number of extra companion slots granted per clan tier. Set to 0 for native. This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value.   Default is 2." />
+    <string id="ng2TLg4pui" text="The number of extra companion slots granted per clan tier. Set to 0 for native. This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. Default is 2." />
     <string id="YR3zyglTxz" text="Extra Lethality" />
     <string id="mv9FDA56bv" text="Extra chance for a hero with the &quot;Wanderer&quot; occupation (not Nobles, or other characters important to the game) to die when they are wounded. If you set the NPC lords' promotion chance higher, you'll want to set this higher, to prevent too many random heroes from being created." />
     <!-- #endregion not used -->
