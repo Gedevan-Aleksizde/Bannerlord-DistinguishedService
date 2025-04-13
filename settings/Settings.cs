@@ -42,8 +42,8 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyInteger("{=JzTC6uoHk}Skill points", 0, 500, Order = 1, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 150.")]
         public int AdditionalSkillPoints { get; set; } = 150; // base_additional_skill_points
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=FqySMd4Cu}Skill bonus", 0, 10, Order = 2, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 2.")]
-        public int NumSkillBonuses { get; set; } = 2; // number_of_skill_bonuses
+        [SettingPropertyInteger("{=FqySMd4Cu}Skill bonus", 0, 10, Order = 2, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 3.")]
+        public int NumSkillBonuses { get; set; } = 3; // number_of_skill_bonuses
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
         [SettingPropertyInteger("{=JEPdqkqB7}Skill rounds", 0, 10, Order = 3, HintText = "{=OfDcCqMwbP}The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. Default is 1.")]
         public int NumSkillRounds { get; set; } = 1; // number_of_skill_rounds 
