@@ -4,7 +4,7 @@
     <tag language="日本語"/>
   </tags>
   <strings>
-    <string id="06e8ea79" text="ERROR 001: Settings.xml をシリアライズできませんでした: {ERROR} デフォルト値を使用します!"/>
+    <string id="06e8ea79" text="ERROR 001: Settings.xml をシリアライズできませんでした: {ERROR} デフォルト値を使用します!"/> <!-- 廃止 -->
     <string id="725b4401" text="ERROR 002: AIの仲間がただちに無効になります!"/>
     <string id="1FBdEE9F" text="ERROR 003: MapEventEndedに対するシリアライズリスナーを作成できませんでした。抜擢確率をゼロにリセットします。"/>
     <string id="825019cb" text="ERROR 004: 問題が発生しました。詳細:{NEWLINE}{ERROR}"/>

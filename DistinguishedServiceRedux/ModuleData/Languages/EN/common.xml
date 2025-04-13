@@ -4,69 +4,69 @@
     <tag language="English"/>
   </tags>
   <strings>
-    <string id="DistServ_Error.settings" text="{=06e8ea79}ERROR 001: Could not serialize Settings.xml: {ERROR} Using default values!"/> <!-- not used? -->
-    <string id="DistServ_Error.ai" text="{=725b4401}ERROR 002: NPC Party's companions have been disabled for now!"/>
-    <string id="DistServ_Error.serialized" text="{=1FBdEE9F}ERROR 003: Serialized Listener for MapEventEnded could not be created. NPC Party's Promotion chance reset to 0."/>
-    <string id="DistServ_Error.problem" text="{=825019cb}ERROR 004: There was a problem:{NEWLINE}{ERROR}"/>
-    <string id="DistServ_Info.loaded" text="{=faAd84dA}Distringuished Service loaded successfully"/>
-    <string id="DistServ_Info.usesettings" text="{=87Ba3B2D}Using Modules/DistringuishedServerviceUpdated Settings"/>
-    <string id="DistServ_Info.003companionlimit" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
-    <string id="DistServ_Info.usenamelist" text="{=Cb8f5d67}USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names."/>
-    <string id="DistServ_Info.threshold" text="{=D7F07C09}Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}"/>
-    <string id="DistServ_Info.compatible" text="{=04d2faC3}MLBW compatibility mode:{NEWLINE}Using first equipment sets"/>
-    <string id="DistServ_Caution.005autopromotion" text="{=1cD516bA}CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended."/>
-    <string id="DistServ_Caution.006perks" text="{=E395152c}CAUTION: New hero perks will be assigned automatically.{NEWLINE}Change settings if this is unintended."/>
-    <string id="DistServ_Caution.007companionlimit" text="{=4EE768a2}CAUTION 007: Ignoring companion limit."/>
-    <string id="DistServ_Caution.009nowanderer" text="{=8bB978c1}CAUTION 009: No wanderer template with culture {CULTURE} available.{NEWLINE} Choosing randomly instead"/>
-    <string id="DistServ_Caution.013equipment" text="{=243961af}CAUTION 013: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly."/>
-    <string id="DistServ_Caution.014levelerro" text="{=13cc35c2}CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue."/>
-    <string id="DistServ_Caution.015equipincomp" text="{=cc29D94D}CAUTION 015: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly."/>
-    <string id="DistServ_Warn.010templete" text="{=fa7BFEaB}WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{NEWLINE}PICKING COMPLETELY RANDOMLY"/>
-    <string id="DistServ_Warn.011wanderernotfound" text="{=71a98d3e}WARNING 011: Could not find valid wanderer template. You broke something."/>
-    <string id="DistServ_Warn.internalerr" text="{=E773C408}Equipment format issue, providing default equipment instead! Exception details:{NEWLINE}{TEXT}"/>
-    <string id="DistServ_comment_accept.000" text="{=c0A99490}Well, uh, I guess it beats prison..."/>
-    <string id="DistServ_comment_accept.001" text="{=FdE08029}If it means I don't get chained up, it sounds good to me!"/>
-    <string id="DistServ_comment_accept.002" text="{=DfBbA844}Deal - I never liked the other guy anyway."/>
-    <string id="DistServ_comment_accept.003" text="{=fe8aa69D}Deal. Working with you seems like the safest bet."/>
-    <string id="DistServ_comment_accept.004" text="{=9a73CFbd}I like your proposition! We shall face more glorious battle together!"/>
-    <string id="DistServ_comment_accept.005" text="{=D1C118bd}Uh... Sure, why not."/>
-    <string id="DistServ_comment_reject.000" text="{=15373806}I just can't accept!"/>
-    <string id="DistServ_comment_reject.001" text="{=ba850ec7}I can't just join with whoever's most convenient! The whole system would fall apart!"/>
-    <string id="DistServ_comment_reject.002" text="{=7c298cC9}I would never betray my commander like that!"/>
-    <string id="DistServ_comment_reject.003" text="{=77E91d9d}No - I won't throw my life away for somebody who hasn't earned it."/>
-    <string id="DistServ_comment_reject.004" text="{=72376ce2}I just want to retire after this! No deal!"/>
-    <string id="DistServ_tip.killcount" text="{=136b0505}{COUNT} kills"/>
-    <string id="DistServ_tip.count" text="{=00BaAdfA}{NAME} got {COUNT}"/>
-    <string id="DistServ_bonus_title.Scouting" text="{=Ed1f04a1}Ranged with the Scouts"/>
-    <string id="DistServ_bonus_title.Crafting" text="{=8d1622d4}Repaired the party's weapons"/>
-    <string id="DistServ_bonus_title.Athletics" text="{=0d60006a}Trained for combat"/>
-    <string id="DistServ_bonus_title.Riding" text="{=E526B809}Rode horses"/>
-    <string id="DistServ_bonus_title.Tactics" text="{=faDC615A}Studied past battles"/>
-    <string id="DistServ_bonus_title.Roguery" text="{=9573E727}Sold loot in the black market"/>
-    <string id="DistServ_bonus_title.Charm" text="{=CdC0a2c3}Chatted everyone up"/>
-    <string id="DistServ_bonus_title.Leadership" text="{=0174004f}Organized duties for the party"/>
-    <string id="DistServ_bonus_title.Trade" text="{=007A22fa}Bought and sold items from towns you visited"/>
-    <string id="DistServ_bonus_title.Steward" text="{=9b680111}Helped handle the party's accounts"/>
-    <string id="DistServ_bonus_title.Medicine" text="{=3f123ecF}Helped as a medic"/>
-    <string id="DistServ_bonus_title.Engineering" text="{=f4DAa166}Helped construct and take down the camp"/>
-    <string id="DistServ_bonus_hint.text" text="{=CfDBbE79}+ {COUNT} {SKILLNAME}"/>
-    <string id="DistServ_dialog.rename" text="{=Ad79BA89}I want you to be known by another name..."/>
-    <string id="DistServ_dialog.transfer" text="{=0c4701a0}Take these companions into your party..."/>
-    <string id="DistServ_dialog.takeback" text="{=faB64807}I wish to reassign heroes in your party..."/>
-    <string id="DistServ_dialog.poach" text="{=b8D92710}After this defeat, are you sure you wouldn't rather work for me?"/>
-    <string id="DistServ_dialog.answer" text="{=5A92Dd21}That is all."/>
-    <string id="DistServ_inquiry_title.trsfhero" text="{=1f94d05e}Transfer Heroes"/>
-    <string id="DistServ_inquiry_text.trsfhero" text="{=3A704181}You can select who to assign to {HERO}'s party"/>
-    <string id="DistServ_inquiry_title.distinguished" text="{=a62e65a5}Distringuished Soldiers"/>
-    <string id="DistServ_inquiry_text.distinguished" text="{=1A63b476}Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion."/>
-    <string id="DistServ_inquiry_title.console" text="{=f8DAbCe9}Console Command"/>
-    <string id="DistServ_inquiry_text.console" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
-    <string id="DistServ_inquiry_title.select" text="{=4AC6882E}Select Skill Focuses ({COUNT}/{TOTAL})"/>
-    <string id="DistServ_inquiry_text.select" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.."/>
-    <string id="DistServ_inquiry_choice.Random" text="{=E59af7d2}RANDOM"/>
-    <string id="DistServ_inquiry_choice.Nobody" text="{=b486d9de}NOBODY"/>
-    <string id="DistServ_inquiry_choice.Accept" text="{=72Df4348}Accept"/>
-    <string id="DistServ_inquiry_choice.Refuse" text="{=293D731e}Refuse"/>
-    <string id="DistServ_inquiry_title.newname" text="{=deE3Fb1c}Create a new name: "/>
+    <string id="06e8ea79" text="ERROR 001: Could not serialize Settings.xml: {ERROR} Using default values!" /> <!-- not used -->
+    <string id="725b4401" text="ERROR 002: NPC Party's companions have been disabled for now!" />
+    <string id="1FBdEE9F" text="ERROR 003: Serialized Listener for MapEventEnded could not be created. NPC Party's Promotion chance reset to 0." />
+    <string id="825019cb" text="ERROR 004: There was a problem:{NEWLINE}{ERROR}" />
+    <string id="faAd84dA" text="Distringuished Service loaded successfully" />
+    <string id="87Ba3B2D" text="Using Modules/DistringuishedServerviceUpdated Settings" />
+    <string id="A7124477" text="At maximum allowed companions. No nominations possible." />
+    <string id="Cb8f5d67" text="USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names." />
+    <string id="D7F07C09" text="Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}" />
+    <string id="04d2faC3" text="MLBW compatibility mode:{NEWLINE}Using first equipment sets" />
+    <string id="1cD516bA" text="CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended." />
+    <string id="E395152c" text="CAUTION: New hero perks will be assigned automatically.{NEWLINE}Change settings if this is unintended." />
+    <string id="4EE768a2" text="CAUTION 007: Ignoring companion limit." />
+    <string id="8bB978c1" text="CAUTION 009: No wanderer template with culture {CULTURE} available.{NEWLINE} Choosing randomly instead" />
+    <string id="243961af" text="CAUTION 013: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly." />
+    <string id="13cc35c2" text="CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue." />
+    <string id="cc29D94D" text="CAUTION 015: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly." />
+    <string id="fa7BFEaB" text="WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{NEWLINE}PICKING COMPLETELY RANDOMLY" />
+    <string id="71a98d3e" text="WARNING 011: Could not find valid wanderer template. You broke something." />
+    <string id="E773C408" text="Equipment format issue, providing default equipment instead! Exception details:{NEWLINE}{TEXT}" />
+    <string id="c0A99490" text="Well, uh, I guess it beats prison..." />
+    <string id="FdE08029" text="If it means I don't get chained up, it sounds good to me!" />
+    <string id="DfBbA844" text="Deal - I never liked the other guy anyway." />
+    <string id="fe8aa69D" text="Deal. Working with you seems like the safest bet." />
+    <string id="9a73CFbd" text="I like your proposition! We shall face more glorious battle together!" />
+    <string id="D1C118bd" text="Uh... Sure, why not." />
+    <string id="15373806" text="I just can't accept!" />
+    <string id="ba850ec7" text="I can't just join with whoever's most convenient! The whole system would fall apart!" />
+    <string id="7c298cC9" text="I would never betray my commander like that!" />
+    <string id="77E91d9d" text="No - I won't throw my life away for somebody who hasn't earned it." />
+    <string id="72376ce2" text="I just want to retire after this! No deal!" />
+    <string id="136b0505" text="{COUNT} kills" />
+    <string id="00BaAdfA" text="{NAME} got {COUNT}" />
+    <string id="Ed1f04a1" text="Ranged with the Scouts" />
+    <string id="8d1622d4" text="Repaired the party's weapons" />
+    <string id="0d60006a" text="Trained for combat" />
+    <string id="E526B809" text="Rode horses" />
+    <string id="faDC615A" text="Studied past battles" />
+    <string id="9573E727" text="Sold loot in the black market" />
+    <string id="CdC0a2c3" text="Chatted everyone up" />
+    <string id="0174004f" text="Organized duties for the party" />
+    <string id="007A22fa" text="Bought and sold items from towns you visited" />
+    <string id="9b680111" text="Helped handle the party's accounts" />
+    <string id="3f123ecF" text="Helped as a medic" />
+    <string id="f4DAa166" text="Helped construct and take down the camp" />
+    <string id="CfDBbE79" text="+ {COUNT} {SKILLNAME}" />
+    <string id="Ad79BA89" text="I want you to be known by another name..." />
+    <string id="0c4701a0" text="Take these companions into your party..." />
+    <string id="faB64807" text="I wish to reassign heroes in your party..." />
+    <string id="b8D92710" text="After this defeat, are you sure you wouldn't rather work for me?" />
+    <string id="5A92Dd21" text="That is all." />
+    <string id="1f94d05e" text="Transfer Heroes" />
+    <string id="3A704181" text="You can select who to assign to {HERO}'s party" />
+    <string id="a62e65a5" text="Distringuished Soldiers" />
+    <string id="1A63b476" text="Several soldiers made names for themselves in this battle. You can choose up to {N} (or none, by exiting) to fight at your side as a companion." />
+    <string id="f8DAbCe9" text="Console Command" />
+    <string id="2D5Ca02e" text="Pick a soldier to uplift!" />
+    <string id="4AC6882E" text="Select Skill Focuses ({COUNT}/{TOTAL})" />
+    <string id="83E15325" text="{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.." />
+    <string id="E59af7d2" text="RANDOM" />
+    <string id="b486d9de" text="NOBODY" />
+    <string id="72Df4348" text="Accept" />
+    <string id="293D731e" text="Refuse" />
+    <string id="deE3Fb1c" text="Create a new name: " />
   </strings>  
 </base>

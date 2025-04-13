@@ -4,58 +4,60 @@
     <tag language="日本語"/>
   </tags>
   <strings>
-        <string id="KAgbRWUNn" text="昇進の条件"/>
-        <string id="Lwt72jlJJ" text="スキル"/>
-        <string id="R9S8x4TCU" text="NPC部隊"/>
-        <string id="ASqPAFgkE" text="その他"/>
-        <string id="xwNNXlGcq" text="仲間の数の上限"/>
-        <string id="iA1lzksGd" text="昇進費用"/>
-        <string id="PWcgmYKdm0" text="兵士を新たに仲間に昇進させるために必要な費用です。毎日の賃金には影響しません。デフォルトは「0」です。"/>
-        <string id="IraZX6JYH" text="候補者の最大数"/>
-        <string id="xkVDlk1N1V" text="各戦闘ごとに抜擢候補となる兵士の最大値です。"/>
-        <string id="Rw8hDdgtq" text="最小Tier"/>
-        <string id="TDkNix5fda" text="抜擢される兵士に最低限必要なTierです。-1にすると、最大Tierまでアップグレードすることが条件となります。デフォルトは「-1」です。"/>
-        <string id="NqAfmE3I7" text="歩兵の最低キル数"/>
-        <string id="BLpQfo0f8b" text="歩兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
-        <string id="0owPtnEUD" text="乗馬兵の最低キル数"/>
-        <string id="CRRwgyzJvq" text="乗馬兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
-        <string id="NNQYYgCN3" text="投射兵の最低キル数"/>
-        <string id="vcXgO4B8mG" text="弓兵や投擲兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
-        <string id="WyI8Nf9yg" text="目覚ましい活躍のパーセンタイル"/>
-        <string id="aWfPIRIssB" text="キル数がこのパーセンタイルを上回ると抜擢要件を満たします。ゼロに設定すると、キル数だけで判定する旧バージョンと同じ挙動になります。デフォルトは0.68です。"/>
-        <string id="7C44pRJyT" text="仲間の上限を無視する"/>
-        <string id="XoyKSIk9Yo" text="有効にすると、抜擢される人数が仲間の人数の上限を超過することを許容します。注: 仲間の人数が上限を超過している場合、仲間はランダムに**消滅**することがあります。デフォルトは「無効」です。"/>
-        <string id="JzTC6uoHk" text="スキルポイント"/>
-        <string id="85WomjlJtB" text="新たに抜擢された仲間の、自由に割り振れるスキルポイントです。デフォルトは「150」です。"/>
-        <string id="FqySMd4Cu" text="スキルボーナス"/>
-        <string id="KFwunOsf4k" text="新たに抜擢された仲間に与えられるスキルボーナス数です。デフォルトは「3」です。"/>
-        <string id="JEPdqkqB7" text="スキル回数"/>
-        <string id="OfDcCqMwbP" text="新たに抜擢され仲間にスキルを割り振る回数です。1回ごとに「スキル回数」で設定した数だけスキルを割り振れます。デフォルトは「1」です。"/>
-        <string id="ebrfIjhX9" text="スキルのランダム割り振り"/>
-        <string id="17RpeC0Bd7" text="有効にすると、スキル選択でスキルボーナスを選択する代わりにランダムで割り振られます。デフォルトは「無効」です"/>
-        <string id="e1gqqB6S9" text="超過キル数ごとのスキルボーナス"/>
-        <string id="x4hncKsa7v" text="仲間が新たに抜擢される際のキル数が最低要件を超えている場合、超過したキル数ごとに得られるスキルポイントです。デフォルトは「25」です。"/>
-        <string id="WDyB8zjwV" text="50スキルポイント追加のために必要な指揮スキル"/>
-        <string id="fegcgJJkot" text="抜擢した仲間に追加でスキルポイント50が与えられるために必要な、プレイヤーの指揮スキルポイントです。デフォルトは「1250」です。"/>
-        <string id="RfH84SuAS" text="パークスキルの自動選択"/>
-        <string id="UiL3DpJrV1" text="有効にすると、抜擢された仲間はパークスキルが選択された状態で加入します。デフォルトは「無効」です。"/>
-        <string id="3Un7BjHKu" text="NPC部隊の最大仲間上限"/>
-        <string id="dNmMyhjfih" text="NPCクランの部隊が抜擢する仲間の人数の最大値です。"/>
-        <string id="608lhFGxj" text="酒場に放浪者を登場させない"/>
-        <string id="7kBlaqT7Zg" text="有効にすると、酒場に放浪者を登場させません。デフォルトは「無効」です。"/>
-        <string id="xMswq98TK" text="敗北時に仲間を消去する"/>
-        <string id="Fsn9jOohUy" text="有効にすると、部隊が敗北あるいは解散した際に、所属していた仲間が削除されます。有効にすると、"/>
-        <string id="SzH0vFGPO" text="ヒーローへの昇格"/>
-        <string id="ZKYkuUYKTQ" text="有効にした場合、抜擢要件を満たすTierまで兵士をアップグレードすると自動的にヒーローになります。併用する場合は、Tier要件を高くし、死亡率も高く設定することをおすすめします。デフォルトは「無効」です。"/>
-        <string id="WX2tO2HaJ" text="仲間スロットボーナスの基礎値"/>
-        <string id="rR0oSObARw" text="追加する仲間の数の上限の基礎値です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。デフォルトは「2」です。"/>
-        <string id="nbSP8HlmqO" text="クランTierごとの仲間スロットボーナス"/>
-        <string id="ng2TLg4pui" text="クランTierごとに追加される仲間の数の上限です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. デフォルトは「2」です。"/>
-        <string id="YR3zyglTxz" text="追加死亡率"/>
-        <string id="mv9FDA56bv" text="「放浪者」身分のヒーローが戦場で負傷した際の死亡率の追加値です。NPC領主の抜擢確率を大きく設定したことにより、ランダム生成ヒーローが大きくなりすぎることを防ぐには、この値も大きくすることをおすすめします。デフォルトは「0」です。"/>
-        <string id="MdnnLDQZuO" text="NPC部隊の抜擢確率"/>
-        <string id="q2kP1B5pf1" text="NPC領主が戦闘後に兵を抜擢する確率です。これにより、NPC領主の部隊にヒーローが生成されます。ヒーローの死亡を無効にしている場合、値をゼロにすることをおすすめします。デフォルトは0.001です。"/>
-        <string id="v71F1OBfOf" text="警告を表示する"/>
-        <string id="lVB5RJoCDm" text="無効にすると、警告メッセージが隠れます。デフォルトは「有効」です。"/>
-</strings>
+    <string id="KAgbRWUNn" text="昇進の条件"/>
+    <string id="Lwt72jlJJ" text="スキル"/>
+    <string id="R9S8x4TCU" text="NPC部隊"/>
+    <string id="ASqPAFgkE" text="その他"/>
+    <string id="xwNNXlGcq" text="仲間の数の上限"/>
+    <string id="iA1lzksGd" text="昇進費用"/>
+    <string id="PWcgmYKdm0" text="兵士を新たに仲間に昇進させるために必要な費用です。毎日の賃金には影響しません。デフォルトは「0」です。"/>
+    <string id="IraZX6JYH" text="候補者の最大数"/>
+    <string id="xkVDlk1N1V" text="各戦闘ごとに抜擢候補となる兵士の最大値です。"/>
+    <string id="Rw8hDdgtq" text="最小Tier"/>
+    <string id="TDkNix5fda" text="抜擢される兵士に最低限必要なTierです。-1にすると、最大Tierまでアップグレードすることが条件となります。デフォルトは「-1」です。"/>
+    <string id="NqAfmE3I7" text="歩兵の最低キル数"/>
+    <string id="BLpQfo0f8b" text="歩兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
+    <string id="0owPtnEUD" text="乗馬兵の最低キル数"/>
+    <string id="CRRwgyzJvq" text="乗馬兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
+    <string id="NNQYYgCN3" text="投射兵の最低キル数"/>
+    <string id="vcXgO4B8mG" text="弓兵や投擲兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
+    <string id="WyI8Nf9yg" text="目覚ましい活躍のパーセンタイル"/>
+    <string id="aWfPIRIssB" text="キル数がこのパーセンタイルを上回ると抜擢要件を満たします。ゼロに設定すると、キル数だけで判定する旧バージョンと同じ挙動になります。デフォルトは0.68です。"/>
+    <string id="7C44pRJyT" text="仲間の上限を無視する"/>
+    <string id="XoyKSIk9Yo" text="有効にすると、抜擢される人数が仲間の人数の上限を超過することを許容します。注: 仲間の人数が上限を超過している場合、仲間はランダムに**消滅**することがあります。デフォルトは「無効」です。"/>
+    <string id="JzTC6uoHk" text="スキルポイント"/>
+    <string id="85WomjlJtB" text="新たに抜擢された仲間の、自由に割り振れるスキルポイントです。デフォルトは「150」です。"/>
+    <string id="FqySMd4Cu" text="スキルボーナス"/>
+    <string id="KFwunOsf4k" text="新たに抜擢された仲間に与えられるスキルボーナス数です。デフォルトは「3」です。"/>
+    <string id="JEPdqkqB7" text="スキル回数"/>
+    <string id="OfDcCqMwbP" text="新たに抜擢され仲間にスキルを割り振る回数です。1回ごとに「スキル回数」で設定した数だけスキルを割り振れます。デフォルトは「1」です。"/>
+    <string id="ebrfIjhX9" text="スキルのランダム割り振り"/>
+    <string id="17RpeC0Bd7" text="有効にすると、スキル選択でスキルボーナスを選択する代わりにランダムで割り振られます。デフォルトは「無効」です"/>
+    <string id="e1gqqB6S9" text="超過キル数ごとのスキルボーナス"/>
+    <string id="x4hncKsa7v" text="仲間が新たに抜擢される際のキル数が最低要件を超えている場合、超過したキル数ごとに得られるスキルポイントです。デフォルトは「25」です。"/>
+    <string id="WDyB8zjwV" text="50スキルポイント追加のために必要な指揮スキル"/>
+    <string id="fegcgJJkot" text="抜擢した仲間に追加でスキルポイント50が与えられるために必要な、プレイヤーの指揮スキルポイントです。デフォルトは「1250」です。"/>
+    <string id="RfH84SuAS" text="パークスキルの自動選択"/>
+    <string id="UiL3DpJrV1" text="有効にすると、抜擢された仲間はパークスキルが選択された状態で加入します。デフォルトは「無効」です。"/>
+    <string id="3Un7BjHKu" text="NPC部隊の最大仲間上限"/>
+    <string id="dNmMyhjfih" text="NPCクランの部隊が抜擢する仲間の人数の最大値です。"/>
+    <string id="SzH0vFGPO" text="ヒーローへの昇格"/>
+    <string id="ZKYkuUYKTQ" text="有効にした場合、抜擢要件を満たすTierまで兵士をアップグレードすると自動的にヒーローになります。併用する場合は、Tier要件を高くし、死亡率も高く設定することをおすすめします。デフォルトは「無効」です。"/>
+    <!-- #region 未実装のため使用していない -->
+    <string id="608lhFGxj" text="酒場に放浪者を登場させない"/>
+    <string id="7kBlaqT7Zg" text="有効にすると、酒場に放浪者を登場させません。デフォルトは「無効」です。"/>
+    <string id="xMswq98TK" text="敗北時に仲間を消去する"/>
+    <string id="Fsn9jOohUy" text="有効にすると、部隊が敗北あるいは解散した際に、所属していた仲間が削除されます。有効にすると、"/>
+    <string id="WX2tO2HaJ" text="仲間スロットボーナスの基礎値"/>
+    <string id="rR0oSObARw" text="追加する仲間の数の上限の基礎値です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。デフォルトは「2」です。"/>
+    <string id="nbSP8HlmqO" text="クランTierごとの仲間スロットボーナス"/>
+    <string id="ng2TLg4pui" text="クランTierごとに追加される仲間の数の上限です。「仲間の上限を無視する」を無効にして、なおかつ0にするとバニラと同じになります。This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. デフォルトは「2」です。"/>
+    <string id="YR3zyglTxz" text="追加死亡率"/>
+    <string id="mv9FDA56bv" text="「放浪者」身分のヒーローが戦場で負傷した際の死亡率の追加値です。NPC領主の抜擢確率を大きく設定したことにより、ランダム生成ヒーローが大きくなりすぎることを防ぐには、この値も大きくすることをおすすめします。デフォルトは「0」です。"/>
+     <!-- #endregion 未実装のため使用していない -->
+    <string id="MdnnLDQZuO" text="NPC部隊の抜擢確率"/>
+    <string id="q2kP1B5pf1" text="NPC領主が戦闘後に兵を抜擢する確率です。これにより、NPC領主の部隊にヒーローが生成されます。ヒーローの死亡を無効にしている場合、値をゼロにすることをおすすめします。デフォルトは0.001です。"/>
+    <string id="v71F1OBfOf" text="警告を表示する"/>
+    <string id="lVB5RJoCDm" text="無効にすると、警告メッセージが隠れます。デフォルトは「有効」です。"/>
+  </strings>
 </base>
