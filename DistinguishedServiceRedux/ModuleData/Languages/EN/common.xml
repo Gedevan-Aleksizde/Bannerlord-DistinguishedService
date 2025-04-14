@@ -20,7 +20,6 @@
     <string id="8bB978c1" text="CAUTION 009: No wanderer template with culture {CULTURE} available.{NEWLINE} Choosing randomly instead" />
     <string id="243961af" text="CAUTION 013: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly." />
     <string id="13cc35c2" text="CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue." />
-    <string id="cc29D94D" text="CAUTION 015: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly." />
     <string id="fa7BFEaB" text="WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{NEWLINE}PICKING COMPLETELY RANDOMLY" />
     <string id="71a98d3e" text="WARNING 011: Could not find valid wanderer template. You broke something." />
     <string id="E773C408" text="Equipment format issue, providing default equipment instead! Exception details:{NEWLINE}{TEXT}" />
@@ -62,11 +61,12 @@
     <string id="f8DAbCe9" text="Console Command" />
     <string id="2D5Ca02e" text="Pick a soldier to uplift!" />
     <string id="4AC6882E" text="Select Skill Focuses ({COUNT}/{TOTAL})" />
-    <string id="83E15325" text="{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.." />
+    <string id="83E15325" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they..{NEWLINE} (Select {COUNT} experiences)" />
     <string id="E59af7d2" text="RANDOM" />
     <string id="b486d9de" text="NOBODY" />
     <string id="72Df4348" text="Accept" />
     <string id="293D731e" text="Refuse" />
     <string id="deE3Fb1c" text="Create a new name: " />
+    <string id="Ev5tzGxf2" text="A rumor said a soldier named {NAME} had performed distinguished service on battlefield." />
   </strings>  
 </base>

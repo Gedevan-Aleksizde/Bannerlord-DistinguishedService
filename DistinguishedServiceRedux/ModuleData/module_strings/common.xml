@@ -16,7 +16,6 @@
   <string id="DistServ_Caution.009nowanderer" text="{=8bB978c1}CAUTION 009: No wanderer template with culture {CULTURE} available.{NEWLINE} Choosing randomly instead"/>
   <string id="DistServ_Caution.013equipment" text="{=243961af}CAUTION 013: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly."/>
   <string id="DistServ_Caution.014levelerro" text="{=13cc35c2}CAUTION 014: Reflection call to CheckInitialLevel failed. Potential version issue."/>
-  <string id="DistServ_Caution.015equipincomp" text="{=cc29D94D}CAUTION 015: Something went wrong with this unit's equipment.{NEWLINE}Aborting process, not everything might be added properly."/>
   <string id="DistServ_Warn.010templete" text="{=fa7BFEaB}WARNING 010: SOMETHING ACTUALLY WENT WRONG WITH WANDERER TEMPLATES{NEWLINE}PICKING COMPLETELY RANDOMLY"/>
   <string id="DistServ_Warn.011wanderernotfound" text="{=71a98d3e}WARNING 011: Could not find valid wanderer template. You broke something."/>
   <string id="DistServ_Warn.internalerr" text="{=E773C408}Equipment format issue, providing default equipment instead! Exception details:{NEWLINE}{TEXT}"/>
@@ -58,10 +57,11 @@
   <string id="DistServ_inquiry_title.console" text="{=f8DAbCe9}Console Command"/>
   <string id="DistServ_inquiry_text.console" text="{=2D5Ca02e}Pick a soldier to uplift!"/>
   <string id="DistServ_inquiry_title.select" text="{=4AC6882E}Select Skill Focuses ({COUNT}/{TOTAL})"/>
-  <string id="DistServ_inquiry_text.select" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they.."/>
+  <string id="DistServ_inquiry_text.select" text="{=83E15325}{NAME} (previously a {PREV}) has finally found glory on the battlefield. Before this, and besides training for battle they..{NEWLINE} (Select {COUNT} experiences)"/>
   <string id="DistServ_inquiry_choice.Random" text="{=E59af7d2}RANDOM"/>
   <string id="DistServ_inquiry_choice.Nobody" text="{=b486d9de}NOBODY"/>
   <string id="DistServ_inquiry_choice.Accept" text="{=72Df4348}Accept"/>
   <string id="DistServ_inquiry_choice.Refuse" text="{=293D731e}Refuse"/>
   <string id="DistServ_inquiry_title.newname" text="{=deE3Fb1c}Create a new name: "/>
+  <string id="DistServ_notify.npcpromotion" text="{=Ev5tzGxf2}A rumor said a soldier named {NAME} had performed distinguished service on battlefield." />
 </strings>

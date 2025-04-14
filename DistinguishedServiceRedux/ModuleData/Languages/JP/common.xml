@@ -20,7 +20,6 @@
     <string id="8bB978c1" text="CAUTION 009: {CULTURE} 文化の有効な放浪者テンプレートが存在しません。{NEWLINE}代わりにランダムに選択します"/>
     <string id="243961af" text="CAUTION 013: この兵士の装備に何らかの問題が見つかりました。{NEWLINE}処理を中止します。装備の追加が適切に行われなかった可能性があります。"/>
     <string id="13cc35c2" text="CAUTION 014: Reflection call to CheckInitialLevel failed. バージョンの違いが原因の可能性があります。"/>
-    <string id="cc29D94D" text="CAUTION 015: この兵士の装備に何らかの問題が見つかりました。{NEWLINE}処理を中止します。装備の追加が適切に行われなかった可能性があります。"/>
     <string id="fa7BFEaB" text="WARNING 010: 放浪者テンプレートの何らかの問題が見つかりました。{NEWLINE}完全にランダムに選択します"/>
     <string id="71a98d3e" text="Warning 011: 有効な放浪者テンプレートがありません。あなたの設定になんらかの問題があります。"/>
     <string id="E773C408" text="装備フォーマットに問題があります。デフォルト装備を代わりに与えます。例外の詳細:{NEWLINE}{TEXT}"/>
@@ -62,11 +61,12 @@
     <string id="f8DAbCe9" text="コンソールコマンド"/>
     <string id="2D5Ca02e" text="抜擢する兵士の選択"/>
     <string id="4AC6882E" text="フォーカス対象スキルの選択 ({COUNT}/{TOTAL)"/>
-    <string id="83E15325" text="{PREV}の{NAME}は戦場で誉を得た。彼ら兵は、以前から、そしてこれからも戦いのために鍛錬を積む…"/>
+    <string id="83E15325" text="{PREV}の{NAME}は戦場で誉を得た。彼ら兵は、以前から、そしてこれからも戦いのために鍛錬を積む。{NEWLINE}鍛錬の内容を{COUNT}種類指定しよう"/>
     <string id="E59af7d2" text="ランダム"/>
     <string id="b486d9de" text="誰も選ばない"/>
     <string id="72Df4348" text="承認"/>
     <string id="293D731e" text="拒否"/>
     <string id="deE3Fb1c" text="新しい名前を決めてください"/>
+    <string id="Ev5tzGxf2" text="{NAME}と呼ばれる兵士が、戦場で目覚ましい活躍をしたという噂を聞いた" />
   </strings>
 </base>

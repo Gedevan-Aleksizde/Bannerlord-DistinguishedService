@@ -12,52 +12,54 @@
     <string id="iA1lzksGd" text="Promotion Cost" />
     <string id="PWcgmYKdm0" text="The cost to pay the new hero up-front. Doesn't affect daily payments. Deafult is 0." />
     <string id="IraZX6JYH" text="Max. nominations" />
-    <string id="xkVDlk1N1V" text="The maximum number of nominees you are allowed to pick at the end of a battle. Default is 1." />
+    <string id="xkVDlk1N1V" text="The maximum number of nominees you are allowed to pick at the end of a battle. The default is 1." />
     <string id="Rw8hDdgtq" text="Min. Tier" />
-    <string id="TDkNix5fda" text="The minimum tier of unit eligible to become a hero. Set to -1 to only allow units with no further upgrades to be nominated. Default is -1." />
+    <string id="TDkNix5fda" text="The minimum tier of unit eligible to become a hero. Set to -1 to only allow units with no further upgrades to be nominated. The default is -1." />
     <string id="NqAfmE3I7" text="Min. Kills for Infantly Troops" />
-    <string id="BLpQfo0f8b" text="The number of kills threshold to be nominated for infantly. Default is 5." />
+    <string id="BLpQfo0f8b" text="The number of kills threshold to be nominated for infantly. The default is 5." />
     <string id="0owPtnEUD" text="Min. Kills for Mounted Troops" />
-    <string id="CRRwgyzJvq" text="The number of kills threshold to be nominated for mounted troops. Default is 5." />
+    <string id="CRRwgyzJvq" text="The number of kills threshold to be nominated for mounted troops. The default is 5." />
     <string id="NNQYYgCN3" text="Min. Kills for Ranged Troops" />
-    <string id="vcXgO4B8mG" text="The number of kills threshold to be nominated for ranged troops. Default is 5." />
+    <string id="vcXgO4B8mG" text="The number of kills threshold to be nominated for ranged troops. The default is 5." />
     <string id="WyI8Nf9yg" text="Percentile Outperform" />
-    <string id="aWfPIRIssB" text="The percentile of kills a unit must exceed to qualify to be nominated. Set to 0 for previous versions' behaviour (only kill thresholds). Default is 0.68." />
+    <string id="aWfPIRIssB" text="The percentile of kills a unit must exceed to qualify to be nominated. Set to 0 for previous versions' behaviour (only kill thresholds). The default is 0.68." />
     <string id="7C44pRJyT" text="Ignore Companion Limit" />
-    <string id="XoyKSIk9Yo" text="If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. Default is Disabled." />
+    <string id="XoyKSIk9Yo" text="If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. The default is Disabled." />
     <string id="JzTC6uoHk" text="Skill points" />
-    <string id="85WomjlJtB" text="The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 150." />
+    <string id="85WomjlJtB" text="The number of primary skill point bonus to manually assign to newly-created companion skills. The default is 150." />
     <string id="FqySMd4Cu" text="Skill bonus" />
-    <string id="KFwunOsf4k" text="The number of skill bonuses for players to choose for newly-created heroes. Default is 3." />
+    <string id="KFwunOsf4k" text="The number of skill bonuses for players to choose for newly-created heroes. The default is 3." />
     <string id="JEPdqkqB7" text="Skill rounds" />
-    <string id="OfDcCqMwbP" text="The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. Default is 2." />
+    <string id="OfDcCqMwbP" text="The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. The default is 2." />
     <string id="ebrfIjhX9" text="Randomized skills" />
     <string id="17RpeC0Bd7" text="Should skills to invest points into be selected for you?" />
     <string id="e1gqqB6S9" text="Skill Bonus per Excess Kills" />
-    <string id="x4hncKsa7v" text="The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. Default is 25." />
+    <string id="x4hncKsa7v" text="The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. The default is 25." />
     <string id="WDyB8zjwV" text="Player's Leadership Skill For Extra 50 Skill Points" />
-    <string id="fegcgJJkot" text="The number of points of the player's leadership skill point that is required to add 50 extra assignable skill points. Default is 1250." />
+    <string id="fegcgJJkot" text="The number of points of the player's leadership skill point that is required to add 50 extra assignable skill points. The default is 1250." />
     <string id="RfH84SuAS" text="Fill In Perks" />
-    <string id="UiL3DpJrV1" text="If enabled, the newly-generated hero's perks are fill in automatically. Default is disabled." />
+    <string id="UiL3DpJrV1" text="If enabled, the newly-generated hero's perks are fill in automatically. The default is disabled." />
     <string id="3Un7BjHKu" text="Max. Companions In NPC Parties" />
     <string id="dNmMyhjfih" text="The maximum allowed number of promoted companions per NPC clan party." />
     <string id="SzH0vFGPO" text="Upgrade To Hero" />
     <string id="ZKYkuUYKTQ" text="If enabled, nomination functionality so that when a unit is upgraded to Eligible Tier they automatically become a hero. Pairs best with high Eligible Tier value, and high lethality. Deafault is disabled." />
     <!-- #region not used -->
     <string id="608lhFGxj" text="Remove Wanderers from Tavern" />
-    <string id="7kBlaqT7Zg" text="If enabled, Remove Wanderers from Tavern. Default is disabled." />
+    <string id="7kBlaqT7Zg" text="If enabled, Remove Wanderers from Tavern. The default is disabled." />
     <string id="xMswq98TK" text="Remove The Companion On Defeat" />
     <string id="Fsn9jOohUy" text="If enabled the NPC partiy's companion is eliminated after their party is defeated/disbanded. This should be enabled, if you are generating NPC party's companions, as the NPC lords will not gather them back up." />
     <string id="WX2tO2HaJ" text="Companion Slots Bonus Base" />
-    <string id="rR0oSObARw" text="The base value of the number of extra companion slots to add, if Ignore Companion Limit is disables, Set to 0 for native. Default is 2." />
+    <string id="rR0oSObARw" text="The base value of the number of extra companion slots to add, if Ignore Companion Limit is disables, Set to 0 for native. The default is 2." />
     <string id="nbSP8HlmqO" text="Companion Slots Bonus Per Clan Tier" /> 
-    <string id="ng2TLg4pui" text="The number of extra companion slots granted per clan tier. Set to 0 for native. This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. Default is 2." />
+    <string id="ng2TLg4pui" text="The number of extra companion slots granted per clan tier. Set to 0 for native. This is applied with a targeted Harmony PostFix that should be compatible with other mods that affect this value. The default is 2." />
     <string id="YR3zyglTxz" text="Extra Lethality" />
     <string id="mv9FDA56bv" text="Extra chance for a hero with the &quot;Wanderer&quot; occupation (not Nobles, or other characters important to the game) to die when they are wounded. If you set the NPC lords' promotion chance higher, you'll want to set this higher, to prevent too many random heroes from being created." />
     <!-- #endregion not used -->
     <string id="MdnnLDQZuO" text="Chance Of The Promotion In NPC Parties" />
     <string id="q2kP1B5pf1" text="The chance of an NPC lord promoting a properly-tiered unit into a companion after winning a battle. This generates heroes in NPC lords' parties. If you don't have hero death, you might want to set this to zero." />
     <string id="v71F1OBfOf" text="Show Warnings" />
-    <string id="lVB5RJoCDm" text="If disabled, the system warning messages are hidden. Default is enabled." />
+    <string id="lVB5RJoCDm" text="If disabled, the system warning messages are hidden. The default is enabled." />
+    <string id="JzUhsJAPK" text="Notify Promotion In NPC Parties" />
+    <string id="6CvcXzLIF" text="If enabled, notifications will pop up when NPC parties promote troops. The default is disabled." />
   </strings>
 </base>

@@ -59,5 +59,7 @@
     <string id="q2kP1B5pf1" text="NPC領主が戦闘後に兵を抜擢する確率です。これにより、NPC領主の部隊にヒーローが生成されます。ヒーローの死亡を無効にしている場合、値をゼロにすることをおすすめします。デフォルトは0.001です。"/>
     <string id="v71F1OBfOf" text="警告を表示する"/>
     <string id="lVB5RJoCDm" text="無効にすると、警告メッセージが隠れます。デフォルトは「有効」です。"/>
+    <string id="JzUhsJAPK" text="NPC部隊での抜擢通知" />
+    <string id="6CvcXzLIF" text="有効にすると、NPC部隊で抜擢があった際にログに通知を行います。デフォルトは「無効」です。" />
   </strings>
 </base>
