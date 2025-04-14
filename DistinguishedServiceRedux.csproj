@@ -5,7 +5,7 @@
 		<TargetFramework>net48</TargetFramework>
 		<Platforms>x64</Platforms>
 		<LangVersion>9.0</LangVersion>
-		<Nullable>disable</Nullable>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
   <PropertyGroup>
