@@ -130,7 +130,7 @@ namespace DistinguishedServiceRedux
         }
         public void FindBattle(IMission misson)
         {
-            if (((Mission)misson).CombatType > Mission.MissionCombatType.Combat || !((NativeObject)Mission.Current.Scene != (NativeObject)null))
+            if (((Mission)misson).CombatType > Mission.MissionCombatType.Combat || !((NativeObject)Mission.Current.Scene != null))
                 return;
             if (Mission.Current.HasMissionBehavior<DSBattleLogic>())
             {

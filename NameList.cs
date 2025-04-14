@@ -19,22 +19,23 @@ namespace DistinguishedServiceRedux
         }
         /// <summary>
         /// Get a name format string randomly
+        /// random name is determined by IsRanged and FirstBattleEquipment propertyies.
         /// </summary>
-        public static TextObject DrawNameFormat(CharacterObject co)
+        public static TextObject DrawNameFormat(CharacterObject chracater)
         {
 
             List<TextObject> formats = new();
             string troopType = "infantly";
-            if (co.IsRanged)
+            if (chracater.IsRanged)
             {
                 troopType = "ranged";
             }
-            else if (co.FirstBattleEquipment[EquipmentIndex.Horse].IsEmpty)
+            else if (chracater.FirstBattleEquipment[EquipmentIndex.Horse].IsEmpty)
             {
                 troopType = "cavalry";
             }
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
-            formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{co.Culture.StringId}").ToList());
+            formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{chracater.Culture.StringId}").ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
             return formats[MBRandom.RandomInt(formats.Count)];
         }
