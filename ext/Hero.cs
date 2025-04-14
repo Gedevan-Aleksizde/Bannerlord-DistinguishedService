@@ -84,7 +84,7 @@ namespace DistinguishedServiceRedux.ext
         {
             while (hero.HeroDeveloper.UnspentAttributePoints > 0)
             {
-                CharacterAttribute characterAttribute = null;
+                CharacterAttribute? characterAttribute = null;
                 float num = float.MinValue;
                 foreach (CharacterAttribute item in Attributes.All)
                 {
@@ -139,7 +139,7 @@ namespace DistinguishedServiceRedux.ext
         {
             while (hero.HeroDeveloper.UnspentFocusPoints > 0)
             {
-                SkillObject skillObject = null;
+                SkillObject? skillObject = null;
                 float num = float.MinValue;
                 foreach (SkillObject item in Skills.All)
                 {
