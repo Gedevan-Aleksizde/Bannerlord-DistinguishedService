@@ -26,9 +26,9 @@ namespace DistinguishedServiceRedux
     public class SubModule : MBSubModuleBase
     {
         public static readonly string moduleName = "DistinguishedServiceRedux";
-        public static SubModule instance;
+        public static SubModule? instance;
         public bool gamestarted = false;
-        private static PromotionManager _pm = null;
+        private static PromotionManager? _pm = null;
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
@@ -59,11 +59,11 @@ namespace DistinguishedServiceRedux
 
                 }
 
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.White));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.White));
             }
             gamestarted = true;
         }
@@ -98,11 +98,11 @@ namespace DistinguishedServiceRedux
                 }
 
                 if (!reload)
-                    InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.Blue));
+                    InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "loaded").ToString(), Colors.White));
             }
             catch (Exception ex)
             {
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Error", "problem").SetTextVariable("ERROR", ex.ToString()).ToString(), Colors.White));
             }
             gamestarted = false;
         }
