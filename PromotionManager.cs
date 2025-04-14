@@ -6,13 +6,13 @@
 
 using DistinguishedServiceRedux.ext;
 using DistinguishedServiceRedux.settings;
+using Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
-using TaleWorlds.CampaignSystem.Conversation;
 using TaleWorlds.CampaignSystem.Extensions;
 using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Party;
@@ -30,7 +30,7 @@ namespace DistinguishedServiceRedux
         Random rand; //Single random object to use
 
         //Distinguished Service Specific Lists
-        public static PromotionManager __instance = null; // TODO: really needed?
+        public static PromotionManager? __instance = null; // TODO: really needed?
         public List<CharacterObject> nominations;
         public List<int> killcounts;
 
@@ -45,12 +45,12 @@ namespace DistinguishedServiceRedux
 
             if (NameList.IsFileExists())
             {
-                InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Info", "usenamelist").ToString(), Color.FromUint(4282569842U)));
+                InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Info", "usenamelist").ToString(), Colors.White));
             }
 
             //Output final mod state to user, set static instance
             InformationManager.DisplayMessage(new(
-                GameTexts.FindText("DistServ_Info", "threshold").SetTextVariable("MAX", Settings.Instance.MaxNominations).SetTextVariable("TTHRESH", Settings.Instance.EligibleTier).SetTextVariable("KTHRESH", Settings.Instance.EligibleKillCountInfantry).SetTextVariable("CTHRESH", Settings.Instance.EligibleKillCountCavalry).SetTextVariable("RTHRESH", Settings.Instance.EligibleKillCountRanged).SetTextVariable("PTHRESH", Settings.Instance.EligiblePercentile).ToString(), Color.FromUint(4282569842U)));
+                GameTexts.FindText("DistServ_Info", "threshold").SetTextVariable("MAX", Settings.Instance.MaxNominations).SetTextVariable("TTHRESH", Settings.Instance.EligibleTier).SetTextVariable("KTHRESH", Settings.Instance.EligibleKillCountInfantry).SetTextVariable("CTHRESH", Settings.Instance.EligibleKillCountCavalry).SetTextVariable("RTHRESH", Settings.Instance.EligibleKillCountRanged).SetTextVariable("PTHRESH", Settings.Instance.EligiblePercentile).ToString(), Colors.White));
             PromotionManager.__instance = this;
 
             //Display warnings if chosen settings will cause non-player-controlled events
@@ -80,7 +80,7 @@ namespace DistinguishedServiceRedux
         {
             if (!Settings.Instance.IgnoreCompanionLimit && Clan.PlayerClan.Companions.Count >= Clan.PlayerClan.CompanionLimit)
             {
-                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "003companionlimit").ToString(), Colors.Blue));
+                InformationManager.DisplayMessage(new InformationMessage(GameTexts.FindText("DistServ_Info", "003companionlimit").ToString(), Colors.White));
                 return;
             }
             List<CharacterObject> charactersNominated = new();
@@ -116,7 +116,7 @@ namespace DistinguishedServiceRedux
                     new(
                         GameTexts.FindText("DistServ_inquiry_title", "distinguished").ToString(),
                         GameTexts.FindText("DistServ_inquiry_text", "distinguished").SetTextVariable("N", nominations).ToString(),
-                        this.GenInquiryelements(coList, killCounts), true, 0, nominations, GameTexts.FindText("str_done", (string)null).ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Random").ToString(), new Action<List<InquiryElement>>(OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+                        this.GenInquiryelements(coList, killCounts), true, 0, nominations, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Random").ToString(), new Action<List<InquiryElement>>(OnNomineeSelect), null, ""), true);
                 return;
             }
         }
@@ -254,115 +254,43 @@ namespace DistinguishedServiceRedux
             }
         }
 
-        //Here's the primary function for this mod--
-        //it takes in a CharacterObject, kill count, and option for player selection of skills
-        //and creates a hero from that CO, tweaks that hero's skills and attributes,
-        //and adds them to the player's party
-        public void PromoteUnit(CharacterObject co, int kills = -1, bool pickSkills = true)
+
+        /// <summary>
+        /// Assigns the new hero with skill points and attributes, Add party.
+        /// </summary>
+        /// <param name="baseCharacter"></param>
+        /// <param name="kills"></param>
+        /// <param name="pickSkills"></param>
+        public void PromoteUnit(CharacterObject baseCharacter, int kills = -1, bool pickSkills = true)
         {
-            CharacterObject nco = Game.Current.ObjectManager.GetObject<CharacterObject>(co.StringId);
-            if (nco == null)
-            {
-                return;
-            }
-            CharacterObject wanderer = nco.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == nco.IsFemale && x.CivilianEquipments != null));
-            if (wanderer == null)
-            {
-                if (Settings.Instance.ShowCautionText)
-                    InformationManager.DisplayMessage(new(
-                        GameTexts.FindText("DistServ_Caution", "009nowanderer").SetTextVariable("CULTURE", nco.Culture.Name).ToString(), Colors.Yellow));
-                wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == nco.IsFemale && x.CivilianEquipments != null));
-            }
-            if (wanderer == null)
-            {
-                if (Settings.Instance.ShowCautionText)
-                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Warn", "010templete").ToString(), Colors.Red));
-                wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == nco.IsFemale));
-            }
-            if (wanderer == null)
-            {
-                InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Warn", "011wanderernotfound").ToString(), Colors.Red));
-                return;
-            }
-            Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, (Settlement)null, (Clan)null, (Clan)null, rand.Next(20, 50));
-            specialHero.Culture = nco.Culture;
-            specialHero.SetName(NameList.DrawNameFormat(nco).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
-            if (NameList.IsFileExists())
-            {
-                TextObject newName = NameList.PullOutNameFromExternalFile();
-                if (newName.ToString() != "")
-                {
-                    specialHero.SetName(NameList.DrawNameFormat(nco).SetTextVariable("FIRSTNAME", newName), newName);
-                }
-            }
-            specialHero.SetHasMet();
-            //Default formation class seems to be read only, so I could't change it // TODO
-            specialHero.CharacterObject.DefaultFormationGroup = nco.DefaultFormationGroup;
-
-            specialHero.ChangeState(Hero.CharacterStates.Active);
-            AddCompanionAction.Apply(Clan.PlayerClan, specialHero);
-            AddHeroToPartyAction.Apply(specialHero, MobileParty.MainParty, true);
-            CampaignEventDispatcher.Instance.OnHeroCreated(specialHero, false);
-
-            AddTraitVariance(specialHero);
-            float adjustedCost = Settings.Instance.PromotionCost;
-            if (Hero.MainHero.GetPerkValue(DefaultPerks.Trade.GreatInvestor))
-            {
-                adjustedCost *= 0.7f;
-            }
-            if (Hero.MainHero.GetPerkValue(DefaultPerks.Steward.PaidInPromise))
-            {
-                adjustedCost *= 0.75f;
-            }
-            GiveGoldAction.ApplyBetweenCharacters(Hero.MainHero, specialHero, (int)adjustedCost);
-
-            //special, equipment-formatting try-catch statement
+            Hero specialHero;
             try
             {
-                if (MyLittleWarbandLoaded)
+                CharacterObject newcharacterObj = Game.Current.ObjectManager.GetObject<CharacterObject>(baseCharacter.StringId);
+                if (newcharacterObj == null)
                 {
-                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Info", "compatible").ToString(), Colors.Yellow));
-                    specialHero.BattleEquipment.FillFrom(nco.FirstBattleEquipment);
-                    specialHero.CivilianEquipment.FillFrom(nco.FirstCivilianEquipment);
+                    return;
                 }
-                else
-                {
-                    specialHero.BattleEquipment.FillFrom(nco.RandomBattleEquipment);
-                    specialHero.CivilianEquipment.FillFrom(nco.RandomCivilianEquipment);
-                }
-                this.AdjustEquipment(specialHero);
+                specialHero = this.InitializePromotedHero(newcharacterObj);
             }
-            catch (Exception e)
+            catch (NullReferenceException)
             {
-                if (Settings.Instance.ShowCautionText)
-                {
-                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Caution", "013equipment").ToString(), Colors.Yellow));
-                    Debug.Print(GameTexts.FindText("DistServ_Warn", "internalerr").SetTextVariable("TEXT", e.Message).ToString());
-                }
-                //leave them naked, alone, and afraid
+                return;
             }
-            specialHero.HeroDeveloper.SetInitialLevel(nco.Level);
-            Dictionary<SkillObject, int> baselineSkills = new();
-            foreach (SkillObject sk in Skills.All)
-            {
-                baselineSkills[sk] = Math.Min(nco.GetSkillValue(sk), 300);
-                specialHero.HeroDeveloper.SetInitialSkillLevel(sk, co.GetSkillValue(sk));
-            }
-            int currentSkill = 0;
-            foreach (SkillObject sk in Skills.All)
-            {
-                currentSkill = specialHero.GetSkillValue(sk);
-                specialHero.HeroDeveloper.ChangeSkillLevel(sk, baselineSkills[sk] - currentSkill);
-            }
+            InformationManager.DisplayMessage(new($"isMounted={specialHero.CharacterObject.IsMounted}, isRanged={specialHero.CharacterObject.IsRanged}"));
 
-            int skipToAssign = Settings.Instance.AdditionalSkillPoints + 50 * Hero.MainHero.GetSkillValue(DefaultSkills.Leadership) / Settings.Instance.LeadershipPointsPer50ExtraPoints;
+            this.SetHeroParams(specialHero, baseCharacter.Name, kills, null);
+        }
+        internal void SetHeroParams(Hero hero, TextObject prevName, int kills = -1, Hero? partyLeader = null)
+        {
+            int skipToAssign = Settings.Instance.AdditionalSkillPoints + 50 * (partyLeader ?? Hero.MainHero).GetSkillValue(DefaultSkills.Leadership) / Settings.Instance.LeadershipPointsPer50ExtraPoints;
             if (kills > 0)
             {
-                if (nco.IsMounted)
+                if (hero.CharacterObject.IsMounted)
                 {
                     skipToAssign += Settings.Instance.SkillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountCavalry);
                 }
-                else if (nco.IsRanged)
+                else if (hero.CharacterObject.IsRanged)
                 {
                     skipToAssign += Settings.Instance.SkillPointsPerExcessKill * (kills - Settings.Instance.EligibleKillCountRanged);
                 }
@@ -372,75 +300,79 @@ namespace DistinguishedServiceRedux
                 }
             }
 
+
             if (Settings.Instance.RandomizedSkill)
             {
                 for (int i = 1; i <= Settings.Instance.NumSkillRounds; i++)
                 {
-                    AssignSkillsRandomly(specialHero, skipToAssign / i, Settings.Instance.NumSkillBonuses);
+                    AssignSkillsRandomly(hero, skipToAssign / i, Settings.Instance.NumSkillBonuses);
                 }
             }
             else
             {
                 for (int i = 1; i <= Settings.Instance.NumSkillRounds; i++)
                 {
-                    AssignSkills(specialHero, skipToAssign / i, Settings.Instance.NumSkillBonuses, i, Settings.Instance.NumSkillRounds, co.Name);
+                    AssignSkills(hero, skipToAssign / i, Settings.Instance.NumSkillBonuses, i, Settings.Instance.NumSkillRounds, prevName);
                 }
             }
-            int totToAdd = specialHero.HeroDeveloper.UnspentAttributePoints;
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2, false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 2, false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Cunning, 2, false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 2, false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Intelligence, 2, false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Social, 2, false);
-            totToAdd -= 12;
-
-            int toAdd = 0;
-            if (totToAdd > 0)
+            int totalAtt = hero.HeroDeveloper.UnspentAttributePoints;
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2, false);
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 2, false);
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Cunning, 2, false);
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 2, false);
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Intelligence, 2, false);
+            hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Social, 2, false);
+            totalAtt -= 12;
+            if (totalAtt > 0)
             {
-                if (nco.IsMounted)
+
+                int toAdd;
+                if (hero.CharacterObject.IsMounted)
                 {
                     toAdd = rand.Next(3);
-                    specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, toAdd, false);
-                    totToAdd -= toAdd;
+                    hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, toAdd, false);
+                    totalAtt -= toAdd;
                 }
-                else if (nco.IsRanged)
+                else if (hero.CharacterObject.IsRanged)
                 {
                     toAdd = rand.Next(3);
-                    specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, toAdd, false);
-                    totToAdd -= toAdd;
+                    hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, toAdd, false);
+                    totalAtt -= toAdd;
                 }
                 else
                 {
                     toAdd = rand.Next(3);
-                    specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, toAdd, false);
-                    totToAdd -= toAdd;
+                    hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, toAdd, false);
+                    totalAtt -= toAdd;
                 }
                 List<CharacterAttribute> shuffled_attrs = new(Attributes.All);
                 Shuffle(shuffled_attrs);
                 foreach (CharacterAttribute ca in shuffled_attrs)
                 {
                     toAdd = rand.Next(2);
-                    specialHero.HeroDeveloper.AddAttribute(ca, toAdd, false);
-                    totToAdd -= toAdd;
-                    if (totToAdd <= 0)
+                    hero.HeroDeveloper.AddAttribute(ca, toAdd, false);
+                    totalAtt -= toAdd;
+                    if (totalAtt <= 0)
                         break;
                 }
             }
             if (Settings.Instance.FillInPerks)
             {
-                specialHero.DevelopCharacterStats();
+                hero.DevelopCharacterStats();
             }
-            specialHero.HeroDeveloper.UnspentAttributePoints = 0;
+            hero.HeroDeveloper.UnspentAttributePoints = 0;
         }
 
-        //Eighth and Ninth Util functions -- Assign skills to the nascent hero
-        //either through player selection, or randomly
-        //For player selection, we create inquiry elements for each "soft" skill,
-        //and allow the player to choose several to give a skill bump to
-        //Randomly, we replace player choice with a switch statement
-        //
-        //We also cap out at 300 to avoid... Problems...
+        /// <summary>
+        /// Sets new hero's skill point given player's skill seelection
+        /// capped out at 300 to avoid problems
+        /// </summary>
+        /// <param name="specialHero"></param>
+        /// <param name="skPointsAasign"></param>
+        /// <param name="numSelectedSkills"></param>
+        /// <param name="n"></param>
+        /// <param name="total"></param>
+        /// <param name="prev"></param>
         public void AssignSkills(Hero specialHero, int skPointsAasign, int numSelectedSkills, int n, int total, TextObject prev)
         {
             List<InquiryElement> iqes = new();
@@ -452,7 +384,7 @@ namespace DistinguishedServiceRedux
             }
             MultiSelectionInquiryData msid = new(
                 GameTexts.FindText("DistServ_inquiry_title", "select").SetTextVariable("COUNT", n).SetTextVariable("TOTAL", total).ToString(),
-                GameTexts.FindText("DistServ_inquiry_text", "select").SetTextVariable("NAME", specialHero.Name).SetTextVariable("PREV", prev).ToString(),
+                GameTexts.FindText("DistServ_inquiry_text", "select").SetTextVariable("NAME", specialHero.Name).SetTextVariable("PREV", prev).SetTextVariable("COUNT", Settings.Instance.NumSkillBonuses).ToString(),
                 iqes,
                 true,
                 numSelectedSkills,
@@ -488,9 +420,15 @@ namespace DistinguishedServiceRedux
                     }
                 }
             }),
-            (Action<List<InquiryElement>>)null);
+            null);
             MBInformationManager.ShowMultiSelectionInquiry(msid, true);
         }
+        /// <summary>
+        /// TODO: why separated from AssignSkillsRandomly function?
+        /// </summary>
+        /// <param name="specialHero"></param>
+        /// <param name="skPointsAasign"></param>
+        /// <param name="numSelectedSkills"></param>
         public void AssignSkillsRandomly(Hero specialHero, int skPointsAasign, int numSelectedSkills)
         {
             List<SkillObject> soList = new() { DefaultSkills.Scouting, DefaultSkills.Crafting, DefaultSkills.Athletics, DefaultSkills.Riding, DefaultSkills.Tactics, DefaultSkills.Roguery, DefaultSkills.Charm, DefaultSkills.Leadership, DefaultSkills.Trade, DefaultSkills.Steward, DefaultSkills.Medicine, DefaultSkills.Engineering };
@@ -607,7 +545,7 @@ namespace DistinguishedServiceRedux
                 fauxKills.Add(1337);
             }
 
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(GameTexts.FindText("DistServ_inquiry_title", "console").ToString(), GameTexts.FindText("DistServ_inquiry_text", "console").ToString(), PromotionManager.__instance.GenInquiryelements(cos, fauxKills), true, 0, 1, GameTexts.FindText("str_done", (string)null).ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Random").ToString(), new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(GameTexts.FindText("DistServ_inquiry_title", "console").ToString(), GameTexts.FindText("DistServ_inquiry_text", "console").ToString(), PromotionManager.__instance.GenInquiryelements(cos, fauxKills), true, 0, 1, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Random").ToString(), new Action<List<InquiryElement>>(PromotionManager.__instance.OnNomineeSelect), null, ""), true);
 
             return "Dialog Generated";
         }
@@ -668,57 +606,38 @@ namespace DistinguishedServiceRedux
         }
 
         /// <summary>
-        /// 
+        /// PromoteUnit for NPC party
+        /// TODO: why separete from the PromoteUnit
         /// </summary>
-        /// <param name="co"></param>
+        /// <param name="baseCharacter"></param>
         /// <param name="party"></param>
-        public void PromoteToParty(CharacterObject co, MobileParty party)
+        public void PromoteToParty(CharacterObject baseCharacter, MobileParty party)
         {
-            if (co == null || party == null)
+            if (baseCharacter == null || party == null)
             {
                 return;
             }
-            Hero partyLeader = party?.LeaderHero;
+            Hero? partyLeader = party?.LeaderHero;
             if (partyLeader == null)
             {
                 return;
             }
-            CharacterObject wanderer = co.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == co.IsFemale && x.CivilianEquipments != null));
-            wanderer ??= CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == co.IsFemale && x.CivilianEquipments != null));
-            if (wanderer == null)
+            Hero specialHero;
+            try
+            {
+                specialHero = InitializePromotedHero(baseCharacter, party);
+            }
+            catch (NullReferenceException)
             {
                 return;
             }
-            Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, (Settlement)null, (Clan)null, (Clan)null, rand.Next(20, 50));
-            specialHero.SetName(NameList.DrawNameFormat(co).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
-            specialHero.Culture = co.Culture;
-            specialHero.ChangeState(Hero.CharacterStates.Active);
-            AddHeroToPartyAction.Apply(specialHero, party, true);
-            CampaignEventDispatcher.Instance.OnHeroCreated(specialHero, false);
-            AddTraitVariance(specialHero);
-            GiveGoldAction.ApplyBetweenCharacters(partyLeader, specialHero, Settings.Instance.PromotionCost, true);
-            try
-            {
-                specialHero.BattleEquipment.FillFrom(co.FirstBattleEquipment);//co.RandomBattleEquipment);
-                specialHero.CivilianEquipment.FillFrom(co.FirstCivilianEquipment);// co.RandomCivilianEquipment);
-                this.AdjustEquipment(specialHero);
-            }
-            catch (Exception e)
-            {
-                if (Settings.Instance.ShowCautionText)
-                {
-                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Caution", "015equipincomp").ToString(), Colors.Yellow));
-                    Debug.Print("Equipment format issue, providing default equipment instead! Exception details:\n" + e.Message);
-                }
-            }
-
-            if (co.IsMounted)
+            if (specialHero.CharacterObject.IsMounted)
             {
                 specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rand.Next(2), false);
                 specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 1 + rand.Next(2), false);
                 specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 4 + rand.Next(3), false);
             }
-            else if (co.IsRanged)
+            else if (specialHero.CharacterObject.IsRanged)
             {
                 specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rand.Next(2), false);
                 specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 4 + rand.Next(3), false);
@@ -733,16 +652,12 @@ namespace DistinguishedServiceRedux
             specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Cunning, 1 + rand.Next(3), false);
             specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Social, 1 + rand.Next(3), false);
             specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Intelligence, 1 + rand.Next(3), false);
-            foreach (SkillObject sk in Skills.All)
-            {
-                specialHero.HeroDeveloper.ChangeSkillLevel(sk, co.GetSkillValue(sk), false);
-            }
-            List<SkillObject> shuffledSkills = new List<SkillObject>(Skills.All);
+            List<SkillObject> shuffledSkills = new(Skills.All);
             Shuffle(shuffledSkills);
             int skipToAssign = Settings.Instance.AdditionalSkillPoints + 50 * partyLeader.GetSkillValue(DefaultSkills.Leadership) / Settings.Instance.LeadershipPointsPer50ExtraPoints;
-            int bonus = 0;
             foreach (SkillObject sk in shuffledSkills)
             {
+                int bonus;
                 if (sk == DefaultSkills.OneHanded || sk == DefaultSkills.TwoHanded || sk == DefaultSkills.Polearm || sk == DefaultSkills.Bow || sk == DefaultSkills.Crossbow || sk == DefaultSkills.Throwing)
                 {
                     bonus = rand.Next(10) + rand.Next(15);
@@ -779,20 +694,153 @@ namespace DistinguishedServiceRedux
         }
 
         /// <summary>
+        /// Initializes Hero object from a base characterObject
+        /// Creates instance from a wanderer template, decide the name, add default equipments, and have it join the party
+        /// </summary>
+        /// <param name="baseCharacter"></param>
+        /// <param name="party"></param> you should null if the target party is the player's party
+        /// <returns></returns>
+        /// <exception cref="NullReferenceException"></exception>
+        internal Hero InitializePromotedHero(CharacterObject baseCharacter, MobileParty? party = null)
+        {
+            if (party == MobileParty.MainParty) party = null;
+            bool isPlayerCase = party == null;
+            Hero partyLeader = (isPlayerCase ? Hero.MainHero : party?.LeaderHero) ?? throw new NullReferenceException();
+            CharacterObject wanderer = baseCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == baseCharacter.IsFemale && x.CivilianEquipments != null));
+            if (wanderer == null)
+            {
+                if (Settings.Instance.ShowCautionText)
+                    InformationManager.DisplayMessage(new(
+                        GameTexts.FindText("DistServ_Caution", "009nowanderer").SetTextVariable("CULTURE", baseCharacter.Culture.Name).ToString(), Colors.Yellow));
+                wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == baseCharacter.IsFemale && x.CivilianEquipments != null));
+            }
+            if (wanderer == null)
+            {
+                if (Settings.Instance.ShowCautionText)
+                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Warn", "010templete").ToString(), Colors.Red));
+                wanderer = CharacterObject.PlayerCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == baseCharacter.IsFemale));
+            }
+            if (wanderer == null)
+            {
+                InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Warn", "011wanderernotfound").ToString(), Colors.Red));
+                throw new NullReferenceException();
+            }
+            Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, null, null, null, rand.Next(20, 50));  // TODO: I don't like uniform distribution.
+            specialHero.Culture = wanderer.Culture;
+            specialHero.CharacterObject.IsBasicTroop = false;
+            Settlement bornSettlement = SettlementHelper.FindRandomSettlement((Settlement x) => x.IsTown && x.Culture == specialHero.Culture) ?? SettlementHelper.FindRandomSettlement();
+            HeroHelper.SpawnHeroForTheFirstTime(specialHero, bornSettlement);  // I don't make sure but an errorful characterobject appears on the encyclopedia causes the game crash without this function.
+
+            if (NameList.IsFileExists() && isPlayerCase)
+            {
+                TextObject newName = NameList.PullOutNameFromExternalFile();
+                if (newName.ToString() != "")
+                {
+                    specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", newName), newName);
+                }
+            }
+            else
+            {
+                specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
+            }
+            if (party == null)
+            {
+                specialHero.SetHasMet();
+            }
+            else if (Settings.Instance.NotifyNPCPromotion)
+            {
+                InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_notify", "npcpromotion").SetTextVariable("NAME", specialHero.Name).ToString(), Colors.White, ""));
+            }
+            AddTraitVariance(specialHero);
+            specialHero.HeroDeveloper.SetInitialLevel(wanderer.Level);
+            // Default formation class seems to be read only, so I could't change it // TODO
+            specialHero.CharacterObject.DefaultFormationGroup = wanderer.DefaultFormationGroup;
+            specialHero.ChangeState(Hero.CharacterStates.Active);
+            if (isPlayerCase) AddCompanionAction.Apply(Clan.PlayerClan, specialHero);
+            AddHeroToPartyAction.Apply(specialHero, isPlayerCase ? MobileParty.MainParty : party, true);
+            CampaignEventDispatcher.Instance.OnHeroCreated(specialHero, false);
+            float adjustedCost = Settings.Instance.PromotionCost;
+            if (partyLeader.GetPerkValue(DefaultPerks.Trade.GreatInvestor))
+            {
+                adjustedCost *= 0.7f;
+            }
+            if (partyLeader.GetPerkValue(DefaultPerks.Steward.PaidInPromise))
+            {
+                adjustedCost *= 0.75f;
+            }
+            GiveGoldAction.ApplyBetweenCharacters(partyLeader, specialHero, (int)adjustedCost);
+            try
+            {
+                if (isPlayerCase)  // TODO: this conditioning really needed?
+                {
+                    if (MyLittleWarbandLoaded)
+                    {
+                        InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Info", "compatible").ToString(), Colors.Yellow));
+                        specialHero.BattleEquipment.FillFrom(baseCharacter.FirstBattleEquipment);
+                        specialHero.CivilianEquipment.FillFrom(baseCharacter.FirstCivilianEquipment);
+                    }
+                    else
+                    {
+                        specialHero.BattleEquipment.FillFrom(baseCharacter.RandomBattleEquipment);
+                        specialHero.CivilianEquipment.FillFrom(baseCharacter.RandomCivilianEquipment);
+                    }
+                }
+                else
+                {
+                    specialHero.BattleEquipment.FillFrom(baseCharacter.FirstBattleEquipment);// character.RandomBattleEquipment);
+                    specialHero.CivilianEquipment.FillFrom(baseCharacter.FirstCivilianEquipment);// character.RandomCivilianEquipment);
+                }
+                this.AdjustEquipment(specialHero);
+            }
+            catch (Exception e)
+            {
+                if (Settings.Instance.ShowCautionText)
+                {
+                    InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Caution", "013equipment").ToString(), Colors.Yellow));
+                    Debug.Print(GameTexts.FindText("DistServ_Warn", "internalerr").SetTextVariable("TEXT", e.Message).ToString());
+                }
+            }
+            // copy original skillpoint to new object with capping out.
+            // TODO: why so intricate?
+            if (isPlayerCase)
+            {
+                Dictionary<SkillObject, int> baselineSkills = new();
+                foreach (SkillObject sk in Skills.All)
+                {
+                    baselineSkills[sk] = Math.Min(baseCharacter.GetSkillValue(sk), 300);
+                    // specialHero.HeroDeveloper.SetInitialSkillLevel(sk, baseCharacter.GetSkillValue(sk));
+                }
+                foreach (SkillObject sk in Skills.All)
+                {
+                    int currentSkill = specialHero.GetSkillValue(sk);
+                    specialHero.HeroDeveloper.ChangeSkillLevel(sk, baselineSkills[sk] - currentSkill);
+                }
+            }
+            else
+            {
+                foreach (SkillObject sk in Skills.All)
+                {
+                    specialHero.HeroDeveloper.ChangeSkillLevel(sk, baseCharacter.GetSkillValue(sk), false);
+                }
+            }
+            return specialHero;
+        }
+
+        /// <summary>
         /// Add the dialog options to the game; rename the companion's name, transfer to another party, 
         /// take back a companion from another party, poach a companion from a defeated party
         /// </summary>
         /// <param name="campaignGameStarter"></param>
         public static void AddDialogs(CampaignGameStarter campaignGameStarter)
         {
-            campaignGameStarter.AddPlayerLine("companion_change_name_start", "hero_main_options", "companion_change_name_confirm", GameTexts.FindText("DistServ_dialog", "rename").ToString(), new(GetNamechangecondition), new(GetNamechanceconsequence), 100, (ConversationSentence.OnClickableConditionDelegate)null, (ConversationSentence.OnPersuasionOptionDelegate)null);
-            campaignGameStarter.AddDialogLine("companion_change_name_confirm", "companion_change_name_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), (ConversationSentence.OnConditionDelegate)null, (ConversationSentence.OnConsequenceDelegate)null, 100, (ConversationSentence.OnClickableConditionDelegate)null);
-            campaignGameStarter.AddPlayerLine("companion_transfer_start", "hero_main_options", "companion_transfer_confirm", GameTexts.FindText("DistServ_dialog", "transfer").ToString(), new(GetGiveCompToClanPartyCondition), new(GetGiveCompToClanPartyConsequence), 100, (ConversationSentence.OnClickableConditionDelegate)null, (ConversationSentence.OnPersuasionOptionDelegate)null);
-            campaignGameStarter.AddDialogLine("companion_transfer_confirm", "companion_transfer_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), (ConversationSentence.OnConditionDelegate)null, (ConversationSentence.OnConsequenceDelegate)null, 100, (ConversationSentence.OnClickableConditionDelegate)null);
-            campaignGameStarter.AddPlayerLine("companion_takeback_start", "hero_main_options", "companion_takeback_confirm", GameTexts.FindText("DistServ_dialog", "takeback").ToString(), new(GetTakeCompFromClanPartyCondition), new(GetTakeCompFromClanPartyConsequence), 100, (ConversationSentence.OnClickableConditionDelegate)null, (ConversationSentence.OnPersuasionOptionDelegate)null);
-            campaignGameStarter.AddDialogLine("companion_takeback_confirm", "companion_takeback_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), (ConversationSentence.OnConditionDelegate)null, (ConversationSentence.OnConsequenceDelegate)null, 100, (ConversationSentence.OnClickableConditionDelegate)null);
-            campaignGameStarter.AddPlayerLine("enemy_comp_recruit_1", "defeated_lord_answer", "companion_poach_confirm", GameTexts.FindText("DistServ_dialog", "poach").ToString(), new(PromotionManager.GetCapturedAIWandererCondition), (ConversationSentence.OnConsequenceDelegate)null, 100, (ConversationSentence.OnClickableConditionDelegate)null, (ConversationSentence.OnPersuasionOptionDelegate)null); //new ConversationSentence.OnClickableConditionDelegate(CanConvertWanderer)
-            campaignGameStarter.AddDialogLine("enemy_comp_recruit_2", "companion_poach_confirm", "close_window", "{RECRUIT_RESPONSE}", (ConversationSentence.OnConditionDelegate)null, (ConversationSentence.OnConsequenceDelegate)null, 100, (ConversationSentence.OnClickableConditionDelegate)null);
+            campaignGameStarter.AddPlayerLine("companion_change_name_start", "hero_main_options", "companion_change_name_confirm", GameTexts.FindText("DistServ_dialog", "rename").ToString(), new(GetNamechangecondition), new(GetNamechanceconsequence), 100, null, null);
+            campaignGameStarter.AddDialogLine("companion_change_name_confirm", "companion_change_name_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), null, null, 100, null);
+            campaignGameStarter.AddPlayerLine("companion_transfer_start", "hero_main_options", "companion_transfer_confirm", GameTexts.FindText("DistServ_dialog", "transfer").ToString(), new(GetGiveCompToClanPartyCondition), new(GetGiveCompToClanPartyConsequence), 100, null, null);
+            campaignGameStarter.AddDialogLine("companion_transfer_confirm", "companion_transfer_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), null, null, 100, null);
+            campaignGameStarter.AddPlayerLine("companion_takeback_start", "hero_main_options", "companion_takeback_confirm", GameTexts.FindText("DistServ_dialog", "takeback").ToString(), new(GetTakeCompFromClanPartyCondition), new(GetTakeCompFromClanPartyConsequence), 100, null, null);
+            campaignGameStarter.AddDialogLine("companion_takeback_confirm", "companion_takeback_confirm", "hero_main_options", GameTexts.FindText("DistServ_dialog", "answer").ToString(), null, null, 100, null);
+            campaignGameStarter.AddPlayerLine("enemy_comp_recruit_1", "defeated_lord_answer", "companion_poach_confirm", GameTexts.FindText("DistServ_dialog", "poach").ToString(), new(PromotionManager.GetCapturedAIWandererCondition), null, 100, null, null); //new ConversationSentence.OnClickableConditionDelegate(CanConvertWanderer)
+            campaignGameStarter.AddDialogLine("enemy_comp_recruit_2", "companion_poach_confirm", "close_window", "{RECRUIT_RESPONSE}", null, null, 100, null);
 
         }
 
@@ -806,7 +854,7 @@ namespace DistinguishedServiceRedux
         }
         private static void GetNamechanceconsequence()
         {
-            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), string.Empty, true, true, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("str_cancel").ToString(), new Action<string>(PromotionManager.ChangeHeroName), (Action)null, false), false);
+            InformationManager.ShowTextInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "newname").ToString(), string.Empty, true, true, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("str_cancel").ToString(), new Action<string>(PromotionManager.ChangeHeroName), null, false), false);
 
         }
         private static void ChangeHeroName(string s)
@@ -827,7 +875,7 @@ namespace DistinguishedServiceRedux
         }
         private static void GetGiveCompToClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "trsfhero").ToString(), GameTexts.FindText("DistServ_inquiry_text", "trsfhero").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, 0, PartyBase.MainParty.MemberRoster.Count, GameTexts.FindText("str_done", (string)null).ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Nobody").ToString(), new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "trsfhero").ToString(), GameTexts.FindText("DistServ_inquiry_text", "trsfhero").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetPlayerPartyHeroCOs()), true, 0, PartyBase.MainParty.MemberRoster.Count, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("DistServ_inquiry_choice", "Nobody").ToString(), new Action<List<InquiryElement>>(PromotionManager.TransferCompsToConversationParty), null, ""), true);
         }
         private static void TransferCompsToConversationParty(List<InquiryElement> ies)
         {
@@ -871,7 +919,7 @@ namespace DistinguishedServiceRedux
         /// </summary>
         private static void GetTakeCompFromClanPartyConsequence()
         {
-            MBInformationManager.ShowMultiSelectionInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "trsfhero").ToString(), GameTexts.FindText("DistServ_inquiry_text", "trsfhero").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, 0, PartyBase.MainParty.MemberRoster.Count, GameTexts.FindText("str_done", (string)null).ToString(), GameTexts.FindText("DistServ_inquiry_chice", "Nobody").ToString(), new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), (Action<List<InquiryElement>>)null, ""), true);
+            MBInformationManager.ShowMultiSelectionInquiry(new(GameTexts.FindText("DistServ_inquiry_title", "trsfhero").ToString(), GameTexts.FindText("DistServ_inquiry_text", "trsfhero").SetTextVariable("HERO", Hero.OneToOneConversationHero.Name).ToString(), PromotionManager.GenTransferList(PromotionManager.GetConversationPartyHeros(), false), true, 0, PartyBase.MainParty.MemberRoster.Count, GameTexts.FindText("str_done").ToString(), GameTexts.FindText("DistServ_inquiry_chice", "Nobody").ToString(), new Action<List<InquiryElement>>(PromotionManager.TransferCompsFromConversationParty), null, ""), true);
         }
         /// <summary>
         /// 

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
@@ -19,23 +18,23 @@ namespace DistinguishedServiceRedux
         }
         /// <summary>
         /// Get a name format string randomly
-        /// random name is determined by IsRanged and FirstBattleEquipment propertyies.
+        /// random name is determined by IsRanged flag, FirstBattleEquipment, and culture propertyies.
         /// </summary>
-        public static TextObject DrawNameFormat(CharacterObject chracater)
+        public static TextObject DrawNameFormat(bool isRanged, Equipment equip, BasicCultureObject culture)
         {
 
             List<TextObject> formats = new();
             string troopType = "infantly";
-            if (chracater.IsRanged)
+            if (isRanged)
             {
                 troopType = "ranged";
             }
-            else if (chracater.FirstBattleEquipment[EquipmentIndex.Horse].IsEmpty)
+            else if (equip[EquipmentIndex.Horse].IsEmpty)
             {
                 troopType = "cavalry";
             }
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
-            formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{chracater.Culture.StringId}").ToList());
+            formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
             return formats[MBRandom.RandomInt(formats.Count)];
         }
