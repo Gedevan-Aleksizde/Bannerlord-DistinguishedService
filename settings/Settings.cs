@@ -18,7 +18,7 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyInteger("{=iA1lzksGd}Promotion Cost", 0, 1000, "0", Order = 0, RequireRestart = false, HintText = "{=PWcgmYKdm0}The cost to pay the new hero up-front. Doesn't affect daily payments. Deafult is 0.")]
         public int PromotionCost { get; set; } = 0; // up_front_cost
         [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
-        [SettingPropertyInteger("{=IraZX6JYH}Max. nominations", 1, 128, "0", Order = 1, RequireRestart = false, HintText = "{=xkVDlk1N1V}The maximum number of nominees you are allowed to pick at the end of a battle. Default is 1.")]
+        [SettingPropertyInteger("{=IraZX6JYH}Max. Nominations", 1, 128, "0", Order = 1, RequireRestart = false, HintText = "{=xkVDlk1N1V}The maximum number of nominees you are allowed to pick at the end of a battle. Default is 1.")]
         public int MaxNominations { get; set; } = 1; // max_nominations
         [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
         [SettingPropertyInteger("{=Rw8hDdgtq}Min. Tier", -1, 10, "0", Order = 2, RequireRestart = false, HintText = "{=TDkNix5fda}The minimum tier of unit eligible to become a hero. Set to -1 to only allow units with no further upgrades to be nominated. Default is -1.")]
@@ -39,16 +39,16 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyBool("{=7C44pRJyT}Ignore Companion Limit", Order = 0, RequireRestart = false, HintText = "{=XoyKSIk9Yo}If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. Default is Disabled.")]
         public bool IgnoreCompanionLimit { get; set; } = false;  // respect_companion_limit, UI改善のため値を反転した
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=JzTC6uoHk}Skill points", 0, 500, Order = 1, RequireRestart = false, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 150.")]
+        [SettingPropertyInteger("{=JzTC6uoHk}Skill Points", 0, 500, Order = 1, RequireRestart = false, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 150.")]
         public int AdditionalSkillPoints { get; set; } = 150; // base_additional_skill_points
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=FqySMd4Cu}Skill bonus", 0, 10, Order = 2, RequireRestart = false, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 3.")]
+        [SettingPropertyInteger("{=FqySMd4Cu}Skill Bonus", 0, 10, Order = 2, RequireRestart = false, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 3.")]
         public int NumSkillBonuses { get; set; } = 3; // number_of_skill_bonuses
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=JEPdqkqB7}Skill rounds", 0, 10, Order = 3, RequireRestart = false, HintText = "{=OfDcCqMwbP}The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. Default is 1.")]
+        [SettingPropertyInteger("{=JEPdqkqB7}Skill Rounds", 0, 10, Order = 3, RequireRestart = false, HintText = "{=OfDcCqMwbP}The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. Default is 1.")]
         public int NumSkillRounds { get; set; } = 1; // number_of_skill_rounds 
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills")]
-        [SettingPropertyBool("{=ebrfIjhX9}Randomized skills", Order = 4, RequireRestart = false, HintText = "{=17RpeC0Bd7}If enabled, bonus skill is assigned randomly.")]
+        [SettingPropertyBool("{=ebrfIjhX9}Randomized Skills", Order = 4, RequireRestart = false, HintText = "{=17RpeC0Bd7}If enabled, bonus skill is assigned randomly.")]
         public bool RandomizedSkill { get; set; } = false; // select_skills_randomly
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
         [SettingPropertyInteger("{=e1gqqB6S9}Skill Bonus per Excess Kills", 0, 100, Order = 5, HintText = "{=x4hncKsa7v}The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. Default is 25.")]
