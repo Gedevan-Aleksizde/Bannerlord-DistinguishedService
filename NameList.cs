@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.Random;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace DistinguishedServiceRedux
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
-            return formats[MBRandom.RandomInt(formats.Count)];
+            return formats[new Xorshift().Next(formats.Count)];
         }
         /// <summary>
         /// Draw a user-defined name from the external text file, then **remove drawn name from the file**
@@ -50,7 +51,7 @@ namespace DistinguishedServiceRedux
                     string[] lines = File.ReadAllLines(filePath);
                     if (lines.Length == 0)
                         return new("");
-                    int index = MBRandom.RandomInt(0, lines.Length);
+                    int index = (new MersenneTwister().Next(lines.Length));
                     string name = lines[index];
                     string newText = "";
                     for (int i = 0; i < lines.Length; i++)

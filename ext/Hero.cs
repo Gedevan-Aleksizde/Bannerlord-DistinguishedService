@@ -1,9 +1,11 @@
-﻿using System.Linq;
+﻿using MathNet.Numerics.Random;
+using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.Extensions;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+
 namespace DistinguishedServiceRedux.ext
 {
     public static class HeroExt
@@ -169,7 +171,7 @@ namespace DistinguishedServiceRedux.ext
             {
                 if (item.AlternativePerk != null)
                 {
-                    if (MBRandom.RandomFloat < 0.5f)
+                    if (new MersenneTwister().NextDouble() < 0.5f)
                     {
                         hero.HeroDeveloper.AddPerk(item);
                     }

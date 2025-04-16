@@ -7,6 +7,8 @@
 using DistinguishedServiceRedux.ext;
 using DistinguishedServiceRedux.settings;
 using Helpers;
+using MathNet.Numerics.Distributions;
+using MathNet.Numerics.Random;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,9 +29,7 @@ namespace DistinguishedServiceRedux
 {
     class PromotionManager
     {
-        Random rand; //Single random object to use
-
-        //Distinguished Service Specific Lists
+        private Random rng;
         public static PromotionManager? __instance = null; // TODO: really needed?
         public List<CharacterObject> nominations;
         public List<int> killcounts;
@@ -39,7 +39,7 @@ namespace DistinguishedServiceRedux
 
         public PromotionManager()
         {
-            this.rand = new Random();
+            this.rng = new MersenneTwister(); // Bannerlord default rng is native XoRShift... // TODO: I should use faster one, e.g., XoShiro256
             this.nominations = new List<CharacterObject>();
             this.killcounts = new List<int>();
 
@@ -228,7 +228,7 @@ namespace DistinguishedServiceRedux
                 if (trait == DefaultTraits.Honor || trait == DefaultTraits.Mercy || (trait == DefaultTraits.Generosity || trait == DefaultTraits.Valor) || trait == DefaultTraits.Calculating)
                 {
                     int num1 = hero.CharacterObject.GetTraitLevel(trait);
-                    float num2 = MBRandom.RandomFloat;
+                    float num2 = (float)this.rng.NextDouble();
                     //skew towards player's traits
                     if (Hero.MainHero.GetTraitLevel(trait) >= 0.9)
                     {
@@ -277,8 +277,6 @@ namespace DistinguishedServiceRedux
             {
                 return;
             }
-            InformationManager.DisplayMessage(new($"isMounted={specialHero.CharacterObject.IsMounted}, isRanged={specialHero.CharacterObject.IsRanged}"));
-
             this.SetHeroParams(specialHero, baseCharacter.Name, kills, null);
         }
         internal void SetHeroParams(Hero hero, TextObject prevName, int kills = -1, Hero? partyLeader = null)
@@ -329,19 +327,19 @@ namespace DistinguishedServiceRedux
                 int toAdd;
                 if (hero.CharacterObject.IsMounted)
                 {
-                    toAdd = rand.Next(3);
+                    toAdd = rng.Next(3);
                     hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, toAdd, false);
                     totalAtt -= toAdd;
                 }
                 else if (hero.CharacterObject.IsRanged)
                 {
-                    toAdd = rand.Next(3);
+                    toAdd = rng.Next(3);
                     hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, toAdd, false);
                     totalAtt -= toAdd;
                 }
                 else
                 {
-                    toAdd = rand.Next(3);
+                    toAdd = rng.Next(3);
                     hero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, toAdd, false);
                     totalAtt -= toAdd;
                 }
@@ -349,7 +347,7 @@ namespace DistinguishedServiceRedux
                 Shuffle(shuffled_attrs);
                 foreach (CharacterAttribute ca in shuffled_attrs)
                 {
-                    toAdd = rand.Next(2);
+                    toAdd = rng.Next(2);
                     hero.HeroDeveloper.AddAttribute(ca, toAdd, false);
                     totalAtt -= toAdd;
                     if (totalAtt <= 0)
@@ -472,7 +470,7 @@ namespace DistinguishedServiceRedux
             while (n > 1)
             {
                 n--;
-                int k = rand.Next(n + 1);
+                int k = rng.Next(n + 1);
                 T value = list[k];
                 list[k] = list[n];
                 list[n] = value;
@@ -564,7 +562,6 @@ namespace DistinguishedServiceRedux
                 //only care about decisive field battles
                 if (!(mapEvent.HasWinner))
                     return;
-                Random r = new();  // TODO: why not MBRandom?
                 //look at winning side
                 foreach (MapEventParty p in mapEvent.PartiesOnSide(mapEvent.WinningSide))
                 {
@@ -574,7 +571,7 @@ namespace DistinguishedServiceRedux
                     }
                     if (p.Party.LeaderHero != null)
                     {
-                        if (r.NextDouble() > Settings.Instance.ChancePromotionAI)
+                        if (this.rng.NextDouble() > Settings.Instance.ChancePromotionAI)
                             continue;
                         List<CharacterObject> characterObjects = p.Troops.Troops.ToList();
                         if (characterObjects == null)
@@ -622,10 +619,14 @@ namespace DistinguishedServiceRedux
             {
                 return;
             }
+            if (partyLeader.IsMinorFactionHero)
+            {
+                return;
+            }
             Hero specialHero;
             try
             {
-                specialHero = InitializePromotedHero(baseCharacter, party);
+                specialHero = this.InitializePromotedHero(baseCharacter, party);
             }
             catch (NullReferenceException)
             {
@@ -633,25 +634,25 @@ namespace DistinguishedServiceRedux
             }
             if (specialHero.CharacterObject.IsMounted)
             {
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rand.Next(2), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 1 + rand.Next(2), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 4 + rand.Next(3), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rng.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 1 + rng.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 4 + rng.Next(3), false);
             }
             else if (specialHero.CharacterObject.IsRanged)
             {
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rand.Next(2), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 4 + rand.Next(3), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 1 + rand.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 2 + rng.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 4 + rng.Next(3), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 1 + rng.Next(2), false);
             }
             else
             {
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 3 + rand.Next(3), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 2 + rand.Next(2), false);
-                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 2 + rand.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Vigor, 3 + rng.Next(3), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Control, 2 + rng.Next(2), false);
+                specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Endurance, 2 + rng.Next(2), false);
             }
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Cunning, 1 + rand.Next(3), false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Social, 1 + rand.Next(3), false);
-            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Intelligence, 1 + rand.Next(3), false);
+            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Cunning, 1 + rng.Next(3), false);
+            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Social, 1 + rng.Next(3), false);
+            specialHero.HeroDeveloper.AddAttribute(DefaultCharacterAttributes.Intelligence, 1 + rng.Next(3), false);
             List<SkillObject> shuffledSkills = new(Skills.All);
             Shuffle(shuffledSkills);
             int skipToAssign = Settings.Instance.AdditionalSkillPoints + 50 * partyLeader.GetSkillValue(DefaultSkills.Leadership) / Settings.Instance.LeadershipPointsPer50ExtraPoints;
@@ -660,11 +661,11 @@ namespace DistinguishedServiceRedux
                 int bonus;
                 if (sk == DefaultSkills.OneHanded || sk == DefaultSkills.TwoHanded || sk == DefaultSkills.Polearm || sk == DefaultSkills.Bow || sk == DefaultSkills.Crossbow || sk == DefaultSkills.Throwing)
                 {
-                    bonus = rand.Next(10) + rand.Next(15);
+                    bonus = rng.Next(10) + rng.Next(15);
                 }
                 else
                 {
-                    bonus = rand.Next(10) + rand.Next(15) + rand.Next(25);
+                    bonus = rng.Next(10) + rng.Next(15) + rng.Next(25);
                 }
                 skipToAssign -= bonus;
                 if (skipToAssign < 0)
@@ -703,8 +704,8 @@ namespace DistinguishedServiceRedux
         /// <exception cref="NullReferenceException"></exception>
         internal Hero InitializePromotedHero(CharacterObject baseCharacter, MobileParty? party = null)
         {
-            if (party == MobileParty.MainParty) party = null;
-            bool isPlayerCase = party == null;
+            bool isPlayerCase = party == MobileParty.MainParty || party == null;
+            MobileParty targetParty = isPlayerCase ? MobileParty.MainParty : party;
             Hero partyLeader = (isPlayerCase ? Hero.MainHero : party?.LeaderHero) ?? throw new NullReferenceException();
             CharacterObject wanderer = baseCharacter.Culture.NotableAndWandererTemplates.GetRandomElementWithPredicate<CharacterObject>((Func<CharacterObject, bool>)(x => x.Occupation == Occupation.Wanderer && x.IsFemale == baseCharacter.IsFemale && x.CivilianEquipments != null));
             if (wanderer == null)
@@ -725,12 +726,16 @@ namespace DistinguishedServiceRedux
                 InformationManager.DisplayMessage(new(GameTexts.FindText("DistServ_Warn", "011wanderernotfound").ToString(), Colors.Red));
                 throw new NullReferenceException();
             }
-            Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, null, null, null, rand.Next(20, 50));  // TODO: I don't like uniform distribution.
+            Hero specialHero = HeroCreator.CreateSpecialHero(wanderer, null, null, null, 20 + Binomial.Sample(this.rng, 0.2, 30));
             specialHero.Culture = wanderer.Culture;
             specialHero.CharacterObject.IsBasicTroop = false;
-            Settlement bornSettlement = SettlementHelper.FindRandomSettlement((Settlement x) => x.IsTown && x.Culture == specialHero.Culture) ?? SettlementHelper.FindRandomSettlement();
-            HeroHelper.SpawnHeroForTheFirstTime(specialHero, bornSettlement);  // I don't make sure but an errorful characterobject appears on the encyclopedia causes the game crash without this function.
-
+            HeroHelper.SpawnHeroForTheFirstTime(
+                specialHero,
+                SettlementHelper.FindRandomSettlement((Settlement x) => x.IsTown && x.Culture == specialHero.Culture) ?? SettlementHelper.FindRandomSettlement());  // I don't make sure but an errorful characterobject appears on the encyclopedia causes the game crash without this function.
+            specialHero.ChangeState(Hero.CharacterStates.Active);
+            AddCompanionAction.Apply(partyLeader.Clan, specialHero); // hero.Clan shouldn't be null.
+            AddHeroToPartyAction.Apply(specialHero, targetParty, true);
+            // (isPlayerCase ? MobileParty.MainParty : party).AddElementToMemberRoster(specialHero.CharacterObject, 1);
             if (NameList.IsFileExists() && isPlayerCase)
             {
                 TextObject newName = NameList.PullOutNameFromExternalFile();
@@ -743,7 +748,7 @@ namespace DistinguishedServiceRedux
             {
                 specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
             }
-            if (party == null)
+            if (isPlayerCase)
             {
                 specialHero.SetHasMet();
             }
@@ -755,9 +760,6 @@ namespace DistinguishedServiceRedux
             specialHero.HeroDeveloper.SetInitialLevel(wanderer.Level);
             // Default formation class seems to be read only, so I could't change it // TODO
             specialHero.CharacterObject.DefaultFormationGroup = wanderer.DefaultFormationGroup;
-            specialHero.ChangeState(Hero.CharacterStates.Active);
-            if (isPlayerCase) AddCompanionAction.Apply(Clan.PlayerClan, specialHero);
-            AddHeroToPartyAction.Apply(specialHero, isPlayerCase ? MobileParty.MainParty : party, true);
             CampaignEventDispatcher.Instance.OnHeroCreated(specialHero, false);
             float adjustedCost = Settings.Instance.PromotionCost;
             if (partyLeader.GetPerkValue(DefaultPerks.Trade.GreatInvestor))

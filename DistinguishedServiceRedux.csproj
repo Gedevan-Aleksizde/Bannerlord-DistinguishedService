@@ -36,6 +36,7 @@
         <PackageReference Include="Bannerlord.ReferenceAssemblies" Version="1.2.12.66233" />
         <PackageReference Include="Bannerlord.UIExtenderEx" Version="2.12.0" />
         <PackageReference Include="Lib.Harmony" Version="2.3.5" />
+        <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     </ItemGroup>
     <ItemGroup>
       <None Include="SubModule.xml">
