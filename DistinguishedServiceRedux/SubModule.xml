@@ -8,6 +8,11 @@
   </DependedModules>
   <DependedModuleMetadatas>
     <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" />
+    <DependedModuleMetadata id="DistinguishedService" incompatible="true" />
+    <DependedModuleMetadata id="DistinguishedService110" incompatible="true" />
+    <DependedModuleMetadata id="DistinguishedService116" incompatible="true" />
+    <DependedModuleMetadata id="DistinguishedService120" incompatible="true" />
+    <DependedModuleMetadata id="DistinguishedService120" incompatible="true" />
   </DependedModuleMetadatas>
   <SubModules>
     <SubModule>
