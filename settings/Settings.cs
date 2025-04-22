@@ -37,7 +37,7 @@ namespace DistinguishedServiceRedux.settings
         public float EligiblePercentile { get; set; } = 0.68f;  // outperform_percentile
         [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
         [SettingPropertyBool("{=7C44pRJyT}Ignore Companion Limit", Order = 0, RequireRestart = false, HintText = "{=XoyKSIk9Yo}If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. Default is Disabled.")]
-        public bool IgnoreCompanionLimit { get; set; } = false;  // respect_companion_limit, UI改善のため値を反転した
+        public bool IgnoreCompanionLimit { get; set; } = false;  // respect_companion_limit, inverted for better user interface
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
         [SettingPropertyInteger("{=JzTC6uoHk}Skill Points", 0, 500, Order = 1, RequireRestart = false, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 80.")]
         public int AdditionalSkillPoints { get; set; } = 80; // base_additional_skill_points
@@ -51,8 +51,8 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyBool("{=ebrfIjhX9}Randomized Skills", Order = 4, RequireRestart = false, HintText = "{=17RpeC0Bd7}If enabled, bonus skill is assigned randomly.")]
         public bool RandomizedSkill { get; set; } = false; // select_skills_randomly
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=e1gqqB6S9}Skill Bonus per Excess Kills", 0, 100, Order = 5, HintText = "{=x4hncKsa7v}The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. Default is 25.")]
-        public int SkillPointsPerExcessKill { get; set; } = 25; // skillpoints_per_excess_kill
+        [SettingPropertyInteger("{=e1gqqB6S9}Skill Bonus per Excess Kills", 0, 100, Order = 5, RequireRestart = false, HintText = "{=x4hncKsa7v}The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. Default is 10.")]
+        public int SkillPointsPerExcessKill { get; set; } = 10; // skillpoints_per_excess_kill
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
         [SettingPropertyInteger("{=WDyB8zjwV}Player's Leadership Skill For Extra 50 Skill Points", 0, 1250, Order = 6, RequireRestart = false, HintText = "{=fegcgJJkot}The number of points of the player's leadership skill point that is required to add 50 extra assignable skill points. Default is 1250.")]
         public int LeadershipPointsPer50ExtraPoints { get; set; } = 1250; // leadership_points_per_50_extra_skill_points

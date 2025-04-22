@@ -34,7 +34,7 @@
     <string id="ebrfIjhX9" text="Randomized Skills" />
     <string id="17RpeC0Bd7" text="Should skills to invest points into be selected for you?" />
     <string id="e1gqqB6S9" text="Skill Bonus per Excess Kills" />
-    <string id="x4hncKsa7v" text="The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. The default is 25." />
+    <string id="x4hncKsa7v" text="The number of skill points that is awarded to the new companion per kill over the minimum kill threshold. The default is 10." />
     <string id="WDyB8zjwV" text="Player's Leadership Skill For Extra 50 Skill Points" />
     <string id="fegcgJJkot" text="The number of points of the player's leadership skill point that is required to add 50 extra assignable skill points. The default is 1250." />
     <string id="RfH84SuAS" text="Fill In Perks" />

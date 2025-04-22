@@ -56,6 +56,6 @@
         </SubModuleOverrides>
     </ItemGroup>
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="copy $(OutDir)\$(AssemblyName).dll DistinguishedServiceRedux\bin\Win64_Shipping_Client\$(AssemblyName).dll" />
+      <Exec Command="copy $(OutDir)\$(AssemblyName).dll DistinguishedServiceRedux\bin\Win64_Shipping_Client\$(AssemblyName).dll&#xD;&#xA;copy SubModule.xml DistinguishedServiceRedux" />
     </Target>
 </Project>
