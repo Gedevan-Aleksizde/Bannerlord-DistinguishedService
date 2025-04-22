@@ -25,7 +25,9 @@ namespace DistinguishedServiceRedux.ext
         public static void SetInitialLevelFromSkills(this Hero hero)
         {
             int b = (int)Skills.All.Sum((SkillObject s) => 2f * MathF.Pow(hero.GetSkillValue(s), 2.2f)) - 2000;
-            // hero.HeroDeveloper.TotalXp = MathF.Max(1, b); TODO: is really needed?
+            // hero.HeroDeveloper.TotalXp = MathF.Max(1, b);
+            hero.HeroDeveloper.SetInitialLevel(hero.Level);
+
         }
         public static void CheckLevel(this Hero hero)
         {
@@ -55,11 +57,16 @@ namespace DistinguishedServiceRedux.ext
                     hero.HeroDeveloper.AddAttribute(item, 1);
                 }
             }
+            if (hero.HeroDeveloper.UnspentAttributePoints < 0) hero.HeroDeveloper.UnspentAttributePoints = 0;
 
             foreach (SkillObject item2 in Skills.All)
             {
                 hero.HeroDeveloper.UnspentFocusPoints -= hero.HeroDeveloper.GetFocus(item2);
                 hero.HeroDeveloper.InitializeSkillXp(item2);
+            }
+            if (hero.HeroDeveloper.UnspentFocusPoints < 0)
+            {
+                hero.HeroDeveloper.UnspentFocusPoints = 0;
             }
         }
         public static MBReadOnlyList<PerkObject> GetOneAvailablePerkForEachPerkPair(this Hero hero)
