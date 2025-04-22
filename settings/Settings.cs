@@ -39,11 +39,11 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyBool("{=7C44pRJyT}Ignore Companion Limit", Order = 0, RequireRestart = false, HintText = "{=XoyKSIk9Yo}If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. Default is Disabled.")]
         public bool IgnoreCompanionLimit { get; set; } = false;  // respect_companion_limit, UI改善のため値を反転した
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=JzTC6uoHk}Skill Points", 0, 500, Order = 1, RequireRestart = false, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 150.")]
-        public int AdditionalSkillPoints { get; set; } = 150; // base_additional_skill_points
+        [SettingPropertyInteger("{=JzTC6uoHk}Skill Points", 0, 500, Order = 1, RequireRestart = false, HintText = "{=85WomjlJtB}The number of primary skill point bonus to manually assign to newly-created companion skills. Default is 80.")]
+        public int AdditionalSkillPoints { get; set; } = 80; // base_additional_skill_points
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
-        [SettingPropertyInteger("{=FqySMd4Cu}Skill Bonus", 0, 10, Order = 2, RequireRestart = false, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 3.")]
-        public int NumSkillBonuses { get; set; } = 3; // number_of_skill_bonuses
+        [SettingPropertyInteger("{=FqySMd4Cu}Skill Bonus", 0, 10, Order = 2, RequireRestart = false, HintText = "{=KFwunOsf4k}The number of skill bonuses for players to choose for newly-created heroes. Default is 2.")]
+        public int NumSkillBonuses { get; set; } = 2; // number_of_skill_bonuses
         [SettingPropertyGroup("{=Lwt72jlJJ}Skills", GroupOrder = 1)]
         [SettingPropertyInteger("{=JEPdqkqB7}Skill Rounds", 0, 10, Order = 3, RequireRestart = false, HintText = "{=OfDcCqMwbP}The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. Default is 1.")]
         public int NumSkillRounds { get; set; } = 1; // number_of_skill_rounds 

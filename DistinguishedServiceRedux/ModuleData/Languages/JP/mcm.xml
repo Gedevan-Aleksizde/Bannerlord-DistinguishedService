@@ -26,9 +26,9 @@
     <string id="7C44pRJyT" text="仲間の上限を無視する"/>
     <string id="XoyKSIk9Yo" text="有効にすると、抜擢される人数が仲間の人数の上限を超過することを許容します。注: 仲間の人数が上限を超過している場合、仲間はランダムに**消滅**することがあります。デフォルトは「無効」です。"/>
     <string id="JzTC6uoHk" text="スキルポイント"/>
-    <string id="85WomjlJtB" text="新たに抜擢された仲間の、自由に割り振れるスキルポイントです。デフォルトは「150」です。"/>
+    <string id="85WomjlJtB" text="新たに抜擢された仲間の、自由に割り振れるスキルポイントです。デフォルトは「80」です。"/>
     <string id="FqySMd4Cu" text="スキルボーナス"/>
-    <string id="KFwunOsf4k" text="新たに抜擢された仲間に与えられるスキルボーナス数です。デフォルトは「3」です。"/>
+    <string id="KFwunOsf4k" text="新たに抜擢された仲間に与えられるスキルボーナス数です。デフォルトは「2」です。"/>
     <string id="JEPdqkqB7" text="スキル回数"/>
     <string id="OfDcCqMwbP" text="新たに抜擢され仲間にスキルを割り振る回数です。1回ごとに「スキル回数」で設定した数だけスキルを割り振れます。デフォルトは「1」です。"/>
     <string id="ebrfIjhX9" text="スキルのランダム割り振り"/>

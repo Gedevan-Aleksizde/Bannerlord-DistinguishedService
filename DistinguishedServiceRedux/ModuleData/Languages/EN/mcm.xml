@@ -26,9 +26,9 @@
     <string id="7C44pRJyT" text="Ignore Companion Limit" />
     <string id="XoyKSIk9Yo" text="If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. The default is Disabled." />
     <string id="JzTC6uoHk" text="Skill Points" />
-    <string id="85WomjlJtB" text="The number of primary skill point bonus to manually assign to newly-created companion skills. The default is 150." />
+    <string id="85WomjlJtB" text="The number of primary skill point bonus to manually assign to newly-created companion skills. The default is 80." />
     <string id="FqySMd4Cu" text="Skill Bonus" />
-    <string id="KFwunOsf4k" text="The number of skill bonuses for players to choose for newly-created heroes. The default is 3." />
+    <string id="KFwunOsf4k" text="The number of skill bonuses for players to choose for newly-created heroes. The default is 2." />
     <string id="JEPdqkqB7" text="Skill Rounds" />
     <string id="OfDcCqMwbP" text="The number of round you can assign skill bonuses during each round gives [base_additional_skill_points/round#] per skill. The default is 2." />
     <string id="ebrfIjhX9" text="Randomized Skills" />
