@@ -50,7 +50,7 @@ namespace DistinguishedServiceRedux
 
             //Output final mod state to user, set static instance
             InformationManager.DisplayMessage(new(
-                GameTexts.FindText("DistServ_Info", "threshold").SetTextVariable("MAX", Settings.Instance.MaxNominations).SetTextVariable("TTHRESH", Settings.Instance.EligibleTier).SetTextVariable("KTHRESH", Settings.Instance.EligibleKillCountInfantry).SetTextVariable("CTHRESH", Settings.Instance.EligibleKillCountCavalry).SetTextVariable("RTHRESH", Settings.Instance.EligibleKillCountRanged).SetTextVariable("PTHRESH", Settings.Instance.EligiblePercentile).ToString(), Colors.White));
+                GameTexts.FindText("DistServ_Info", "threshold").SetTextVariable("MAX", Settings.Instance.MaxNominations).SetTextVariable("TTHRESH", Settings.Instance.EligibleTier).SetTextVariable("KTHRESH", Settings.Instance.EligibleKillCountInfantry).SetTextVariable("CTHRESH", Settings.Instance.EligibleKillCountCavalry).SetTextVariable("RTHRESH", Settings.Instance.EligibleKillCountRanged).SetTextVariable("MATHRESH", Settings.Instance.EligibleKillCountMountedArcher).SetTextVariable("PTHRESH", Settings.Instance.EligiblePercentile).ToString(), Colors.White));
             PromotionManager.__instance = this;
 
             //Display warnings if chosen settings will cause non-player-controlled events
