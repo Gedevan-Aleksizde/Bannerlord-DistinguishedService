@@ -33,7 +33,10 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyInteger("{=NNQYYgCN3}Min. Kills for Ranged Troops", 1, 128, "0", Order = 5, RequireRestart = false, HintText = "{=vcXgO4B8mG}The number of kills threshold to be nominated for ranged troops. Default is 5.")]
         public int EligibleKillCountRanged { get; set; } = 5; // ran_kill_threshold
         [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
-        [SettingPropertyFloatingInteger("{=WyI8Nf9yg}Percentile Outperform", 0, 1, "0.000", Order = 6, RequireRestart = false, HintText = "{=aWfPIRIssB}The percentile of kills a unit must exceed to qualify to be nominated. Set to 0 for previous versions' behaviour (only kill thresholds). Default is 0.68.")]
+        [SettingPropertyInteger("{=KQ3VzjCD8}Min. Kills for Mounted Archer", 1, 128, "0", Order = 6, RequireRestart = false, HintText = "{=jPx6zMENo}The number of kills threshold to be nominated for mounted archers. Mounted troops with throwing weapons are NOT classified as this. Default is 5. Default is 5.")]
+        public int EligibleKillCountMountedArcher { get; set; } = 5;
+        [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
+        [SettingPropertyFloatingInteger("{=WyI8Nf9yg}Percentile Outperform", 0, 1, "0.000", Order = 7, RequireRestart = false, HintText = "{=aWfPIRIssB}The percentile of kills a unit must exceed to qualify to be nominated. Set to 0 for previous versions' behaviour (only kill thresholds). Default is 0.68.")]
         public float EligiblePercentile { get; set; } = 0.68f;  // outperform_percentile
         [SettingPropertyGroup("{=KAgbRWUNn}Eligibility", GroupOrder = 0)]
         [SettingPropertyBool("{=7C44pRJyT}Ignore Companion Limit", Order = 0, RequireRestart = false, HintText = "{=XoyKSIk9Yo}If enabled, the number of nominations will excess the native companion limit. NOTE: Your companion will randomly LOST if you have more companions than the limit. Default is Disabled.")]

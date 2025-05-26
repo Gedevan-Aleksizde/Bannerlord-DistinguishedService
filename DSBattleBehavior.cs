@@ -87,13 +87,17 @@ namespace DistinguishedServiceRedux
                     continue;
                 // FIXME: This can hit false positives in certain situations, but those edge cases are harder to fix and more rare, so we'll just settle for something that works for now...
                 int cutoffKills;
-                if (co.IsRanged)
+                if (co.IsRanged && co.IsMounted)
                 {
-                    cutoffKills = Settings.Instance.EligibleKillCountRanged;
+                    cutoffKills = Settings.Instance.EligibleKillCountMountedArcher;
                 }
                 else if (co.IsMounted)
                 {
                     cutoffKills = Settings.Instance.EligibleKillCountCavalry;
+                }
+                else if (co.IsRanged)
+                {
+                    cutoffKills = Settings.Instance.EligibleKillCountRanged;
                 }
                 else
                 {

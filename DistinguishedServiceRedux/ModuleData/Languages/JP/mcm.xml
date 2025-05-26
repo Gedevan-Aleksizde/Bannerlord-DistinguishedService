@@ -19,6 +19,8 @@
     <string id="BLpQfo0f8b" text="歩兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
     <string id="0owPtnEUD" text="乗馬兵の最低キル数"/>
     <string id="CRRwgyzJvq" text="乗馬兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
+    <string id="KQ3VzjCD8" text="乗馬射手の最低キル数" />
+    <string id="jPx6zMENo" text="乗馬射手が抜擢されるのに最低限必要なキル数です。投擲武器を装備した騎兵には適用されません。デフォルトは「5」です。" />
     <string id="NNQYYgCN3" text="投射兵の最低キル数"/>
     <string id="vcXgO4B8mG" text="弓兵や投擲兵が抜擢されるのに最低限必要なキル数です。デフォルトは「5」です。"/>
     <string id="WyI8Nf9yg" text="目覚ましい活躍のパーセンタイル"/>

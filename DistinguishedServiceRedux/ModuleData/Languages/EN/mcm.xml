@@ -19,6 +19,8 @@
     <string id="BLpQfo0f8b" text="The number of kills threshold to be nominated for infantly. The default is 5." />
     <string id="0owPtnEUD" text="Min. Kills for Mounted Troops" />
     <string id="CRRwgyzJvq" text="The number of kills threshold to be nominated for mounted troops. The default is 5." />
+    <string id="KQ3VzjCD8" text="Min. Kills for Mounted Archer" /> <!-- new in v1.3.0 -->
+    <string id="jPx6zMENo" text="The number of kills threshold to be nominated for mounted archers. Mounted troops with throwing weapons are NOT classified as this. Default is 5." /> <!-- new in v1.3.0 -->
     <string id="NNQYYgCN3" text="Min. Kills for Ranged Troops" />
     <string id="vcXgO4B8mG" text="The number of kills threshold to be nominated for ranged troops. The default is 5." />
     <string id="WyI8Nf9yg" text="Percentile Outperform" />
