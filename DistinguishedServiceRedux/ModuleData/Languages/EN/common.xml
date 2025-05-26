@@ -12,7 +12,7 @@
     <string id="87Ba3B2D" text="Using Modules/DistringuishedServerviceUpdated Settings" />
     <string id="A7124477" text="At maximum allowed companions. No nominations possible." />
     <string id="Cb8f5d67" text="USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names." />
-    <string id="D7F07C09" text="Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Inf = {KTHRESH} cav = {CTHRESH} ran = {RTHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}" />
+    <string id="iMyTBa9ZB" text="Max nominations = {MAX}{NEWLINE}Tier Threshold = {TTHRESH}{NEWLINE}Kill Thresh.:{NEWLINE}Infantry = {KTHRESH} Cavarly = {CTHRESH} Ranged = {RTHRESH} Mouted Archer = {MATHRESH}{NEWLINE}Performance Thresh. = {PTHRESH}" /> <!-- changed in v1.3.0 -->
     <string id="04d2faC3" text="MLBW compatibility mode:{NEWLINE}Using first equipment sets" />
     <string id="1cD516bA" text="CAUTION 005: Troops will auto-promote to heros at tier {TTHRESH}{NEWLINE}Change settings if this is unintended." />
     <string id="E395152c" text="CAUTION: New hero perks will be assigned automatically.{NEWLINE}Change settings if this is unintended." />

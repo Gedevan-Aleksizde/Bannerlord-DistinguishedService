@@ -13,6 +13,7 @@
     <string id="A7124477" text="仲間にできる人数の上限に達しています。抜擢できません。"/>
     <string id="Cb8f5d67" text="外部の名簿ファイルを使用します!{NEWLINE}使用した名前を排除するため、このファイルはModによって自動的に変更されます。"/>
     <string id="D7F07C09" text="最大候補者指数 {MAX}{NEWLINE}必要Tier {TTHRESH}{NEWLINE}必要キル数 {KTHRESH}{NEWLINE}歩兵 {KTHRESH}、騎兵 {CTHRESH}、投射 {RTHRESH}{NEWLINE}要求成績 {PTHRESH}"/>
+    <string id="iMyTBa9ZB" text="最大候補者指数 {MAX}{NEWLINE}必要Tier {TTHRESH}{NEWLINE}必要キル数 {KTHRESH}{NEWLINE}歩兵 {KTHRESH}、騎兵 {CTHRESH}、投射 {RTHRESH}、弓騎 {MATHRESH}{NEWLINE}要求成績 {PTHRESH}"/>
     <string id="04d2faC3" text="My Little Warband互換モード: 1番目の装備セットを使用します"/>
     <string id="1cD516bA" text="CAUTION 005: 兵士が Tier {TTHRESH}に到達すると自動でヒーローに昇格します。{NEWLINE}不要ならば設定を変更してください。"/>
     <string id="E395152c" text="CAUTION: 新たなヒーローのパークスキルが自動的に割り当てられます。{NEWLINE}意図した設定でないなら変更してください。"/>
