@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
@@ -11,6 +12,7 @@ namespace DistinguishedServiceRedux
 {
     public static class NameList
     {
+        private static readonly RandomSource rng = new Xoshiro256StarStar(threadSafe: true);
         private const string EXTERNAL_NAME_FILE = "external_namelist.txt";
         private static readonly string filePath = Path.Combine(TaleWorlds.ModuleManager.ModuleHelper.GetModuleFullPath(SubModule.moduleName), EXTERNAL_NAME_FILE);
         public static bool IsFileExists()
@@ -36,8 +38,10 @@ namespace DistinguishedServiceRedux
             }
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
+            TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId);
+            formats.AppendList(Settlement.All.Where(x => x.Culture == culture && (x.IsTown || x.IsVillage)).Select(x => nameFromatSettlement.CopyTextObject().SetTextVariable("SETTLEMENT", x.Name.ToString())).ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
-            return formats[new Xorshift().Next(formats.Count)];
+            return formats[rng.Next(formats.Count)].CopyTextObject();
         }
         /// <summary>
         /// Draw a user-defined name from the external text file, then **remove drawn name from the file**
