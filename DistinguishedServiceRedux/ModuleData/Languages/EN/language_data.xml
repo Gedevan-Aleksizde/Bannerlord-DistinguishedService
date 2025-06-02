@@ -3,4 +3,5 @@
   <LanguageFile xml_path="EN/common.xml"/>
   <LanguageFile xml_path="EN/mcm.xml"/>
   <LanguageFile xml_path="EN/namelist.xml"/>
+  <LanguageFile xml_path="EN/namelist-backward.xml"/>
 </LanguageData>

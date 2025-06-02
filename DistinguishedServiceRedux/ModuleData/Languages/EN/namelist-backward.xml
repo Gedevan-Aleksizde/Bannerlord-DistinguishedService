@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<base>
+    <tags>
+        <tag language="English"/>
+    </tags>
+    <strings>
+        <!-- left for backward compatibility -->
+        <string id="44b89b22" text="{FIRSTNAME} the Swordman" />
+        <string id="87F243b9" text="{FIRSTNAME} the Horseman" />
+        <string id="a460490b" text="{FIRSTNAME} the Hunter" />
+        <string id="67FE6236" text="{FIRSTNAME} the Miller's son" />
+        <string id="faF0B019" text="{FIRSTNAME} the Steed" />
+        <string id="d4CAddb5" text="{FIRSTNAME} the Woodcutter's son" />
+        <string id="D9C12b0e" text="{FIRSTNAME} the Charcoal-burner's son" />  
+        <string id="219F400D" text="{FIRSTNAME} Athanatos" />
+        <string id="65a05768" text="{FIRSTNAME} Pankratios" />
+        <string id="83B53C21" text="{FIRSTNAME} the Spatharios" />
+        <string id="fc90fD0d" text="{FIRSTNAME} Ornianus" />
+        <string id="A7B68763" text="{FIRSTNAME} Blandikos" />
+        <string id="1c053Fc1" text="{FIRSTNAME} Grozny" />
+        <string id="6ED2647d" text="{FIRSTNAME} Ovskii" />
+        <string id="DSR65b787f2" text="{FIRSTNAME} the Geitebukk" />
+        <string id="3958c626" text="{FIRSTNAME} the Geitebukk" />
+        <string id="132fD7BD" text="{FIRSTNAME} Vastrovskii" />
+        <string id="3dBF2D5E" text="{FIRSTNAME} Shagokhodnii" />
+        <string id="DSRca4D83fD" text="{FIRSTNAME} Ragetius" />
+        <string id="Dd464a2d" text="{FIRSTNAME} the Valkyrja" />
+        <string id="DSR81FB560A" text="{FIRSTNAME} Palaicus" />
+    </strings>
+</base>

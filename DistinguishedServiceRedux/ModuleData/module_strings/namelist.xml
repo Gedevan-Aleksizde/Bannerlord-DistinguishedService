@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <strings>
+  <!-- #region infantly name format -->
   <string id="DistServ_name_format_infantly.blade" text="{=7a3804Bc}{FIRSTNAME} the Blade"/>
   <string id="DistServ_name_format_infantly.sword" text="{=44b89b22}{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}"/>
   <string id="DistServ_name_format_infantly.brave" text="{=9b0e91cA}{FIRSTNAME} the Brave"/>
@@ -13,6 +14,23 @@
   <string id="DistServ_name_format_infantly.scythe" text="{=e446af77}{FIRSTNAME} the Scythe"/>
   <string id="DistServ_name_format_infantly.anvil" text="{=ee1e910A}{FIRSTNAME} the Anvil"/>
   <string id="DistServ_name_format_infantly.scarlet" text="{=1957a93D}{FIRSTNAME} the scarlet"/>
+  <string id="DistServ_name_format_infantry.woodcutterson" text="{FIRSTNAME} the Woodcutter's {?IS_FEMALE}daughter{?}son{\?}"/>
+  <string id="DistServ_name_format_infantry.charcoalson" text="{FIRSTNAME} the Charcoal-burner's {?IS_FEMALE}daughter{?}son{\?}"/>
+  <string id="DistServ_name_format_infantry.firstblade" text="{=8939AE9F}{FIRSTNAME} the Firstblade"/>
+  <string id="DistServ_name_format_infantry.gorger" text="{=a860114d}{FIRSTNAME} the Gorger"/>
+  <string id="DistServ_name_format_infantly.iron" text="{=851056d0}{FIRSTNAME} the Iron"/>
+  <string id="DistServ_name_format_infantly.barehand" text="{=0f1D6083}{FIRSTNAME} the Barehand"/>
+  <string id="DistServ_name_format_infantly.barefoot" text="{=3f99fAf4}{FIRSTNAME} the Barefoot"/>
+  <string id="DistServ_name_format_infantly.bigfoot" text="{=320e8AC3}{FIRSTNAME} the Bigfoot"/>
+  <string id="DistServ_name_format_infantry.brawler" text="{=c0C37f23}{FIRSTNAME} the Brawler"/>
+  <string id="DistServ_name_format_infentry.centipede" text="{=58E25b2c}{FIRSTNAME} the Centipede"/>
+  <string id="DistServ_name_format_infantry.steed" text="{FIRSTNAME} the {?IS_FEMALE}Mare{?}Steed{\?}"/>
+  <string id="DistServ_name_format_infantry.plower" text="{=285C9720}{FIRSTNAME} the Plower"/>
+  <string id="DistServ_name_format_infantry.shieldcrasher" text="{=403BB249}{FIRSTNAME} the Shield-crasher"/>
+  <string id="DistServ_name_format_infantry.levyman" text="{=4878254d}{FIRSTNAME} the Levyman"/>
+  <string id="DistServ_name_format_infantry.crookednose" text="{=a26BBbfE}{FIRSTNAME} the Crooked Nose"/>
+  <!-- #endregion -->
+  <!-- #region cavalry name format -->
   <string id="DistServ_name_format_cavalry.rider" text="{=e49b3Fe7}{FIRSTNAME} the Rider"/>
   <string id="DistServ_name_format_cavalry.horseman" text="{FIRSTNAME} the {?IS_FEMALE}Horselady{?}Horseman{\?}"/>
   <string id="DistServ_name_format_cavalry.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
@@ -24,6 +42,16 @@
   <string id="DistServ_name_format_cavalry.hammer" text="{=3d133b8B}{FIRSTNAME} the Hammer"/>
   <string id="DistServ_name_format_cavalry.swift" text="{=242b2BaA}{FIRSTNAME} the Swift"/>
   <string id="DistServ_name_format_cavalry.pinder" text="{=8701bbe2}{FIRSTNAME} the Pinder"/>
+  <string id="DistServ_name_format_cavalry.haste" text="{=7c42d315}{FIRSTNAME} the Haste"/>
+  <string id="DistServ_name_format_cavalry.harbinger" text="{=14053851}{FIRSTNAME} the Harbinger"/>
+  <string id="DistServ_name_format_cavalry.lazy" text="{=351607C1}{FIRSTNAME} the Lazy"/>
+  <string id="DistServ_name_format_cavalry.fourlegged" text="{=6FbA2aE9}{FIRSTNAME} the Four-legged"/>
+  <string id="DistServ_name_format_cavalry.groom" text="{=dc845e39}{FIRSTNAME} the Groom"/>
+  <string id="DistServ_name_format_cavalry.cavarlyman" text="{=0bc321ac}{FIRSTNAME} the Cavarlyman"/>
+  <string id="DistServ_name_format_cavalry.squire" text="{=F1104B5a}{FIRSTNAME} the Squire"/>
+  <string id="DistServ_name_format_cavalry.goldenbridle" text="{=9f3b1B25}{FIRSTNAME} the Golden Bridle"/>
+  <!-- #endregion -->
+  <!-- #region ranged troops name format -->
   <string id="DistServ_name_format_ranged.ranger" text="{=37423dcD}{FIRSTNAME} the Ranger"/>
   <string id="DistServ_name_format_ranged.bowman" text="{=9e5C609A}{FIRSTNAME} the Bowman"/>
   <string id="DistServ_name_format_ranged.sharpshooter" text="{=eaD76Cf2}{FIRSTNAME} the Sharpshooter"/>
@@ -35,26 +63,284 @@
   <string id="DistServ_name_format_ranged.adale" text="{=91C52417}{FIRSTNAME}-a-Dale"/>
   <string id="DistServ_name_format_ranged.greenleaf" text="{=2692143D}{FIRSTNAME} Greenleaf"/>
   <string id="DistServ_name_format_ranged.doncaster" text="{=8566Dfa5}{FIRSTNAME} of Doncaster"/>
+  <string id="DistServ_name_format_ranged.blind" text="{=707C8eD8}{FIRSTNAME} the Blind"/>
+  <string id="DistServ_name_format_ranged.arch" text="{=a69b2FbB}{FIRSTNAME} the Arch"/>
+  <string id="DistServ_name_format_ranged.stray" text="{=669eA1E2}{FIRSTNAME} the Stray"/>
+  <string id="DistServ_name_format_ranged.arrowhed" text="{=ba8667da}{FIRSTNAME} the Arrowhead"/>
+  <string id="DistServ_name_format_ranged.hermit" text="{=Ff2b5b00}{FIRSTNAME} the Hermit"/>
+  <string id="DistServ_name_format_ranged.farseeker" text="{=A11ef5c8}{FIRSTNAME} the Far-Seeker"/>
+  <string id="DistServ_name_format_ranged.huntsman" text="{=DdCCd87F}{FIRSTNAME} the Huntsman"/>
+  <string id="DistServ_name_format_ranged.powerdraw" text="{=2Fd2556D}{FIRSTNAME} the Power-drawer"/>
+  <string id="DistServ_name_format_ranged.cave" text="{=9a416ecf}{FIRSTNAME} the Cave"/>
+  <string id="DistServ_name_format_ranged.indexfinger" text="{=3Bd9e080}{FIRSTNAME} the Index Finger"/>
+  <string id="DistServ_name_format_ranged.indexfinger" text="{=e4229b66}{FIRSTNAME} the Arrow Barrel"/>
+  <!-- #endregion -->
+  <!-- #region Battanian name format -->
   <string id="DistServ_name_format_culture_battania.fhasach" text="{=A93e60aD}{FIRSTNAME} an Fhàsach"/>
   <string id="DistServ_name_format_culture_battania.laidir" text="{=E126Bd72}{FIRSTNAME} an Làidir"/>
   <string id="DistServ_name_format_culture_battania.gaisgeach" text="{=8bD3e872}{FIRSTNAME} an Gaisgeach"/>
+  <string id="DistServ_name_format_culture_battania.uchalion" text="{=51493733}{FIRSTNAME} o Uchalion"/>
+  <string id="DistServ_name_format_culture_battania.llyntywal" text="{=18Db0e27}{FIRSTNAME} o Lyn Tywal"/>
+  <string id="DistServ_name_format_culture_battania.llynmodris" text="{=b0046b16}{FIRSTNAME} o Lyn Modris"/>
+  <string id="DistServ_name_format_culture_battania.ailtadruin" text="{=9e3b35dD}{FIRSTNAME} o Ailta Druin"/>
+  <string id="DistServ_name_format_culture_battania.pendric" text="{=c428E81E}{FIRSTNAME} o Benddric"/>
+  <string id="DistServ_name_format_culture_battania.llwyd" text="{=DSR78aCaa02}{FIRSTNAME} Lwyd"/>
+  <string id="DistServ_name_format_culture_battania.fawr" text="{=DSRc0E07140}{FIRSTNAME} Fawr"/>
+  <string id="DistServ_name_format_culture_battania.default" text="{=DSR3f1F3207}{FIRSTNAME} y Battanaid"/>
+  <!-- #endregion -->
+  <!-- #region Imperial name format -->
   <string id="DistServ_name_format_culture_empire.vulpis" text="{=70a204b5}{FIRSTNAME} Vulpis"/>
   <string id="DistServ_name_format_culture_empire.fortis" text="{=B9DFa49E}{FIRSTNAME} Fortis"/>
   <string id="DistServ_name_format_culture_empire.callidus" text="{=4A98Ab35}{FIRSTNAME} an Callidus"/>
+  <string id="DistServ_name_format_culture_empire.immportal" text="{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}"/>
+  <string id="DistServ_name_format_culture_empire.pankrat" text="{=65a05768}{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}"/>
+  <string id="DistServ_name_format_culture_empire.silver" text="{=a07A65f9}{FIRSTNAME} the Silver Shield"/>
+  <string id="DistServ_name_format_culture_empire.bronze" text="{=Ab3d8Ea5}{FIRSTNAME} the Bronze Shield"/>
+  <string id="DistServ_name_format_culture_empire.spathaman" text="{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}"/>
+  <string id="DistServ_name_format_culture_empire.spear" text="{=36cd93E0}{FIRSTNAME} the Kontarion"/>
+  <string id="DistServ_name_format_culture_empire.myzead" text="{=1eD346CC}{FIRSTNAME} Myzeadas"/>
+  <string id="DistServ_name_format_culture_empire.cursion" text="{=2fBF2798}{FIRSTNAME} Cursiontos"/>
+  <string id="DistServ_name_format_culture_empire.calsea" text="{=61F4Eb94}{FIRSTNAME} Calseas"/>
+  <string id="DistServ_name_format_culture_empire.mironias" text="{=501785b9}{FIRSTNAME} Mirontos"/>
+  <string id="DistServ_name_format_culture_empire.tiagys" text="{=Cb3bE7d5}{FIRSTNAME} Tiagysas"/>
+  <string id="DistServ_name_format_culture_empire.ornian" text="{FIRSTNAME} {?IS_FEMALE}Ornianicus{?}Oriaianica{\?}"/>
+  <string id="DistServ_name_format_culture_empire.zeos" text="{=831d35eD}{FIRSTNAME} Erithrysas"/>
+  <string id="DistServ_name_format_culture_empire.lycarea" text="{=7b1cA944}{FIRSTNAME} Lycareas"/>
+  <string id="DistServ_name_format_culture_empire.sethys" text="{=1F692340}{FIRSTNAME} Sethys"/>
+  <string id="DistServ_name_format_culture_empire.vlandikos" text="{FIRSTNAME} {?IS_FEMALE}Blandike{?}Blandikos{\?}"/>
+  <string id="DistServ_name_format_culture_empire.battanion" text="{=7f518e38}{FIRSTNAME} Battanion"/>
+  <string id="DistServ_name_format_culture_empire.default" text="{=2A63395C}{FIRSTNAME} Calradias"/>
+  <!-- #endregion -->
+  <!-- #region Sturigian name format -->
   <string id="DistServ_name_format_culture_sturgia.kraken" text="{=e0B3624e}{FIRSTNAME} det Kråke"/>
   <string id="DistServ_name_format_culture_sturgia.leaf" text="{=f030A6f3}{FIRSTNAME} det Rev"/>
   <string id="DistServ_name_format_culture_sturgia.nord" text="{=3Fc0b82e}{FIRSTNAME} av Nord"/>
+  <string id="DistServ_name_format_culture_sturgia.sword" text="{=e05C8Fd3}{FIRSTNAME} the Svärd"/>
+  <string id="DistServ_name_format_culture_sturgia.shield" text="{=90025540}{FIRSTNAME} the Sköld"/>
+  <string id="DistServ_name_format_culture_sturgia.chertyg" text="{=72219326}{FIRSTNAME} z Chertyga"/>
+  <string id="DistServ_name_format_culture_sturgia.kachar" text="{=A3C29ef9}{FIRSTNAME} z Kachara"/>
+  <string id="DistServ_name_format_culture_sturgia.byalic" text="{=faF406d4}{FIRSTNAME} z Byalii"/>
+  <string id="DistServ_name_format_culture_sturgia.galcha" text="{=b6A3224c}{FIRSTNAME} z Galchi"/>
+  <string id="DistServ_name_format_culture_sturgia.ircara" text="{=5A8f4f83}{FIRSTNAME} z Ircari"/>
+  <string id="DistServ_name_format_culture_sturgia.grozny" text="{FIRSTNAME} {?IS_FEMALE}Grozna{?}Grozny{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.ovskii" text="{FIRSTNAME} {?IS_FEMALE}Ovska{?}Ovskii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.vastrovskii" text="{FIRSTNAME} {?IS_FEMALE}Vastorvska{?}Vastrovskii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.shagokhodnii" text="{FIRSTNAME} {?IS_FEMALE}Shagokhodna{?}Shagokhodnii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.varangian" text="{=0d200107}{FIRSTNAME} the Vaeling"/>
+  <string id="DistServ_name_format_culture_sturgia.snowplower" text="{=Bd4Db926}{FIRSTNAME} the Snowplower"/>
+  <string id="DistServ_name_format_culture_sturgia.default" text="{=35c04036}{FIRSTNAME} Sturgianin"/>
+  <!-- #endregion -->
+  <!-- #region Nords name format -->
   <string id="DistServ_name_format_culture_nord.nord" text="{=whcLyzQjHH}{FIRSTNAME} av Nord"/>
+  <string id="DistServ_name_format_culture_nord.ashtree" text="{=DSR604806C5}{FIRSTNAME} the Ashtree"/>
+  <string id="DistServ_name_format_culture_nord.hornblower" text="{=DSR01514F16}{FIRSTNAME} the Hornblower"/>
+  <string id="DistServ_name_format_culture_nord.banner" text="{=DSRde7EFEd1}{FIRSTNAME} the AðalmækiR"/>
+  <string id="DistServ_name_format_culture_nord.arbot" text="{=DSRD7D23726}{FIRSTNAME} the Arbot"/>
+  <string id="DistServ_name_format_culture_nord.salmontrout" text="{=DSRBfFA6BeF}{FIRSTNAME} the Aurriði"/>
+  <string id="DistServ_name_format_culture_nord.oathspeaking" text="{=DSR560b730f}{FIRSTNAME} the Aiþalataz"/>
+  <string id="DistServ_name_format_culture_nord.bareleg" text="{=DSRde88f64A}{FIRSTNAME} the Berleggr"/>
+  <string id="DistServ_name_format_culture_nord.broad" text="{=DSRC98f1729}{FIRSTNAME} the Breiðr"/>
+  <string id="DistServ_name_format_culture_nord.brown" text="{=DSR4c0d6871}{FIRSTNAME} the Brun"/>
+  <string id="DistServ_name_format_culture_nord.buck" text="{=DSRA7Af40dB}{FIRSTNAME} the Borkr"/>
+  <string id="DistServ_name_format_culture_nord.fire" text="{=DSR94455642}{FIRSTNAME} the Eldr"/>
+  <string id="DistServ_name_format_culture_nord.sword" text="{=DSR0e887c53}{FIRSTNAME} the Sverð"/>
+  <string id="DistServ_name_format_culture_nord.shield" text="{=DSR2Fc3d897}{FIRSTNAME} the Skjoldr"/>
+  <string id="DistServ_name_format_culture_nord.shieldmaster" text="{=DSR016c1db8}{FIRSTNAME} the Shieldmaster"/>
+  <string id="DistServ_name_format_culture_nord.underlinden" text="{=DSR794b9822}{FIRSTNAME} under the Linden"/>
+  <string id="DistServ_name_format_culture_nord.porrige" text="{=DSRCf633197}{FIRSTNAME} the Grautr"/>
+  <string id="DistServ_name_format_culture_nord.goldbeard" text="{=DSR890b429D}{FIRSTNAME} the Gullskeggr"/>
+  <string id="DistServ_name_format_culture_nord.straw" text="{=DSR20A3f862}{FIRSTNAME} the Hálmi"/>
+  <string id="DistServ_name_format_culture_nord.dark-brown" text="{=DSR724bb03c}{FIRSTNAME} the Jarpr"/>
+  <string id="DistServ_name_format_culture_nord.alfarheim" text="{=DSR46Db6045}{FIRSTNAME} of Alfarheim"/>
+  <string id="DistServ_name_format_culture_nord.grani" text="{=DSRdc798A3C}{FIRSTNAME} the Grani Rider"/>
+  <string id="DistServ_name_format_culture_nord.troll" text="{=DSR22B25047}{FIRSTNAME} the Tröll"/>
+  <string id="DistServ_name_format_culture_nord.goat" text="{=DSR65b787f2}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
+  <string id="DistServ_name_format_culture_nord.graycloak" text="{=DSR19590ed4}{FIRSTNAME} the Gráfeldr"/>
+  <string id="DistServ_name_format_culture_nord.bluetooth" text="{=DSR163dD4a3}{FIRSTNAME} the Bluetooth"/>
+  <string id="DistServ_name_format_culture_nord.forkbeard" text="{=DSR3904b038}{FIRSTNAME} the Forkbeard"/>
+  <string id="DistServ_name_format_culture_nord.hunger" text="{=DSR4B9f43FF}{FIRSTNAME} the Hunger"/>
+  <string id="DistServ_name_format_culture_nord.whetstone" text="{=DSRB38d0415}{FIRSTNAME} the Whetstone"/>
+  <string id="DistServ_name_format_culture_nord.default" text="{=DSRec9f6816}{FIRSTNAME} av Nord"/>
+  <!-- #endregion -->
+  <!-- #region Nordling name format -->
+  <string id="DistServ_name_format_culture_nordling.ashtree" text="{=C38573ce}{FIRSTNAME} the Ashtree"/>
+  <string id="DistServ_name_format_culture_nordling.hornblower" text="{=3FF379a4}{FIRSTNAME} the Hornblower"/>
+  <string id="DistServ_name_format_culture_nordling.banner" text="{=D566B9f2}{FIRSTNAME} the AðalmækiR"/>
+  <string id="DistServ_name_format_culture_nordling.arbot" text="{=ce5B29c0}{FIRSTNAME} the Arbot"/>
+  <string id="DistServ_name_format_culture_nordling.salmontrout" text="{=4DE52c3A}{FIRSTNAME} the Aurriði"/>
+  <string id="DistServ_name_format_culture_nordling.oathspeaking" text="{=0ff16F20}{FIRSTNAME} the Aiþalataz"/>
+  <string id="DistServ_name_format_culture_nordling.bareleg" text="{=64356808}{FIRSTNAME} the Berleggr"/>
+  <string id="DistServ_name_format_culture_nordling.broad" text="{=6779Cc15}{FIRSTNAME} the Breiðr"/>
+  <string id="DistServ_name_format_culture_nordling.brown" text="{=973f32a9}{FIRSTNAME} the Brun"/>
+  <string id="DistServ_name_format_culture_nordling.buck" text="{=a6DE208A}{FIRSTNAME} the Borkr"/>
+  <string id="DistServ_name_format_culture_nordling.fire" text="{=1305a575}{FIRSTNAME} the Eldr"/>
+  <string id="DistServ_name_format_culture_nordling.sword" text="{=95D62Fef}{FIRSTNAME} the Sverð"/>
+  <string id="DistServ_name_format_culture_nordling.shield" text="{=bc1f6F24}{FIRSTNAME} the Skjoldr"/>
+  <string id="DistServ_name_format_culture_nordling.shieldmaster" text="{=B54378f8}{FIRSTNAME} the Shieldmaster"/>
+  <string id="DistServ_name_format_culture_nordling.underlinden" text="{=D9676e8d}{FIRSTNAME} under the Linden"/>
+  <string id="DistServ_name_format_culture_nordling.porrige" text="{=Bf5DbC9C}{FIRSTNAME} the Grautr"/>
+  <string id="DistServ_name_format_culture_nordling.goldbeard" text="{=6263b52b}{FIRSTNAME} the Gullskeggr"/>
+  <string id="DistServ_name_format_culture_nordling.straw" text="{=5EC91b07}{FIRSTNAME} the Hálmi"/>
+  <string id="DistServ_name_format_culture_nordling.dark-brown" text="{=59F0C69e}{FIRSTNAME} the Jarpr"/>
+  <string id="DistServ_name_format_culture_nordling.alfarheim" text="{=5249275b}{FIRSTNAME} of Alfarheim"/>
+  <string id="DistServ_name_format_culture_nordling.grani" text="{=3764af09}{FIRSTNAME} the Grani Rider"/>
+  <string id="DistServ_name_format_culture_nordling.troll" text="{=6f2599c7}{FIRSTNAME} the Tröll"/>
+  <string id="DistServ_name_format_culture_nordling.goat" text="{=3958c626}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
+  <string id="DistServ_name_format_culture_nordling.graycloak" text="{=07a3Ff06}{FIRSTNAME} the Gráfeldr"/>
+  <string id="DistServ_name_format_culture_nordling.bluetooth" text="{=91EA333A}{FIRSTNAME} the Bluetooth"/>
+  <string id="DistServ_name_format_culture_nordling.forkbeard" text="{=8781fdd9}{FIRSTNAME} the Forkbeard"/>
+  <string id="DistServ_name_format_culture_nordling.hunger" text="{=8e973D28}{FIRSTNAME} the Hunger"/>
+  <string id="DistServ_name_format_culture_nordling.whetstone" text="{=2A58134b}{FIRSTNAME} the Whetstone"/>
+  <string id="DistServ_name_format_culture_nordling.default" text="{=E99f0E79}{FIRSTNAME} the Nordling"/>
+  <!-- #endregion -->
+  <!-- #region Vakken name format -->
   <string id="DistServ_name_format_culture_vakken.vakken" text="{=XR30w6GwFc}{FIRSTNAME} the vakken"/>
+  <string id="DistServ_name_format_culture_vakken.forest" text="{=87D0c39d}{FIRSTNAME} the Forest"/>
+  <string id="DistServ_name_format_culture_vakken.forest" text="{=8816290a}{FIRSTNAME} the Forestrunner"/>
+  <string id="DistServ_name_format_culture_vakken.ircara." text="{=2AdEd0D3}{FIRSTNAME} the Ircarian"/>
+  <string id="DistServ_name_format_culture_vakken.unlanded" text="{=baB9AFcE}{FIRSTNAME} the Unlanded"/>
+  <string id="DistServ_name_format_culture_vakken.default" text="{=451d59C4}{FIRSTNAME} the Vakken"/>
+  <!-- #endregion -->
+  <!-- #region VLandian name format -->
   <string id="DistServ_name_format_culture_vlandia.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
   <string id="DistServ_name_format_culture_vlandia.lion" text="{=ae5Ee53E}{FIRSTNAME} the Lion"/>
   <string id="DistServ_name_format_culture_vlandia.little" text="{=989f99c1}{FIRSTNAME} the Little"/>
+  <string id="DistServ_name_format_culture_vlandia.ebor" text="{=e04Ab9b0}{FIRSTNAME} the Eborian"/>
+  <string id="DistServ_name_format_culture_vlandia.uppertrand" text="{=5EaAe229}{FIRSTNAME} of the Upper Trand"/>
+  <string id="DistServ_name_format_culture_vlandia.lowertrand" text="{=BbA980d7}{FIRSTNAME} of the Lower Trand"/>
+  <string id="DistServ_name_format_culture_vlandia.ochspool" text="{=65997339}{FIRSTNAME} of Ochs Pool"/>
+  <string id="DistServ_name_format_culture_vlandia.minorsargot" text="{=938ba6e3}{FIRSTNAME} of Minor Sargot"/>
+  <string id="DistServ_name_format_culture_vlandia.lowersargot" text="{=41FE05CE}{FIRSTNAME} of the Lower Sargot"/>
+  <string id="DistServ_name_format_culture_vlandia.uppersargot" text="{=9c13eB1b}{FIRSTNAME} of the Upper Sargot"/>
+  <string id="DistServ_name_format_culture_vlandia.overlord" text="{=c49a6650}{FIRSTNAME} the so-called Overlord"/>
+  <string id="DistServ_name_format_culture_vlandia.freeholder" text="{=ca1ad0f0}{FIRSTNAME} the Freeholder"/>
+  <string id="DistServ_name_format_culture_vlandia.default" text="{=ceA828aF}{FIRSTNAME} the Vlandian"/>
+  <!-- #endregion -->
+  <!-- #region Khuzaits name format -->
   <string id="DistServ_name_format_culture_khuzait.ukhaantai" text="{=faC8efcC}{FIRSTNAME} Ukhaantai"/>
   <string id="DistServ_name_format_culture_khuzait.khurdan" text="{=566286e1}{FIRSTNAME} Khurdan"/>
   <string id="DistServ_name_format_culture_khuzait.yamaa" text="{=A518b416}{FIRSTNAME} Yamaa"/>
+  <string id="DistServ_name_format_culture_khuzait.devseg" text="{=AdC9b194}Devsegiin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.akkan" text="{=5d532ce9}Akkanin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.akkan" text="{=05B7Ed2A}Kökkaratin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.sulundag" text="{=2264f587}Sulundagiin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.tanaz" text="{=0e24e754}Tanaziin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.karakaz" text="{=D3E3Df82}Karakaziin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.zakhan" text="{=aa2580aa}Zakhanii {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.ozu" text="{=78Dc10AB}Ozugiin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.kohirohini" text="{=d6CC31eA}Kohi Rohinin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.teyagh" text="{=5186a8a0}Teyagiin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.mor" text="{=C1B24Eaf}Moriin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.bokh" text="{=50a9d14a}Bökhiin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.greywolf" text="{=85189195}Saaral choniin {FIRSTNAME}"/>
+  <string id="DistServ_name_format_culture_khuzait.saddleborn" text="{=d64A9530}{FIRSTNAME} the Saddleborn"/>
+  <string id="DistServ_name_format_culture_khuzait.default" text="{=298f810E}Khuzaitiin {FIRSTNAME}"/>
+  <!-- #endregion -->
+  <!-- #region Aserai name format -->
   <string id="DistServ_name_format_culture_aserai.genubi" text="{=IaTwqbjk8W}{FIRSTNAME} al janubi"/>
   <string id="DistServ_name_format_culture_aserai.sayf" text="{=09DF31e8}{FIRSTNAME} al sayf"/>
   <string id="DistServ_name_format_culture_aserai.sharasa" text="{=c66255e7}{FIRSTNAME} al sharasa"/>
+  <string id="DistServ_name_format_culture_aserai.nahralkals" text="{=F327E0a0}{FIRSTNAME} Nahr al-Kalsyin"/>
+  <string id="DistServ_name_format_culture_aserai.bahralyeshm" text="{=0b59a165}{FIRSTNAME} Bahr al-Yeshmyin "/>
+  <string id="DistServ_name_format_culture_aserai.jabalashabi" text="{=B78ad814}{FIRSTNAME} Jabal Ashabiyin"/>
+  <string id="DistServ_name_format_culture_aserai.jarjara" text="{=3e1751C6}{FIRSTNAME} Jarjarayin"/>
+  <string id="DistServ_name_format_culture_aserai.jabaltamar" text="{=2488b090}{FIRSTNAME} of Jabal Tamaryin"/>
+  <string id="DistServ_name_format_culture_aserai.camel" text="{=1dD3368A}{FIRSTNAME} the Jamal"/>
+  <string id="DistServ_name_format_culture_aserai.simoon" text="{=1c454A7A}{FIRSTNAME} the Simoon"/>
+  <string id="DistServ_name_format_culture_aserai.figtorte" text="{=bcF4E073}{FIRSTNAME} the Fig Torte"/>
+  <string id="DistServ_name_format_culture_aserai.figtorte" text="{=Dd7FC999}{FIRSTNAME} the Jinete"/>
+  <string id="DistServ_name_format_culture_aserai.default" text="{=1C7f78DE}{FIRSTNAME} ibn Asera"/>
+  <!-- #endregion -->
+  <!-- #region Darshi name format -->
+  <string id="DistServ_name_format_culture_darshi.mesopotamian" text="{=a4903Ebd}{FIRSTNAME} the Mesopotamian"/>
+  <string id="DistServ_name_format_culture_darshi.tyagis" text="{=8133ED37}{FIRSTNAME} of Tyagis"/>
+  <string id="DistServ_name_format_culture_darshi.ghulam" text="{=46Ca6191}{FIRSTNAME} the Ghulam"/>
+  <string id="DistServ_name_format_culture_darshi.koshti" text="{=BbEA033B}{FIRSTNAME} the Koshti"/>
+  <string id="DistServ_name_format_culture_darshi.melon" text="{=Cf840c6f}{FIRSTNAME} the Melon Lover"/>
+  <string id="DistServ_name_format_culture_darshi.blacksheep" text="{=beC76c41}{FIRSTNAME} the Black Sheep"/>
+  <string id="DistServ_name_format_culture_darshi.whitesheep" text="{=Ab0cdd2A}{FIRSTNAME} the White Sheep"/>
+  <string id="DistServ_name_format_culture_darshi.default" text="{=aE42183}{FIRSTNAME} the Darshi"/>
+  <!-- #endregion -->
+  <!-- #region Valkyrie name format -->
+  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=6DE7785F}{FIRSTNAME} the White Horse"/>
+  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=DSR1824a4c9}{FIRSTNAME} the Ashtree"/>
+  <string id="DistServ_name_format_culture_valkyrie.hornblower" text="{=DSR9c31C16f}{FIRSTNAME} the Hornblower"/>
+  <string id="DistServ_name_format_culture_valkyrie.himinbjorg" text="{=508eb01A}{FIRSTNAME} of Himinbjörg"/>
+  <string id="DistServ_name_format_culture_valkyrie.bifrost" text="{=E50dd5cA}{FIRSTNAME} the Bifröst"/>
+  <string id="DistServ_name_format_culture_valkyrie.granirider" text="{=DSRA5888013}{FIRSTNAME} the Grani Rider"/>
+  <string id="DistServ_name_format_culture_valkyrie.rune" text="{=a8DA899E}{FIRSTNAME} the Rune"/>
+  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=530aeeCe}{FIRSTNAME} of Nine Mothers"/>
+  <string id="DistServ_name_format_culture_valkyrie.sword" text="{=DSRA72d8bfD}{FIRSTNAME} the Sverð"/>
+  <string id="DistServ_name_format_culture_valkyrie.shield" text="{=DSR430b03Ef}{FIRSTNAME} the Skjoldr"/>
+  <string id="DistServ_name_format_culture_valkyrie.valheim" text="{=6BDeF89A}{FIRSTNAME} of Valheim"/>
+  <string id="DistServ_name_format_culture_valkyrie.default" text="{FIRSTNAME} the {?IS_FEMALE}Valkyrja{?}Einherjar{\?}"/>
+  <!-- #endregion -->
+  <!-- #region Tetsuihjin name format -->
+  <string id="DistServ_name_format_culture_tetsojin.doutanuki" text="{=D70dd98B}{FIRSTNAME} the Doutanuki"/>
+  <string id="DistServ_name_format_culture_tetsojin.wolf" text="{=E975E857}{FIRSTNAME} the Lone Wolf"/>
+  <string id="DistServ_name_format_culture_tetsojin.officer" text="{=d80110a3}{FIRSTNAME} the Kougi"/>
+  <string id="DistServ_name_format_culture_tetsojin.oneyedragon" text="{=fa11a579}{FIRSTNAME} the One-eyed Dragon"/>
+  <string id="DistServ_name_format_culture_tetsojin.hattyou" text="{=0ff7B910}{FIRSTNAME} the Four-fourlong-chanting-dumpling-piercer"/>
+  <string id="DistServ_name_format_culture_tetsojin.ura" text="{=81737Da9}{FIRSTNAME} the Ura"/>
+  <string id="DistServ_name_format_culture_tetsojin.hayato" text="{=b03f1793}{FIRSTNAME} the Hayato"/>
+  <string id="DistServ_name_format_culture_tetsojin.miyatsuko" text="{=82C7cfa4}{FIRSTNAME} the Miyatsuko"/>
+  <string id="DistServ_name_format_culture_tetsojin.obito" text="{=64bDF091}{FIRSTNAME} the Obito"/>
+  <string id="DistServ_name_format_culture_tetsojin.fuhito" text="{=c45D5B6E}{FIRSTNAME} the Fuhito"/>
+  <string id="DistServ_name_format_culture_tetsojin.suguri" text="{=95315Ee4}{FIRSTNAME} the Suguri"/>
+  <string id="DistServ_name_format_culture_tetsojin.emishi" text="{=24A11e02}{FIRSTNAME} the Emishi"/>
+  <string id="DistServ_name_format_culture_tetsojin.atai" text="{=9bC717bd}{FIRSTNAME} the Atai"/>
+  <string id="DistServ_name_format_culture_tetsojin.tatenui" text="{=f2030e5b}{FIRSTNAME} the Shield-sewer"/>
+  <string id="DistServ_name_format_culture_tetsojin.yuge" text="{=6b545f61}{FIRSTNAME} the Fletcher"/>
+  <string id="DistServ_name_format_culture_tetsojin.kurabe" text="{=9f64Ddb4}{FIRSTNAME} the Saddler"/>
+  <string id="DistServ_name_format_culture_tetsojin.mizunoe" text="{=4Eb1Cc0a}{FIRSTNAME} of Mizunoe"/>
+  <string id="DistServ_name_format_culture_tetsojin.templeborn" text="{=a698c01D}{FIRSTNAME} the Templeborn"/>
+  <string id="DistServ_name_format_culture_tetsojin.default" text="{=8fF9B02C}{FIRSTNAME} the Ronin"/>
+  <!-- #endregion -->
+  <!-- #region Khergit name format -->
+  <string id="DistServ_name_format_culture_rebkhu.tulga" text="{=DSR8e6D385E}{FIRSTNAME} of Tulga"/>
+  <string id="DistServ_name_format_culture_rebkhu.narra" text="{=DSR3FEbfF8D}{FIRSTNAME} of Narra"/>
+  <string id="DistServ_name_format_culture_rebkhu.ichamur" text="{=0ae31E89}{FIRSTNAME} of Ichamur"/>
+  <string id="DistServ_name_format_culture_rebkhu.ichamur" text="{=1c1c8104}{FIRSTNAME} of Ada Kulun"/>
+  <string id="DistServ_name_format_culture_rebkhu.dirighaban" text="{=2309dF4e}{FIRSTNAME} of Dirigh Aban"/>
+  <string id="DistServ_name_format_culture_rebkhu.default" text="{=6ED1C751}{FIRSTNAME} the Khergit"/>
+  <!-- #endregion -->
+  <!-- #region Vargir name format -->
+  <string id="DistServ_name_format_culture_vagir.guard" text="{=75313adf}{FIRSTNAME} the ex-Imperial-guard"/>
+  <string id="DistServ_name_format_culture_vagir.reyvadin" text="{=253D01F5}{FIRSTNAME} z Reyvadina"/>
+  <string id="DistServ_name_format_culture_vagir.curaw" text="{=c4054ec8}{FIRSTNAME} z Curawa"/>
+  <string id="DistServ_name_format_culture_vagir.khudan" text="{=5537F9d5}{FIRSTNAME} z Khudana"/>
+  <string id="DistServ_name_format_culture_vagir.yrumy" text="{=c0A24bc0}{FIRSTNAME} z Yrumy"/>
+  <string id="DistServ_name_format_culture_vagir.radoghir" text="{=317E5D93}{FIRSTNAME} z Radoghira"/>
+  <string id="DistServ_name_format_culture_vagir.default" text="{=e2158238}{FIRSTNAME} the Vagir"/>
+  <!-- #endregion -->
+  <!-- #region Paleician name format -->
+  <string id="DistServ_name_format_culture_paleician.lakonis" text="{=DSRA741c1e4}{FIRSTNAME} Lakonion"/>
+  <string id="DistServ_name_format_culture_paleician.rageta" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
+  <string id="DistServ_name_format_culture_paleician.rhotae" text="{=DSR01AfF451}{FIRSTNAME} of Rotash"/>
+  <string id="DistServ_name_format_culture_paleician.default" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
+  <!-- #endregion -->
+  <!-- #region Paleics name format -->
+  <string id="DistServ_name_format_culture_palaic.lakonis" text="{=903dC120}{FIRSTNAME} Lakonion"/>
+  <string id="DistServ_name_format_culture_palaic.rageta" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
+  <string id="DistServ_name_format_culture_palaic.rhotae" text="{=31A2a011}{FIRSTNAME} of Rotash"/>
+  <string id="DistServ_name_format_culture_palaic.default" text="{=f4998359}{FIRSTNAME} Palaicus"/>
+  <!-- #endregion -->
+  <string id="DistServ_name_format_culture_balion.default" text="{=12e734E1}{FIRSTNAME} the Balionling"/>
+  <string id="DistServ_name_format_culture_bragantia.default" text="{=d0E19592}{FIRSTNAME} the Biscanian"/>
+  <string id="DistServ_name_format_culture_geroia.default" text="{=F3D239f5}{FIRSTNAME} the Geroian"/>
+  <string id="DistServ_name_format_culture_dryatic.default" text="{=64bA0b40}{FIRSTNAME} the Dryatican"/>
+  <string id="DistServ_name_format_culture_jarjarawi.default" text="{=b68955aD}{FIRSTNAME} the Jarjarawi"/>
+  <string id="DistServ_name_format_culture_laconian.default" text="{=4a2Ce7AB}{FIRSTNAME} the Lakonikos "/>
+  <string id="DistServ_name_format_culture_kannan.default" text="{=11c24aB0}{FIRSTNAME} the Kannan"/>
+  <string id="DistServ_name_format_culture_massa.default" text="{=37416d6f}{FIRSTNAME} Massagetos"/>
+  
+  <string id="DistServ_name_format_culture_swadia.default" text="{=40D1583e}{FIRSTNAME} the Swadisch"/>
+  <string id="DistServ_name_format_culture_rhodok.default" text="{=f640f9f5}{FIRSTNAME} the Rhodok"/>
+  <string id="DistServ_name_format_culture_sarranid.default" text="{=ecBd8942}{FIRSTNAME} the Sarranian"/>
+  <string id="DistServ_name_format_culture_siri.default" text="{=2234f65d}{FIRSTNAME} the Siri"/>
+
+  <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
+  <!-- #region Bandit name format -->
   <string id="DistServ_name_format_climinals.001" text="{=585607e1}{FIRSTNAME} the Ragged"/>
   <string id="DistServ_name_format_climinals.002" text="{=2f0fa040}{FIRSTNAME} the Shiv"/>
   <string id="DistServ_name_format_climinals.003" text="{=671a2a18}{FIRSTNAME} Slicer"/>
@@ -99,251 +385,7 @@
   <string id="DistServ_name_format_shift_sand.001" text="{=4b31369f}{FIRSTNAME} Sawbones"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=6837C94A}{FIRSTNAME} the Chemist"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
-  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/>
-  
-  <string id="DistServ_name_format_infantry.woodcutterson" text="{FIRSTNAME} the Woodcutter's {?IS_FEMALE}daughter{?}son{\?}"/>
-  <string id="DistServ_name_format_infantry.charcoalson" text="{FIRSTNAME} the Charcoal-burner's {?IS_FEMALE}daughter{?}son{\?}"/>
-  <string id="DistServ_name_format_infantry.firstblade" text="{=8939AE9F}{FIRSTNAME} the Firstblade"/>
-  <string id="DistServ_name_format_infantry.gorger" text="{=a860114d}{FIRSTNAME} the Gorger"/>
-  <string id="DistServ_name_format_infantly.iron" text="{=851056d0}{FIRSTNAME} the Iron"/>
-  <string id="DistServ_name_format_infantly.barehand" text="{=0f1D6083}{FIRSTNAME} the Barehand"/>
-  <string id="DistServ_name_format_infantly.barefoot" text="{=3f99fAf4}{FIRSTNAME} the Barefoot"/>
-  <string id="DistServ_name_format_infantly.bigfoot" text="{=320e8AC3}{FIRSTNAME} the Bigfoot"/>
-  <string id="DistServ_name_format_infantry.brawler" text="{=c0C37f23}{FIRSTNAME} the Brawler"/>
-  <string id="DistServ_name_format_infentry.centipede" text="{=58E25b2c}{FIRSTNAME} the Centipede"/>
-  <string id="DistServ_name_format_infantry.steed" text="{=faF0B019}{FIRSTNAME} the Steed"/>
-  <string id="DistServ_name_format_infantry.plower" text="{=285C9720}{FIRSTNAME} the Plower"/>
-  <string id="DistServ_name_format_infantry.shieldcrasher" text="{=403BB249}{FIRSTNAME} the Shield-crasher"/>
-  <string id="DistServ_name_format_infantry.levyman" text="{=4878254d}{FIRSTNAME} the Levyman"/>
-  <string id="DistServ_name_format_infantry.crookednose" text="{=a26BBbfE}{FIRSTNAME} the Crooked Nose"/>
-  <string id="DistServ_name_format_ranged.blind" text="{=707C8eD8}{FIRSTNAME} the Blind"/>
-  <string id="DistServ_name_format_ranged.arch" text="{=a69b2FbB}{FIRSTNAME} the Arch"/>
-  <string id="DistServ_name_format_ranged.stray" text="{=669eA1E2}{FIRSTNAME} the Stray"/>
-  <string id="DistServ_name_format_ranged.arrowhed" text="{=ba8667da}{FIRSTNAME} the Arrowhead"/>
-  <string id="DistServ_name_format_ranged.hermit" text="{=Ff2b5b00}{FIRSTNAME} the Hermit"/>
-  <string id="DistServ_name_format_ranged.farseeker" text="{=A11ef5c8}{FIRSTNAME} the Far-Seeker"/>
-  <string id="DistServ_name_format_ranged.huntsman" text="{=DdCCd87F}{FIRSTNAME} the Huntsman"/>
-  <string id="DistServ_name_format_ranged.powerdraw" text="{=2Fd2556D}{FIRSTNAME} the Power-drawer"/>
-  <string id="DistServ_name_format_ranged.cave" text="{=9a416ecf}{FIRSTNAME} the Cave"/>
-  <string id="DistServ_name_format_ranged.indexfinger" text="{=3Bd9e080}{FIRSTNAME} the Index Finger"/>
-  <string id="DistServ_name_format_ranged.indexfinger" text="{=e4229b66}{FIRSTNAME} the Arrow Barrel"/>
-  <string id="DistServ_name_format_cavalry.haste" text="{=7c42d315}{FIRSTNAME} the Haste"/>
-  <string id="DistServ_name_format_cavalry.harbinger" text="{=14053851}{FIRSTNAME} the Harbinger"/>
-  <string id="DistServ_name_format_cavalry.lazy" text="{=351607C1}{FIRSTNAME} the Lazy"/>
-  <string id="DistServ_name_format_cavalry.fourlegged" text="{=6FbA2aE9}{FIRSTNAME} the Four-legged"/>
-  <string id="DistServ_name_format_cavalry.groom" text="{=dc845e39}{FIRSTNAME} the Groom"/>
-  <string id="DistServ_name_format_cavalry.cavarlyman" text="{=0bc321ac}{FIRSTNAME} the Cavarlyman"/>
-  <string id="DistServ_name_format_cavalry.squire" text="{=F1104B5a}{FIRSTNAME} the Squire"/>
-  <string id="DistServ_name_format_cavalry.goldenbridle" text="{=9f3b1B25}{FIRSTNAME} the Golden Bridle"/>
-  <string id="DistServ_name_format_culture_aserai.nahralkals" text="{=F327E0a0}{FIRSTNAME} Nahr al-Kalsyin"/>
-  <string id="DistServ_name_format_culture_aserai.bahralyeshm" text="{=0b59a165}{FIRSTNAME} Bahr al-Yeshmyin "/>
-  <string id="DistServ_name_format_culture_aserai.jabalashabi" text="{=B78ad814}{FIRSTNAME} Jabal Ashabiyin"/>
-  <string id="DistServ_name_format_culture_aserai.jarjara" text="{=3e1751C6}{FIRSTNAME} Jarjarayin"/>
-  <string id="DistServ_name_format_culture_aserai.jabaltamar" text="{=2488b090}{FIRSTNAME} of Jabal Tamaryin"/>
-  <string id="DistServ_name_format_culture_aserai.camel" text="{=1dD3368A}{FIRSTNAME} the Jamal"/>
-  <string id="DistServ_name_format_culture_aserai.simoon" text="{=1c454A7A}{FIRSTNAME} the Simoon"/>
-  <string id="DistServ_name_format_culture_aserai.figtorte" text="{=bcF4E073}{FIRSTNAME} the Fig Torte"/>
-  <string id="DistServ_name_format_culture_aserai.figtorte" text="{=Dd7FC999}{FIRSTNAME} the Jinete"/>
-  <string id="DistServ_name_format_culture_aserai.default" text="{=1C7f78DE}{FIRSTNAME} ibn Asera"/>
-  <string id="DistServ_name_format_culture_battania.uchalion" text="{=51493733}{FIRSTNAME} o Uchalion"/>
-  <string id="DistServ_name_format_culture_battania.llyntywal" text="{=18Db0e27}{FIRSTNAME} o Lyn Tywal"/>
-  <string id="DistServ_name_format_culture_battania.llynmodris" text="{=b0046b16}{FIRSTNAME} o Lyn Modris"/>
-  <string id="DistServ_name_format_culture_battania.ailtadruin" text="{=9e3b35dD}{FIRSTNAME} o Ailta Druin"/>
-  <string id="DistServ_name_format_culture_battania.pendric" text="{=c428E81E}{FIRSTNAME} o Benddric"/>
-  <string id="DistServ_name_format_culture_battania.llwyd" text="{=DSR78aCaa02}{FIRSTNAME} Lwyd"/>
-  <string id="DistServ_name_format_culture_battania.fawr" text="{=DSRc0E07140}{FIRSTNAME} Fawr"/>
-  <string id="DistServ_name_format_culture_battania.default" text="{=DSR3f1F3207}{FIRSTNAME} y Battanaid"/>
-  <string id="DistServ_name_format_culture_empire.immportal" text="{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}"/>
-  <string id="DistServ_name_format_culture_empire.pankrat" text="{=65a05768}{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}"/>
-  <string id="DistServ_name_format_culture_empire.silver" text="{=a07A65f9}{FIRSTNAME} the Silver Shield"/>
-  <string id="DistServ_name_format_culture_empire.bronze" text="{=Ab3d8Ea5}{FIRSTNAME} the Bronze Shield"/>
-  <string id="DistServ_name_format_culture_empire.spathaman" text="{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}"/>
-  <string id="DistServ_name_format_culture_empire.spear" text="{=36cd93E0}{FIRSTNAME} the Kontarion"/>
-  <string id="DistServ_name_format_culture_empire.myzead" text="{=1eD346CC}{FIRSTNAME} Myzeadas"/>
-  <string id="DistServ_name_format_culture_empire.cursion" text="{=2fBF2798}{FIRSTNAME} Cursiontos"/>
-  <string id="DistServ_name_format_culture_empire.calsea" text="{=61F4Eb94}{FIRSTNAME} Calseas"/>
-  <string id="DistServ_name_format_culture_empire.mironias" text="{=501785b9}{FIRSTNAME} Mirontos"/>
-  <string id="DistServ_name_format_culture_empire.tiagys" text="{=Cb3bE7d5}{FIRSTNAME} Tiagysas"/>
-  <string id="DistServ_name_format_culture_empire.ornian" text="{FIRSTNAME} {?IS_FEMALE}Ornianicus{?}Oriaianica{\?}"/>
-  <string id="DistServ_name_format_culture_empire.zeos" text="{=831d35eD}{FIRSTNAME} Erithrysas"/>
-  <string id="DistServ_name_format_culture_empire.lycarea" text="{=7b1cA944}{FIRSTNAME} Lycareas"/>
-  <string id="DistServ_name_format_culture_empire.sethys" text="{=1F692340}{FIRSTNAME} Sethys"/>
-  <string id="DistServ_name_format_culture_empire.vlandikos" text="{FIRSTNAME} {?IS_FEMALE}Blandike{?}Blandikos{\?}"/>
-  <string id="DistServ_name_format_culture_empire.battanion" text="{=7f518e38}{FIRSTNAME} Battanion"/>
-  <string id="DistServ_name_format_culture_empire.default" text="{=2A63395C}{FIRSTNAME} Calradias"/>
-  <string id="DistServ_name_format_culture_khuzait.devseg" text="{=AdC9b194}Devsegiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.akkan" text="{=5d532ce9}Akkanin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.akkan" text="{=05B7Ed2A}Kökkaratin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.sulundag" text="{=2264f587}Sulundagiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.tanaz" text="{=0e24e754}Tanaziin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.karakaz" text="{=D3E3Df82}Karakaziin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.zakhan" text="{=aa2580aa}Zakhanii {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.ozu" text="{=78Dc10AB}Ozugiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.kohirohini" text="{=d6CC31eA}Kohi Rohinin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.teyagh" text="{=5186a8a0}Teyagiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.mor" text="{=C1B24Eaf}Moriin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.bokh" text="{=50a9d14a}Bökhiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.greywolf" text="{=85189195}Saaral choniin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_khuzait.saddleborn" text="{=d64A9530}{FIRSTNAME} the Saddleborn"/>
-  <string id="DistServ_name_format_culture_khuzait.default" text="{=298f810E}Khuzaitiin {FIRSTNAME}"/>
-  <string id="DistServ_name_format_culture_sturgia.sword" text="{=e05C8Fd3}{FIRSTNAME} the Svärd"/>
-  <string id="DistServ_name_format_culture_sturgia.shield" text="{=90025540}{FIRSTNAME} the Sköld"/>
-  <string id="DistServ_name_format_culture_sturgia.chertyg" text="{=72219326}{FIRSTNAME} z Chertyga"/>
-  <string id="DistServ_name_format_culture_sturgia.kachar" text="{=A3C29ef9}{FIRSTNAME} z Kachara"/>
-  <string id="DistServ_name_format_culture_sturgia.byalic" text="{=faF406d4}{FIRSTNAME} z Byalii"/>
-  <string id="DistServ_name_format_culture_sturgia.galcha" text="{=b6A3224c}{FIRSTNAME} z Galchi"/>
-  <string id="DistServ_name_format_culture_sturgia.ircara" text="{=5A8f4f83}{FIRSTNAME} z Ircari"/>
-  <string id="DistServ_name_format_culture_sturgia.grozny" text="{FIRSTNAME} {?IS_FEMALE}Grozny{?}Grozna{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.ovskii" text="{FIRSTNAME} {?IS_FEMALE}Ovska{?}Ovskii{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.vastrovskii" text="{FIRSTNAME} {?IS_FEMALE}Vastorvska{?}Vastrovskii{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.shagokhodnii" text="{FIRSTNAME} {?IS_FEMALE}Shagokhodna{?}Shagokhodnii{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.varangian" text="{=0d200107}{FIRSTNAME} the Vaeling"/>
-  <string id="DistServ_name_format_culture_sturgia.snowplower" text="{=Bd4Db926}{FIRSTNAME} the Snowplower"/>
-  <string id="DistServ_name_format_culture_sturgia.default" text="{=35c04036}{FIRSTNAME} Sturgianin"/>
-  <string id="DistServ_name_format_culture_vlandia.ebor" text="{=e04Ab9b0}{FIRSTNAME} the Eborian"/>
-  <string id="DistServ_name_format_culture_vlandia.uppertrand" text="{=5EaAe229}{FIRSTNAME} of the Upper Trand"/>
-  <string id="DistServ_name_format_culture_vlandia.lowertrand" text="{=BbA980d7}{FIRSTNAME} of the Lower Trand"/>
-  <string id="DistServ_name_format_culture_vlandia.ochspool" text="{=65997339}{FIRSTNAME} of Ochs Pool"/>
-  <string id="DistServ_name_format_culture_vlandia.minorsargot" text="{=938ba6e3}{FIRSTNAME} of Minor Sargot"/>
-  <string id="DistServ_name_format_culture_vlandia.lowersargot" text="{=41FE05CE}{FIRSTNAME} of the Lower Sargot"/>
-  <string id="DistServ_name_format_culture_vlandia.uppersargot" text="{=9c13eB1b}{FIRSTNAME} of the Upper Sargot"/>
-  <string id="DistServ_name_format_culture_vlandia.overlord" text="{=c49a6650}{FIRSTNAME} the so-called Overlord"/>
-  <string id="DistServ_name_format_culture_vlandia.freeholder" text="{=ca1ad0f0}{FIRSTNAME} the Freeholder"/>
-  <string id="DistServ_name_format_culture_vlandia.default" text="{=ceA828aF}{FIRSTNAME} the Vlandian"/>
-  <string id="DistServ_name_format_culture_nord.ashtree" text="{=DSR604806C5}{FIRSTNAME} the Ashtree"/>
-  <string id="DistServ_name_format_culture_nord.hornblower" text="{=DSR01514F16}{FIRSTNAME} the Hornblower"/>
-  <string id="DistServ_name_format_culture_nord.banner" text="{=DSRde7EFEd1}{FIRSTNAME} the AðalmækiR"/>
-  <string id="DistServ_name_format_culture_nord.arbot" text="{=DSRD7D23726}{FIRSTNAME} the Arbot"/>
-  <string id="DistServ_name_format_culture_nord.salmontrout" text="{=DSRBfFA6BeF}{FIRSTNAME} the Aurriði"/>
-  <string id="DistServ_name_format_culture_nord.oathspeaking" text="{=DSR560b730f}{FIRSTNAME} the Aiþalataz"/>
-  <string id="DistServ_name_format_culture_nord.bareleg" text="{=DSRde88f64A}{FIRSTNAME} the Berleggr"/>
-  <string id="DistServ_name_format_culture_nord.broad" text="{=DSRC98f1729}{FIRSTNAME} the Breiðr"/>
-  <string id="DistServ_name_format_culture_nord.brown" text="{=DSR4c0d6871}{FIRSTNAME} the Brun"/>
-  <string id="DistServ_name_format_culture_nord.buck" text="{=DSRA7Af40dB}{FIRSTNAME} the Borkr"/>
-  <string id="DistServ_name_format_culture_nord.fire" text="{=DSR94455642}{FIRSTNAME} the Eldr"/>
-  <string id="DistServ_name_format_culture_nord.sword" text="{=DSR0e887c53}{FIRSTNAME} the Sverð"/>
-  <string id="DistServ_name_format_culture_nord.shield" text="{=DSR2Fc3d897}{FIRSTNAME} the Skjoldr"/>
-  <string id="DistServ_name_format_culture_nord.shieldmaster" text="{=DSR016c1db8}{FIRSTNAME} the Shieldmaster"/>
-  <string id="DistServ_name_format_culture_nord.underlinden" text="{=DSR794b9822}{FIRSTNAME} under the Linden"/>
-  <string id="DistServ_name_format_culture_nord.porrige" text="{=DSRCf633197}{FIRSTNAME} the Grautr"/>
-  <string id="DistServ_name_format_culture_nord.goldbeard" text="{=DSR890b429D}{FIRSTNAME} the Gullskeggr"/>
-  <string id="DistServ_name_format_culture_nord.straw" text="{=DSR20A3f862}{FIRSTNAME} the Hálmi"/>
-  <string id="DistServ_name_format_culture_nord.dark-brown" text="{=DSR724bb03c}{FIRSTNAME} the Jarpr"/>
-  <string id="DistServ_name_format_culture_nord.alfarheim" text="{=DSR46Db6045}{FIRSTNAME} of Alfarheim"/>
-  <string id="DistServ_name_format_culture_nord.grani" text="{=DSRdc798A3C}{FIRSTNAME} the Grani Rider"/>
-  <string id="DistServ_name_format_culture_nord.troll" text="{=DSR22B25047}{FIRSTNAME} the Tröll"/>
-  <string id="DistServ_name_format_culture_nord.goat" text="{=DSR65b787f2}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
-  <string id="DistServ_name_format_culture_nord.graycloak" text="{=DSR19590ed4}{FIRSTNAME} the Gráfeldr"/>
-  <string id="DistServ_name_format_culture_nord.bluetooth" text="{=DSR163dD4a3}{FIRSTNAME} the Bluetooth"/>
-  <string id="DistServ_name_format_culture_nord.forkbeard" text="{=DSR3904b038}{FIRSTNAME} the Forkbeard"/>
-  <string id="DistServ_name_format_culture_nord.hunger" text="{=DSR4B9f43FF}{FIRSTNAME} the Hunger"/>
-  <string id="DistServ_name_format_culture_nord.whetstone" text="{=DSRB38d0415}{FIRSTNAME} the Whetstone"/>
-  <string id="DistServ_name_format_culture_nord.default" text="{=DSRec9f6816}{FIRSTNAME} av Nord"/>
-  <string id="DistServ_name_format_culture_darshi.mesopotamian" text="{=a4903Ebd}{FIRSTNAME} the Mesopotamian"/>
-  <string id="DistServ_name_format_culture_darshi.tyagis" text="{=8133ED37}{FIRSTNAME} of Tyagis"/>
-  <string id="DistServ_name_format_culture_darshi.ghulam" text="{=46Ca6191}{FIRSTNAME} the Ghulam"/>
-  <string id="DistServ_name_format_culture_darshi.koshti" text="{=BbEA033B}{FIRSTNAME} the Koshti"/>
-  <string id="DistServ_name_format_culture_darshi.melon" text="{=Cf840c6f}{FIRSTNAME} the Melon Lover"/>
-  <string id="DistServ_name_format_culture_darshi.blacksheep" text="{=beC76c41}{FIRSTNAME} the Black Sheep"/>
-  <string id="DistServ_name_format_culture_darshi.whitesheep" text="{=Ab0cdd2A}{FIRSTNAME} the White Sheep"/>
-  <string id="DistServ_name_format_culture_darshi.default" text="{=aE42183}{FIRSTNAME} the Darshi"/>
-  <string id="DistServ_name_format_culture_vakken.forest" text="{=87D0c39d}{FIRSTNAME} the Forest"/>
-  <string id="DistServ_name_format_culture_vakken.forest" text="{=8816290a}{FIRSTNAME} the Forestrunner"/>
-  <string id="DistServ_name_format_culture_vakken.ircara." text="{=2AdEd0D3}{FIRSTNAME} the Ircarian"/>
-  <string id="DistServ_name_format_culture_vakken.unlanded" text="{=baB9AFcE}{FIRSTNAME} the Unlanded"/>
-  <string id="DistServ_name_format_culture_vakken.default" text="{=451d59C4}{FIRSTNAME} the Vakken"/>
-  <string id="DistServ_name_format_culture_balion.default" text="{=12e734E1}{FIRSTNAME} the Balionling"/>
-  <string id="DistServ_name_format_culture_bragantia.default" text="{=d0E19592}{FIRSTNAME} the Biscanian"/>
-  <string id="DistServ_name_format_culture_geroia.default" text="{=F3D239f5}{FIRSTNAME} the Geroian"/>
-  <string id="DistServ_name_format_culture_dryatic.default" text="{=64bA0b40}{FIRSTNAME} the Dryatican"/>
-  <string id="DistServ_name_format_culture_jarjarawi.default" text="{=b68955aD}{FIRSTNAME} the Jarjarawi"/>
-  <string id="DistServ_name_format_culture_laconian.default" text="{=4a2Ce7AB}{FIRSTNAME} the Lakonikos "/>
-  <string id="DistServ_name_format_culture_kannan.default" text="{=11c24aB0}{FIRSTNAME} the Kannan"/>
-  <string id="DistServ_name_format_culture_massa.default" text="{=37416d6f}{FIRSTNAME} Massagetos"/>
-  <string id="DistServ_name_format_culture_palaic.lakonis" text="{=903dC120}{FIRSTNAME} Lakonion"/>
-  <string id="DistServ_name_format_culture_palaic.rageta" text="{=f4C2b0ea}{FIRSTNAME} Ragetius"/>
-  <string id="DistServ_name_format_culture_palaic.rhotae" text="{=31A2a011}{FIRSTNAME} of Rotash"/>
-  <string id="DistServ_name_format_culture_palaic.default" text="{=f4998359}{FIRSTNAME} Palaicus"/>
-  <string id="DistServ_name_format_culture_swadia.default" text="{=40D1583e}{FIRSTNAME} the Swadisch"/>
-  <string id="DistServ_name_format_culture_rhodok.default" text="{=f640f9f5}{FIRSTNAME} the Rhodok"/>
-  <string id="DistServ_name_format_culture_sarranid.default" text="{=ecBd8942}{FIRSTNAME} the Sarranian"/>
-  <string id="DistServ_name_format_culture_siri.default" text="{=2234f65d}{FIRSTNAME} the Siri"/>
-  <string id="DistServ_name_format_culture_nordling.ashtree" text="{=C38573ce}{FIRSTNAME} the Ashtree"/>
-  <string id="DistServ_name_format_culture_nordling.hornblower" text="{=3FF379a4}{FIRSTNAME} the Hornblower"/>
-  <string id="DistServ_name_format_culture_nordling.banner" text="{=D566B9f2}{FIRSTNAME} the AðalmækiR"/>
-  <string id="DistServ_name_format_culture_nordling.arbot" text="{=ce5B29c0}{FIRSTNAME} the Arbot"/>
-  <string id="DistServ_name_format_culture_nordling.salmontrout" text="{=4DE52c3A}{FIRSTNAME} the Aurriði"/>
-  <string id="DistServ_name_format_culture_nordling.oathspeaking" text="{=0ff16F20}{FIRSTNAME} the Aiþalataz"/>
-  <string id="DistServ_name_format_culture_nordling.bareleg" text="{=64356808}{FIRSTNAME} the Berleggr"/>
-  <string id="DistServ_name_format_culture_nordling.broad" text="{=6779Cc15}{FIRSTNAME} the Breiðr"/>
-  <string id="DistServ_name_format_culture_nordling.brown" text="{=973f32a9}{FIRSTNAME} the Brun"/>
-  <string id="DistServ_name_format_culture_nordling.buck" text="{=a6DE208A}{FIRSTNAME} the Borkr"/>
-  <string id="DistServ_name_format_culture_nordling.fire" text="{=1305a575}{FIRSTNAME} the Eldr"/>
-  <string id="DistServ_name_format_culture_nordling.sword" text="{=95D62Fef}{FIRSTNAME} the Sverð"/>
-  <string id="DistServ_name_format_culture_nordling.shield" text="{=bc1f6F24}{FIRSTNAME} the Skjoldr"/>
-  <string id="DistServ_name_format_culture_nordling.shieldmaster" text="{=B54378f8}{FIRSTNAME} the Shieldmaster"/>
-  <string id="DistServ_name_format_culture_nordling.underlinden" text="{=D9676e8d}{FIRSTNAME} under the Linden"/>
-  <string id="DistServ_name_format_culture_nordling.porrige" text="{=Bf5DbC9C}{FIRSTNAME} the Grautr"/>
-  <string id="DistServ_name_format_culture_nordling.goldbeard" text="{=6263b52b}{FIRSTNAME} the Gullskeggr"/>
-  <string id="DistServ_name_format_culture_nordling.straw" text="{=5EC91b07}{FIRSTNAME} the Hálmi"/>
-  <string id="DistServ_name_format_culture_nordling.dark-brown" text="{=59F0C69e}{FIRSTNAME} the Jarpr"/>
-  <string id="DistServ_name_format_culture_nordling.alfarheim" text="{=5249275b}{FIRSTNAME} of Alfarheim"/>
-  <string id="DistServ_name_format_culture_nordling.grani" text="{=3764af09}{FIRSTNAME} the Grani Rider"/>
-  <string id="DistServ_name_format_culture_nordling.troll" text="{=6f2599c7}{FIRSTNAME} the Tröll"/>
-  <string id="DistServ_name_format_culture_nordling.goat" text="{=3958c626}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
-  <string id="DistServ_name_format_culture_nordling.graycloak" text="{=07a3Ff06}{FIRSTNAME} the Gráfeldr"/>
-  <string id="DistServ_name_format_culture_nordling.bluetooth" text="{=91EA333A}{FIRSTNAME} the Bluetooth"/>
-  <string id="DistServ_name_format_culture_nordling.forkbeard" text="{=8781fdd9}{FIRSTNAME} the Forkbeard"/>
-  <string id="DistServ_name_format_culture_nordling.hunger" text="{=8e973D28}{FIRSTNAME} the Hunger"/>
-  <string id="DistServ_name_format_culture_nordling.whetstone" text="{=2A58134b}{FIRSTNAME} the Whetstone"/>
-  <string id="DistServ_name_format_culture_nordling.default" text="{=E99f0E79}{FIRSTNAME} the Nordling"/>
-  <string id="DistServ_name_format_culture_paleician.lakonis" text="{=DSRA741c1e4}{FIRSTNAME} Lakonion"/>
-  <string id="DistServ_name_format_culture_paleician.rageta" text="{FIRSTNAME} {?IS_FEMALE}Ragetius{?}Ragetia{\?}"/>
-  <string id="DistServ_name_format_culture_paleician.rhotae" text="{=DSR01AfF451}{FIRSTNAME} of Rotash"/>
-  <string id="DistServ_name_format_culture_paleician.default" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
-  <string id="DistServ_name_format_culture_rebkhu.tulga" text="{=DSR8e6D385E}{FIRSTNAME} of Tulga"/>
-  <string id="DistServ_name_format_culture_rebkhu.narra" text="{=DSR3FEbfF8D}{FIRSTNAME} of Narra"/>
-  <string id="DistServ_name_format_culture_rebkhu.ichamur" text="{=0ae31E89}{FIRSTNAME} of Ichamur"/>
-  <string id="DistServ_name_format_culture_rebkhu.ichamur" text="{=1c1c8104}{FIRSTNAME} of Ada Kulun"/>
-  <string id="DistServ_name_format_culture_rebkhu.dirighaban" text="{=2309dF4e}{FIRSTNAME} of Dirigh Aban"/>
-  <string id="DistServ_name_format_culture_rebkhu.default" text="{=6ED1C751}{FIRSTNAME} the Khergit"/>
-  <string id="DistServ_name_format_culture_vagir.guard" text="{=75313adf}{FIRSTNAME} the ex-Imperial-guard"/>
-  <string id="DistServ_name_format_culture_vagir.reyvadin" text="{=253D01F5}{FIRSTNAME} z Reyvadina"/>
-  <string id="DistServ_name_format_culture_vagir.curaw" text="{=c4054ec8}{FIRSTNAME} z Curawa"/>
-  <string id="DistServ_name_format_culture_vagir.khudan" text="{=5537F9d5}{FIRSTNAME} z Khudana"/>
-  <string id="DistServ_name_format_culture_vagir.yrumy" text="{=c0A24bc0}{FIRSTNAME} z Yrumy"/>
-  <string id="DistServ_name_format_culture_vagir.radoghir" text="{=317E5D93}{FIRSTNAME} z Radoghira"/>
-  <string id="DistServ_name_format_culture_vagir.default" text="{=e2158238}{FIRSTNAME} the Vagir"/>
-  <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
-  <string id="DistServ_name_format_culture_tetsojin.doutanuki" text="{=D70dd98B}{FIRSTNAME} the Doutanuki"/>
-  <string id="DistServ_name_format_culture_tetsojin.wolf" text="{=E975E857}{FIRSTNAME} the Lone Wolf"/>
-  <string id="DistServ_name_format_culture_tetsojin.officer" text="{=d80110a3}{FIRSTNAME} the Kougi"/>
-  <string id="DistServ_name_format_culture_tetsojin.oneyedragon" text="{=fa11a579}{FIRSTNAME} the One-eyed Dragon"/>
-  <string id="DistServ_name_format_culture_tetsojin.hattyou" text="{=0ff7B910}{FIRSTNAME} the Four-fourlong-chanting-dumpling-piercer"/>
-  <string id="DistServ_name_format_culture_tetsojin.ura" text="{=81737Da9}{FIRSTNAME} the Ura"/>
-  <string id="DistServ_name_format_culture_tetsojin.hayato" text="{=b03f1793}{FIRSTNAME} the Hayato"/>
-  <string id="DistServ_name_format_culture_tetsojin.miyatsuko" text="{=82C7cfa4}{FIRSTNAME} the Miyatsuko"/>
-  <string id="DistServ_name_format_culture_tetsojin.obito" text="{=64bDF091}{FIRSTNAME} the Obito"/>
-  <string id="DistServ_name_format_culture_tetsojin.fuhito" text="{=c45D5B6E}{FIRSTNAME} the Fuhito"/>
-  <string id="DistServ_name_format_culture_tetsojin.suguri" text="{=95315Ee4}{FIRSTNAME} the Suguri"/>
-  <string id="DistServ_name_format_culture_tetsojin.emishi" text="{=24A11e02}{FIRSTNAME} the Emishi"/>
-  <string id="DistServ_name_format_culture_tetsojin.atai" text="{=9bC717bd}{FIRSTNAME} the Atai"/>
-  <string id="DistServ_name_format_culture_tetsojin.tatenui" text="{=f2030e5b}{FIRSTNAME} the Shield-sewer"/>
-  <string id="DistServ_name_format_culture_tetsojin.yuge" text="{=6b545f61}{FIRSTNAME} the Fletcher"/>
-  <string id="DistServ_name_format_culture_tetsojin.kurabe" text="{=9f64Ddb4}{FIRSTNAME} the Saddler"/>
-  <string id="DistServ_name_format_culture_tetsojin.mizunoe" text="{=4Eb1Cc0a}{FIRSTNAME} of Mizunoe"/>
-  <string id="DistServ_name_format_culture_tetsojin.templeborn" text="{=a698c01D}{FIRSTNAME} the Templeborn"/>
-  <string id="DistServ_name_format_culture_tetsojin.default" text="{=8fF9B02C}{FIRSTNAME} the Ronin"/>
-  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=6DE7785F}{FIRSTNAME} the White Horse"/>
-  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=DSR1824a4c9}{FIRSTNAME} the Ashtree"/>
-  <string id="DistServ_name_format_culture_valkyrie.hornblower" text="{=DSR9c31C16f}{FIRSTNAME} the Hornblower"/>
-  <string id="DistServ_name_format_culture_valkyrie.himinbjorg" text="{=508eb01A}{FIRSTNAME} of Himinbjörg"/>
-  <string id="DistServ_name_format_culture_valkyrie.bifrost" text="{=E50dd5cA}{FIRSTNAME} the Bifröst"/>
-  <string id="DistServ_name_format_culture_valkyrie.granirider" text="{=DSRA5888013}{FIRSTNAME} the Grani Rider"/>
-  <string id="DistServ_name_format_culture_valkyrie.rune" text="{=a8DA899E}{FIRSTNAME} the Rune"/>
-  <string id="DistServ_name_format_culture_valkyrie.ashtree" text="{=530aeeCe}{FIRSTNAME} of Nine Mothers"/>
-  <string id="DistServ_name_format_culture_valkyrie.sword" text="{=DSRA72d8bfD}{FIRSTNAME} the Sverð"/>
-  <string id="DistServ_name_format_culture_valkyrie.shield" text="{=DSR430b03Ef}{FIRSTNAME} the Skjoldr"/>
-  <string id="DistServ_name_format_culture_valkyrie.valheim" text="{=6BDeF89A}{FIRSTNAME} of Valheim"/>
-  <string id="DistServ_name_format_culture_valkyrie.default" text="{FIRSTNAME} the {?IS_FEMALE}Valkyrja{?}Einherjar{\?}"/>
+  <!-- #endregion -->
+  <!-- universal name format -->
+  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/> 
 </strings>
