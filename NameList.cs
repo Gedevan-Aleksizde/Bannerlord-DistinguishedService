@@ -23,7 +23,7 @@ namespace DistinguishedServiceRedux
         /// Get a name format string randomly
         /// random name is determined by IsRanged flag, FirstBattleEquipment, and culture propertyies.
         /// </summary>
-        public static TextObject DrawNameFormat(bool isRanged, Equipment equip, BasicCultureObject culture)
+        public static TextObject DrawNameFormat(bool isRanged, bool isFemale, Equipment equip, BasicCultureObject culture)
         {
 
             List<TextObject> formats = new();
@@ -38,8 +38,8 @@ namespace DistinguishedServiceRedux
             }
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
-            TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId);
-            formats.AppendList(Settlement.All.Where(x => x.Culture == culture && (x.IsTown || x.IsVillage)).Select(x => nameFromatSettlement.CopyTextObject().SetTextVariable("SETTLEMENT", x.Name.ToString())).ToList());
+            TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId); // TODO: if not found
+            formats.AppendList(Settlement.All.Where(x => x.Culture == culture && (x.IsTown || x.IsVillage)).Select(x => nameFromatSettlement.CopyTextObject().SetTextVariable("SETTLEMENT", x.Name.ToString()).SetTextVariable("IS_FEMALE", isFemale ? 1 : 0)).ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
             return formats[rng.Next(formats.Count)].CopyTextObject();
         }

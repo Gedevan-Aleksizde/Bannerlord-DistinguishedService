@@ -741,12 +741,12 @@ namespace DistinguishedServiceRedux
                 TextObject newName = NameList.PullOutNameFromExternalFile();
                 if (newName.ToString() != "")
                 {
-                    specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", newName), newName);
+                    specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, baseCharacter.IsFemale, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", newName), newName);
                 }
             }
             else
             {
-                specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
+                specialHero.SetName(NameList.DrawNameFormat(wanderer.IsRanged, baseCharacter.IsFemale, wanderer.FirstBattleEquipment, wanderer.Culture).SetTextVariable("FIRSTNAME", specialHero.FirstName), specialHero.FirstName);
             }
             if (isPlayerCase)
             {
