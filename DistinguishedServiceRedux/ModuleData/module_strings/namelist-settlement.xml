@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<strings>
+    <!-- #region settlement formats per culture  -->
+    <string id="DistServ_name_format_settlement.aserai" text="{=75003f6b}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.battania" text="{=13aeB4Ac}{FIRSTNAME} o {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.darshi" text="{=WqK5a41NY}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.empire" text="{=iKAPdWL9l}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.khuzait" text="{=BYIjrs4BJ}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.nord" text="{=VQbbK5h51}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.sturgia" text="{=SFydVVh4c}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.vakken" text="{=sTSxSXP2R}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.vlandia" text="{=CHQdAHXoI}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.huaxia" text="{=23xtkMt79}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.apolssalian" text="{=inlGGPfVY}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.ariorum" text="{=Z46h6KpMp}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.vagir" text="{=4sL2RZ5FQ}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.lyrion" text="{=ot7DlMb1D}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.nordling" text="{=n6YwceWUu}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.paleician" text="{=1Utfpjqr0}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.republic" text="{=uJU5qJAWO}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.rebkhu" text="{=wUJuD9MbI}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.vagir" text="{=RhO1PXyPA}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.balion" text="{=WGAXo1CEk}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.bragantia" text="{=7QOaettwM}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.dryatic" text="{=3CZNvz3Xu}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.geroia" text="{=tgZRiBn8Z}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.iltanlar" text="{=RXm1vEuqL}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.laconian" text="{=siYOgpoen}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.lotki" text="{=f6p4lxiWx}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.massa" text="{=hMZlGFT4Y}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.palaic" text="{=EcLf4sX7o}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.swadia" text="{=mShxpDrua}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.rhodok" text="{=kp0zKsQzH}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.zendar" text="{=A8i9y8MOA}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.huaxia" text="{=3Lnxudiyr}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement.testojin" text="{=9aF48664}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.valkyrie" text="{=Dt7SBz0we}{FIRSTNAME} of {SETTLEMENT}"/>
+    <!-- #endregion settlement formats per culture  -->
+</strings>
