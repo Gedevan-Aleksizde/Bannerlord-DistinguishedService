@@ -38,11 +38,6 @@
         <PackageReference Include="Lib.Harmony" Version="2.3.5" />
         <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     </ItemGroup>
-    <ItemGroup>
-      <None Include="SubModule.xml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
 
       <!-- Extra Substitution Variables to Use in SubModule.xml -->
     <ItemGroup>
@@ -56,6 +51,6 @@
         </SubModuleOverrides>
     </ItemGroup>
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="copy $(OutDir)\$(AssemblyName).dll DistinguishedServiceRedux\bin\Win64_Shipping_Client\$(AssemblyName).dll&#xD;&#xA;copy SubModule.xml DistinguishedServiceRedux" />
+      <Exec Command="copy $(OutDir)\$(AssemblyName).dll DistinguishedServiceRedux\bin\Win64_Shipping_Client\$(AssemblyName).dll&#xD;&#xA;xcopy /Y /E _Module DistinguishedServiceRedux\" />
     </Target>
 </Project>
