@@ -14,8 +14,8 @@
   <string id="DistServ_name_format_infantly.scythe" text="{=e446af77}{FIRSTNAME} the Scythe"/>
   <string id="DistServ_name_format_infantly.anvil" text="{=ee1e910A}{FIRSTNAME} the Anvil"/>
   <string id="DistServ_name_format_infantly.scarlet" text="{=1957a93D}{FIRSTNAME} the scarlet"/>
-  <string id="DistServ_name_format_infantry.woodcutterson" text="{FIRSTNAME} the Woodcutter's {?IS_FEMALE}daughter{?}son{\?}"/>
-  <string id="DistServ_name_format_infantry.charcoalson" text="{FIRSTNAME} the Charcoal-burner's {?IS_FEMALE}daughter{?}son{\?}"/>
+  <string id="DistServ_name_format_infantry.woodcutterson" text="{=8aAa6258}{FIRSTNAME} the Woodcutter's {?IS_FEMALE}daughter{?}son{\?}"/>
+  <string id="DistServ_name_format_infantry.charcoalson" text="{=7b602df4}{FIRSTNAME} the Charcoal-burner's {?IS_FEMALE}daughter{?}son{\?}"/>
   <string id="DistServ_name_format_infantry.firstblade" text="{=8939AE9F}{FIRSTNAME} the Firstblade"/>
   <string id="DistServ_name_format_infantry.gorger" text="{=a860114d}{FIRSTNAME} the Gorger"/>
   <string id="DistServ_name_format_infantly.iron" text="{=851056d0}{FIRSTNAME} the Iron"/>
@@ -24,7 +24,7 @@
   <string id="DistServ_name_format_infantly.bigfoot" text="{=320e8AC3}{FIRSTNAME} the Bigfoot"/>
   <string id="DistServ_name_format_infantry.brawler" text="{=c0C37f23}{FIRSTNAME} the Brawler"/>
   <string id="DistServ_name_format_infentry.centipede" text="{=58E25b2c}{FIRSTNAME} the Centipede"/>
-  <string id="DistServ_name_format_infantry.steed" text="{FIRSTNAME} the {?IS_FEMALE}Mare{?}Steed{\?}"/>
+  <string id="DistServ_name_format_infantry.steed" text="{=Dd77D7fe}{FIRSTNAME} the {?IS_FEMALE}Mare{?}Steed{\?}"/>
   <string id="DistServ_name_format_infantry.plower" text="{=285C9720}{FIRSTNAME} the Plower"/>
   <string id="DistServ_name_format_infantry.shieldcrasher" text="{=403BB249}{FIRSTNAME} the Shield-crasher"/>
   <string id="DistServ_name_format_infantry.levyman" text="{=4878254d}{FIRSTNAME} the Levyman"/>
@@ -32,7 +32,7 @@
   <!-- #endregion -->
   <!-- #region cavalry name format -->
   <string id="DistServ_name_format_cavalry.rider" text="{=e49b3Fe7}{FIRSTNAME} the Rider"/>
-  <string id="DistServ_name_format_cavalry.horseman" text="{FIRSTNAME} the {?IS_FEMALE}Horselady{?}Horseman{\?}"/>
+  <string id="DistServ_name_format_cavalry.horseman" text="{=Bd616959}{FIRSTNAME} the {?IS_FEMALE}Horselady{?}Horseman{\?}"/>
   <string id="DistServ_name_format_cavalry.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
   <string id="DistServ_name_format_cavalry.vanguard" text="{=B1832939}{FIRSTNAME} the Vanguard"/>
   <string id="DistServ_name_format_cavalry.centaur" text="{=0bEE50da}{FIRSTNAME} the Centaur"/>
@@ -56,10 +56,10 @@
   <string id="DistServ_name_format_ranged.bowman" text="{=9e5C609A}{FIRSTNAME} the Bowman"/>
   <string id="DistServ_name_format_ranged.sharpshooter" text="{=eaD76Cf2}{FIRSTNAME} the Sharpshooter"/>
   <string id="DistServ_name_format_ranged.sniper" text="{=685eE327}{FIRSTNAME} the Sniper"/>
-  <string id="DistServ_name_format_ranged.hunter" text="{FIRSTNAME} the {?IS_FEMALE}Huntress{?}Hunter{\?}"/>
+  <string id="DistServ_name_format_ranged.hunter" text="{=C78c0302}{FIRSTNAME} the {?IS_FEMALE}Huntress{?}Hunter{\?}"/>
   <string id="DistServ_name_format_ranged.merry" text="{=deF02B69}{FIRSTNAME} the Merry"/>
   <string id="DistServ_name_format_ranged.scarlet" text="{=B72a05dC}{FIRSTNAME} the Scarlet"/>
-  <string id="DistServ_name_format_ranged.miller" text="{FIRSTNAME} the Miller's {?IS_FEMALE}daughter{?}son{\?}"/>
+  <string id="DistServ_name_format_ranged.miller" text="{=c6DA8Da2}{FIRSTNAME} the Miller's {?IS_FEMALE}daughter{?}son{\?}"/>
   <string id="DistServ_name_format_ranged.adale" text="{=91C52417}{FIRSTNAME}-a-Dale"/>
   <string id="DistServ_name_format_ranged.greenleaf" text="{=2692143D}{FIRSTNAME} Greenleaf"/>
   <string id="DistServ_name_format_ranged.doncaster" text="{=8566Dfa5}{FIRSTNAME} of Doncaster"/>
@@ -92,22 +92,22 @@
   <string id="DistServ_name_format_culture_empire.vulpis" text="{=70a204b5}{FIRSTNAME} Vulpis"/>
   <string id="DistServ_name_format_culture_empire.fortis" text="{=B9DFa49E}{FIRSTNAME} Fortis"/>
   <string id="DistServ_name_format_culture_empire.callidus" text="{=4A98Ab35}{FIRSTNAME} an Callidus"/>
-  <string id="DistServ_name_format_culture_empire.immportal" text="{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}"/>
+  <string id="DistServ_name_format_culture_empire.immportal" text="{=Bf326787}{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}"/>
   <string id="DistServ_name_format_culture_empire.pankrat" text="{=65a05768}{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}"/>
   <string id="DistServ_name_format_culture_empire.silver" text="{=a07A65f9}{FIRSTNAME} the Silver Shield"/>
   <string id="DistServ_name_format_culture_empire.bronze" text="{=Ab3d8Ea5}{FIRSTNAME} the Bronze Shield"/>
-  <string id="DistServ_name_format_culture_empire.spathaman" text="{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}"/>
+  <string id="DistServ_name_format_culture_empire.spathaman" text="{=Ab6AB970}{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}"/>
   <string id="DistServ_name_format_culture_empire.spear" text="{=36cd93E0}{FIRSTNAME} the Kontarion"/>
   <string id="DistServ_name_format_culture_empire.myzead" text="{=1eD346CC}{FIRSTNAME} Myzeadas"/>
   <string id="DistServ_name_format_culture_empire.cursion" text="{=2fBF2798}{FIRSTNAME} Cursiontos"/>
   <string id="DistServ_name_format_culture_empire.calsea" text="{=61F4Eb94}{FIRSTNAME} Calseas"/>
   <string id="DistServ_name_format_culture_empire.mironias" text="{=501785b9}{FIRSTNAME} Mirontos"/>
   <string id="DistServ_name_format_culture_empire.tiagys" text="{=Cb3bE7d5}{FIRSTNAME} Tiagysas"/>
-  <string id="DistServ_name_format_culture_empire.ornian" text="{FIRSTNAME} {?IS_FEMALE}Ornianicus{?}Oriaianica{\?}"/>
+  <string id="DistServ_name_format_culture_empire.ornian" text="{=45E59008}{FIRSTNAME} {?IS_FEMALE}Ornianicus{?}Oriaianica{\?}"/>
   <string id="DistServ_name_format_culture_empire.zeos" text="{=831d35eD}{FIRSTNAME} Erithrysas"/>
   <string id="DistServ_name_format_culture_empire.lycarea" text="{=7b1cA944}{FIRSTNAME} Lycareas"/>
   <string id="DistServ_name_format_culture_empire.sethys" text="{=1F692340}{FIRSTNAME} Sethys"/>
-  <string id="DistServ_name_format_culture_empire.vlandikos" text="{FIRSTNAME} {?IS_FEMALE}Blandike{?}Blandikos{\?}"/>
+  <string id="DistServ_name_format_culture_empire.vlandikos" text="{=4969d28d}{FIRSTNAME} {?IS_FEMALE}Blandike{?}Blandikos{\?}"/>
   <string id="DistServ_name_format_culture_empire.battanion" text="{=7f518e38}{FIRSTNAME} Battanion"/>
   <string id="DistServ_name_format_culture_empire.default" text="{=2A63395C}{FIRSTNAME} Calradias"/>
   <!-- #endregion -->
@@ -122,10 +122,10 @@
   <string id="DistServ_name_format_culture_sturgia.byalic" text="{=faF406d4}{FIRSTNAME} z Byalii"/>
   <string id="DistServ_name_format_culture_sturgia.galcha" text="{=b6A3224c}{FIRSTNAME} z Galchi"/>
   <string id="DistServ_name_format_culture_sturgia.ircara" text="{=5A8f4f83}{FIRSTNAME} z Ircari"/>
-  <string id="DistServ_name_format_culture_sturgia.grozny" text="{FIRSTNAME} {?IS_FEMALE}Grozna{?}Grozny{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.ovskii" text="{FIRSTNAME} {?IS_FEMALE}Ovska{?}Ovskii{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.vastrovskii" text="{FIRSTNAME} {?IS_FEMALE}Vastorvska{?}Vastrovskii{\?}"/>
-  <string id="DistServ_name_format_culture_sturgia.shagokhodnii" text="{FIRSTNAME} {?IS_FEMALE}Shagokhodna{?}Shagokhodnii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.grozny" text="{=1c139bDA}{FIRSTNAME} {?IS_FEMALE}Grozna{?}Grozny{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.ovskii" text="{=3eB9b07e}{FIRSTNAME} {?IS_FEMALE}Ovska{?}Ovskii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.vastrovskii" text="{=027B11ad}{FIRSTNAME} {?IS_FEMALE}Vastorvska{?}Vastrovskii{\?}"/>
+  <string id="DistServ_name_format_culture_sturgia.shagokhodnii" text="{=1277386F}{FIRSTNAME} {?IS_FEMALE}Shagokhodna{?}Shagokhodnii{\?}"/>
   <string id="DistServ_name_format_culture_sturgia.varangian" text="{=0d200107}{FIRSTNAME} the Vaeling"/>
   <string id="DistServ_name_format_culture_sturgia.snowplower" text="{=Bd4Db926}{FIRSTNAME} the Snowplower"/>
   <string id="DistServ_name_format_culture_sturgia.default" text="{=35c04036}{FIRSTNAME} Sturgianin"/>
@@ -201,7 +201,7 @@
   <string id="DistServ_name_format_culture_vakken.unlanded" text="{=baB9AFcE}{FIRSTNAME} the Unlanded"/>
   <string id="DistServ_name_format_culture_vakken.default" text="{=451d59C4}{FIRSTNAME} the Vakken"/>
   <!-- #endregion -->
-  <!-- #region VLandian name format -->
+  <!-- #region Vlandian name format -->
   <string id="DistServ_name_format_culture_vlandia.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
   <string id="DistServ_name_format_culture_vlandia.lion" text="{=ae5Ee53E}{FIRSTNAME} the Lion"/>
   <string id="DistServ_name_format_culture_vlandia.little" text="{=989f99c1}{FIRSTNAME} the Little"/>
@@ -273,7 +273,7 @@
   <string id="DistServ_name_format_culture_valkyrie.sword" text="{=DSRA72d8bfD}{FIRSTNAME} the Sverð"/>
   <string id="DistServ_name_format_culture_valkyrie.shield" text="{=DSR430b03Ef}{FIRSTNAME} the Skjoldr"/>
   <string id="DistServ_name_format_culture_valkyrie.valheim" text="{=6BDeF89A}{FIRSTNAME} of Valheim"/>
-  <string id="DistServ_name_format_culture_valkyrie.default" text="{FIRSTNAME} the {?IS_FEMALE}Valkyrja{?}Einherjar{\?}"/>
+  <string id="DistServ_name_format_culture_valkyrie.default" text="{=65Cae0Cb}{FIRSTNAME} the {?IS_FEMALE}Valkyrja{?}Einherjar{\?}"/>
   <!-- #endregion -->
   <!-- #region Tetsuihjin name format -->
   <string id="DistServ_name_format_culture_tetsojin.doutanuki" text="{=D70dd98B}{FIRSTNAME} the Doutanuki"/>
@@ -315,13 +315,13 @@
   <!-- #endregion -->
   <!-- #region Paleician name format -->
   <string id="DistServ_name_format_culture_paleician.lakonis" text="{=DSRA741c1e4}{FIRSTNAME} Lakonion"/>
-  <string id="DistServ_name_format_culture_paleician.rageta" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
+  <string id="DistServ_name_format_culture_paleician.rageta" text="{=8a084583}{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
   <string id="DistServ_name_format_culture_paleician.rhotae" text="{=DSR01AfF451}{FIRSTNAME} of Rotash"/>
-  <string id="DistServ_name_format_culture_paleician.default" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
+  <string id="DistServ_name_format_culture_paleician.default" text="{=Bd77E9cc}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
   <!-- #endregion -->
   <!-- #region Paleics name format -->
   <string id="DistServ_name_format_culture_palaic.lakonis" text="{=903dC120}{FIRSTNAME} Lakonion"/>
-  <string id="DistServ_name_format_culture_palaic.rageta" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
+  <string id="DistServ_name_format_culture_palaic.rageta" text="{=8a084583}{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
   <string id="DistServ_name_format_culture_palaic.rhotae" text="{=31A2a011}{FIRSTNAME} of Rotash"/>
   <string id="DistServ_name_format_culture_palaic.default" text="{=f4998359}{FIRSTNAME} Palaicus"/>
   <!-- #endregion -->
@@ -333,12 +333,10 @@
   <string id="DistServ_name_format_culture_laconian.default" text="{=4a2Ce7AB}{FIRSTNAME} the Lakonikos "/>
   <string id="DistServ_name_format_culture_kannan.default" text="{=11c24aB0}{FIRSTNAME} the Kannan"/>
   <string id="DistServ_name_format_culture_massa.default" text="{=37416d6f}{FIRSTNAME} Massagetos"/>
-  
   <string id="DistServ_name_format_culture_swadia.default" text="{=40D1583e}{FIRSTNAME} the Swadisch"/>
   <string id="DistServ_name_format_culture_rhodok.default" text="{=f640f9f5}{FIRSTNAME} the Rhodok"/>
   <string id="DistServ_name_format_culture_sarranid.default" text="{=ecBd8942}{FIRSTNAME} the Sarranian"/>
   <string id="DistServ_name_format_culture_siri.default" text="{=2234f65d}{FIRSTNAME} the Siri"/>
-
   <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
   <!-- #region Bandit name format -->
   <string id="DistServ_name_format_climinals.001" text="{=585607e1}{FIRSTNAME} the Ragged"/>
@@ -387,5 +385,5 @@
   <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
   <!-- #endregion -->
   <!-- universal name format -->
-  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/> 
+  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/>
 </strings>

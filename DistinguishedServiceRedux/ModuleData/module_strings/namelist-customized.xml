@@ -1,3 +1,104 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <strings>
+  <string id="DistServ_name_format_infantly.blade" text="{=7a3804Bc}{FIRSTNAME} the Blade"/>
+  <string id="DistServ_name_format_infantly.sword" text="{=44b89b22}{FIRSTNAME} the Swordman"/>
+  <string id="DistServ_name_format_infantly.brave" text="{=9b0e91cA}{FIRSTNAME} the Brave"/>
+  <string id="DistServ_name_format_infantly.maruder" text="{=80703397}{FIRSTNAME} the Maruder"/>
+  <string id="DistServ_name_format_infantly.loyal" text="{=19530eFE}{FIRSTNAME} the Loyal"/>
+  <string id="DistServ_name_format_infantly.strong" text="{=8aC3d7cd}{FIRSTNAME} the Strong"/>
+  <string id="DistServ_name_format_infantly.Red" text="{=A50878c8}{FIRSTNAME} the Red"/>
+  <string id="DistServ_name_format_infantly.butcher" text="{=0cb624d5}{FIRSTNAME} the Butcher"/>
+  <string id="DistServ_name_format_infantly.knife" text="{=F949d0eD}{FIRSTNAME} the Knife"/>
+  <string id="DistServ_name_format_infantly.shark" text="{=F9781Fa5}{FIRSTNAME} the Shark"/>
+  <string id="DistServ_name_format_infantly.scythe" text="{=e446af77}{FIRSTNAME} the Scythe"/>
+  <string id="DistServ_name_format_infantly.anvil" text="{=ee1e910A}{FIRSTNAME} the Anvil"/>
+  <string id="DistServ_name_format_infantly.scarlet" text="{=1957a93D}{FIRSTNAME} the scarlet"/>
+  <string id="DistServ_name_format_cavalry.rider" text="{=e49b3Fe7}{FIRSTNAME} the Rider"/>
+  <string id="DistServ_name_format_cavalry.horseman" text="{=87F243b9}{FIRSTNAME} the Horseman"/>
+  <string id="DistServ_name_format_cavalry.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
+  <string id="DistServ_name_format_cavalry.vanguard" text="{=B1832939}{FIRSTNAME} the Vanguard"/>
+  <string id="DistServ_name_format_cavalry.centaur" text="{=0bEE50da}{FIRSTNAME} the Centaur"/>
+  <string id="DistServ_name_format_cavalry.stallion" text="{=73a1d677}{FIRSTNAME} the Stallion"/>
+  <string id="DistServ_name_format_cavalry.gallant" text="{=9874382b}{FIRSTNAME} the Gallant"/>
+  <string id="DistServ_name_format_cavalry.butcher" text="{=0cb624d5}{FIRSTNAME} the Butcher"/>
+  <string id="DistServ_name_format_cavalry.hammer" text="{=3d133b8B}{FIRSTNAME} the Hammer"/>
+  <string id="DistServ_name_format_cavalry.swift" text="{=242b2BaA}{FIRSTNAME} the Swift"/>
+  <string id="DistServ_name_format_cavalry.pinder" text="{=8701bbe2}{FIRSTNAME} the Pinder"/>
+  <string id="DistServ_name_format_ranged.ranger" text="{=37423dcD}{FIRSTNAME} the Ranger"/>
+  <string id="DistServ_name_format_ranged.bowman" text="{=9e5C609A}{FIRSTNAME} the Bowman"/>
+  <string id="DistServ_name_format_ranged.sharpshooter" text="{=eaD76Cf2}{FIRSTNAME} the Sharpshooter"/>
+  <string id="DistServ_name_format_ranged.sniper" text="{=685eE327}{FIRSTNAME} the Sniper"/>
+  <string id="DistServ_name_format_ranged.hunter" text="{=a460490b}{FIRSTNAME} the Hunter"/>
+  <string id="DistServ_name_format_ranged.merry" text="{=deF02B69}{FIRSTNAME} the Merry"/>
+  <string id="DistServ_name_format_ranged.scarlet" text="{=B72a05dC}{FIRSTNAME} the Scarlet"/>
+  <string id="DistServ_name_format_ranged.miller" text="{=67FE6236}{FIRSTNAME} the Miller's son"/>
+  <string id="DistServ_name_format_ranged.adale" text="{=91C52417}{FIRSTNAME}-a-Dale"/>
+  <string id="DistServ_name_format_ranged.greenleaf" text="{=2692143D}{FIRSTNAME} Greenleaf"/>
+  <string id="DistServ_name_format_ranged.doncaster" text="{=8566Dfa5}{FIRSTNAME} of Doncaster"/>
+  <string id="DistServ_name_format_culture_battania.fhasach" text="{=A93e60aD}{FIRSTNAME} an Fhàsach"/>
+  <string id="DistServ_name_format_culture_battania.laidir" text="{=E126Bd72}{FIRSTNAME} an Làidir"/>
+  <string id="DistServ_name_format_culture_battania.gaisgeach" text="{=8bD3e872}{FIRSTNAME} an Gaisgeach"/>
+  <string id="DistServ_name_format_culture_empire.vulpis" text="{=70a204b5}{FIRSTNAME} Vulpis"/>
+  <string id="DistServ_name_format_culture_empire.fortis" text="{=B9DFa49E}{FIRSTNAME} Fortis"/>
+  <string id="DistServ_name_format_culture_empire.callidus" text="{=4A98Ab35}{FIRSTNAME} an Callidus"/>
+  <string id="DistServ_name_format_culture_sturgia.kraken" text="{=e0B3624e}{FIRSTNAME} det Kråke"/>
+  <string id="DistServ_name_format_culture_sturgia.leaf" text="{=f030A6f3}{FIRSTNAME} det Rev"/>
+  <string id="DistServ_name_format_culture_sturgia.nord" text="{=3Fc0b82e}{FIRSTNAME} av Nord"/>
+  <string id="DistServ_name_format_culture_nord.nord" text="{=e0B3624e}{FIRSTNAME} av Nord"/>
+  <string id="DistServ_name_format_culture_vakken.vakken" text="{=e0B3624e}{FIRSTNAME} the vakken"/>
+  <string id="DistServ_name_format_culture_vlandia.bold" text="{=f619044D}{FIRSTNAME} the Bold"/>
+  <string id="DistServ_name_format_culture_vlandia.lion" text="{=ae5Ee53E}{FIRSTNAME} the Lion"/>
+  <string id="DistServ_name_format_culture_vlandia.little" text="{=989f99c1}{FIRSTNAME} the Little"/>
+  <string id="DistServ_name_format_culture_khuzait.ukhaantai" text="{=faC8efcC}{FIRSTNAME} Ukhaantai"/>
+  <string id="DistServ_name_format_culture_khuzait.khurdan" text="{=566286e1}{FIRSTNAME} Khurdan"/>
+  <string id="DistServ_name_format_culture_khuzait.yamaa" text="{=A518b416}{FIRSTNAME} Yamaa"/>
+  <string id="DistServ_name_format_culture_aserai.genubi" text="{=DistinguishedServiceRedux1127dF6E}{FIRSTNAME} al janubi"/>
+  <string id="DistServ_name_format_culture_aserai.sayf" text="{=DistinguishedServiceRedux09DF31e8}{FIRSTNAME} al sayf"/>
+  <string id="DistServ_name_format_culture_aserai.sharasa" text="{=DistinguishedServiceReduxc66255e7}{FIRSTNAME} al sharasa"/>
+  <string id="DistServ_name_format_culture_darshi.darshi" text="{=DistinguishedServiceReduxdaE42183}{FIRSTNAME} the Darshi"/>
+  <string id="DistServ_name_format_climinals.001" text="{=585607e1}{FIRSTNAME} the Ragged"/>
+  <string id="DistServ_name_format_climinals.002" text="{=2f0fa040}{FIRSTNAME} the Shiv"/>
+  <string id="DistServ_name_format_climinals.003" text="{=671a2a18}{FIRSTNAME} Slicer"/>
+  <string id="DistServ_name_format_climinals.004" text="{=b25A376B}{FIRSTNAME} the Plunderer"/>
+  <string id="DistServ_name_format_climinals.005" text="{=5a1b50A8}{FIRSTNAME} the Mad"/>
+  <string id="DistServ_name_format_climinals.006" text="{=Fb47208b}{FIRSTNAME} Racoon"/>
+  <string id="DistServ_name_format_climinals.007" text="{=7BD66bc9}{FIRSTNAME} the Overlord"/>
+  <string id="DistServ_name_format_climinals.008" text="{=f273F650}{FIRSTNAME} the Slayer"/>
+  <string id="DistServ_name_format_climinals.009" text="{=f0D7710d}{FIRSTNAME} the Boss"/>
+  <string id="DistServ_name_format_climinals.010" text="{=9eD7d8bb}{FIRSTNAME} of the Filth"/>
+  <string id="DistServ_name_format_climinals.011" text="{=Ad64C0ab}{FIRSTNAME} the Bonebreaker"/>
+  <string id="DistServ_name_format_climinals.012" text="{=5d448d9D}{FIRSTNAME} Skullsmasher"/>
+  <string id="DistServ_name_format_climinals.013" text="{=FbBe5213}{FIRSTNAME} the Enslaver"/>
+  <string id="DistServ_name_format_climinals.014" text="{=7f10D466}{FIRSTNAME} the Captain"/>
+  <string id="DistServ_name_format_climinal2.001" text="{=8fA4C86b}{FIRSTNAME} the Smuggler"/>
+  <string id="DistServ_name_format_climinal2.002" text="{=1B251494}{FIRSTNAME} the Thief"/>
+  <string id="DistServ_name_format_climinal2.003" text="{=053d83Fa}{FIRSTNAME} Conman"/>
+  <string id="DistServ_name_format_climinal2.004" text="{=86C81e9C}{FIRSTNAME} the Fence"/>
+  <string id="DistServ_name_format_climinal2.005" text="{=65C53e0C}{FIRSTNAME} Sly"/>
+  <string id="DistServ_name_format_climinal2.006" text="{=B333774b}{FIRSTNAME} the Contrabander"/>
+  <string id="DistServ_name_format_climinal2.007" text="{=42bDD7AA}{FIRSTNAME} the Swindler"/>
+  <string id="DistServ_name_format_climinal2.008" text="{=1b5f3803}{FIRSTNAME} the Pilferer"/>
+  <string id="DistServ_name_format_climinal3.001" text="{=061BB601}{FIRSTNAME} the Mastermind"/>
+  <string id="DistServ_name_format_climinal3.002" text="{=D54D3d4B}{FIRSTNAME} the Assassin"/>
+  <string id="DistServ_name_format_climinal3.003" text="{=933b16d6}{FIRSTNAME} the Spy"/>
+  <string id="DistServ_name_format_climinal3.004" text="{=8a5391fb}{FIRSTNAME} the Scoutmaster"/>
+  <string id="DistServ_name_format_climinal3.005" text="{=9cA68f83}{FIRSTNAME} the Tracker"/>
+  <string id="DistServ_name_format_climinal3.006" text="{=9c1723ad}{FIRSTNAME} the Pathfinder"/>
+  <string id="DistServ_name_format_climinal3.007" text="{=bc5B77cA}{FIRSTNAME} the Hidden"/>
+  <string id="DistServ_name_format_climinal3.008" text="{=88E396c7}{FIRSTNAME} the Bounty Hunter"/>
+  <string id="DistServ_name_format_climinal3.009" text="{=b80375ab}{FIRSTNAME} Fox"/>
+  <string id="DistServ_name_format_pirates.001" text="{=8fA4C86b}{FIRSTNAME} the Smuggler"/>
+  <string id="DistServ_name_format_pirates.002" text="{=4e523c6c}{FIRSTNAME} the Sailor"/>
+  <string id="DistServ_name_format_pirates.003" text="{=23866a83}{FIRSTNAME} of the Waves"/>
+  <string id="DistServ_name_format_pirates.004" text="{=fe6BA5f3}{FIRSTNAME} the Peg Leg"/>
+  <string id="DistServ_name_format_pirates.005" text="{=7ED7E320}{FIRSTNAME} Ale-Drinker"/>
+  <string id="DistServ_name_format_pirates.006" text="{=32E9c4af}{FIRSTNAME} the Privateer"/>
+  <string id="DistServ_name_format_pirates.007" text="{=745fA2D7}{FIRSTNAME} the Seafarer"/>
+  <string id="DistServ_name_format_pirates.008" text="{=2FFD8342}{FIRSTNAME} Blackbeard"/>
+  <string id="DistServ_name_format_shift_sand.001" text="{=23782F63}{FIRSTNAME} the Doc"/>
+  <string id="DistServ_name_format_shift_sand.001" text="{=A9A2Aee1}{FIRSTNAME} Bloodscalpel"/>
+  <string id="DistServ_name_format_shift_sand.001" text="{=4b31369f}{FIRSTNAME} Sawbones"/>
+  <string id="DistServ_name_format_shift_sand.001" text="{=6837C94A}{FIRSTNAME} the Chemist"/>
+  <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
+  <string id="DistServ_name_format_default.fallback" text="{=DistinguishedServiceRedux2aA12fc9}{FIRSTNAME}"/>
 </strings>
