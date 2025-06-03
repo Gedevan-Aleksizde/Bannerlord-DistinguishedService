@@ -4,10 +4,8 @@
     <tag language="English"/>
   </tags>
   <strings>
-    <string id="2aA12fc9" text="{FIRSTNAME}" />
-
     <string id="7a3804Bc" text="{FIRSTNAME} the Blade" />
-    <string id="44b89b22" text="{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}" />
+    <string id="16452362" text="{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}" />
     <string id="9b0e91cA" text="{FIRSTNAME} the Brave" />
     <string id="80703397" text="{FIRSTNAME} the Maruder" />
     <string id="19530eFE" text="{FIRSTNAME} the Loyal" />
@@ -89,7 +87,7 @@
     <string id="B9DFa49E" text="{FIRSTNAME} Fortis" />
     <string id="4A98Ab35" text="{FIRSTNAME} an Callidus" />
     <string id="Bf326787" text="{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}" />
-    <string id="65a05768" text="{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}" />
+    <string id="25445eC4" text="{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}" />
     <string id="a07A65f9" text="{FIRSTNAME} the Silver Shield" />
     <string id="Ab3d8Ea5" text="{FIRSTNAME} the Bronze Shield" />
     <string id="Ab6AB970" text="{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}" />
@@ -99,7 +97,7 @@
     <string id="61F4Eb94" text="{FIRSTNAME} Calseas" />
     <string id="501785b9" text="{FIRSTNAME} Mirontos" />
     <string id="Cb3bE7d5" text="{FIRSTNAME} Tiagysas" />
-    <string id="45E59008" text="{FIRSTNAME} {?IS_FEMALE}Ornianicus{?}Oriaianica{\?}" />
+    <string id="DdC0627d" text="{FIRSTNAME} {?IS_FEMALE}Ornianica{?}Ornianicus{\?}" />
     <string id="831d35eD" text="{FIRSTNAME} Erithrysas" />
     <string id="7b1cA944" text="{FIRSTNAME} Lycareas" />
     <string id="1F692340" text="{FIRSTNAME} Sethys" />
@@ -146,7 +144,7 @@
     <string id="DSR46Db6045" text="{FIRSTNAME} of Alfarheim" />
     <string id="DSRdc798A3C" text="{FIRSTNAME} the Grani Rider" />
     <string id="DSR22B25047" text="{FIRSTNAME} the Tröll" />
-    <string id="DSR65b787f2" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
+    <string id="6c6Ed6CB" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
     <string id="DSR19590ed4" text="{FIRSTNAME} the Gráfeldr" />
     <string id="DSR163dD4a3" text="{FIRSTNAME} the Bluetooth" />
     <string id="DSR3904b038" text="{FIRSTNAME} the Forkbeard" />
@@ -175,7 +173,7 @@
     <string id="5249275b" text="{FIRSTNAME} of Alfarheim" />
     <string id="3764af09" text="{FIRSTNAME} the Grani Rider" />
     <string id="6f2599c7" text="{FIRSTNAME} the Tröll" />
-    <string id="3958c626" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
+    <string id="bD8wrnSIl" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
     <string id="07a3Ff06" text="{FIRSTNAME} the Gráfeldr" />
     <string id="91EA333A" text="{FIRSTNAME} the Bluetooth" />
     <string id="8781fdd9" text="{FIRSTNAME} the Forkbeard" />
@@ -286,10 +284,10 @@
     <string id="DSRA741c1e4" text="{FIRSTNAME} Lakonion" />
     <string id="8a084583" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}" />
     <string id="DSR01AfF451" text="{FIRSTNAME} of Rotash" />
-    <string id="Bd77E9cc" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}" />
+    <string id="Ff2fBfe4" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}" />
     <string id="903dC120" text="{FIRSTNAME} Lakonion" />
     <string id="31A2a011" text="{FIRSTNAME} of Rotash" />
-    <string id="f4998359" text="{FIRSTNAME} Palaicus" />
+    <string id="M7Y3DaIJI" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}" />
     <string id="12e734E1" text="{FIRSTNAME} the Balionling" />
     <string id="d0E19592" text="{FIRSTNAME} the Biscanian" />
     <string id="F3D239f5" text="{FIRSTNAME} the Geroian" />
@@ -381,6 +379,8 @@
     <string id="3Lnxudiyr" text="{FIRSTNAME} of {SETTLEMENT}" />
     <string id="9aF48664" text="{SETTLEMENT} no {FIRSTNAME}" />
     <string id="Dt7SBz0we" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="QV9KFogP1" text="{FIRSTNAME} of {SETTLEMENT}" />
     <!-- #endregion settlement formats per culture  -->
+    <string id="2aA12fc9" text="{FIRSTNAME}" />
   </strings>
 </base>

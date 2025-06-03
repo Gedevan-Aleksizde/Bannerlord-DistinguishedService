@@ -11,7 +11,7 @@
         <string id="67FE6236" text="{FIRSTNAME} the Miller's son" />
         <string id="faF0B019" text="{FIRSTNAME} the Steed" />
         <string id="d4CAddb5" text="{FIRSTNAME} the Woodcutter's son" />
-        <string id="D9C12b0e" text="{FIRSTNAME} the Charcoal-burner's son" />  
+        <string id="D9C12b0e" text="{FIRSTNAME} the Charcoal-burner's son" />
         <string id="219F400D" text="{FIRSTNAME} Athanatos" />
         <string id="65a05768" text="{FIRSTNAME} Pankratios" />
         <string id="83B53C21" text="{FIRSTNAME} the Spatharios" />
@@ -26,5 +26,7 @@
         <string id="DSRca4D83fD" text="{FIRSTNAME} Ragetius" />
         <string id="Dd464a2d" text="{FIRSTNAME} the Valkyrja" />
         <string id="DSR81FB560A" text="{FIRSTNAME} Palaicus" />
+        <string id="f4C2b0ea" text="{FIRSTNAME} Ragetius" />
+        <string id="f4998359" text="{FIRSTNAME} Palaicus" />
     </strings>
 </base>

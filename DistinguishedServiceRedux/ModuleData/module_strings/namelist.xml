@@ -103,7 +103,7 @@
   <string id="DistServ_name_format_culture_empire.calsea" text="{=61F4Eb94}{FIRSTNAME} Calseas"/>
   <string id="DistServ_name_format_culture_empire.mironias" text="{=501785b9}{FIRSTNAME} Mirontos"/>
   <string id="DistServ_name_format_culture_empire.tiagys" text="{=Cb3bE7d5}{FIRSTNAME} Tiagysas"/>
-  <string id="DistServ_name_format_culture_empire.ornian" text="{=f40fcb46}{FIRSTNAME} {?IS_FEMALE}Ornianica{?}Ornianicus{\?}"/>
+  <string id="DistServ_name_format_culture_empire.ornian" text="{=DdC0627d}{FIRSTNAME} {?IS_FEMALE}Ornianica{?}Ornianicus{\?}"/>
   <string id="DistServ_name_format_culture_empire.zeos" text="{=831d35eD}{FIRSTNAME} Erithrysas"/>
   <string id="DistServ_name_format_culture_empire.lycarea" text="{=7b1cA944}{FIRSTNAME} Lycareas"/>
   <string id="DistServ_name_format_culture_empire.sethys" text="{=1F692340}{FIRSTNAME} Sethys"/>

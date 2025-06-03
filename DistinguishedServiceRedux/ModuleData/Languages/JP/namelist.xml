@@ -10,41 +10,6 @@
         <tag language="日本語"/>
       </tags>
       <strings>
-        <string id="2aA12fc9" text="{FIRSTNAME}"/>
-        <string id="75003f6b" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="13aeB4Ac" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="WqK5a41NY" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="iKAPdWL9l" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="BYIjrs4BJ" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="VQbbK5h51" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="SFydVVh4c" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="sTSxSXP2R" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="CHQdAHXoI" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="23xtkMt79" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="inlGGPfVY" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="Z46h6KpMp" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="4sL2RZ5FQ" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="ot7DlMb1D" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="n6YwceWUu" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="1Utfpjqr0" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="uJU5qJAWO" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="wUJuD9MbI" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="RhO1PXyPA" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="WGAXo1CEk" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="7QOaettwM" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="3CZNvz3Xu" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="tgZRiBn8Z" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="RXm1vEuqL" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="siYOgpoen" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="f6p4lxiWx" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="hMZlGFT4Y" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="EcLf4sX7o" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="mShxpDrua" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="kp0zKsQzH" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="A8i9y8MOA" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="3Lnxudiyr" text="{SETTLEMENT}の{FIRSTNAME}"/>
-        <string id="9aF48664" text="{SETTLEMENT}之{FIRSTNAME}"/>
-        <string id="Dt7SBz0we" text="{SETTLEMENT}の{FIRSTNAME}"/>
         <string id="7a3804Bc" text="剣の{FIRSTNAME}"/>
         <string id="16452362" text="{?IS_FEMALE}剣乙女{?}剣士{\?}の{FIRSTNAME}"/>
         <string id="9b0e91cA" text="勇者の{FIRSTNAME}"/>
@@ -138,7 +103,7 @@
         <string id="61F4Eb94" text="{FIRSTNAME}゠カルセアス"/>
         <string id="501785b9" text="{FIRSTNAME}゠ミロントス"/>
         <string id="Cb3bE7d5" text="{FIRSTNAME}゠ティアギュサス"/>
-        <string id="f40fcb46" text="{FIRSTNAME}゠{?IS_FEMALE}オルニアニカ{?}オルニアニクス{\?}"/>
+        <string id="DdC0627d" text="{FIRSTNAME}゠{?IS_FEMALE}オルニアニカ{?}オルニアニクス{\?}"/>
         <string id="831d35eD" text="{FIRSTNAME}゠エリトリュサス"/>
         <string id="7b1cA944" text="{FIRSTNAME}゠リュカレアス"/>
         <string id="1F692340" text="{FIRSTNAME}゠セティス"/>
@@ -385,6 +350,44 @@
         <string id="4b31369f" text="外科医の{FIRSTNAME}"/>
         <string id="6837C94A" text="薬師の{FIRSTNAME}"/>
         <string id="5e40fe20" text="手足断ちの{FIRSTNAME}"/>
+        <!-- #region settlement name formats -->
+        <string id="75003f6b" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="13aeB4Ac" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="WqK5a41NY" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="iKAPdWL9l" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="BYIjrs4BJ" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="VQbbK5h51" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="SFydVVh4c" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="sTSxSXP2R" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="CHQdAHXoI" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="23xtkMt79" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="inlGGPfVY" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="Z46h6KpMp" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="4sL2RZ5FQ" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="ot7DlMb1D" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="n6YwceWUu" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="1Utfpjqr0" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="uJU5qJAWO" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="wUJuD9MbI" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="RhO1PXyPA" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="WGAXo1CEk" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="7QOaettwM" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="3CZNvz3Xu" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="tgZRiBn8Z" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="RXm1vEuqL" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="siYOgpoen" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="f6p4lxiWx" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="hMZlGFT4Y" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="EcLf4sX7o" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="mShxpDrua" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="kp0zKsQzH" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="A8i9y8MOA" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="3Lnxudiyr" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="9aF48664" text="{SETTLEMENT}之{FIRSTNAME}"/>
+        <string id="Dt7SBz0we" text="{SETTLEMENT}の{FIRSTNAME}"/>
+        <string id="QV9KFogP1" text="{SETTLEMENT}の{FIRSTNAME}" />
+        <!-- #endregion settlement name formats -->
+        <string id="2aA12fc9" text="{FIRSTNAME}"/>
         <!-- 今は使われないが後方互換性のために残す -->
         <string id="44b89b22" text="剣士の{FIRSTNAME}"/>
         <string id="87F243b9" text="騎兵の{FIRSTNAME}"/>
