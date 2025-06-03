@@ -38,7 +38,12 @@ namespace DistinguishedServiceRedux
             }
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_{troopType}").ToList());
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
-            TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId); // TODO: if not found
+
+            TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId);
+            if (nameFromatSettlement.ToString().Substring(0, 19) == $"ERROR: Text with id")
+            {
+                nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", "_default");
+            }
             formats.AppendList(Settlement.All.Where(x => x.Culture == culture && (x.IsTown || x.IsVillage)).Select(x => nameFromatSettlement.CopyTextObject().SetTextVariable("SETTLEMENT", x.Name.ToString()).SetTextVariable("IS_FEMALE", isFemale ? 1 : 0)).ToList());
             if (formats.Count == 0) return GameTexts.FindText("DistServ_name_format_default.fallback");
             return formats[rng.Next(formats.Count)].CopyTextObject();
