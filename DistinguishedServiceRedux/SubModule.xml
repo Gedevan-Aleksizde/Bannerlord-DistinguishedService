@@ -1,13 +1,13 @@
 ﻿<Module>
   <Name value="Distinguished Service - Redux"/>
   <Id value="DistinguishedServiceRedux"/>
-  <Version value="v1.3.0"/>
+  <Version value="v1.5.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
  <DependedModules>
   </DependedModules>
   <DependedModuleMetadatas>
-    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" />
+    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" version="5.*" />
     <DependedModuleMetadata id="DistinguishedService" incompatible="true" />
     <DependedModuleMetadata id="DistinguishedService110" incompatible="true" />
     <DependedModuleMetadata id="DistinguishedService116" incompatible="true" />
