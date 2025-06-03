@@ -1,6 +1,8 @@
-﻿using MCM.Abstractions.Attributes;
+﻿using MCM.Abstractions;
+using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
+using System.Collections.Generic;
 
 namespace DistinguishedServiceRedux.settings
 {
@@ -101,5 +103,28 @@ namespace DistinguishedServiceRedux.settings
         [SettingPropertyGroup("{=ASqPAFgkE}Misc", GroupOrder = 3)]
         [SettingPropertyBool("{=SzH0vFGPO}Upgrade To Hero", Order = 1, RequireRestart = false, HintText = "{=ZKYkuUYKTQ}If enabled, nomination functionality so that when a unit is upgraded to Eligible Tier they automatically become a hero. Pairs best with high Eligible Tier value, and high lethality. Deafault is disabled.")]
         public bool UpgradeToHero { get; set; } = false; // upgrade_to_hero
+
+        public override IEnumerable<ISettingsPreset> GetBuiltInPresets()
+        {
+            foreach (var preset in base.GetBuiltInPresets())
+            {
+                yield return preset;
+            }
+
+            yield return new MemorySettingsPreset("the_origin", "the_origin", "The Origin", () => new Settings
+            {
+
+                MaxNominations = 2,
+                EligibleKillCountInfantry = 5,
+                EligibleKillCountCavalry = 6,
+                EligibleKillCountRanged = 7,
+                EligibleKillCountMountedArcher = 7,
+                NumSkillBonuses = 3,
+                NumSkillRounds = 2,
+                AdditionalSkillPoints = 30,
+                SkillPointsPerExcessKill = 5,
+
+            });
+        }
     }
 }
