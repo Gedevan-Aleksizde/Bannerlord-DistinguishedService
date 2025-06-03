@@ -46,7 +46,7 @@
         <string id="9aF48664" text="{SETTLEMENT}之{FIRSTNAME}"/>
         <string id="Dt7SBz0we" text="{SETTLEMENT}の{FIRSTNAME}"/>
         <string id="7a3804Bc" text="剣の{FIRSTNAME}"/>
-        <string id="44b89b22" text="剣士の{FIRSTNAME}"/>
+        <string id="16452362" text="{?IS_FEMALE}剣乙女{?}剣士{\?}の{FIRSTNAME}"/>
         <string id="9b0e91cA" text="勇者の{FIRSTNAME}"/>
         <string id="80703397" text="略奪屋の{FIRSTNAME}"/>
         <string id="19530eFE" text="忠実な{FIRSTNAME}"/>
@@ -128,7 +128,7 @@
         <string id="B9DFa49E" text="巨塔の{FIRSTNAME}"/>
         <string id="4A98Ab35" text="狡猾な{FIRSTNAME}"/>
         <string id="Bf326787" text="{FIRSTNAME}゠{?IF_FEMALE}アタナテー{?}アタナトス{\?}"/>
-        <string id="65a05768" text="{FIRSTNAME}゠パンクラティオス"/>
+        <string id="25445eC4" text="{FIRSTNAME}゠パンクラティオス"/>
         <string id="a07A65f9" text="銀の盾の{FIRSTNAME}"/>
         <string id="Ab3d8Ea5" text="青銅の盾の{FIRSTNAME}"/>
         <string id="Ab6AB970" text="{?IF_FEMALE}スパタレ―{?}スパタリオス{\?}の{FIRSTNAME}"/>
@@ -138,7 +138,7 @@
         <string id="61F4Eb94" text="{FIRSTNAME}゠カルセアス"/>
         <string id="501785b9" text="{FIRSTNAME}゠ミロントス"/>
         <string id="Cb3bE7d5" text="{FIRSTNAME}゠ティアギュサス"/>
-        <string id="45E59008" text="{FIRSTNAME}゠{?IS_FEMALE}オルニアニクス{?}オルニアニカ{\?}"/>
+        <string id="f40fcb46" text="{FIRSTNAME}゠{?IS_FEMALE}オルニアニカ{?}オルニアニクス{\?}"/>
         <string id="831d35eD" text="{FIRSTNAME}゠エリトリュサス"/>
         <string id="7b1cA944" text="{FIRSTNAME}゠リュカレアス"/>
         <string id="1F692340" text="{FIRSTNAME}゠セティス"/>
@@ -185,7 +185,7 @@
         <string id="DSR46Db6045" text="妖精郷の{FIRSTNAME}"/>
         <string id="DSRdc798A3C" text="グラニ乗りの{FIRSTNAME}"/>
         <string id="DSR22B25047" text="トロルの{FIRSTNAME}"/>
-        <string id="DSR65b787f2" text="牡山羊の{FIRSTNAME}"/>
+        <string id="6c6Ed6CB" text="{?IS_FEMALE}牝山羊{?}牡山羊{\?}の{FIRSTNAME}"/>
         <string id="DSR19590ed4" text="灰色皮の{FIRSTNAME}"/>
         <string id="DSR163dD4a3" text="青歯の{FIRSTNAME}"/>
         <string id="DSR3904b038" text="二叉髭の{FIRSTNAME}"/>
@@ -214,7 +214,7 @@
         <string id="5249275b" text="妖精郷の{FIRSTNAME}"/>
         <string id="3764af09" text="グラニ乗りの{FIRSTNAME}"/>
         <string id="6f2599c7" text="トロルの{FIRSTNAME}"/>
-        <string id="3958c626" text="牡山羊の{FIRSTNAME}"/>
+        <string id="bD8wrnSIl" text="{?IS_FEMALE}牝山羊{?}牡山羊{\?}の{FIRSTNAME}"/>
         <string id="07a3Ff06" text="灰色皮の{FIRSTNAME}"/>
         <string id="91EA333A" text="青歯の{FIRSTNAME}"/>
         <string id="8781fdd9" text="二叉髭の{FIRSTNAME}"/>
@@ -325,10 +325,10 @@
         <string id="DSRA741c1e4" text="{FIRSTNAME}゠ラコニオン"/>
         <string id="8a084583" text="{FIRSTNAME}゠{?IS_FEMALE}ラゲティア{?}ラゲティウス{\?}"/>
         <string id="DSR01AfF451" text="ロタシュの{FIRSTNAME}"/>
-        <string id="Bd77E9cc" text="{FIRSTNAME}゠{?IS_FEMALE}パライカ{?}パライクス{\?}"/>
+        <string id="Ff2fBfe4" text="{FIRSTNAME}゠{?IS_FEMALE}パライカ{?}パライクス{\?}"/>
         <string id="903dC120" text="{FIRSTNAME}゠ラコニオン"/>
         <string id="31A2a011" text="ロタシュの{FIRSTNAME}"/>
-        <string id="f4998359" text="{FIRSTNAME}゠パライクス"/>
+        <string id="M7Y3DaIJI" text="{FIRSTNAME}゠{?IS_FEMALE}パライカ{?}パライクス{\?}"/>
         <string id="12e734E1" text="バリオンリングの{FIRSTNAME}"/>
         <string id="d0E19592" text="ビスカン人の{FIRSTNAME}"/>
         <string id="F3D239f5" text="ゲロイア人の{FIRSTNAME}"/>
@@ -385,6 +385,7 @@
         <string id="4b31369f" text="外科医の{FIRSTNAME}"/>
         <string id="6837C94A" text="薬師の{FIRSTNAME}"/>
         <string id="5e40fe20" text="手足断ちの{FIRSTNAME}"/>
+        <!-- 今は使われないが後方互換性のために残す -->
         <string id="44b89b22" text="剣士の{FIRSTNAME}"/>
         <string id="87F243b9" text="騎兵の{FIRSTNAME}"/>
         <string id="a460490b" text="狩人の{FIRSTNAME}"/>
@@ -407,6 +408,7 @@
         <string id="Dd464a2d" text="ヴァルキリアの{FIRSTNAME}"/>
         <string id="DSR81FB560A" text="{FIRSTNAME}゠パライクス"/>
         <string id="f4C2b0ea" text="{FIRSTNAME}゠ラゲティウス"/>
+        <string id="f4998359" text="{FIRSTNAME}゠パライクス"/>
       </strings>
     </base>
     

@@ -35,5 +35,6 @@
     <string id="DistServ_name_format_settlement.huaxia" text="{=3Lnxudiyr}{FIRSTNAME} of {SETTLEMENT}"/>
     <string id="DistServ_name_format_settlement.testojin" text="{=9aF48664}{SETTLEMENT} no {FIRSTNAME}"/>
     <string id="DistServ_name_format_settlement.valkyrie" text="{=Dt7SBz0we}{FIRSTNAME} of {SETTLEMENT}"/>
+    <string id="DistServ_name_format_settlement._default" text="{=QV9KFogP1}{FIRSTNAME} of {SETTLEMENT}"/>
     <!-- #endregion settlement formats per culture  -->
 </strings>
