@@ -5,7 +5,7 @@
   <string id="DistServ_Error.ai" text="{=725b4401}ERROR 002: NPC Party's companions have been disabled for now!"/>
   <string id="DistServ_Error.serialized" text="{=1FBdEE9F}ERROR 003: Serialized Listener for MapEventEnded could not be created. NPC Party's Promotion chance reset to 0."/>
   <string id="DistServ_Error.problem" text="{=825019cb}ERROR 004: There was a problem:{NEWLINE}{ERROR}"/>
-  <string id="DistServ_Info.loaded" text="{=a6B4E064}Distringuished Service Redux loaded successfully"/>
+  <string id="DistServ_Info.loaded" text="{=ZBA22VMKs}Distringuished Service Redux loaded successfully"/>
   <string id="DistServ_Info.usesettings" text="{=87Ba3B2D}Using Modules/DistringuishedServerviceUpdated Settings"/>
   <string id="DistServ_Info.003companionlimit" text="{=A7124477}At maximum allowed companions. No nominations possible."/>
   <string id="DistServ_Info.usenamelist" text="{=Cb8f5d67}USING EXTERNAL NAMELIST FILE!{NEWLINE}This file will be written back to/edited to knock out used names."/>

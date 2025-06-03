@@ -2,7 +2,7 @@
 <strings>
   <!-- #region infantly name format -->
   <string id="DistServ_name_format_infantly.blade" text="{=7a3804Bc}{FIRSTNAME} the Blade"/>
-  <string id="DistServ_name_format_infantly.sword" text="{=44b89b22}{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}"/>
+  <string id="DistServ_name_format_infantly.sword" text="{=16452362}{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}"/>
   <string id="DistServ_name_format_infantly.brave" text="{=9b0e91cA}{FIRSTNAME} the Brave"/>
   <string id="DistServ_name_format_infantly.maruder" text="{=80703397}{FIRSTNAME} the Maruder"/>
   <string id="DistServ_name_format_infantly.loyal" text="{=19530eFE}{FIRSTNAME} the Loyal"/>
@@ -93,7 +93,7 @@
   <string id="DistServ_name_format_culture_empire.fortis" text="{=B9DFa49E}{FIRSTNAME} Fortis"/>
   <string id="DistServ_name_format_culture_empire.callidus" text="{=4A98Ab35}{FIRSTNAME} an Callidus"/>
   <string id="DistServ_name_format_culture_empire.immportal" text="{=Bf326787}{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}"/>
-  <string id="DistServ_name_format_culture_empire.pankrat" text="{=65a05768}{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}"/>
+  <string id="DistServ_name_format_culture_empire.pankrat" text="{=25445eC4}{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}"/>
   <string id="DistServ_name_format_culture_empire.silver" text="{=a07A65f9}{FIRSTNAME} the Silver Shield"/>
   <string id="DistServ_name_format_culture_empire.bronze" text="{=Ab3d8Ea5}{FIRSTNAME} the Bronze Shield"/>
   <string id="DistServ_name_format_culture_empire.spathaman" text="{=Ab6AB970}{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}"/>
@@ -154,7 +154,7 @@
   <string id="DistServ_name_format_culture_nord.alfarheim" text="{=DSR46Db6045}{FIRSTNAME} of Alfarheim"/>
   <string id="DistServ_name_format_culture_nord.grani" text="{=DSRdc798A3C}{FIRSTNAME} the Grani Rider"/>
   <string id="DistServ_name_format_culture_nord.troll" text="{=DSR22B25047}{FIRSTNAME} the Tröll"/>
-  <string id="DistServ_name_format_culture_nord.goat" text="{=DSR65b787f2}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
+  <string id="DistServ_name_format_culture_nord.goat" text="{=6c6Ed6CB}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
   <string id="DistServ_name_format_culture_nord.graycloak" text="{=DSR19590ed4}{FIRSTNAME} the Gráfeldr"/>
   <string id="DistServ_name_format_culture_nord.bluetooth" text="{=DSR163dD4a3}{FIRSTNAME} the Bluetooth"/>
   <string id="DistServ_name_format_culture_nord.forkbeard" text="{=DSR3904b038}{FIRSTNAME} the Forkbeard"/>
@@ -185,7 +185,7 @@
   <string id="DistServ_name_format_culture_nordling.alfarheim" text="{=5249275b}{FIRSTNAME} of Alfarheim"/>
   <string id="DistServ_name_format_culture_nordling.grani" text="{=3764af09}{FIRSTNAME} the Grani Rider"/>
   <string id="DistServ_name_format_culture_nordling.troll" text="{=6f2599c7}{FIRSTNAME} the Tröll"/>
-  <string id="DistServ_name_format_culture_nordling.goat" text="{=3958c626}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
+  <string id="DistServ_name_format_culture_nordling.goat" text="{=bD8wrnSIl}{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}"/>
   <string id="DistServ_name_format_culture_nordling.graycloak" text="{=07a3Ff06}{FIRSTNAME} the Gráfeldr"/>
   <string id="DistServ_name_format_culture_nordling.bluetooth" text="{=91EA333A}{FIRSTNAME} the Bluetooth"/>
   <string id="DistServ_name_format_culture_nordling.forkbeard" text="{=8781fdd9}{FIRSTNAME} the Forkbeard"/>
@@ -317,13 +317,13 @@
   <string id="DistServ_name_format_culture_paleician.lakonis" text="{=DSRA741c1e4}{FIRSTNAME} Lakonion"/>
   <string id="DistServ_name_format_culture_paleician.rageta" text="{=8a084583}{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
   <string id="DistServ_name_format_culture_paleician.rhotae" text="{=DSR01AfF451}{FIRSTNAME} of Rotash"/>
-  <string id="DistServ_name_format_culture_paleician.default" text="{=Bd77E9cc}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
+  <string id="DistServ_name_format_culture_paleician.default" text="{=Ff2fBfe4}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
   <!-- #endregion -->
   <!-- #region Paleics name format -->
   <string id="DistServ_name_format_culture_palaic.lakonis" text="{=903dC120}{FIRSTNAME} Lakonion"/>
   <string id="DistServ_name_format_culture_palaic.rageta" text="{=8a084583}{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}"/>
   <string id="DistServ_name_format_culture_palaic.rhotae" text="{=31A2a011}{FIRSTNAME} of Rotash"/>
-  <string id="DistServ_name_format_culture_palaic.default" text="{=f4998359}{FIRSTNAME} Palaicus"/>
+  <string id="DistServ_name_format_culture_palaic.default" text="{=M7Y3DaIJI}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
   <!-- #endregion -->
   <string id="DistServ_name_format_culture_balion.default" text="{=12e734E1}{FIRSTNAME} the Balionling"/>
   <string id="DistServ_name_format_culture_bragantia.default" text="{=d0E19592}{FIRSTNAME} the Biscanian"/>
