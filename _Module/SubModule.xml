@@ -1,10 +1,13 @@
 ﻿<Module>
   <Name value="Distinguished Service - Redux"/>
   <Id value="DistinguishedServiceRedux"/>
-  <Version value="v1.5.0"/>
+  <Version value="v1.5.1"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
- <DependedModules>
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="1.2.12" Optional="false"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="1.2.12" Optional="false"/>
+    <DependedModule Id="Sandbox" DependentVersion="1.2.12" Optional="false"/>
   </DependedModules>
   <DependedModuleMetadatas>
     <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" version="5.*" />
