@@ -40,7 +40,8 @@ namespace DistinguishedServiceRedux
             formats.AppendList(GameTexts.FindAllTextVariations($"DistServ_name_format_culture_{culture.StringId}").ToList());
 
             TextObject nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", culture.StringId);
-            if (nameFromatSettlement.ToString().Substring(0, 19) == $"ERROR: Text with id")
+            string whytheydidntimplementtryget = nameFromatSettlement.ToString();
+            if (whytheydidntimplementtryget.Substring(0, Math.Min(whytheydidntimplementtryget.Length, 19)) == $"ERROR: Text with id")
             {
                 nameFromatSettlement = GameTexts.FindText("DistServ_name_format_settlement", "_default");
             }
