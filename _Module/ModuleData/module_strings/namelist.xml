@@ -384,6 +384,5 @@
   <string id="DistServ_name_format_shift_sand.001" text="{=6837C94A}{FIRSTNAME} the Chemist"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
   <!-- #endregion -->
-  <!-- universal name format -->
-  <string id="DistServ_name_format_default.fallback" text="{=2aA12fc9}{FIRSTNAME}"/>
+
 </strings>
