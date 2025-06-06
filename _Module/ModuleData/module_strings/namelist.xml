@@ -325,6 +325,37 @@
   <string id="DistServ_name_format_culture_palaic.rhotae" text="{=31A2a011}{FIRSTNAME} of Rotash"/>
   <string id="DistServ_name_format_culture_palaic.default" text="{=M7Y3DaIJI}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
   <!-- #endregion -->
+  <!-- #region Huaxia name format -->
+  <string id="DistServ_name_format_culture_huaxia.nezha" text="{FIRSTNAME} the Eigh-armed Nezha"/>
+  <string id="DistServ_name_format_culture_huaxia.bigdipper" text="{FIRSTNAME} the Big Dipper"/>
+  <string id="DistServ_name_format_culture_huaxia.polaris" text="{FIRSTNAME} the Polaris"/>
+  <string id="DistServ_name_format_culture_huaxia.qilin" text="{FIRSTNAME} the Qilin Cub"/>
+  <string id="DistServ_name_format_culture_huaxia.conqueror" text="{FIRSTNAME} the Little Conqueror"/>
+  <string id="DistServ_name_format_culture_huaxia.ruyunlong" text="{FIRSTNAME} the Cloud Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.glaive" text="{FIRSTNAME} the Long Graive"/>
+  <string id="DistServ_name_format_culture_huaxia.pantherface" text="{FIRSTNAME} the Panther-face"/>
+  <string id="DistServ_name_format_culture_huaxia.pili" text="{FIRSTNAME} the Lightning Fire"/>
+  <string id="DistServ_name_format_culture_huaxia.silverspear" text="{FIRSTNAME} the Silver Spear"/>
+  <string id="DistServ_name_format_culture_huaxia.xuanfeng" text="{FIRSTNAME} the Little Whirlwind"/>
+  <string id="DistServ_name_format_culture_huaxia.putiandiao" text="{FIRSTNAME} the Sky-beating Hawk"/>
+  <string id="DistServ_name_format_culture_huaxia.tatoomonk" text="{FIRSTNAME} the Flower-tatoo Monk"/>
+  <string id="DistServ_name_format_culture_huaxia.tigerslayer" text="{FIRSTNAME} the Tiger Slayer"/>
+  <string id="DistServ_name_format_culture_huaxia.qingmianshou" text="{FIRSTNAME} the Nevus-faced Beast"/>
+  <string id="DistServ_name_format_culture_huaxia.ninedragon" text="{FIRSTNAME} the Nine-tatoo Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.xeixuanfeng" text="{FIRSTNAME} the Black Whirlwind"/>
+  <string id="DistServ_name_format_culture_huaxia.xeifei" text="{FIRSTNAME} the Black Bull"/>
+  <string id="DistServ_name_format_culture_huaxia.fanjian" text="{FIRSTNAME} the River-shaking Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.shuangwei" text="{FIRSTNAME} the Twin-tailed Scorpion"/>
+  <string id="DistServ_name_format_culture_huaxia.jinmao" text="{FIRSTNAME} the Velvet-skined Tiger"/>
+  <string id="DistServ_name_format_culture_huaxia.tongbei" text="{FIRSTNAME} the Connected Shoulders "/>
+  <string id="DistServ_name_format_culture_huaxia.caodao" text="{FIRSTNAME} the Sword Daemon "/>
+  <string id="DistServ_name_format_culture_huaxia.hunshumowang" text="{FIRSTNAME} the Chaotic Lord"/>
+  <string id="DistServ_name_format_culture_huaxia.sleepdragon" text="{FIRSTNAME} the Sleeping Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.phoenix" text="{FIRSTNAME} the Phoenix Chick"/>
+  <string id="DistServ_name_format_culture_huaxia.mirror" text="{FIRSTNAME} the Water Mirror"/>
+  <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
+  <string id="DistServ_name_format_culture_huaxia.luran" text="{FIRSTNAME} the Double-headed Snake"/>
+  <!-- #endregion -->
   <string id="DistServ_name_format_culture_balion.default" text="{=12e734E1}{FIRSTNAME} the Balionling"/>
   <string id="DistServ_name_format_culture_bragantia.default" text="{=d0E19592}{FIRSTNAME} the Biscanian"/>
   <string id="DistServ_name_format_culture_geroia.default" text="{=F3D239f5}{FIRSTNAME} the Geroian"/>
@@ -337,7 +368,6 @@
   <string id="DistServ_name_format_culture_rhodok.default" text="{=f640f9f5}{FIRSTNAME} the Rhodok"/>
   <string id="DistServ_name_format_culture_sarranid.default" text="{=ecBd8942}{FIRSTNAME} the Sarranian"/>
   <string id="DistServ_name_format_culture_siri.default" text="{=2234f65d}{FIRSTNAME} the Siri"/>
-  <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
   <!-- #region Bandit name format -->
   <string id="DistServ_name_format_climinals.001" text="{=585607e1}{FIRSTNAME} the Ragged"/>
   <string id="DistServ_name_format_climinals.002" text="{=2f0fa040}{FIRSTNAME} the Shiv"/>
