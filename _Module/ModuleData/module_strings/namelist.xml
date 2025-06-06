@@ -326,35 +326,35 @@
   <string id="DistServ_name_format_culture_palaic.default" text="{=M7Y3DaIJI}{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}"/>
   <!-- #endregion -->
   <!-- #region Huaxia name format -->
-  <string id="DistServ_name_format_culture_huaxia.nezha" text="{FIRSTNAME} the Eigh-armed Nezha"/>
-  <string id="DistServ_name_format_culture_huaxia.bigdipper" text="{FIRSTNAME} the Big Dipper"/>
-  <string id="DistServ_name_format_culture_huaxia.polaris" text="{FIRSTNAME} the Polaris"/>
-  <string id="DistServ_name_format_culture_huaxia.qilin" text="{FIRSTNAME} the Qilin Cub"/>
-  <string id="DistServ_name_format_culture_huaxia.conqueror" text="{FIRSTNAME} the Little Conqueror"/>
-  <string id="DistServ_name_format_culture_huaxia.ruyunlong" text="{FIRSTNAME} the Cloud Dragon"/>
-  <string id="DistServ_name_format_culture_huaxia.glaive" text="{FIRSTNAME} the Long Graive"/>
-  <string id="DistServ_name_format_culture_huaxia.pantherface" text="{FIRSTNAME} the Panther-face"/>
-  <string id="DistServ_name_format_culture_huaxia.pili" text="{FIRSTNAME} the Lightning Fire"/>
-  <string id="DistServ_name_format_culture_huaxia.silverspear" text="{FIRSTNAME} the Silver Spear"/>
-  <string id="DistServ_name_format_culture_huaxia.xuanfeng" text="{FIRSTNAME} the Little Whirlwind"/>
-  <string id="DistServ_name_format_culture_huaxia.putiandiao" text="{FIRSTNAME} the Sky-beating Hawk"/>
-  <string id="DistServ_name_format_culture_huaxia.tatoomonk" text="{FIRSTNAME} the Flower-tatoo Monk"/>
-  <string id="DistServ_name_format_culture_huaxia.tigerslayer" text="{FIRSTNAME} the Tiger Slayer"/>
-  <string id="DistServ_name_format_culture_huaxia.qingmianshou" text="{FIRSTNAME} the Nevus-faced Beast"/>
-  <string id="DistServ_name_format_culture_huaxia.ninedragon" text="{FIRSTNAME} the Nine-tatoo Dragon"/>
-  <string id="DistServ_name_format_culture_huaxia.xeixuanfeng" text="{FIRSTNAME} the Black Whirlwind"/>
-  <string id="DistServ_name_format_culture_huaxia.xeifei" text="{FIRSTNAME} the Black Bull"/>
-  <string id="DistServ_name_format_culture_huaxia.fanjian" text="{FIRSTNAME} the River-shaking Dragon"/>
-  <string id="DistServ_name_format_culture_huaxia.shuangwei" text="{FIRSTNAME} the Twin-tailed Scorpion"/>
-  <string id="DistServ_name_format_culture_huaxia.jinmao" text="{FIRSTNAME} the Velvet-skined Tiger"/>
-  <string id="DistServ_name_format_culture_huaxia.tongbei" text="{FIRSTNAME} the Connected Shoulders "/>
-  <string id="DistServ_name_format_culture_huaxia.caodao" text="{FIRSTNAME} the Sword Daemon "/>
-  <string id="DistServ_name_format_culture_huaxia.hunshumowang" text="{FIRSTNAME} the Chaotic Lord"/>
-  <string id="DistServ_name_format_culture_huaxia.sleepdragon" text="{FIRSTNAME} the Sleeping Dragon"/>
-  <string id="DistServ_name_format_culture_huaxia.phoenix" text="{FIRSTNAME} the Phoenix Chick"/>
-  <string id="DistServ_name_format_culture_huaxia.mirror" text="{FIRSTNAME} the Water Mirror"/>
+  <string id="DistServ_name_format_culture_huaxia.nezha" text="{=278938e8}{FIRSTNAME} the Eigh-armed Nezha"/>
+  <string id="DistServ_name_format_culture_huaxia.bigdipper" text="{=fc0404b0}{FIRSTNAME} the Big Dipper"/>
+  <string id="DistServ_name_format_culture_huaxia.polaris" text="{=4c7553bA}{FIRSTNAME} the Polaris"/>
+  <string id="DistServ_name_format_culture_huaxia.qilin" text="{=Ff81aa9b}{FIRSTNAME} the Qilin Cub"/>
+  <string id="DistServ_name_format_culture_huaxia.conqueror" text="{=fe86d7da}{FIRSTNAME} the Little Conqueror"/>
+  <string id="DistServ_name_format_culture_huaxia.ruyunlong" text="{=8aAbE203}{FIRSTNAME} the Cloud Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.glaive" text="{=32860aA0}{FIRSTNAME} the Long Graive"/>
+  <string id="DistServ_name_format_culture_huaxia.pantherface" text="{=5556C8fB}{FIRSTNAME} the Panther-face"/>
+  <string id="DistServ_name_format_culture_huaxia.pili" text="{=Bf59d9aB}{FIRSTNAME} the Lightning Fire"/>
+  <string id="DistServ_name_format_culture_huaxia.silverspear" text="{=197e4C66}{FIRSTNAME} the Silver Spear"/>
+  <string id="DistServ_name_format_culture_huaxia.xuanfeng" text="{=49F4Cd0E}{FIRSTNAME} the Little Whirlwind"/>
+  <string id="DistServ_name_format_culture_huaxia.putiandiao" text="{=0473B37d}{FIRSTNAME} the Sky-beating Hawk"/>
+  <string id="DistServ_name_format_culture_huaxia.tatoomonk" text="{=7d354dbA}{FIRSTNAME} the Flower-tatoo Monk"/>
+  <string id="DistServ_name_format_culture_huaxia.tigerslayer" text="{=3B44a433}{FIRSTNAME} the Tiger Slayer"/>
+  <string id="DistServ_name_format_culture_huaxia.qingmianshou" text="{=ca8f173C}{FIRSTNAME} the Nevus-faced Beast"/>
+  <string id="DistServ_name_format_culture_huaxia.ninedragon" text="{=65471c91}{FIRSTNAME} the Nine-tatoo Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.xeixuanfeng" text="{=70571d1E}{FIRSTNAME} the Black Whirlwind"/>
+  <string id="DistServ_name_format_culture_huaxia.xeifei" text="{=96DAcDf5}{FIRSTNAME} the Black Bull"/>
+  <string id="DistServ_name_format_culture_huaxia.fanjian" text="{=563D5438}{FIRSTNAME} the River-shaking Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.shuangwei" text="{=99C34e3a}{FIRSTNAME} the Twin-tailed Scorpion"/>
+  <string id="DistServ_name_format_culture_huaxia.jinmao" text="{=b6C98f7D}{FIRSTNAME} the Velvet-skined Tiger"/>
+  <string id="DistServ_name_format_culture_huaxia.tongbei" text="{=b0FF1306}{FIRSTNAME} the Connected Shoulders "/>
+  <string id="DistServ_name_format_culture_huaxia.caodao" text="{=b6428500}{FIRSTNAME} the Sword Daemon "/>
+  <string id="DistServ_name_format_culture_huaxia.hunshumowang" text="{=e433AE8c}{FIRSTNAME} the Chaotic Lord"/>
+  <string id="DistServ_name_format_culture_huaxia.sleepdragon" text="{=c6D91015}{FIRSTNAME} the Sleeping Dragon"/>
+  <string id="DistServ_name_format_culture_huaxia.phoenix" text="{=1ABcCD68}{FIRSTNAME} the Phoenix Chick"/>
+  <string id="DistServ_name_format_culture_huaxia.mirror" text="{=64441ee4}{FIRSTNAME} the Water Mirror"/>
   <string id="DistServ_name_format_culture_huaxia.default" text="{=6016F1bC}{FIRSTNAME} the Huaxian"/>
-  <string id="DistServ_name_format_culture_huaxia.luran" text="{FIRSTNAME} the Double-headed Snake"/>
+  <string id="DistServ_name_format_culture_huaxia.luran" text="{=1dc1ccbA}{FIRSTNAME} the Double-headed Snake"/>
   <!-- #endregion -->
   <string id="DistServ_name_format_culture_balion.default" text="{=12e734E1}{FIRSTNAME} the Balionling"/>
   <string id="DistServ_name_format_culture_bragantia.default" text="{=d0E19592}{FIRSTNAME} the Biscanian"/>
@@ -414,5 +414,4 @@
   <string id="DistServ_name_format_shift_sand.001" text="{=6837C94A}{FIRSTNAME} the Chemist"/>
   <string id="DistServ_name_format_shift_sand.001" text="{=5e40fe20}{FIRSTNAME} the Limbchopper"/>
   <!-- #endregion -->
-
 </strings>
