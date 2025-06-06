@@ -344,6 +344,38 @@
     <string id="4b31369f" text="{FIRSTNAME} Sawbones" />
     <string id="6837C94A" text="{FIRSTNAME} the Chemist" />
     <string id="5e40fe20" text="{FIRSTNAME} the Limbchopper" />
+    
+    <!-- #region added in v1.5.2 -->
+    <string id="278938e8" text="{FIRSTNAME} the Eigh-armed Nezha" /> <!-- 八臂哪吒 -->
+    <string id="fc0404b0" text="{FIRSTNAME} the Big Dipper" /> <!-- 北斗七星 -->
+    <string id="4c7553bA" text="{FIRSTNAME} the Polaris" /> <!-- 北辰 -->
+    <string id="Ff81aa9b" text="{FIRSTNAME} the Qilin Cub" /> <!-- 麒麟児 -->
+    <string id="fe86d7da" text="{FIRSTNAME} the Little Conqueror" /> <!-- 小覇王 -->
+    <string id="8aAbE203" text="{FIRSTNAME} the Cloud Dragon" /> <!-- 入雲龍 -->
+    <string id="32860aA0" text="{FIRSTNAME} the Long Graive" /> <!-- 大刀 -->
+    <string id="5556C8fB" text="{FIRSTNAME} the Panther-face" /> <!-- 豹子頭 -->
+    <string id="Bf59d9aB" text="{FIRSTNAME} the Lightning Fire" /> <!-- 霹靂火 -->
+    <string id="197e4C66" text="{FIRSTNAME} the Silver Spear" /> <!-- 銀槍手 -->
+    <string id="49F4Cd0E" text="{FIRSTNAME} the Little Whirlwind" /> <!-- 小旋風 -->
+    <string id="0473B37d" text="{FIRSTNAME} the Sky-beating Hawk" /> <!-- 撲天鵰 -->
+    <string id="7d354dbA" text="{FIRSTNAME} the Flower-tatoo Monk" /> <!-- 花和尚 -->
+    <string id="3B44a433" text="{FIRSTNAME} the Tiger Slayer" /> <!-- 打虎 -->
+    <string id="ca8f173C" text="{FIRSTNAME} the Nevus-faced Beast" /> <!-- 青面獣 -->
+    <string id="65471c91" text="{FIRSTNAME} the Nine-tatoo Dragon" /> <!-- 九紋竜 -->
+    <string id="70571d1E" text="{FIRSTNAME} the Black Whirlwind" /> <!-- 黒旋風 -->
+    <string id="96DAcDf5" text="{FIRSTNAME} the Black Bull" /> <!-- 黒牛  -->
+    <string id="563D5438" text="{FIRSTNAME} the River-shaking Dragon" /> <!-- 混江龍 -->
+    <string id="99C34e3a" text="{FIRSTNAME} the Twin-tailed Scorpion" /> <!-- 双尾蠍 -->
+    <string id="b6C98f7D" text="{FIRSTNAME} the Velvet-skined Tiger" /> <!-- 錦毛虎 -->
+    <string id="b0FF1306" text="{FIRSTNAME} the Connected Shoulders " /> <!-- 通背 -->
+    <string id="b6428500" text="{FIRSTNAME} the Sword Daemon " /> <!-- 操刀鬼 -->
+    <string id="e433AE8c" text="{FIRSTNAME} the Chaotic Lord" /> <!-- 混世魔王 -->
+    <string id="c6D91015" text="{FIRSTNAME} the Sleeping Dragon" /> <!-- 伏龍 -->
+    <string id="1ABcCD68" text="{FIRSTNAME} the Phoenix Chick" /> <!-- 鳳雛 -->
+    <string id="64441ee4" text="{FIRSTNAME} the Water Mirror" /> <!-- 水鏡 -->
+    <string id="1dc1ccbA" text="{FIRSTNAME} the Double-headed Snake" /> <!-- 率然 -->
+    <!-- #endregion -->
+    
     <!-- #region settlement formats per culture  -->
     <string id="75003f6b" text="{FIRSTNAME} of {SETTLEMENT}" />
     <string id="13aeB4Ac" text="{FIRSTNAME} o {SETTLEMENT}" />

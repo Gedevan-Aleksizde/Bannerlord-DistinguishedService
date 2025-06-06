@@ -344,6 +344,37 @@
     <string id="4b31369f" text="外科医の{FIRSTNAME}"/>
     <string id="6837C94A" text="薬師の{FIRSTNAME}"/>
     <string id="5e40fe20" text="手足断ちの{FIRSTNAME}"/>
+    
+    <string id="278938e8" text="八臂哪吒の{FIRSTNAME}"/>
+    <string id="fc0404b0" text="北斗の{FIRSTNAME}"/>
+    <string id="4c7553bA" text="北辰の{FIRSTNAME}"/>
+    <string id="Ff81aa9b" text="麒麟児の{FIRSTNAME}"/>
+    <string id="fe86d7da" text="小覇王の{FIRSTNAME}"/>
+    <string id="8aAbE203" text="入雲龍の{FIRSTNAME}"/>
+    <string id="32860aA0" text="大刀の{FIRSTNAME}"/>
+    <string id="5556C8fB" text="豹子頭の{FIRSTNAME}"/>
+    <string id="Bf59d9aB" text="霹靂火の{FIRSTNAME}"/>
+    <string id="197e4C66" text="銀槍手の{FIRSTNAME}"/>
+    <string id="49F4Cd0E" text="小旋風の{FIRSTNAME}"/>
+    <string id="0473B37d" text="撲天鵰の{FIRSTNAME}"/>
+    <string id="7d354dbA" text="花和尚の{FIRSTNAME}"/>
+    <string id="3B44a433" text="打虎の{FIRSTNAME}"/>
+    <string id="ca8f173C" text="青面獣の{FIRSTNAME}"/>
+    <string id="65471c91" text="九紋龍の{FIRSTNAME}"/>
+    <string id="70571d1E" text="黒旋風の{FIRSTNAME}"/>
+    <string id="96DAcDf5" text="黒牛の{FIRSTNAME}"/>
+    <string id="563D5438" text="混江龍の{FIRSTNAME}"/>
+    <string id="99C34e3a" text="双尾蠍の{FIRSTNAME}"/>
+    <string id="b6C98f7D" text="錦毛虎の{FIRSTNAME}"/>
+    <string id="b0FF1306" text="通臂の{FIRSTNAME}"/>
+    <string id="b6428500" text="操刀鬼の{FIRSTNAME}"/>
+    <string id="e433AE8c" text="混世魔王の{FIRSTNAME}"/>
+    <string id="c6D91015" text="伏龍の{FIRSTNAME}"/>
+    <string id="1ABcCD68" text="鳳雛の{FIRSTNAME}"/>
+    <string id="64441ee4" text="水鏡の{FIRSTNAME}"/>
+    <string id="6016F1bC" text="夏華人の{FIRSTNAME}"/>
+    <string id="1dc1ccbA" text="率然の{FIRSTNAME}"/>
+    
     <!-- #region settlement name formats -->
     <string id="75003f6b" text="{SETTLEMENT}の{FIRSTNAME}"/>
     <string id="13aeB4Ac" text="{SETTLEMENT}の{FIRSTNAME}"/>
