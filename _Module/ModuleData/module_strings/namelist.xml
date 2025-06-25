@@ -296,6 +296,147 @@
   <string id="DistServ_name_format_culture_tetsojin.templeborn" text="{=a698c01D}{FIRSTNAME} the Templeborn"/>
   <string id="DistServ_name_format_culture_tetsojin.default" text="{=8fF9B02C}{FIRSTNAME} the Ronin"/>
   <!-- #endregion -->
+  <!-- #region Shokuho name format -->
+  <string id="DistServ_name_format_culture_ou.oneeyedragon" text="{=SajF3CJNn}{FIRSTNAME} the One-eyed Dragon"/>
+  <string id="DistServ_name_format_culture_ou.yasha" text="{=yL7QtEAl0}{FIRSTNAME} the Yasha Daemon"/>
+  <string id="DistServ_name_format_culture_ou.bandit" text="{=LDBoMpSx0}{FIRSTNAME} the Bandit Daimyō"/>
+  <string id="DistServ_name_format_culture_ou.mogami" text="{=f90hyZNws}{FIRSTNAME} the Kitsune Fox"/>
+  <string id="DistServ_name_format_culture_ou.salmon" text="{=wYedo9KvQ}{FIRSTNAME} the Begger Warlord"/>
+  <string id="DistServ_name_format_culture_ou.salmon" text="{=6JHXuAtg3}{FIRSTNAME} the Dark Executor"/>
+  <string id="DistServ_name_format_culture_ou.ushu" text="{=pU5ASdhxU}{FIRSTNAME} of Ushū"/>
+  <string id="DistServ_name_format_culture_ou.oshu" text="{=24taQ4jxu}{FIRSTNAME} of Ōshū"/>
+  
+  <string id="DistServ_name_format_culture_kanto.bando" text="{=NNU8caokR}{FIRSTNAME} the Bandō-Tarō"/>
+  <string id="DistServ_name_format_culture_kanto.taizen" text="{=SUg5JkdA2}{FIRSTNAME} the Chamberlain Lancer"/>
+  <string id="DistServ_name_format_culture_kanto.crimson" text="{=02fNdlaIX}{FIRSTNAME} the Crimson Samurai"/>
+  <string id="DistServ_name_format_culture_kanto.ryohu" text="{=G2K51zlWx}{FIRSTNAME} the Second Lu bu"/> <!-- Lu Bu, ancient Chinese warlord -->
+  <string id="DistServ_name_format_culture_kanto.ryohu" text="{=BLV4JPQyr}{FIRSTNAME} the Chief-Enforcer"/>
+  <string id="DistServ_name_format_culture_kanto.doukan" text="{=6xksCvwZJ}{FIRSTNAME} the Build Master"/>
+  <string id="DistServ_name_format_culture_kanto.tanuki" text="{=kWleQs9rF}{FIRSTNAME} the Old Tanuki"/>
+  <string id="DistServ_name_format_culture_kanto.gihei" text="{=HgZB9Qrg6}{FIRSTNAME} the Kamakura-Aku-Genta"/> <!-- Aku Genta, savage warrior -->
+  <string id="DistServ_name_format_culture_kanto.rappa" text="{=ulY2mBtYI}{FIRSTNAME} the Rappa Ninja"/> <!-- rappa = a slang for a saboteur or a ninja -->
+  <string id="DistServ_name_format_culture_kanto.shogun" text="{=KH8260mX3}{FIRSTNAME} the {?IF_FEMALE}Ni-Shōgun{?}Kubō{\?}"/> <!-- Ni = a nun, Kubō = vice Shogun -->
+  <string id="DistServ_name_format_culture_kanto.bushu" text="{=mqxa4Js3r}{FIRSTNAME} of Bushū"/>
+  <string id="DistServ_name_format_culture_kanto.joshu" text="{=pbKijHMPl}{FIRSTNAME} of Jōshū"/>
+  <string id="DistServ_name_format_culture_kanto.soshu" text="{=dLCFeZNHt}{FIRSTNAME} of Sōshu"/>
+
+  <string id="DistServ_name_format_culture_hokuriku.isono" text="{=yypMFtFCb}{FIRSTNAME} the Eleven-line-breacher"/> <!-- breaking 11 line formations at once -->
+  <string id="DistServ_name_format_culture_hokuriku.tarotchi" text="{=UAqXMFk2b}{FIRSTNAME} the Tarō Tachi"/> <!-- roughly 10 Kg large katana -->
+  <string id="DistServ_name_format_culture_hokuriku.dragon" text="{=q7pcIr8ky}{FIRSTNAME} the Dragon"/>
+  <string id="DistServ_name_format_culture_hokuriku.kenshin" text="{=UZhWhVl0p}{FIRSTNAME} the War-God"/>
+  <string id="DistServ_name_format_culture_hokuriku.kakizaki" text="{=MeKycTp2S}{FIRSTNAME} the Principal of Echigo"/>
+  <string id="DistServ_name_format_culture_hokuriku.jug" text="{=1tk1vVsAL}{FIRSTNAME} the Jug Crusher"/>
+  <string id="DistServ_name_format_culture_hokuriku.tengu" text="{=I3Zke7WjZ}{FIRSTNAME} the Little Tengu"/>
+  <string id="DistServ_name_format_culture_hokuriku.naoe" text="{=HRsO9TtRT}{FIRSTNAME} the Best Servant of the World"/>
+  <string id="DistServ_name_format_culture_hokuriku.nokizaru" text="{=0pSD7X3uK}{FIRSTNAME} the Nokizaru Ninja"/> <!-- nokizaru = a monkey under the roof, one of the slang for a ninja -->
+  <string id="DistServ_name_format_culture_hokuriku.echizen" text="{=PDYrwK9yN}{FIRSTNAME} of Echizen"/>
+  <string id="DistServ_name_format_culture_hokuriku.echigo" text="{=9F3ZuDu5b}{FIRSTNAME} of Echigo"/>
+  <string id="DistServ_name_format_culture_hokuriku.etchu" text="{=9YhlvIpxm}{FIRSTNAME} of Etchū"/>
+  <string id="DistServ_name_format_culture_hokuriku.kaga" text="{=6lz5o74wi}{FIRSTNAME} of Kaga"/>
+  <string id="DistServ_name_format_culture_hokuriku.noto" text="{=jlJyjxP0e}{FIRSTNAME} of Noto"/>
+  <string id="DistServ_name_format_culture_hokuriku.sado" text="{=SYsPw8M0p}{FIRSTNAME} of Sado Isle"/>
+  <string id="DistServ_name_format_culture_hokuriku.wakasa" text="{=RMBTEKzyY}{FIRSTNAME} of Wakasa"/>
+  <string id="DistServ_name_format_culture_hokuriku.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Dara Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+
+  <string id="DistServ_name_format_culture_tokai.mataza" text="{=LBFLzcFmc}{FIRSTNAME} the Yari"/>
+  <string id="DistServ_name_format_culture_tokai.tiger" text="{=g0hIdVSmV}{FIRSTNAME} the Owari Tiger"/>
+  <string id="DistServ_name_format_culture_tokai.nobu" text="{=0QNUUpWKA}{FIRSTNAME} the Temma Demon"/> <!-- Duddhism demon, heavenly demon of Takajizai-Ten, demon lord of the sixth heaven of the universe of desire -->
+  <string id="DistServ_name_format_culture_tokai.huun" text="{=upApjcxcf}{FIRSTNAME} the Fūunji"/> <!-- a talented young man in a turbulent time -->
+  <string id="DistServ_name_format_culture_tokai.utsuke" text="{=Dfc2H3KxB}{FIRSTNAME} the Ō-utsuke Craziest"/> <!-- a craziest guy -->
+  <string id="DistServ_name_format_culture_tokai.yoshimoto" text="{=isWReKSMt}{FIRSTNAME} the Greatest Yumitori in Kaidō"/> <!-- Kaidō = Tokai-do -->
+  <string id="DistServ_name_format_culture_tokai.kinka" text="{=NrsIO9s1u}{FIRSTNAME} the Orange-head"/>
+  <string id="DistServ_name_format_culture_tokai.hage" text="{=1aX920QYp}{FIRSTNAME} the Bald Rat"/>
+  <string id="DistServ_name_format_culture_tokai.kogan" text="{=SJqkr1BxI}{FIRSTNAME} the Nōbi-Unrivaled"/>
+  <string id="DistServ_name_format_culture_tokai.sakuma" text="{=sVlpTDSE4}{FIRSTNAME} the Oni-Gemba"/>
+  <string id="DistServ_name_format_culture_tokai.bishu" text="{=DOQnWkUO1}{FIRSTNAME} of Bishū"/>
+  <string id="DistServ_name_format_culture_tokai.onshu" text="{=a5JkrLXOR}{FIRSTNAME} of Onshū"/>
+  <string id="DistServ_name_format_culture_tokai.sanshu" text="{=J1ym6aKKb}{FIRSTNAME} of Sanshū"/>
+  <string id="DistServ_name_format_culture_tokai.sunshu" text="{=JJFQjY4ye}{FIRSTNAME} of SunShū"/>
+  <string id="DistServ_name_format_culture_tokai.ishu" text="{=zd0E7SaxQ}{FIRSTNAME} of Ishū"/>
+  <string id="DistServ_name_format_culture_tokai.soshu" text="{=GijN9PuAd}{FIRSTNAME} of Sōshū"/>
+  <string id="DistServ_name_format_culture_tokai.koshu" text="{=UiVekZgxy}{FIRSTNAME} of Kōshū"/>
+  <string id="DistServ_name_format_culture_tokai.momen" text="{=cbmc57ABC}{FIRSTNAME} the Cotton"/>
+  <string id="DistServ_name_format_culture_tokai.tochihennnashi" text="{=efWJhJxQ3}{FIRSTNAME} the Unbiased"/>
+  <string id="DistServ_name_format_culture_tokai.rearguard" text="{=HAj8oCTdJ}{FIRSTNAME} the Rear Guard"/>
+
+  <string id="DistServ_name_format_culture_tosan.viper" text="{=6bDCdbNyt}{FIRSTNAME} the Mamushi Viper"/>
+  <string id="DistServ_name_format_culture_tosan.shinano" text="{=jAe7Daxzv}{FIRSTNAME} of Shinshū"/>
+  <string id="DistServ_name_format_culture_tosan.hida" text="{=eZIvqzcPG}{FIRSTNAME} of Hida"/>
+  <string id="DistServ_name_format_culture_tosan.mino" text="{=Pw7gexjkb}{FIRSTNAME} of Mino"/>
+  <string id="DistServ_name_format_culture_tosan.shoki" text="{=e0bRHd9Bb}{FIRSTNAME} the Chungquy"/> <!-- Chinese guardian god of home -->
+  <string id="DistServ_name_format_culture_tosan.sanada" text="{=eLsPdRS1T}{FIRSTNAME} the Assault Danjō"/> <!-- seme danjō -->
+  <string id="DistServ_name_format_culture_tosan.bull" text="{=eNKJh4Qhs}{FIRSTNAME} the Mōgyū Wild Bull"/>
+  <string id="DistServ_name_format_culture_tosan.shinano" text="{=QxtqvRIhA}{FIRSTNAME} the Immortal"/>
+  <string id="DistServ_name_format_culture_tosan.hida" text="{=Pg1k2ghjm}{FIRSTNAME} the Stable Master"/> <!-- tenkyū, meaning administrator of horse stable  -->
+  <string id="DistServ_name_format_culture_tosan.hida" text="{=o4VIVnKZs}{FIRSTNAME} the Younger Stable Master"/>
+  <string id="DistServ_name_format_culture_tosan.nyudo" text="{=KQStglYII}{FIRSTNAME} the Nyūdō"/> <!-- a buddhist monk, or a secular who entered the way of buddhism -->
+  <string id="DistServ_name_format_culture_tosan.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Tawake Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+
+  <string id="DistServ_name_format_culture_kinki.heuge" text="{=PLW22L1qx}{FIRSTNAME} the Heuge Funny"/>
+  <string id="DistServ_name_format_culture_kinki.gamo" text="{=M12UHuKmY}{FIRSTNAME} the Hard-Headed"/>
+  <string id="DistServ_name_format_culture_kinki.komei" text="{=OXhgU0drh}{FIRSTNAME} the Second Kongming"/> <!-- analogue to ancient Chinese strategist -->
+  <string id="DistServ_name_format_culture_kinki.choryo" text="{=DVqF5PCNQ}{FIRSTNAME} the Second Zhang Liang"/> <!-- analogue to ancient Chinese tactician -->
+  <string id="DistServ_name_format_culture_kinki.blackoni" text="{=AC7zdyYDW}{FIRSTNAME} the Kuro-Oni"/> <!-- black oni -->
+  <string id="DistServ_name_format_culture_kinki.kengo" text="{=zbt7OG06I}{FIRSTNAME} the Kengō Master"/>
+  <string id="DistServ_name_format_culture_kinki.kensei" text="{=Hyqp8t1DG}{FIRSTNAME} the Sword Sage"/>
+  <string id="DistServ_name_format_culture_kinki.kabuki" text="{=6jPFFXzHB}{FIRSTNAME} the Kabuki-Mono"/>
+  <string id="DistServ_name_format_culture_kinki.pirate" text="{=t4AJcmWk9}{FIRSTNAME} the Pirate Warlord"/>
+  <string id="DistServ_name_format_culture_kinki.slayer" text="{=d17EDBMVr}{FIRSTNAME} the Slayer"/>
+  <string id="DistServ_name_format_culture_kinki.ninja" text="{=lUhm4hRho}{FIRSTNAME} the Suppa Ninja"/> <!-- suppa = one of the slang indicates a spy or a ninja -->
+  <string id="DistServ_name_format_culture_kinki.musha" text="{=1HbRWBUbm}{FIRSTNAME} the {?IF_FEMALE}Hime-Musha{?}Oni-Musha{\?}"/> <!-- Hime = girl, princess -->
+  <string id="DistServ_name_format_culture_kinki.yamashiro" text="{=T4EnGCWxi}{FIRSTNAME} of Yamashiro"/>
+  <string id="DistServ_name_format_culture_kinki.iga" text="{=9EsngDKfZ}{FIRSTNAME} of Iga"/>
+  <string id="DistServ_name_format_culture_kinki.koga" text="{=j4OXKZvqL}{FIRSTNAME} of Kōga"/>
+  <string id="DistServ_name_format_culture_kinki.omi" text="{=guXk5HzCW}{FIRSTNAME} of Ōmi"/>  
+  <string id="DistServ_name_format_culture_kinki.omi" text="{=fjeL4ID0E}{FIRSTNAME} of Seta"/>
+  <string id="DistServ_name_format_culture_kinki.senshu" text="{=BMC3EsLU7}{FIRSTNAME} of Sensū"/>
+  <string id="DistServ_name_format_culture_kinki.settsu" text="{=A0gPkB4ts}{FIRSTNAME} of Settsu"/>
+
+  <string id="DistServ_name_format_culture_sanyho.amago" text="{=ju8Z0LVyt}{FIRSTNAME} the Oni Daemon"/>
+  <string id="DistServ_name_format_culture_sanyho.akaoni" text="{=YtKpF7Nxb}{FIRSTNAME} the Aka-Oni"/> <!-- red oni -->
+  <string id="DistServ_name_format_culture_sanyho.aooni" text="{=9ErrlniMG}{FIRSTNAME} the Ao-Oni"/> <!-- blue oni -->
+  <string id="DistServ_name_format_culture_sanyho.buddha" text="{=dnGIsS6sT}{FIRSTNAME} the Buddha"/>
+  <string id="DistServ_name_format_culture_sanyho.akai" text="{=RnCetm36o}{FIRSTNAME} the Akuemon"/> <!-- vicious samurai -->
+  <string id="DistServ_name_format_culture_sanyho.buddha" text="{=tUmBaXD71}{FIRSTNAME} the Conspiracy Sage"/>  
+  <string id="DistServ_name_format_culture_sanyho.buddha" text="{=NAwc5nggv}{FIRSTNAME} the Conspiracy-God"/>
+  <string id="DistServ_name_format_culture_sanyho.buddha" text="{=sAXDvjt2q}{FIRSTNAME} the Cutting Board"/>
+  <string id="DistServ_name_format_culture_sanyho.kingo" text="{=uMd1rTgGf}{FIRSTNAME} the Kimgo Royal Guard"/>
+  <string id="DistServ_name_format_culture_sanyho.kusa" text="{=yq4dhf2Qf}{FIRSTNAME} the Weed"/> <!-- a slang for a ninja -->
+  <string id="DistServ_name_format_culture_sanyho.bishu" text="{=T2SOCRqx8}{FIRSTNAME} of Bishū"/>
+  <string id="DistServ_name_format_culture_sanyho.banshu" text="{=ouK5J4nY2}{FIRSTNAME} of Banshū"/>
+  <string id="DistServ_name_format_culture_sanyho.tanshu" text="{=7zGXWHeTU}{FIRSTNAME} of Tanshū"/>
+  <string id="DistServ_name_format_culture_sanyho.sakushu" text="{=VT3hjkxas}{FIRSTNAME} of Sakushū"/>
+  <string id="DistServ_name_format_culture_sanyho.choshu" text="{=V1mRCgU1u}{FIRSTNAME} of Chōshū"/>
+  <string id="DistServ_name_format_culture_sanyho.boshu" text="{=ZWzgxwGBX}{FIRSTNAME} of Bōshū"/>
+  <string id="DistServ_name_format_culture_sanyho.geishu" text="{=UhxhE6MFY}{FIRSTNAME} of Geishū"/>
+  
+  <string id="DistServ_name_format_culture_nankai.nio" text="{=BKNAM3mrD}{FIRSTNAME} the Niō"/>
+  <string id="DistServ_name_format_culture_nankai.niomon" text="{=mr3aw1IbV}{FIRSTNAME} the Adamantine Gate"/>
+  <string id="DistServ_name_format_culture_nankai.notora" text="{=PMJ7vEDiK}{FIRSTNAME} the Wild Tiger"/>
+  <string id="DistServ_name_format_culture_nankai.dekibito" text="{=oJvnHHdpJ}{FIRSTNAME} the Superior"/> <!-- dekibito -->
+  <string id="DistServ_name_format_culture_nankai.himewakago" text="{=YKAGAkSnz}{FIRSTNAME} the Girly-Little-Prince"/> <!-- hime-wakago, girly young boy -->
+  <string id="DistServ_name_format_culture_nankai.oniwakago" text="{=gIYetGfa0}{FIRSTNAME} the Demonic-Little-Prince"/> <!-- oni-wakago, demonic young boy -->
+  <string id="DistServ_name_format_culture_nankai.sanshu" text="{=kpwweVnrp}{FIRSTNAME} of Sanshū"/>
+  <string id="DistServ_name_format_culture_nankai.kishu" text="{=EfxfEyW4j}{FIRSTNAME} of Kishū"/>
+  <string id="DistServ_name_format_culture_nankai.tosa" text="{=rAWF633uy}{FIRSTNAME} of Tosa"/>
+  <string id="DistServ_name_format_culture_sanyho.yoshu" text="{=G0XuUgBuQ}{FIRSTNAME} of Yoshū"/>
+  
+  <string id="DistServ_name_format_culture_saikai.tachibana" text="{=CJrlxhEMS}{FIRSTNAME} the Victorious"/>
+  <string id="DistServ_name_format_culture_saikai.raijin" text="{=cZIlQ5S2b}{FIRSTNAME} the Raijin"/>
+  <string id="DistServ_name_format_culture_saikai.fujin" text="{=4RxPfRua2}{FIRSTNAME} the Fūjin"/>
+  <string id="DistServ_name_format_culture_saikai.fujin" text="{=E21APjpQO}{FIRSTNAME} the Avatar of Hachiman"/>
+  <string id="DistServ_name_format_culture_saikai.fujin" text="{=BNEJURyqo}{FIRSTNAME} the Avatar of Marici"/>
+  <string id="DistServ_name_format_culture_saikai.chinzei" text="{=L26jG43nV}{FIRSTNAME} the West Conqueror"/> <!-- Chinzei -->
+  <string id="DistServ_name_format_culture_saikai.bear" text="{=0ILFfZimT}{FIRSTNAME} the Bear"/>
+  <string id="DistServ_name_format_culture_saikai.boshu" text="{=JXNphjBs8}{FIRSTNAME} of Hōshū"/>
+  <string id="DistServ_name_format_culture_saikai.hishu" text="{=ymh4jzzTN}{FIRSTNAME} of Hishū"/>
+  <string id="DistServ_name_format_culture_saikai.sasshu" text="{=ymh4jzzTN}{FIRSTNAME} of Sasshū"/>
+  <string id="DistServ_name_format_culture_saikai.nisshu" text="{=1S0nXg0Gi}{FIRSTNAME} of Nisshū"/>
+  <string id="DistServ_name_format_culture_saikai.gushu" text="{=r5OyNfvlY}{FIRSTNAME} of Gūshū"/>
+  <string id="DistServ_name_format_culture_saikai.tsushima" text="{=siiuRgFww}{FIRSTNAME} of Tsushima"/>
+  <string id="DistServ_name_format_culture_saikai.nise" text="{=iqxeNFUjU}{FIRSTNAME} the {?IF_FEMALE}Nise Young{?}Hime{\?}"/> <!-- ni-se, literally "two-years-old", a dialect word meaning young guy -->
+  <string id="DistServ_name_format_culture_tosan.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Tomma Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+  <!-- #endregion Shokuho -->
   <!-- #region Khergit name format -->
   <string id="DistServ_name_format_culture_rebkhu.tulga" text="{=DSR8e6D385E}{FIRSTNAME} of Tulga"/>
   <string id="DistServ_name_format_culture_rebkhu.narra" text="{=DSR3FEbfF8D}{FIRSTNAME} of Narra"/>

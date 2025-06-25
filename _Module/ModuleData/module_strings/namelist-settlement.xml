@@ -36,5 +36,15 @@
     <string id="DistServ_name_format_settlement.testojin" text="{=9aF48664}{SETTLEMENT} no {FIRSTNAME}"/>
     <string id="DistServ_name_format_settlement.valkyrie" text="{=Dt7SBz0we}{FIRSTNAME} of {SETTLEMENT}"/>
     <string id="DistServ_name_format_settlement._default" text="{=QV9KFogP1}{FIRSTNAME} of {SETTLEMENT}"/>
+    
+    <string id="DistServ_name_format_settlement.ou" text="{=mTO2J4fQU}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.kanto" text="{=ToHMmoKeg}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.kinai" text="{=Zq3uiCC7q}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.hokuriku" text="{=Y3dL6ToT8}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.nankai" text="{=Oqc4HTudC}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.saikai" text="{=RQUEx6f0i}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.sanyo" text="{=ApTdjUGEQ}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.tokai" text="{=0MrWp8iWn}{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="DistServ_name_format_settlement.tosan" text="{=RK0FNDFeB}{SETTLEMENT} no {FIRSTNAME}"/>
     <!-- #endregion settlement formats per culture  -->
 </strings>

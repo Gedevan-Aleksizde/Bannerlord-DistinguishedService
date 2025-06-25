@@ -375,7 +375,143 @@
     <string id="64441ee4" text="{FIRSTNAME} the Water Mirror" /> <!-- 水鏡 -->
     <string id="1dc1ccbA" text="{FIRSTNAME} the Double-headed Snake" /> <!-- 率然 -->
     <!-- #endregion -->
+    <!-- #region Shokuho -->
+    <string id="SajF3CJNn" text="{FIRSTNAME} the One-eyed Dragon" />
+    <string id="yL7QtEAl0" text="{FIRSTNAME} the Yasha Daemon" />
+    <string id="LDBoMpSx0" text="{FIRSTNAME} the Bandit Daimyō" />
+    <string id="f90hyZNws" text="{FIRSTNAME} the Kitsune Fox" />
+    <string id="wYedo9KvQ" text="{FIRSTNAME} the Begger Warlord" />
+    <string id="6JHXuAtg3" text="{FIRSTNAME} the Dark Executor" />
+    <string id="pU5ASdhxU" text="{FIRSTNAME} of Ushū" />
+    <string id="24taQ4jxu" text="{FIRSTNAME} of Ōshū" />
     
+    <string id="NNU8caokR" text="{FIRSTNAME} the Bandō-Tarō" />
+    <string id="SUg5JkdA2" text="{FIRSTNAME} the Chamberlain Lancer" />
+    <string id="02fNdlaIX" text="{FIRSTNAME} the Crimson Samurai" />
+    <string id="G2K51zlWx" text="{FIRSTNAME} the Second Lu bu" /> <!-- Lu Bu, ancient Chinese warlord -->
+    <string id="BLV4JPQyr" text="{FIRSTNAME} the Chief-Enforcer" />
+    <string id="6xksCvwZJ" text="{FIRSTNAME} the Build Master" />
+    <string id="kWleQs9rF" text="{FIRSTNAME} the Old Tanuki" />
+    <string id="HgZB9Qrg6" text="{FIRSTNAME} the Kamakura-Aku-Genta" /> <!-- Aku Genta, savage warrior -->
+    <string id="ulY2mBtYI" text="{FIRSTNAME} the Rappa Ninja" /> <!-- rappa = a slang for a saboteur or a ninja -->
+    <string id="KH8260mX3" text="{FIRSTNAME} the {?IF_FEMALE}Ni-Shōgun{?}Kubō{\?}" /> <!-- Ni = a nun, Kubō = vice Shogun -->
+    <string id="mqxa4Js3r" text="{FIRSTNAME} of Bushū" />
+    <string id="pbKijHMPl" text="{FIRSTNAME} of Jōshū" />
+    <string id="dLCFeZNHt" text="{FIRSTNAME} of Sōshu" />
+    
+    <string id="yypMFtFCb" text="{FIRSTNAME} the Eleven-line-breacher" /> <!-- breaking 11 line formations at once -->
+    <string id="UAqXMFk2b" text="{FIRSTNAME} the Tarō Tachi" /> <!-- roughly 10 Kg large katana -->
+    <string id="q7pcIr8ky" text="{FIRSTNAME} the Dragon" />
+    <string id="UZhWhVl0p" text="{FIRSTNAME} the War-God" />
+    <string id="MeKycTp2S" text="{FIRSTNAME} the Principal of Echigo" />
+    <string id="1tk1vVsAL" text="{FIRSTNAME} the Jug Crusher" />
+    <string id="I3Zke7WjZ" text="{FIRSTNAME} the Little Tengu" />
+    <string id="HRsO9TtRT" text="{FIRSTNAME} the Best Servant of the World" />
+    <string id="0pSD7X3uK" text="{FIRSTNAME} the Nokizaru Ninja" /> <!-- nokizaru = a monkey under the roof, one of the slang for a ninja -->
+    <string id="PDYrwK9yN" text="{FIRSTNAME} of Echizen" />
+    <string id="9F3ZuDu5b" text="{FIRSTNAME} of Echigo" />
+    <string id="9YhlvIpxm" text="{FIRSTNAME} of Etchū" />
+    <string id="6lz5o74wi" text="{FIRSTNAME} of Kaga" />
+    <string id="jlJyjxP0e" text="{FIRSTNAME} of Noto" />
+    <string id="SYsPw8M0p" text="{FIRSTNAME} of Sado Isle" />
+    <string id="RMBTEKzyY" text="{FIRSTNAME} of Wakasa" />
+    
+    <string id="LBFLzcFmc" text="{FIRSTNAME} the Yari" />
+    <string id="g0hIdVSmV" text="{FIRSTNAME} the Owari Tiger" />
+    <string id="0QNUUpWKA" text="{FIRSTNAME} the Temma Demon" /> <!-- Duddhism demon, heavenly demon, Takajizai-Ten, demon lord of the sixth heaven of the universe of desire -->
+    <string id="upApjcxcf" text="{FIRSTNAME} the Fūunji" /> <!-- a talented young man in a turbulent times -->
+    <string id="Dfc2H3KxB" text="{FIRSTNAME} the Ō-utsuke Craziest" /> <!-- a craziest guy -->
+    <string id="isWReKSMt" text="{FIRSTNAME} the Greatest Yumitori in Kaidō" /> <!-- Kaidō = Tokai-do -->
+    <string id="NrsIO9s1u" text="{FIRSTNAME} the Orange-head" />
+    <string id="1aX920QYp" text="{FIRSTNAME} the Bald Rat" />
+    <string id="SJqkr1BxI" text="{FIRSTNAME} the Nōbi-Unrivaled" />
+    <string id="sVlpTDSE4" text="{FIRSTNAME} the Oni-Gemba" />
+    <string id="DOQnWkUO1" text="{FIRSTNAME} of Bishū" />
+    <string id="a5JkrLXOR" text="{FIRSTNAME} of Onshū" />
+    <string id="J1ym6aKKb" text="{FIRSTNAME} of Sanshū" />
+    <string id="JJFQjY4ye" text="{FIRSTNAME} of SunShū" />
+    <string id="zd0E7SaxQ" text="{FIRSTNAME} of Ishū" />
+    <string id="GijN9PuAd" text="{FIRSTNAME} of Sōshū" />
+    <string id="UiVekZgxy" text="{FIRSTNAME} of Kōshū" />
+    <string id="cbmc57ABC" text="{FIRSTNAME} the Cotton" />
+    <string id="efWJhJxQ3" text="{FIRSTNAME} the Unbiased" />
+    <string id="HAj8oCTdJ" text="{FIRSTNAME} the Rear Guard" />
+    
+    <string id="6bDCdbNyt" text="{FIRSTNAME} the Mamushi Viper" />
+    <string id="jAe7Daxzv" text="{FIRSTNAME} of Shinshū" />
+    <string id="eZIvqzcPG" text="{FIRSTNAME} of Hida" />
+    <string id="Pw7gexjkb" text="{FIRSTNAME} of Mino" />
+    <string id="e0bRHd9Bb" text="{FIRSTNAME} the Chungquy" /> <!-- Chinese guardian god of home -->
+    <string id="eLsPdRS1T" text="{FIRSTNAME} the Assault Danjō" /> <!-- seme danjō -->
+    <string id="eNKJh4Qhs" text="{FIRSTNAME} the Mōgyū Wild Bull" />
+    <string id="QxtqvRIhA" text="{FIRSTNAME} the Immortal" />
+    <string id="Pg1k2ghjm" text="{FIRSTNAME} the Stable Master" /> <!-- tenkyū, meaning administrator of horse stable  -->
+    <string id="o4VIVnKZs" text="{FIRSTNAME} the Younger Stable Master" />
+    <string id="KQStglYII" text="{FIRSTNAME} the Nyūdō" />
+    
+    <string id="PLW22L1qx" text="{FIRSTNAME} the Heuge Funny" />
+    <string id="M12UHuKmY" text="{FIRSTNAME} the Hard-Headed" />
+    <string id="OXhgU0drh" text="{FIRSTNAME} the Second Kongming" /> <!-- analogue to ancient Chinese strategist -->
+    <string id="DVqF5PCNQ" text="{FIRSTNAME} the Second Zhang Liang" /> <!-- analogue to ancient Chinese tactician -->
+    <string id="AC7zdyYDW" text="{FIRSTNAME} the Kuro-Oni" /> <!-- black oni -->
+    <string id="zbt7OG06I" text="{FIRSTNAME} the Kengō Master" />
+    <string id="Hyqp8t1DG" text="{FIRSTNAME} the Sword Sage" />
+    <string id="6jPFFXzHB" text="{FIRSTNAME} the Kabuki-Mono" />
+    <string id="t4AJcmWk9" text="{FIRSTNAME} the Pirate Warlord" />
+    <string id="d17EDBMVr" text="{FIRSTNAME} the Slayer" />
+    <string id="lUhm4hRho" text="{FIRSTNAME} the Suppa Ninja" /> <!-- suppa = one of the slang indicates a spy or a ninja -->
+    <string id="1HbRWBUbm" text="{FIRSTNAME} the {?IF_FEMALE}Hime-Musha{?}Oni-Musha{\?}" /> <!-- Hime = girl, princess -->
+    <string id="T4EnGCWxi" text="{FIRSTNAME} of Yamashiro" />
+    <string id="9EsngDKfZ" text="{FIRSTNAME} of Iga" />
+    <string id="j4OXKZvqL" text="{FIRSTNAME} of Kōga" />
+    <string id="guXk5HzCW" text="{FIRSTNAME} of Ōmi" />  
+    <string id="fjeL4ID0E" text="{FIRSTNAME} of Seta" />
+    <string id="BMC3EsLU7" text="{FIRSTNAME} of Sensū" />
+    <string id="A0gPkB4ts" text="{FIRSTNAME} of Settsu" />
+    
+    <string id="ju8Z0LVyt" text="{FIRSTNAME} the Oni Daemon" />
+    <string id="YtKpF7Nxb" text="{FIRSTNAME} the Aka-Oni" /> <!-- red oni -->
+    <string id="9ErrlniMG" text="{FIRSTNAME} the Ao-Oni" /> <!-- blue oni -->
+    <string id="dnGIsS6sT" text="{FIRSTNAME} the Buddha" />
+    <string id="RnCetm36o" text="{FIRSTNAME} the Akuemon" /> <!-- vicious samurai -->
+    <string id="tUmBaXD71" text="{FIRSTNAME} the Conspiracy Sage" />  
+    <string id="NAwc5nggv" text="{FIRSTNAME} the Conspiracy-God" />
+    <string id="sAXDvjt2q" text="{FIRSTNAME} the Cutting Board" />
+    <string id="uMd1rTgGf" text="{FIRSTNAME} the Kimgo Royal Guard" />
+    <string id="yq4dhf2Qf" text="{FIRSTNAME} the Weed" /> <!-- a slang for a ninja -->
+    <string id="T2SOCRqx8" text="{FIRSTNAME} of Bishū" />
+    <string id="ouK5J4nY2" text="{FIRSTNAME} of Banshū" />
+    <string id="7zGXWHeTU" text="{FIRSTNAME} of Tanshū" />
+    <string id="VT3hjkxas" text="{FIRSTNAME} of Sakushū" />
+    <string id="V1mRCgU1u" text="{FIRSTNAME} of Chōshū" />
+    <string id="ZWzgxwGBX" text="{FIRSTNAME} of Bōshū" />
+    <string id="UhxhE6MFY" text="{FIRSTNAME} of Geishū" />
+    
+    <string id="BKNAM3mrD" text="{FIRSTNAME} the Niō" />
+    <string id="mr3aw1IbV" text="{FIRSTNAME} the Adamantine Gate" />
+    <string id="PMJ7vEDiK" text="{FIRSTNAME} the Wild Tiger" />
+    <string id="oJvnHHdpJ" text="{FIRSTNAME} the Superior" /> <!-- dekibito -->
+    <string id="YKAGAkSnz" text="{FIRSTNAME} the Girly-Little-Prince" /> <!-- hime-wakago, girly young boy -->
+    <string id="gIYetGfa0" text="{FIRSTNAME} the Demonic-Little-Prince" /> <!-- oni-wakago, demonic young boy -->
+    <string id="kpwweVnrp" text="{FIRSTNAME} of Sanshū" />
+    <string id="EfxfEyW4j" text="{FIRSTNAME} of Kishū" />
+    <string id="rAWF633uy" text="{FIRSTNAME} of Tosa" />
+    <string id="G0XuUgBuQ" text="{FIRSTNAME} of Yoshū" />
+    
+    <string id="CJrlxhEMS" text="{FIRSTNAME} the Victorious" />
+    <string id="cZIlQ5S2b" text="{FIRSTNAME} the Raijin" />
+    <string id="4RxPfRua2" text="{FIRSTNAME} the Fūjin" />
+    <string id="E21APjpQO" text="{FIRSTNAME} the Avatar of Hachiman" />
+    <string id="BNEJURyqo" text="{FIRSTNAME} the Avatar of Marici" />
+    <string id="L26jG43nV" text="{FIRSTNAME} the West Conqueror" /> <!-- Chinzei -->
+    <string id="0ILFfZimT" text="{FIRSTNAME} the Bear" />
+    <string id="JXNphjBs8" text="{FIRSTNAME} of Hōshū" />
+    <string id="ymh4jzzTN" text="{FIRSTNAME} of Hishū" />
+    <string id="ymh4jzzTN" text="{FIRSTNAME} of Sasshū" />
+    <string id="1S0nXg0Gi" text="{FIRSTNAME} of Nisshū" />
+    <string id="r5OyNfvlY" text="{FIRSTNAME} of Gūshū" />
+    <string id="siiuRgFww" text="{FIRSTNAME} of Tsushima" />
+    <!-- #endregion -->
     <!-- #region settlement formats per culture  -->
     <string id="75003f6b" text="{FIRSTNAME} of {SETTLEMENT}" />
     <string id="13aeB4Ac" text="{FIRSTNAME} o {SETTLEMENT}" />
@@ -412,6 +548,16 @@
     <string id="9aF48664" text="{SETTLEMENT} no {FIRSTNAME}" />
     <string id="Dt7SBz0we" text="{FIRSTNAME} of {SETTLEMENT}" />
     <string id="QV9KFogP1" text="{FIRSTNAME} of {SETTLEMENT}" />
+    
+    <string id="mTO2J4fQU" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="ToHMmoKeg" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Zq3uiCC7q" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Y3dL6ToT8" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Oqc4HTudC" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="RQUEx6f0i" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="ApTdjUGEQ" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="0MrWp8iWn" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="RK0FNDFeB" text="{SETTLEMENT} no {FIRSTNAME}"/>
     <!-- #endregion settlement formats per culture  -->
     <string id="2aA12fc9" text="{FIRSTNAME}" />
   </strings>
