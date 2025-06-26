@@ -1,7 +1,7 @@
 ﻿<Module>
   <Name value="Distinguished Service - Redux"/>
   <Id value="DistinguishedServiceRedux"/>
-  <Version value="v1.6.0"/>
+  <Version value="v1.6.1"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>

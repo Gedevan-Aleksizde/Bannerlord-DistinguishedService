@@ -415,6 +415,7 @@
     <string id="jlJyjxP0e" text="{FIRSTNAME} of Noto" />
     <string id="SYsPw8M0p" text="{FIRSTNAME} of Sado Isle" />
     <string id="RMBTEKzyY" text="{FIRSTNAME} of Wakasa" />
+    <string id="RqTjf7heT" text="{FIRSTNAME} the Dara Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
     
     <string id="LBFLzcFmc" text="{FIRSTNAME} the Yari" />
     <string id="g0hIdVSmV" text="{FIRSTNAME} the Owari Tiger" />
@@ -448,6 +449,7 @@
     <string id="Pg1k2ghjm" text="{FIRSTNAME} the Stable Master" /> <!-- tenkyū, meaning administrator of horse stable  -->
     <string id="o4VIVnKZs" text="{FIRSTNAME} the Younger Stable Master" />
     <string id="KQStglYII" text="{FIRSTNAME} the Nyūdō" />
+    <string id="tKuJ2Gw7r" text="{FIRSTNAME} the Tawake Idiot"/>
     
     <string id="PLW22L1qx" text="{FIRSTNAME} the Heuge Funny" />
     <string id="M12UHuKmY" text="{FIRSTNAME} the Hard-Headed" />
@@ -511,6 +513,7 @@
     <string id="1S0nXg0Gi" text="{FIRSTNAME} of Nisshū" />
     <string id="r5OyNfvlY" text="{FIRSTNAME} of Gūshū" />
     <string id="siiuRgFww" text="{FIRSTNAME} of Tsushima" />
+    <string id="QHHQvmI9f" text="{FIRSTNAME} the Tomma Idiot"/>
     <!-- #endregion -->
     <!-- #region settlement formats per culture  -->
     <string id="75003f6b" text="{FIRSTNAME} of {SETTLEMENT}" />

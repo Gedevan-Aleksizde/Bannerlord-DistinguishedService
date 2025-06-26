@@ -336,7 +336,7 @@
   <string id="DistServ_name_format_culture_hokuriku.noto" text="{=jlJyjxP0e}{FIRSTNAME} of Noto"/>
   <string id="DistServ_name_format_culture_hokuriku.sado" text="{=SYsPw8M0p}{FIRSTNAME} of Sado Isle"/>
   <string id="DistServ_name_format_culture_hokuriku.wakasa" text="{=RMBTEKzyY}{FIRSTNAME} of Wakasa"/>
-  <string id="DistServ_name_format_culture_hokuriku.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Dara Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+  <string id="DistServ_name_format_culture_hokuriku.idiot" text="{=RqTjf7heT}{FIRSTNAME} the Dara Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
 
   <string id="DistServ_name_format_culture_tokai.mataza" text="{=LBFLzcFmc}{FIRSTNAME} the Yari"/>
   <string id="DistServ_name_format_culture_tokai.tiger" text="{=g0hIdVSmV}{FIRSTNAME} the Owari Tiger"/>
@@ -370,7 +370,7 @@
   <string id="DistServ_name_format_culture_tosan.hida" text="{=Pg1k2ghjm}{FIRSTNAME} the Stable Master"/> <!-- tenkyū, meaning administrator of horse stable  -->
   <string id="DistServ_name_format_culture_tosan.hida" text="{=o4VIVnKZs}{FIRSTNAME} the Younger Stable Master"/>
   <string id="DistServ_name_format_culture_tosan.nyudo" text="{=KQStglYII}{FIRSTNAME} the Nyūdō"/> <!-- a buddhist monk, or a secular who entered the way of buddhism -->
-  <string id="DistServ_name_format_culture_tosan.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Tawake Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+  <string id="DistServ_name_format_culture_tosan.idiot" text="{=tKuJ2Gw7r}{FIRSTNAME} the Tawake Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
 
   <string id="DistServ_name_format_culture_kinki.heuge" text="{=PLW22L1qx}{FIRSTNAME} the Heuge Funny"/>
   <string id="DistServ_name_format_culture_kinki.gamo" text="{=M12UHuKmY}{FIRSTNAME} the Hard-Headed"/>
@@ -435,7 +435,7 @@
   <string id="DistServ_name_format_culture_saikai.gushu" text="{=r5OyNfvlY}{FIRSTNAME} of Gūshū"/>
   <string id="DistServ_name_format_culture_saikai.tsushima" text="{=siiuRgFww}{FIRSTNAME} of Tsushima"/>
   <string id="DistServ_name_format_culture_saikai.nise" text="{=iqxeNFUjU}{FIRSTNAME} the {?IF_FEMALE}Nise Young{?}Hime{\?}"/> <!-- ni-se, literally "two-years-old", a dialect word meaning young guy -->
-  <string id="DistServ_name_format_culture_tosan.idiot" text="{=RMBTEKzyY}{FIRSTNAME} the Tomma Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+  <string id="DistServ_name_format_culture_tosan.idiot" text="{=QHHQvmI9f}{FIRSTNAME} the Tomma Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
   <!-- #endregion Shokuho -->
   <!-- #region Khergit name format -->
   <string id="DistServ_name_format_culture_rebkhu.tulga" text="{=DSR8e6D385E}{FIRSTNAME} of Tulga"/>

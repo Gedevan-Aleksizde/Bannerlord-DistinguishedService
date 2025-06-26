@@ -412,7 +412,7 @@
     <string id="jlJyjxP0e" text="能登の{FIRSTNAME}"/>
     <string id="SYsPw8M0p" text="佐渡の{FIRSTNAME}"/>
     <string id="RMBTEKzyY" text="若狭の{FIRSTNAME}"/>
-    <string id="RMBTEKzyY" text="若狭の{FIRSTNAME}"/>
+    <string id="RqTjf7heT" text="ダラズの{FIRSTNAME}"/>
     <string id="LBFLzcFmc" text="槍の{FIRSTNAME}"/>
     <string id="g0hIdVSmV" text="尾張の虎の{FIRSTNAME}"/>
     <string id="0QNUUpWKA" text="天魔の{FIRSTNAME}"/>
@@ -444,7 +444,7 @@
     <string id="Pg1k2ghjm" text="典厩の{FIRSTNAME}"/>
     <string id="o4VIVnKZs" text="小典厩の{FIRSTNAME}"/>
     <string id="KQStglYII" text="入道{FIRSTNAME}"/>
-    <string id="RMBTEKzyY" text="若狭の{FIRSTNAME}"/>
+    <string id="tKuJ2Gw7r" text="たわけ者の{FIRSTNAME}"/>
     <string id="PLW22L1qx" text="へうげ者の{FIRSTNAME}"/>
     <string id="M12UHuKmY" text="頑愚者の{FIRSTNAME}"/>
     <string id="OXhgU0drh" text="今孔明の{FIRSTNAME}"/>
@@ -505,7 +505,7 @@
     <string id="r5OyNfvlY" text="隅州の{FIRSTNAME}"/>
     <string id="siiuRgFww" text="対馬の{FIRSTNAME}"/>
     <string id="iqxeNFUjU" text="{?IF_FEMALE}ニ歳{?}姫{\?}の{FIRSTNAME}"/>
-    <string id="RMBTEKzyY" text="若狭の{FIRSTNAME}"/>
+    <string id="QHHQvmI9f" text="とんまの{FIRSTNAME}"/>
     
     <!-- #region settlement name formats -->
     <string id="75003f6b" text="{SETTLEMENT}の{FIRSTNAME}"/>
